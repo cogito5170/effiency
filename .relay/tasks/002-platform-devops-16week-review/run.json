@@ -1,0 +1,42 @@
+{
+  "task": "002-platform-devops-16week-review",
+  "iterations": 2,
+  "verdict": "CHANGES",
+  "stages": [
+    {
+      "stage": "review",
+      "status": "ok",
+      "seconds": 34.65528695799003,
+      "runner": "claude",
+      "detail": "VERDICT CHANGES",
+      "claude": {
+        "input_tokens": 2,
+        "cache_creation_input_tokens": 17402,
+        "cache_read_input_tokens": 3257,
+        "output_tokens": 926,
+        "turns": 1
+      }
+    },
+    {
+      "stage": "review",
+      "status": "ok",
+      "seconds": 48.45902049999859,
+      "runner": "claude",
+      "detail": "VERDICT CHANGES",
+      "claude": {
+        "input_tokens": 2,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 20659,
+        "output_tokens": 2751,
+        "turns": 1
+      }
+    }
+  ],
+  "claude_tokens": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 17402,
+    "cache_read_input_tokens": 23916,
+    "output_tokens": 3677,
+    "turns": 2
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "task": "pd-portfolio-proposal",
+  "iterations": 1,
+  "verdict": "APPROVE",
+  "stages": [
+    {
+      "stage": "review",
+      "status": "ok",
+      "seconds": 20.82179579199874,
+      "runner": "claude",
+      "detail": "VERDICT APPROVE",
+      "claude": {
+        "input_tokens": 2,
+        "cache_creation_input_tokens": 17205,
+        "cache_read_input_tokens": 3257,
+        "output_tokens": 885,
+        "turns": 1
+      }
+    }
+  ],
+  "claude_tokens": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 17205,
+    "cache_read_input_tokens": 3257,
+    "output_tokens": 885,
+    "turns": 1
+  }
+}
