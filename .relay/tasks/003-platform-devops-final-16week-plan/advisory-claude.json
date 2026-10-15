@@ -1,0 +1,15 @@
+{
+ㅊ
+  "agent": "claude",
+  "status": "ok",
+  "seconds": 137.095,
+  "runner": "claude",
+  "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 19706,
+    "cache_read_input_tokens": 12064,
+    "output_tokens": 10655,
+    "turns": 4
+  },
+  "error": ""
+}
