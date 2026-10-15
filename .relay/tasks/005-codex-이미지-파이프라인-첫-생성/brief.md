@@ -15,3 +15,7 @@ git add .relay/tasks/005-* && git commit -m "relay image 005: 생성 결과" && 
 
 ## Done when
 - `image.png`, `image-prompt.md`, `image.json`(status=ok) 가 이 폴더에 커밋되어 있다.
+
+## VM 인박스로 실행 (VM 접근 없이)
+`request.json` (action=image) 이 커밋되어 있다. VM 인박스 워커(docs/vm-inbox.md)가 켜져 있으면 자동으로 처리해
+결과와 `response.json` 을 이 브랜치에 푸시한다.
