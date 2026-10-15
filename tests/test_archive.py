@@ -332,6 +332,21 @@ class DomainTest(ArchiveBase):
         self.assertEqual(new["conflicts_with"], [])
         self.assertEqual(self.ar.get(old["id"])["status"], "active")
 
+    def test_generic_verb_alone_recalls_nothing(self):
+        self.ar.add("젠틀몬스터 매장 벽은 노출 콘크리트 말고 나무로 고쳐", "user_stated", session="gm", domain="interior")
+        self.assertEqual(self.ar.search("고쳐", min_score=3), [])                   # 자소서 세션의 "고쳐"
+        self.assertEqual(archive.recall_context(self.dir, "고쳐", "letter", self.conf), "")
+        self.assertTrue(self.ar.search("젠틀몬스터 벽 고쳐", min_score=3))            # 진짜 겹침은 그대로 찾는다
+
+    def test_general_request_needs_a_strong_overlap_for_another_domain(self):
+        self.ar.add("젠틀몬스터 매장 벽은 노출 콘크리트 말고 나무로", "user_stated", session="gm", domain="interior")
+        self.assertEqual(archive.detect_domain("콘크리트 질감 이야기", self.domains())[0], archive.GENERAL)
+        self.assertTrue(self.ar.search("콘크리트 질감 이야기", min_score=3))            # 필터가 없으면 붙는다
+        weak = archive.recall_context(self.dir, "콘크리트 질감 이야기", "letter", self.conf)   # 낱말 하나 겹침
+        self.assertNotIn("젠틀몬스터", weak)
+        strong = archive.recall_context(self.dir, "노출 콘크리트 나무 질감", "letter2", self.conf)
+        self.assertIn("젠틀몬스터", strong)
+
     def test_hook_same_session_shift_archives_and_warns(self):
         path = write_transcript(self.dir / "s.jsonl", INTERIOR, filler=20, ctx=5_000)
         self.assertIsNone(self.run_hook("prompt", {"prompt": INTERIOR[0][0], "transcript_path": str(path)}))

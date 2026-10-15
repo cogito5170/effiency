@@ -66,6 +66,10 @@ _STOP = {"the", "and", "for", "with", "that", "this", "from", "are", "was", "not
          "그", "이", "저", "것", "수", "등", "및", "좀", "더", "다시", "그리고", "그래서", "하는", "해줘",
          "있다", "없다", "합니다", "했다", "한다", "에서", "으로", "true", "false", "none", "null"}
 
+# 어느 작업에나 붙는 동사 · 평가어. 이것만 겹치면 '비슷한 문맥' 이 아니다 ("고쳐" 한 낱말로 남의 작업 기록이 붙던 병)
+GENERIC = {"고쳐", "고쳐줘", "바꿔", "바꿔줘", "바꾸자", "해봐", "보여줘", "다시", "만들어", "만들어줘", "정리", "정리해", "확인",
+           "확인해", "수정", "수정해", "계속", "좋아", "별로", "이상해", "틀렸어", "피드백", "스스로", "보고", "fix", "redo", "again"}
+
 
 # ---------------------------------------------------------------- 낱말 · 깃발 (모델 호출 없음)
 
@@ -298,7 +302,7 @@ class Archive:
         domain 을 주면 그 도메인의 기록만 본다 (general 로 남은 기록도 뺀다 — 어느 도메인 것인지 모르는
         기억이 새 도메인에 섞이는 것이 막으려는 병이다).
         순서: 정정(correction 이고 conflicts_with 가 있는 사용자 말) > 점수 > 믿음(TRUST) > 최근."""
-        q = set(terms(query))
+        q = set(terms(query)) - GENERIC
         if not q:
             return []
         scored = []
@@ -562,6 +566,8 @@ def recall_context(root: Path, prompt: str, session: str, conf: dict) -> str:
     hits, seen = [], set()
     for score, r in ar.search(prompt, limit=a["recall_max_hits"] * 3, min_score=a["recall_min_score"],
                               exclude_session=session, domain=now if now != GENERAL else ""):
+        if now == GENERAL and r.get("domain", GENERAL) != GENERAL and score < 2 * a["recall_min_score"]:
+            continue        # 도메인을 모르는 요청에 다른 도메인 기록을 붙이려면 겹침이 두 배는 돼야 한다
         if (r["kind"], r["summary"]) not in seen:      # 같은 파일을 여러 번 읽은 기록은 한 줄만
             seen.add((r["kind"], r["summary"]))
             hits.append((score, r))
