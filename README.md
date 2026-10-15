@@ -130,7 +130,7 @@ relay advise 002 --agent agy     # Agy의 독립 자문
 [docs/cloud-runner.md](docs/cloud-runner.md)를 참고한다. Phase 1은 컨테이너 요청 검증과
 감사 아티팩트까지 수행하며, 로컬 OAuth나 API 키는 요구하지 않는다.
 
-하루 단위 운영법은 [docs/playbook.md](docs/playbook.md). 새 세션은 [docs/HANDOFF.md](docs/HANDOFF.md) 부터 (Pro 30일 운용 계획).
+하루 단위 운영법은 [docs/playbook.md](docs/playbook.md). 여러 세션을 gentleMonster 와 한 워크스페이스로 묶는 규칙(context biasing 방지 정책 포함)은 [docs/workspace.md](docs/workspace.md). 새 세션은 [docs/HANDOFF.md](docs/HANDOFF.md) 부터 (Pro 30일 운용 계획).
 
 ## 5. 명령어
 
