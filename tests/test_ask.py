@@ -79,6 +79,8 @@ class AskTest(unittest.TestCase):
             script = ask.install_quick_action(self.root)
         text = script.read_text()
         self.assertIn(f'cd "{self.root}"', text)
+        self.assertIn(f'export HOME="{self.root}"', text)
+        self.assertNotIn("__HOME__", text)
         self.assertIn("relay ask --source", text)
         self.assertTrue(os.access(script, os.X_OK))
 

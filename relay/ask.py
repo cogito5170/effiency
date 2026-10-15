@@ -237,7 +237,10 @@ def ask(root: Path, conf: dict, selection: str, question: str, source: str = "",
 
 QUICK_ACTION = r"""#!/bin/bash
 # relay ask — macOS 빠른 동작(단축어)에서 선택한 텍스트를 받아 질문한다.
-export PATH="$HOME/.local/bin:/opt/homebrew/bin:/usr/local/bin:$PATH"
+# 단축어 앱은 HOME 을 비운 채 스크립트를 실행하므로 설치 시점의 홈 경로를 고정한다.
+export HOME="__HOME__"
+export PATH="$HOME/.local/bin:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:$PATH"
+mkdir -p "$HOME/.relay"
 cd "__ROOT__" || exit 1
 sel="$(cat)"
 app="$(osascript -e 'tell application "System Events" to name of first application process whose frontmost is true' 2>/dev/null)"
@@ -258,6 +261,7 @@ def install_quick_action(root: Path) -> Path:
     target = Path.home() / ".local" / "bin" / "relay-ask-selection"
     target.parent.mkdir(parents=True, exist_ok=True)
     (Path.home() / ".relay").mkdir(exist_ok=True)
-    target.write_text(QUICK_ACTION.replace("__ROOT__", str(root.resolve())), encoding="utf-8")
+    script = QUICK_ACTION.replace("__ROOT__", str(root.resolve())).replace("__HOME__", str(Path.home()))
+    target.write_text(script, encoding="utf-8")
     target.chmod(0o755)
     return target
