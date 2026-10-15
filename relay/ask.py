@@ -241,19 +241,32 @@ QUICK_ACTION = r"""#!/bin/bash
 export HOME="__HOME__"
 export PATH="$HOME/.local/bin:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:$PATH"
 mkdir -p "$HOME/.relay"
-cd "__ROOT__" || exit 1
+exec >>"$HOME/.relay/ask.log" 2>&1
+echo "=== $(date '+%F %T') relay ask 시작"
+cd "__ROOT__" || { echo "작업 폴더 없음: __ROOT__"; exit 1; }
 sel="$(cat)"
-app="$(osascript -e 'tell application "System Events" to name of first application process whose frontmost is true' 2>/dev/null)"
+echo "선택한 글자 수: ${#sel}"
+[ -z "$sel" ] && { echo "선택한 텍스트가 비어 있음 (단축어 입력이 '텍스트'인지, 입력 전달이 stdin 인지 확인)"; exit 1; }
+app="$(osascript -e 'tell application "System Events" to name of first application process whose frontmost is true')"
 src=""
 case "$app" in
-  Preview) src="$(osascript -e 'tell application "Preview" to get path of front document' 2>/dev/null)" ;;
-  "Google Chrome") src="$(osascript -e 'tell application "Google Chrome" to get URL of active tab of front window' 2>/dev/null)" ;;
+  Preview) src="$(osascript -e 'tell application "Preview" to get path of front document')" ;;
+  "Google Chrome") src="$(osascript -e 'tell application "Google Chrome" to get URL of active tab of front window')" ;;
 esac
-q="$(osascript -e 'text returned of (display dialog "무엇이 궁금한가요? (깊게 물으려면 앞에 !)" default answer "쉽게 설명해줘" with title "relay ask")' 2>/dev/null)" || exit 0
+echo "앱: ${app:-?} / 문서: ${src:-(못 가져옴)}"
+q="$(osascript -e 'text returned of (display dialog "무엇이 궁금한가요? (깊게 물으려면 앞에 !)" default answer "쉽게 설명해줘" with title "relay ask")' 2>"$HOME/.relay/ask-dialog.err")"
+rc=$?
+if [ $rc -ne 0 ]; then
+  if grep -q -- "-128" "$HOME/.relay/ask-dialog.err"; then echo "사용자가 취소함"; exit 0; fi
+  echo "질문 창을 띄울 수 없음 → 기본 질문 사용: $(cat "$HOME/.relay/ask-dialog.err")"
+  q="쉽게 설명해줘"
+fi
 deep=""
 case "$q" in "!"*) deep="--deep"; q="${q#!}" ;; esac
-osascript -e 'display notification "답변을 준비하고 있어요" with title "relay ask"' >/dev/null 2>&1
-printf '%s' "$sel" | relay ask --source "$src" --question "$q" $deep --open >"$HOME/.relay/ask.log" 2>&1 &
+echo "질문: $q ${deep}"
+osascript -e 'display notification "답변을 준비하고 있어요" with title "relay ask"'
+printf '%s' "$sel" | relay ask --source "$src" --question "$q" $deep --open
+echo "=== 종료 (exit $?)"
 """
 
 
