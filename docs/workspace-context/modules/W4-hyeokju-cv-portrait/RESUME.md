@@ -1,5 +1,5 @@
 # W4 혁주 CV · 인물 사진 (CV 청사진 → .ai, RELIEF 지면 엔진, CV 히어로 실사 인물)
-기준 2026-10-16T03:30Z · 체크포인트 main@6acff99, claude/cv-blueprint@6a1d95c, claude/hyeokju-cv@84980aa
+기준 2026-10-16T07:45Z · 체크포인트 main@bdee7d6, claude/cv-blueprint@6a1d95c, claude/hyeokju-cv@84980aa
 
 ## 지금
 2026-10-10 10:10 '그레이로 채택, 01과 02 상하 교체' (6a1d95c, CV_PAGE2_B_SIDENOTE_GRAY.ai). 이후 2026-10-15 CLAUDE.md 로 인물 사진 생성 경로가 Codex(W5)로 바뀜.

@@ -1,5 +1,5 @@
 # W1 혁주 자기소개서 (신세계인터내셔날 해외패션 라운딩 VMD)
-기준 2026-10-16T06:50Z · 체크포인트 claude/clever-knuth-1dezlo@56d69a1, claude/beautiful-gates-e42a5m@76d0f6d, claude/modest-cannon-ha8zs3@79ba2dc
+기준 2026-10-16T07:45Z · 체크포인트 claude/clever-knuth-1dezlo@56d69a1, claude/beautiful-gates-e42a5m@76d0f6d, claude/modest-cannon-ha8zs3@79ba2dc
 
 ## 지금
 Q1 구성은 R2 + 왜 해외 브랜드 VMD + 역량 답변(사용자, 10-16 06:09). 현재본은 조립본 rev qa2 931자(092bd99). 첫 단락 가운데 문장을 사용자 요청(앞 세 문장 · 마지막 문장 고정)으로 G1~G3 까지 냈고 선택은 아직 없다.
