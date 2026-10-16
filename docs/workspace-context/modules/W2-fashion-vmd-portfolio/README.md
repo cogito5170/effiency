@@ -1,5 +1,7 @@
 # W2 · 패션 · VMD 지원 포트폴리오
 
+> 새 세션은 이 문서 대신 [RESUME.md](RESUME.md)(2000자 이하)부터 읽는다. 지금 유효한 상태는 `state.json`, 지난 이력은 `history.jsonl`. 이 문서는 모듈 설명이고 상태 서술은 만든 시점(10-16 03:30) 기준이다.
+
 `ws:w2-fashion-vmd-portfolio` · 도메인 fashion · 계약 [ws-module/1](../CONTRACT.md) · 상태 기준 2026-10-16T03:30Z
 
 브리프와 사용자 결정을 받아 스토리 · 장면 청사진(A3/A4) · 표지 이미지 요청 · 공고 조사 결과를 낸다.

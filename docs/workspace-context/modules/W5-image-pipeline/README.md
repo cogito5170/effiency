@@ -1,5 +1,7 @@
 # W5 · 이미지 경로 (Codex)
 
+> 새 세션은 이 문서 대신 [RESUME.md](RESUME.md)(2000자 이하)부터 읽는다. 지금 유효한 상태는 `state.json`, 지난 이력은 `history.jsonl`. 이 문서는 모듈 설명이고 상태 서술은 만든 시점(10-16 03:30) 기준이다.
+
 `ws:w5-image-pipeline` · 도메인 software · 계약 [ws-module/1](../CONTRACT.md) · 상태 기준 2026-10-16T03:30Z
 
 짧은 image-spec 을 받아 VM Codex 가 만든 이미지와 response.json 을 돌려준다. 이미지는 모두 이 모듈을 거친다.

@@ -2,20 +2,23 @@
  "module": "W4",
  "title": "혁주 CV · 인물 사진 (CV 청사진 → .ai, RELIEF 지면 엔진, CV 히어로 실사 인물)",
  "as_of": "2026-10-16T03:30Z",
- "synced_from": {
-  "sessions_checked": [
-   "session_011o2Zk5R9TTMbgacGgwBcjp",
-   "session_01EwZvjiXu5ppJiaJniHRYoT",
-   "session_017EVHBofkdPhvYSUBCeRAH4"
-  ],
-  "method": "세션 카드 + ws_out/W4 스냅숏(2026-10-15) 대조, 저장소 파일 재확인. 세션 이벤트는 새로 읽지 않음.",
-  "branches_checked": {
-   "gentleMonster@main": "6acff99 (docs/cv · relief 없음)",
+ "checkpoint": {
+  "at": "2026-10-16T03:30Z",
+  "refs": {
+   "gentleMonster@main": "6acff99",
    "gentleMonster@claude/cv-blueprint": "6a1d95c",
    "gentleMonster@claude/hyeokju-cv": "84980aa",
-   "gentleMonster@claude/relief-photos": "원격에 없음",
-   "gentleMonster@claude/gentle-monster-magazine-system-xh6ijk": "d10b8ee (W3 소속 세션이지만 `gentle_monster cv` 테스트 CV 레이아웃 포함, 참고만)"
-  }
+   "gentleMonster@claude/gentle-monster-magazine-system-xh6ijk": "d10b8ee"
+  },
+  "method": "scripts/sync_delta.py: 체크포인트 커밋 뒤의 커밋 · 바뀐 파일만 읽음. 세션 대화 원본은 읽지도 고치지도 않음",
+  "not_cloned": [],
+  "verified_no_change_at": "2026-10-16T06:30Z"
+ },
+ "latest_confirmed": "2026-10-10 10:10 '그레이로 채택, 01과 02 상하 교체' (6a1d95c, CV_PAGE2_B_SIDENOTE_GRAY.ai). 이후 2026-10-15 CLAUDE.md 로 인물 사진 생성 경로가 Codex(W5)로 바뀜.",
+ "resume_point": {
+  "op": "cv_layout",
+  "input_hint": "초안 docs/cv/CV_2PAGE_DRAFT.pdf (bfdf3f2) 다음: 사용자가 (1) 1쪽 원본(TYPE1 .ai / RELIEF 렌더) (2) CV 빈칸 사실 (3) 히어로 사진을 portrait→W5.image 로 요청할지 정하면 최종본",
+  "precondition": "사용자 확인 필요"
  },
  "confirmed": [
   {
@@ -269,7 +272,6 @@
    }
   }
  ],
- "latest_confirmed": "2026-10-10 10:10 '그레이로 채택, 01과 02 상하 교체' (6a1d95c, CV_PAGE2_B_SIDENOTE_GRAY.ai). 이후 2026-10-15 CLAUDE.md 로 인물 사진 생성 경로가 Codex(W5)로 바뀜.",
  "open": [
   {
    "id": "W4-O1",
@@ -349,22 +351,6 @@
    "status": "final"
   },
   {
-   "kind": "ai",
-   "repo": "cogito5170/gentleMonster",
-   "ref": "claude/cv-blueprint",
-   "path": "docs/cv/ai/CV_PAGE2_B_SIDENOTE.ai, CV_PAGE2_B_SIDENOTE_BLACK.ai",
-   "commit": "6a1d95c",
-   "status": "superseded"
-  },
-  {
-   "kind": "ai",
-   "repo": "cogito5170/gentleMonster",
-   "ref": "claude/cv-blueprint",
-   "path": "docs/cv/ai/CV_TYPE2_SIDEBAR.ai",
-   "commit": "ba4efa2",
-   "status": "superseded"
-  },
-  {
    "kind": "pdf",
    "repo": "cogito5170/gentleMonster",
    "ref": "claude/cv-blueprint",
@@ -403,22 +389,6 @@
    "path": "docs/cv/photos/{A,B,C,D}.prompt.txt",
    "commit": "84980aa",
    "status": "draft"
-  },
-  {
-   "kind": "doc",
-   "repo": "cogito5170/gentleMonster",
-   "ref": "claude/hyeokju-cv",
-   "path": "docs/relief/requests/CMD-REL1.md (VM 오픈 모델 지시 초안)",
-   "commit": "84980aa",
-   "status": "superseded"
-  },
-  {
-   "kind": "code",
-   "repo": "cogito5170/gentleMonster",
-   "ref": "claude/hyeokju-cv",
-   "path": "gentle_monster/relief/photo.py (Gemini 이미지 경로)",
-   "commit": "9a62f70",
-   "status": "superseded"
   }
  ],
  "unverified": [
@@ -450,10 +420,5 @@
    "statement": "2페이지 원고는 W1(혁주 자소서 session_01FYwvzhDCTYAAM1u37s5yGE)와 맞물림",
    "where": "session_011o2Zk5R9TTMbgacGgwBcjp 카드"
   }
- ],
- "resume_point": {
-  "op": "cv_layout",
-  "input_hint": "초안 docs/cv/CV_2PAGE_DRAFT.pdf (bfdf3f2) 다음: 사용자가 (1) 1쪽 원본(TYPE1 .ai / RELIEF 렌더) (2) CV 빈칸 사실 (3) 히어로 사진을 portrait→W5.image 로 요청할지 정하면 최종본",
-  "precondition": "사용자 확인 필요"
- }
+ ]
 }

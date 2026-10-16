@@ -7,7 +7,8 @@
 - 모듈마다 module.json · ops.json · state.json 이 있고 필수 필드가 있다.
 - ops.json 의 `calls` 는 존재하는 모듈 오퍼레이션만 가리키고, 모듈 의존 그래프에 순환이 없다.
 - state.json 의 confirmed 는 출처가 `사용자` 또는 `도구출력` 이다 (모델 추론은 unverified 로).
-- decisions 의 supersedes 는 같은 모듈의 앞선 결정을 가리킨다.
+- decisions 의 supersedes 는 같은 모듈의 앞선 결정(state.json 또는 history.jsonl)을 가리키고, 대체된 결정은 state.json 에 남지 않는다.
+- RESUME.md 가 있으면 상한(RESUME_MAX_CHARS) 이하다.
 - --git 을 주면 evidence 의 (ref, path) 가 그 클론에 실제로 있는지 본다 (경로 하나짜리만).
 """
 from __future__ import annotations
@@ -24,6 +25,7 @@ MODULE_KEYS = {"contract", "id", "name", "domain", "purpose", "exposes", "consum
 OP_KEYS = {"op", "purpose", "input", "output", "runs_where", "side_effects"}
 STATE_KEYS = {"module", "as_of", "confirmed", "decisions", "open", "artifacts", "resume_point"}
 CONFIRMED_SOURCES = {"사용자", "도구출력"}
+RESUME_MAX_CHARS = 2000  # 새 세션이 첫 줄에 읽는 요약의 상한 (build_resume.py 와 같은 값)
 
 
 def load(path: Path):
@@ -86,6 +88,23 @@ def check(root: Path, clones: list[Path] | None = None) -> list[str]:
             if not c.get("evidence"):
                 errors.append(f"{mid}: confirmed {c.get('id')} 에 evidence 없음")
         seen: set[str] = set()
+        hist = d / "history.jsonl"
+        if hist.exists():  # 대체돼 옮겨 간 결정도 '앞선 결정'으로 친다
+            for n, line in enumerate(hist.read_text(encoding="utf-8").splitlines(), 1):
+                try:
+                    h = json.loads(line)
+                except json.JSONDecodeError:
+                    errors.append(f"{mid}: history.jsonl {n}행이 JSON 이 아님")
+                    continue
+                if h.get("kind") == "decision" and h.get("id"):
+                    seen.add(h["id"])
+        live = {dec.get("id") for dec in s.get("decisions", [])}
+        for dec in s.get("decisions", []):
+            if dec.get("supersedes") in live:
+                errors.append(f"{mid}: 대체된 결정 {dec['supersedes']} 가 아직 state.json 에 있음 (history.jsonl 로)")
+        resume = d / "RESUME.md"
+        if resume.exists() and len(resume.read_text(encoding="utf-8")) > RESUME_MAX_CHARS:
+            errors.append(f"{mid}: RESUME.md 가 {RESUME_MAX_CHARS}자를 넘음")
         for i, dec in enumerate(s.get("decisions", [])):
             sup = dec.get("supersedes")
             if sup and re.fullmatch(r"W\d-D\d+", sup) and sup not in seen:

@@ -2,32 +2,26 @@
  "module": "W5",
  "title": "이미지 생성 경로 (로컬 확산 · Gemini · Codex)",
  "as_of": "2026-10-16T03:30Z",
- "synced_from": {
-  "sessions_checked": [
-   "session_013E5kLcQZ6fo4dSTkiFj8BB",
-   "session_0148K7k8z954TzbiEnuhyCir",
-   "session_01KHd6Ft8vzjYffMcwhTDwcy"
-  ],
-  "sessions_found_in_commits_not_in_workspace": [
-   "session_01WSyRrhmyx2Mhnxw2gM4sy1 (gentleMonster 5e8645b codex-image skill)",
-   "session_013ZwA36yTZqoHvjCaoKW82A (gentleMonster 9ff47fd/93dbe64/12ecdbd cover · CLAUDE.md 규칙)"
-  ],
-  "branches_checked": {
+ "checkpoint": {
+  "at": "2026-10-16T03:30Z",
+  "refs": {
    "gentleMonster@main": "6acff99",
    "effiency@main": "8724b6c",
-   "gentleMonster@claude/codex-all-images": "12ecdbd (main 에 머지됨)",
-   "gentleMonster@claude/project-thread-603jt3": "05ef106 (main 에 머지됨)",
-   "gentleMonster@claude/project-thread-95j1zd": "cb7027b (main 대비 2커밋 앞섬: 001-codex-test)",
-   "effiency@claude/codex-image-pipeline-lgeo10": "main 에 머지됨",
-   "effiency@claude/context-archive": "6f7510c (main 대비 1커밋 앞섬: 005 결과 중복 커밋)",
-   "effiency@claude/jolly-knuth-5oxkld": "원격 없음",
-   "gentleMonster@claude/code-agent-image-gen-cz6kfx": "원격 없음",
-   "gentleMonster@claude/sleepy-cori-h0ug3b": "원격 없음",
-   "diffusion_model@claude/code-agent-image-gen-cz6kfx": "클론 없음 (미확인)",
-   "gentleMonster_gemini@claude/sleepy-cori-h0ug3b": "클론 없음 (미확인)"
-  }
+   "gentleMonster@claude/codex-all-images": "12ecdbd",
+   "gentleMonster@claude/project-thread-603jt3": "05ef106",
+   "gentleMonster@claude/project-thread-95j1zd": "cb7027b",
+   "effiency@claude/context-archive": "6f7510c"
+  },
+  "method": "scripts/sync_delta.py: 체크포인트 커밋 뒤의 커밋 · 바뀐 파일만 읽음. 세션 대화 원본은 읽지도 고치지도 않음",
+  "not_cloned": [],
+  "verified_no_change_at": "2026-10-16T06:30Z"
  },
  "latest_confirmed": "W5-D8: gentleMonster CLAUDE.md '이미지는 모두 Codex 로 만든다 (2026-10-15 사용자 결정)' — 사용자가 PR #14 를 머지(6acff99, 2026-10-15T14:39Z). 로컬 확산 · Gemini · Midjourney 프롬프트 경로를 대체. 경로: image-spec.json → claude/* 푸시 → VM relay inbox → codex exec 이미지 → 같은 브랜치 커밋.",
+ "resume_point": {
+  "op": "image",
+  "input_hint": "경로 정상(status 확인 완료). 다음 이미지는 W2.cover_image · W3.band_image · W4.portrait · W6.cover 가 spec 만 넘겨 부른다.",
+  "precondition": "요청 모듈 쪽 사용자 결정(무엇을 그릴지)이 먼저"
+ },
  "confirmed": [
   {
    "id": "W5-C1",
@@ -360,22 +354,6 @@
    "path": ".relay/tasks/001-codex-test/",
    "commit": "cb7027b",
    "status": "draft"
-  },
-  {
-   "kind": "code",
-   "repo": "cogito5170/diffusion_model",
-   "ref": "claude/code-agent-image-gen-cz6kfx",
-   "path": "atelier/ · .claude/agents/ · studio.py · install_mac.sh (모델 보고, 클론 없음)",
-   "commit": "d3dc611 (보고값)",
-   "status": "superseded"
-  },
-  {
-   "kind": "code",
-   "repo": "cogito5170/gentleMonster_gemini",
-   "ref": "claude/sleepy-cori-h0ug3b",
-   "path": "PREP.md · USAGE.md · PREVIEW.md · bench/ (모델 보고, 클론 없음)",
-   "commit": "216efc2 (보고값)",
-   "status": "superseded"
   }
  ],
  "unverified": [
@@ -399,10 +377,5 @@
    "statement": "허브: VM 은 설치된 relay 를 실행하므로 코드 변경 후 `pipx install --force` 필요 — docs/vm-inbox.md:3,43 의 '업데이트는 같은 명령에 --force' 와 일치",
    "where": "W0-hub.md / effiency docs/vm-inbox.md"
   }
- ],
- "resume_point": {
-  "op": "image",
-  "input_hint": "경로 정상(status 확인 완료). 다음 이미지는 W2.cover_image · W3.band_image · W4.portrait · W6.cover 가 spec 만 넘겨 부른다.",
-  "precondition": "요청 모듈 쪽 사용자 결정(무엇을 그릴지)이 먼저"
- }
+ ]
 }

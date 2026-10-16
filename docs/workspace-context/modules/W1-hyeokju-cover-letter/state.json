@@ -1,24 +1,26 @@
 {
  "module": "W1",
  "title": "혁주 자기소개서 (신세계인터내셔날 해외패션 라운딩 VMD)",
- "as_of": "2026-10-16T03:30Z",
- "synced_from": {
-  "sessions_checked": [
-   "session_01FYwvzhDCTYAAM1u37s5yGE",
-   "session_0122yxjinLCToP7QLnhJbJka",
-   "session_01GGPjmZVBdKmygvWvYsFFv6"
-  ],
-  "branches_checked": {
-   "gentleMonster@claude/clever-knuth-1dezlo": "31e58ae",
-   "gentleMonster@claude/beautiful-gates-e42a5m": "6726b26",
+ "as_of": "2026-10-16T06:50Z",
+ "checkpoint": {
+  "at": "2026-10-16T06:50Z",
+  "refs": {
+   "gentleMonster@claude/clever-knuth-1dezlo": "56d69a1",
+   "gentleMonster@claude/beautiful-gates-e42a5m": "76d0f6d",
    "gentleMonster@claude/modest-cannon-ha8zs3": "79ba2dc",
    "gentleMonster@main": "6acff99"
   },
+  "method": "scripts/sync_delta.py: 체크포인트 커밋 뒤의 커밋 · 바뀐 파일만 읽음. 세션 대화 원본은 읽지도 고치지도 않음",
   "not_cloned": [
    "cogito5170/writing_agent@claude/beautiful-gates-e42a5m",
    "cogito5170/analy_agent@claude/modest-cannon-ha8zs3"
-  ],
-  "method": "2026-10-15 카드 스냅숏 + git show/grep (fetch 완료 상태). 세션 이벤트는 새로 읽지 않음 (허브: 10-15 이후 활동 없음)"
+  ]
+ },
+ "latest_confirmed": "Q1 구성은 R2 + 왜 해외 브랜드 VMD + 역량 답변(사용자, 10-16 06:09). 현재본은 조립본 rev qa2 931자(092bd99). 첫 단락 가운데 문장을 사용자 요청(앞 세 문장 · 마지막 문장 고정)으로 G1~G3 까지 냈고 선택은 아직 없다.",
+ "resume_point": {
+  "op": "finalize",
+  "input_hint": "selfintro_p1_middle_options.json 의 G1~G3 를 보여 주고 하나를 고르게 한 뒤, 그 문장을 넣은 조립본 전문과 글자 수로 Q1 채택을 받는다. 채택되면 selection_sikorea_vmd_3q.json 의 Q1_selfintro 에 기록하고 Q2 로 넘어간다.",
+  "precondition": "사용자 확인 필요 (PROCESS.md §0 '고르는 것은 사용자')."
  },
  "confirmed": [
   {
@@ -123,36 +125,6 @@
    "note": "원문 인용 docs/portfolio/handoff/CMD-HJ86.input.json:5"
   },
   {
-   "id": "W1-C8",
-   "statement": "둘째 단락 최종 수정은 허브 판단에 위임: '자기소개서 사례를 바탕으로 더 적합한 안을 모색한 후 임의 판단 후 수정하라'",
-   "source": "사용자",
-   "evidence": {
-    "repo": "cogito5170/gentleMonster",
-    "ref": "claude/clever-knuth-1dezlo",
-    "path": "docs/portfolio/handoff/CMD-HJ91.input.json",
-    "line": 5,
-    "commit": "69148db",
-    "event": "2b18df90-507b-4cfe-9b55-75b448e7a624"
-   },
-   "decided_at": "2026-10-15T13:39Z",
-   "file_verified": true
-  },
-  {
-   "id": "W1-C9",
-   "statement": "CMD-HJ91 결과: 둘째 단락 FINAL 312자 · ALT 315자, recommend FINAL, blocked_questions Q1(실제 지원 이유 = UQ1). 두 브랜치의 파일 내용이 같다",
-   "source": "도구출력",
-   "evidence": {
-    "repo": "cogito5170/gentleMonster",
-    "ref": "claude/clever-knuth-1dezlo",
-    "path": "docs/portfolio/handoff/CMD-HJ91.result.json",
-    "line": 8,
-    "commit": "31e58ae"
-   },
-   "decided_at": "2026-10-15T13:43Z",
-   "file_verified": true,
-   "note": "편집 브랜치 claude/beautiful-gates-e42a5m@6726b26 동일 파일 diff 없음. recommend 179행, blocked_questions 184행"
-  },
-  {
    "id": "W1-C10",
    "statement": "세션 규칙에 '자기소개서 작업엔 PROCESS.md 우선' 덧붙임 (CMD-HJ48·49), 결과 형식 editor_options/1이 기본값",
    "source": "도구출력",
@@ -180,47 +152,65 @@
    "decided_at": "2026-10-08T07:03Z",
    "file_verified": false,
    "note": "철회 메시지 자체는 파일에 없음. 결과(허브 규약만 쓰는 것)는 agent_protocol.md 에 반영돼 있음"
+  },
+  {
+   "id": "W1-C12",
+   "statement": "사용자 제공 1차 출처: 신세계인터내셔날 보도 '에르노 신세계 강남점 국내 최초 남성 단독 매장'(2026.10.06)과 사용자 요약(도전성 · 매장 도입 시기 · 신규 매장 시선)",
+   "source": "사용자",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/clever-knuth-1dezlo",
+    "path": "docs/portfolio/context_handoff.md",
+    "line": 235,
+    "commit": "3e6d83e"
+   },
+   "decided_at": "2026-10-16T03:20Z",
+   "file_verified": true,
+   "note": "원문 docs/portfolio/postings/herno_gangnam_men_store_20261006.md (d5e9e1e)"
+  },
+  {
+   "id": "W1-C13",
+   "statement": "역량 증명 답변에서 베이글 가게 이야기는 뺀다",
+   "source": "사용자",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/clever-knuth-1dezlo",
+    "path": "docs/portfolio/context_handoff.md",
+    "line": 241,
+    "commit": "3e6d83e"
+   },
+   "decided_at": "2026-10-16T06:05Z",
+   "file_verified": true
+  },
+  {
+   "id": "W1-C14",
+   "statement": "자기소개서 구성: 첫 문단 R2 + H2(왜 해외 브랜드 VMD 부서) + 면접용 역량 답변(베이글 제외). 회사 단락(에르노 도전성)은 이 구성에서 빠진다",
+   "source": "사용자",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/clever-knuth-1dezlo",
+    "path": "docs/portfolio/context_handoff.md",
+    "line": 243,
+    "commit": "3e6d83e"
+   },
+   "decided_at": "2026-10-16T06:09Z",
+   "file_verified": true
+  },
+  {
+   "id": "W1-C15",
+   "statement": "조립본 rev qa2: 931자(줄바꿈 포함) · 926자(제외)",
+   "source": "도구출력",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/clever-knuth-1dezlo",
+    "path": "docs/portfolio/handoff/selfintro_sikorea_assembled.json",
+    "commit": "092bd99"
+   },
+   "decided_at": "2026-10-16T06:31Z",
+   "file_verified": true
   }
  ],
  "decisions": [
-  {
-   "id": "W1-D1",
-   "date": "2026-10-10",
-   "decision": "젠틀몬스터 공간 설계 지원서 문항 2(1164/1200) · 문항 1(865/1000) 완성",
-   "by": "사용자",
-   "supersedes": null,
-   "evidence": {
-    "repo": "cogito5170/gentleMonster",
-    "ref": "claude/clever-knuth-1dezlo",
-    "path": "docs/portfolio/PROCESS.md",
-    "line": 189
-   }
-  },
-  {
-   "id": "W1-D2",
-   "date": "2026-10-13T07:51Z",
-   "decision": "지원처를 ATiiSSU 패션브랜드 공간기획&설계/감리로 옮김 (CMD-HJ44 공고 분석, CMD-HJ45 초안 A1)",
-   "by": "사용자",
-   "supersedes": "W1-D1",
-   "evidence": {
-    "repo": "cogito5170/gentleMonster",
-    "ref": "claude/clever-knuth-1dezlo",
-    "path": "docs/portfolio/handoff/CMD-HJ44.input.json",
-    "commit": "f789ab6"
-   }
-  },
-  {
-   "id": "W1-D3",
-   "date": "2026-10-13T12:56Z",
-   "decision": "BLUE ELEPHANT 브랜드 분석 재개, ATiiSSU 보류 (12:43에 한때 BLUE ELEPHANT 중단 · ATiiSSU 재개 후 다시 뒤집힘)",
-   "by": "사용자",
-   "supersedes": "W1-D2",
-   "evidence": {
-    "repo": "cogito5170/gentleMonster",
-    "ref": "claude/clever-knuth-1dezlo",
-    "commit": "4cc2186 (앞 32a5589)"
-   }
-  },
   {
    "id": "W1-D4",
    "date": "2026-10-14T01:01Z",
@@ -236,32 +226,6 @@
    }
   },
   {
-   "id": "W1-D5",
-   "date": "2026-10-14T02:19Z",
-   "decision": "1000자 · 직관적이고 담백한 문체 (CMD-HJ54 V3)",
-   "by": "사용자",
-   "supersedes": null,
-   "evidence": {
-    "repo": "cogito5170/gentleMonster",
-    "ref": "claude/clever-knuth-1dezlo",
-    "path": "docs/portfolio/context_handoff.md",
-    "line": 198,
-    "commit": "94f2b0e"
-   }
-  },
-  {
-   "id": "W1-D6",
-   "date": "2026-10-14T02:43Z",
-   "decision": "1300자 한 편으로 확장 (CMD-HJ56 V5)",
-   "by": "사용자",
-   "supersedes": "W1-D5",
-   "evidence": {
-    "repo": "cogito5170/gentleMonster",
-    "ref": "claude/clever-knuth-1dezlo",
-    "commit": "1783f92"
-   }
-  },
-  {
    "id": "W1-D7",
    "date": "2026-10-14T03:19Z",
    "decision": "신세계 공통 3문항(각 1000자) 형식으로 다시 씀, V5는 보존",
@@ -273,34 +237,6 @@
     "path": "docs/portfolio/context_handoff.md",
     "line": 204,
     "commit": "0631c45"
-   }
-  },
-  {
-   "id": "W1-D8",
-   "date": "2026-10-14T13:28Z",
-   "decision": "Q1 자기소개 첫 문단 N3 채택 (K1→A2→M1→C1→N3 문장 단위 루프 끝)",
-   "by": "사용자",
-   "supersedes": null,
-   "evidence": {
-    "repo": "cogito5170/gentleMonster",
-    "ref": "claude/clever-knuth-1dezlo",
-    "path": "docs/portfolio/context_handoff.md",
-    "line": 229,
-    "commit": "f7fb2d9"
-   }
-  },
-  {
-   "id": "W1-D9",
-   "date": "2026-10-15T11:52Z",
-   "decision": "사용자가 첫 단락 초안 U1을 직접 작성 (새 사실: 매장에서 '어떻게 배치하면 더 잘 팔릴까' 고민)",
-   "by": "사용자",
-   "supersedes": "W1-D8",
-   "evidence": {
-    "repo": "cogito5170/gentleMonster",
-    "ref": "claude/clever-knuth-1dezlo",
-    "path": "docs/portfolio/context_handoff.md",
-    "line": 230,
-    "commit": "2876d45"
    }
   },
   {
@@ -319,56 +255,35 @@
    }
   },
   {
-   "id": "W1-D11",
-   "date": "2026-10-15T12:32Z",
-   "decision": "UQ1~UQ5 답 없이 사례를 참고해 임의 작성 (분석 세션의 질문 대기를 건너뜀)",
+   "id": "W1-D16",
+   "date": "2026-10-16T06:09Z",
+   "decision": "구성 확정 방향: R2 + H2 + 역량 답변. 회사 단락(D15 의 Z안)은 빠짐",
    "by": "사용자",
-   "supersedes": null,
+   "supersedes": "W1-D15",
    "evidence": {
     "repo": "cogito5170/gentleMonster",
     "ref": "claude/clever-knuth-1dezlo",
-    "path": "docs/portfolio/handoff/CMD-HJ86.input.json",
-    "line": 5,
-    "commit": "b2110e5",
-    "event": "dc37b26e-9296-435c-8abf-86c1170a5901"
+    "path": "docs/portfolio/context_handoff.md",
+    "line": 243,
+    "commit": "3e6d83e"
    }
   },
   {
-   "id": "W1-D12",
-   "date": "2026-10-15T13:39Z",
-   "decision": "둘째 단락 최종안을 허브가 정하도록 위임 → 허브 설계안(S1식 구조, 순환 동기 버림, 실측 문장 삭제)으로 CMD-HJ91 발행. 앞선 진단·수정 루프 CMD-HJ86~90(P/Q/S/T/V안)을 대체",
-   "by": "허브 판단 위임",
-   "supersedes": "W1-D11",
+   "id": "W1-D18",
+   "date": "2026-10-16T06:31Z",
+   "decision": "Q&A 2차: 첫 단락은 '두 관심(옷 · 배치)이 만남'으로, 둘째 단락은 '옮기는 일' 대신 실제 업무(시즌 테마를 착장 · 진열 · VP 로)로 → 조립본 rev qa2 931자",
+   "by": "사용자 질문 → 허브 수정",
+   "supersedes": "W1-D17",
    "evidence": {
     "repo": "cogito5170/gentleMonster",
     "ref": "claude/clever-knuth-1dezlo",
-    "path": "docs/portfolio/handoff/CMD-HJ91.input.json",
-    "line": 5,
-    "commit": "69148db",
-    "event": "2b18df90-507b-4cfe-9b55-75b448e7a624"
+    "path": "docs/portfolio/context_handoff.md",
+    "line": 246,
+    "commit": "092bd99"
    }
   }
  ],
  "open": [
-  {
-   "id": "W1-O1",
-   "item": "CMD-HJ91 FINAL(312자)을 둘째 단락으로 확정할지, 셋째 단락(약 390자)으로 넘어갈지",
-   "waiting_on": "사용자",
-   "blocking": true,
-   "source": "추론·미검증",
-   "note": "허브의 마지막 질문(카드). 파일상 FINAL 채택 기록 없음"
-  },
-  {
-   "id": "W1-O2",
-   "item": "FINAL 셋째 문장의 지원 이유가 실제 이유(UQ1)와 맞는지 — 지금은 R2 '잘 팔릴까'와 공고 구조를 이은 placeholder",
-   "waiting_on": "사용자",
-   "blocking": false,
-   "source": "도구출력",
-   "evidence": {
-    "path": "docs/portfolio/handoff/CMD-HJ91.result.json",
-    "line": 184
-   }
-  },
   {
    "id": "W1-O3",
    "item": "selection_sikorea_vmd_3q.json 의 status 가 '첫 문단 M1…(CMD-HJ80)'에 멈춰 있음 — R2 채택(확정)이 selection 에 반영 안 됨, FINAL 은 채택 후 반영",
@@ -403,18 +318,32 @@
    }
   },
   {
-   "id": "W1-O6",
-   "item": "분석 세션(01GG)은 UQ1~UQ5 답을 기다리는 BLOCKED 상태로 남아 있으나 W1-D11 로 대기는 해소됨",
-   "waiting_on": "없음 (정리만)",
-   "blocking": false,
-   "source": "도구출력"
-  },
-  {
    "id": "W1-O7",
    "item": "세 브랜치 모두 main 미병합, PR 없음",
    "waiting_on": "사용자",
    "blocking": false,
    "source": "도구출력"
+  },
+  {
+   "id": "W1-O8",
+   "item": "첫 단락 가운데 문장 후보 G1~G3(rev2, 큰 것에서 작은 것으로) 중 선택, 그 뒤 qa2 조립본을 Q1 최종으로 채택할지",
+   "waiting_on": "사용자",
+   "blocking": true,
+   "source": "도구출력",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/clever-knuth-1dezlo",
+    "path": "docs/portfolio/handoff/selfintro_p1_middle_options.json",
+    "commit": "56d69a1"
+   },
+   "note": "사용자 요청: 앞 세 문장과 마지막 '두 관심이 만나는 일이 ~ VMD였습니다' 고정"
+  },
+  {
+   "id": "W1-O9",
+   "item": "신세계 공통 3문항 중 Q2 · Q3 진행 상태가 파일에 없음",
+   "waiting_on": "사용자",
+   "blocking": false,
+   "source": "추론·미검증"
   }
  ],
  "artifacts": [
@@ -435,23 +364,6 @@
    "commit": "31e58ae",
    "status": "draft",
    "note": "3문항 현재본. Q1_selfintro 는 R2 · 둘째 단락 반영 전"
-  },
-  {
-   "kind": "doc",
-   "repo": "cogito5170/gentleMonster",
-   "ref": "claude/clever-knuth-1dezlo",
-   "path": "docs/portfolio/handoff/CMD-HJ91.result.json",
-   "commit": "31e58ae",
-   "status": "draft",
-   "note": "둘째 단락 FINAL 312 · ALT 315 (추천 FINAL, 사용자 미확정)"
-  },
-  {
-   "kind": "doc",
-   "repo": "cogito5170/gentleMonster",
-   "ref": "claude/clever-knuth-1dezlo",
-   "path": "docs/portfolio/handoff/CMD-HJ90.result.json",
-   "commit": "fc9a80c",
-   "status": "superseded"
   },
   {
    "kind": "doc",
@@ -497,33 +409,46 @@
    "kind": "doc",
    "repo": "cogito5170/gentleMonster",
    "ref": "claude/clever-knuth-1dezlo",
-   "path": "docs/portfolio/handoff/selection.json",
-   "status": "superseded",
-   "note": "젠틀몬스터 문항 2 완성본 (지원처 전환으로 현재 대상 아님)"
+   "path": "docs/portfolio/handoff/selfintro_sikorea_assembled.json",
+   "commit": "092bd99",
+   "status": "draft",
+   "note": "Q1 현재본 rev qa2 931자"
   },
   {
    "kind": "doc",
    "repo": "cogito5170/gentleMonster",
    "ref": "claude/clever-knuth-1dezlo",
-   "path": "docs/portfolio/handoff/selection_q1.json",
-   "status": "superseded",
-   "note": "젠틀몬스터 문항 1 완성본"
+   "path": "docs/portfolio/handoff/why_overseas_dept_paragraph.json",
+   "commit": "17763fc",
+   "status": "draft",
+   "note": "H1/H2 (H2 가 조립본에 들어감)"
   },
   {
    "kind": "doc",
    "repo": "cogito5170/gentleMonster",
    "ref": "claude/clever-knuth-1dezlo",
-   "path": "docs/portfolio/handoff/selection_atiissu.json",
-   "status": "superseded",
-   "note": "ATiiSSU 초안 A1 (중단)"
+   "path": "docs/portfolio/handoff/prove_capability_drafts.json",
+   "commit": "f2a182e",
+   "status": "draft",
+   "note": "역량 답변 rev2 (베이글 제외)"
   },
   {
    "kind": "doc",
    "repo": "cogito5170/gentleMonster",
    "ref": "claude/clever-knuth-1dezlo",
-   "path": "docs/portfolio/handoff/selection_sikorea_vmd.json",
-   "status": "superseded",
-   "note": "1300자 한 편 V5 (보존)"
+   "path": "docs/portfolio/postings/herno_gangnam_men_store_20261006.md",
+   "commit": "d5e9e1e",
+   "status": "final",
+   "note": "사용자 제공 1차 출처"
+  },
+  {
+   "kind": "doc",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/clever-knuth-1dezlo",
+   "path": "docs/portfolio/handoff/selfintro_p1_middle_options.json",
+   "commit": "56d69a1",
+   "status": "draft",
+   "note": "첫 단락 가운데 문장 M1~M3 → G1~G3"
   }
  ],
  "unverified": [
@@ -552,11 +477,5 @@
    "where": "session_0122yxjinLCToP7QLnhJbJka, session_01GGPjmZVBdKmygvWvYsFFv6",
    "check": "클론 없음, file_verified:false"
   }
- ],
- "resume_point": {
-  "op": "finalize",
-  "input_hint": "사용자에게 둘째 단락 CMD-HJ91 FINAL 전문(312자)과 R2+FINAL 합계 글자 수, blocked_questions Q1(UQ1)을 보여 주고 채택 여부를 받는다. 채택되면 selection_sikorea_vmd_3q.json 의 Q1_selfintro 에 R2 + FINAL 을 edits 로 기록한 뒤 draft_paragraph(slot='Q1 셋째 단락 약 390자', constraints=PROCESS.md §0 · 1000자 · 담백 · 새 사실 금지)로 이어 간다.",
-  "precondition": "사용자 확인 필요 (PROCESS.md §0 '고르는 것은 사용자'; 13:39 위임은 수정까지이고 확정 기록은 없음). 사용자 확인 없이 할 수 있는 것: R2 채택을 selection 파일에 반영하는 기록 작업."
- },
- "latest_confirmed": "Q1 자기소개 첫 단락 = R2 (사용자 채택, 10-15 12:16). 둘째 단락은 사용자가 13:39 허브 판단에 위임 → CMD-HJ91 FINAL(312자)이 편집 세션 추천안으로 나왔으나, 허브가 selection 파일에 채택을 기록하지 않았고 사용자 확인도 없음 (초안)."
+ ]
 }
