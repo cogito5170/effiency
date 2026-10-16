@@ -1,23 +1,31 @@
 {
  "module": "W2",
  "title": "패션 · VMD 지원 포트폴리오 (신세계 VMD 'ON DISPLAY', 패션 공간 직군 조사, AI×패션 시안)",
- "as_of": "2026-10-16T03:30Z",
- "synced_from": {
-  "sessions_checked": [
-   "session_01PEVQJv8SCpLFv14iXTm9Ek",
-   "session_01Ctu8Xc8KMJPnwqyzGUHcmY",
-   "session_011RbA1e4nPywwwdsq2ZNe4N"
-  ],
-  "branches_checked": {
-   "gentleMonster@claude/friendly-gates-0u80ge": "8106369",
-   "gentleMonster@claude/magical-bell-u02os9": "origin 에 없음",
-   "gentleMonster@claude/blissful-cori-hookcx": "origin 에 없음",
+ "as_of": "2026-10-16T06:30Z",
+ "checkpoint": {
+  "at": "2026-10-16T06:30Z",
+  "refs": {
+   "gentleMonster@claude/friendly-gates-0u80ge": "a95c85d",
+   "gentleMonster@claude/project-thread-n4rxnf": "cd4f4d2",
    "gentleMonster@main": "6acff99"
   },
+  "method": "scripts/sync_delta.py: 체크포인트 커밋 뒤의 커밋 · 바뀐 파일만 읽음. 세션 대화 원본은 읽지도 고치지도 않음",
   "not_cloned": [
    "cogito5170/se_new@claude/blissful-cori-hookcx"
   ],
-  "method": "2026-10-15 카드 스냅숏 + git show/grep. 세션 이벤트는 새로 읽지 않음"
+  "sessions": {
+   "session_01PEVQJv8SCpLFv14iXTm9Ek": {
+    "last_event_id": "1f263397-d0fd-4146-9ba6-3466f7b298d0",
+    "at": "2026-10-16T06:25Z",
+    "note": "user 메시지 없음(도구 결과만), 결정은 커밋 기록으로 반영"
+   }
+  }
+ },
+ "latest_confirmed": "안에서 바라보는 시선(사용자 관점, 10-16 03:12)으로 v4 FROM THE INSIDE 를 진행 중: 이야기 단락 A(다짐형) 확정(05:49), 무대는 백화점 실내, 진열은 제작자 세 요소(WEAR · SEE · BUILD)로 청사진(67dfff0). 006 · 007 이미지 요청이 VM 에 걸려 있다.",
+ "resume_point": {
+  "op": "cover_image",
+  "input_hint": "relay 006 · 007 의 response.json 을 확인하고 005 · 006 · 007 세 장을 사용자에게 보여 표지 진열안을 고르게 한다. 함께 v4 '정해야 할 것' 4가지(W2-O11)와 v4 · glass 뼈대 선택(W2-O9)을 묻는다.",
+  "precondition": "사용자 확인 필요. 확인 없이 할 수 있는 것: 006 · 007 결과 확인, 고른 이미지로 inside_blueprint 다시 빌드."
  },
  "confirmed": [
   {
@@ -176,20 +184,62 @@
    },
    "decided_at": "2026-10-09T17:21Z",
    "file_verified": false
+  },
+  {
+   "id": "W2-C12",
+   "statement": "사용자 관점: 일반적인 VMD 는 외부에서 매장을 바라보지만, 나는 내부에서 바라보는 시선으로 접근한다 (레퍼런스: 서점 안에서 유리 너머 밖의 사람을 본 영화 장면)",
+   "source": "사용자",
+   "evidence": {
+    "message": "cmsg_01UZroMhzBAF8GiaH8CRRVex2j783HVh5NZx8w96dAVPtH"
+   },
+   "decided_at": "2026-10-16T03:12Z",
+   "file_verified": false
+  },
+  {
+   "id": "W2-C13",
+   "statement": "v4 FROM THE INSIDE 이야기 한 단락은 A(다짐형)로 확정, B · C 는 기록으로 남김",
+   "source": "사용자",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/friendly-gates-0u80ge",
+    "path": "docs/shinsegae_vmd/storyline_inside.md",
+    "line": 28,
+    "commit": "d8a6f78"
+   },
+   "decided_at": "2026-10-16T05:49Z",
+   "file_verified": true,
+   "note": "파일 기록 기준. 사용자 원문은 세션 이벤트에서 다시 읽지 않음"
+  },
+  {
+   "id": "W2-C14",
+   "statement": "relay 003-from-the-inside · 004-inside-department-store · 005-selling-the-maker: VM Codex 이미지 status=done, exit_code=0",
+   "source": "도구출력",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/friendly-gates-0u80ge",
+    "path": ".relay/tasks/005-selling-the-maker/response.json",
+    "line": 4,
+    "commit": "93f9a25"
+   },
+   "decided_at": "2026-10-16T06:20Z",
+   "file_verified": true,
+   "note": "003 은 5502402, 004 는 e4a43c1"
+  },
+  {
+   "id": "W2-C15",
+   "statement": "FROM THE INSIDE 한 장면 청사진 빌드: from_the_inside_blueprint.pdf · _preview.jpg (005 이미지 기준)",
+   "source": "도구출력",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/friendly-gates-0u80ge",
+    "path": "docs/shinsegae_vmd/blueprint/from_the_inside_blueprint.pdf",
+    "commit": "67dfff0"
+   },
+   "decided_at": "2026-10-16T06:21Z",
+   "file_verified": true
   }
  ],
  "decisions": [
-  {
-   "id": "W2-D1",
-   "date": "2026-10-09T17:05Z",
-   "decision": "AI×패션 시안: RELIEF(부조) 사용, 3D 렌더 시안 제외",
-   "by": "사용자",
-   "supersedes": null,
-   "evidence": {
-    "event": "36eafa9b-efc1-4813-9989-30736a96dca9",
-    "file_verified": false
-   }
-  },
   {
    "id": "W2-D2",
    "date": "2026-10-09T17:21Z",
@@ -199,50 +249,6 @@
    "evidence": {
     "event": "06428777-… / 7ae1337e-…",
     "file_verified": false
-   }
-  },
-  {
-   "id": "W2-D3",
-   "date": "2026-10-15T12:06Z",
-   "decision": "신세계 VMD 포트폴리오 커버 컨셉 이미지: 프롬프트는 Claude, 생성은 미드저니",
-   "by": "사용자",
-   "supersedes": null,
-   "evidence": {
-    "repo": "cogito5170/gentleMonster",
-    "ref": "claude/friendly-gates-0u80ge",
-    "path": "docs/shinsegae_vmd/image_prompts.md",
-    "commit": "0440532",
-    "event": "f185f23b-5223-44df-b907-c6bfd75a861b"
-   }
-  },
-  {
-   "id": "W2-D4",
-   "date": "2026-10-15T12:16Z",
-   "decision": "젠틀몬스터 스토리라인 무시, 새 스토리라인 (v1 WINDOWS OF TIME)",
-   "by": "사용자",
-   "supersedes": null,
-   "evidence": {
-    "repo": "cogito5170/gentleMonster",
-    "ref": "claude/friendly-gates-0u80ge",
-    "path": "docs/shinsegae_vmd/storyline.md",
-    "line": 4,
-    "commit": "e1f8b82",
-    "event": "a6d2b690-cd32-4bdc-8fb6-b91680fd6546"
-   }
-  },
-  {
-   "id": "W2-D5",
-   "date": "2026-10-15T12:25Z",
-   "decision": "A4 가로, 쇼윈도에 나를 설명하는 요소 3가지, 상품연출 · 착장 VMD 방향 → v2 'ON DISPLAY(나를 진열한 매장)'",
-   "by": "사용자",
-   "supersedes": "W2-D4",
-   "evidence": {
-    "repo": "cogito5170/gentleMonster",
-    "ref": "claude/friendly-gates-0u80ge",
-    "path": "docs/shinsegae_vmd/storyline.md",
-    "line": 3,
-    "commit": "ebec462",
-    "event": "68dcd009-90cb-48c1-b87e-a74ccf2995cd"
    }
   },
   {
@@ -344,6 +350,49 @@
     "event": "d4d45ba2-6773-47be-ae0a-ef3047b0bc66"
    },
    "note": "장면을 THE STILL RUNWAY 로 고른 것과 그것을 표지로 쓸지는 모델 제안 — W2-O1"
+  },
+  {
+   "id": "W2-D13",
+   "date": "2026-10-16T03:12Z",
+   "decision": "안에서 바라보는 시선으로 스토리라인을 다시 짬 → v4 storyline_inside.md(의뢰인 세션)와 storyline_glass.md(프로젝트 스레드) 두 안",
+   "by": "사용자",
+   "supersedes": null,
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/friendly-gates-0u80ge",
+    "path": "docs/shinsegae_vmd/storyline_inside.md",
+    "line": 3,
+    "commit": "639ff37"
+   }
+  },
+  {
+   "id": "W2-D14",
+   "date": "2026-10-16T05:49Z",
+   "decision": "v4 이야기 단락 A(다짐형) 확정",
+   "by": "사용자",
+   "supersedes": null,
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/friendly-gates-0u80ge",
+    "path": "docs/shinsegae_vmd/storyline_inside.md",
+    "line": 28,
+    "commit": "d8a6f78"
+   }
+  },
+  {
+   "id": "W2-D16",
+   "date": "2026-10-16T06:21Z",
+   "decision": "쇼윈도에 상품 대신 제작자를 진열: WEAR(롱코트 마네킹) · SEE(필름 카메라) · BUILD(쇼윈도 모형)",
+   "by": "파일 기록 (사용자 원문 미확인)",
+   "supersedes": "W2-D15",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/friendly-gates-0u80ge",
+    "path": "docs/shinsegae_vmd/storyline_inside.md",
+    "line": 51,
+    "commit": "67dfff0"
+   },
+   "note": "실내 무대는 유지, 진열 사물만 바뀜"
   }
  ],
  "open": [
@@ -420,6 +469,40 @@
    "waiting_on": "사용자",
    "blocking": false,
    "source": "도구출력"
+  },
+  {
+   "id": "W2-O9",
+   "item": "안의 시선 스토리라인 두 안 중 뼈대 선택: storyline_inside.md(v4, 하루의 순서 · 얼굴) / storyline_glass.md(유리 안쪽 · 겹침 · FITTING WINDOW) / 섞기",
+   "waiting_on": "사용자",
+   "blocking": true,
+   "source": "도구출력"
+  },
+  {
+   "id": "W2-O10",
+   "item": "relay 006-maker-no-reflection(반사 없는 제작자 진열) · 007-vmd-tools(시침핀 · 스폿 · 1:10 목업) 요청 결과 대기",
+   "waiting_on": "VM (Codex)",
+   "blocking": false,
+   "source": "도구출력",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/friendly-gates-0u80ge",
+    "path": ".relay/tasks/007-vmd-tools/request.json",
+    "commit": "a95c85d"
+   }
+  },
+  {
+   "id": "W2-O11",
+   "item": "v4 '정해야 할 것' 4가지: ① v4 를 뼈대로 할지 v3 와 합칠지 ② 하루의 순서(07:00→21:00) ③ WINDOW LOG 관찰을 직접 할 수 있는지 ④ 기획 제안을 양면 쇼윈도로",
+   "waiting_on": "사용자",
+   "blocking": true,
+   "source": "도구출력",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/friendly-gates-0u80ge",
+    "path": "docs/shinsegae_vmd/storyline_inside.md",
+    "line": 155,
+    "commit": "67dfff0"
+   }
   }
  ],
  "artifacts": [
@@ -445,15 +528,6 @@
    "kind": "doc",
    "repo": "cogito5170/gentleMonster",
    "ref": "claude/friendly-gates-0u80ge",
-   "path": "docs/shinsegae_vmd/storyline.md",
-   "commit": "ebec462",
-   "status": "superseded",
-   "note": "v1 → v2. 뼈대 · 판형 · 방향은 v3 에서 유지"
-  },
-  {
-   "kind": "doc",
-   "repo": "cogito5170/gentleMonster",
-   "ref": "claude/friendly-gates-0u80ge",
    "path": "docs/shinsegae_vmd/see_pick_keep.md",
    "commit": "f350ed8",
    "status": "draft"
@@ -466,15 +540,6 @@
    "commit": "6cd8d30",
    "status": "draft",
    "note": "쇼윈도 밖 컨셉 6안"
-  },
-  {
-   "kind": "doc",
-   "repo": "cogito5170/gentleMonster",
-   "ref": "claude/friendly-gates-0u80ge",
-   "path": "docs/shinsegae_vmd/image_prompts.md",
-   "commit": "e1f8b82",
-   "status": "superseded",
-   "note": "미드저니 프롬프트 — Codex 규칙(W2-D11)으로 대체"
   },
   {
    "kind": "pdf",
@@ -577,6 +642,51 @@
    "path": "https://claude.ai/artifact/H7V166vea7LHa6r5SqU2Hu",
    "status": "draft",
    "note": "'REREAD 다시 읽는 기계' (git 아님)"
+  },
+  {
+   "kind": "doc",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/friendly-gates-0u80ge",
+   "path": "docs/shinsegae_vmd/storyline_inside.md",
+   "commit": "67dfff0",
+   "status": "draft",
+   "note": "v4 안에서 본 쇼윈도 (session_01PEVQJ)"
+  },
+  {
+   "kind": "doc",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/project-thread-n4rxnf",
+   "path": "docs/shinsegae_vmd/storyline_glass.md",
+   "commit": "cd4f4d2",
+   "status": "draft",
+   "note": "유리 안쪽에서 — v4 와 따로 쓴 안 (session_018SQ7p)"
+  },
+  {
+   "kind": "pdf",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/friendly-gates-0u80ge",
+   "path": "docs/shinsegae_vmd/blueprint/from_the_inside_blueprint.pdf",
+   "commit": "67dfff0",
+   "status": "draft",
+   "note": "+ _preview.jpg"
+  },
+  {
+   "kind": "code",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/friendly-gates-0u80ge",
+   "path": "tools/inside_blueprint/build.mjs",
+   "commit": "67dfff0",
+   "status": "final",
+   "note": "spots_00{3,4,5}-*.json"
+  },
+  {
+   "kind": "image",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/friendly-gates-0u80ge",
+   "path": ".relay/tasks/005-selling-the-maker/image.png",
+   "commit": "93f9a25",
+   "status": "draft",
+   "note": "제작자 진열 (003 · 004 는 앞 단계)"
   }
  ],
  "unverified": [
@@ -610,11 +720,5 @@
    "where": "session_011RbA1e4nPywwwdsq2ZNe4N",
    "check": "모델 답. se_new 클론 없음"
   }
- ],
- "resume_point": {
-  "op": "storyline",
-  "input_hint": "storyline_v3.md '정해야 할 것' 1~5 와 story_text.md 빈칸(____)을 사용자에게 묻고 답을 v3 · 원고에 반영. 표지가 THE STILL RUNWAY 로 정해지고 직접 촬영이 어려우면 cover_image(→W5.image, 002 스펙 재사용·수정), 촬영 가능하면 촬영 준비 목록을 scene_blueprint 값(dims.mjs)으로 만든다.",
-  "precondition": "사용자 확인 필요 (5가지 결정 · 빈칸 사실은 지어낼 수 없음). 확인 없이 할 수 있는 것: READING SHINSEGAE 사실 출처 재확인."
- },
- "latest_confirmed": "ON DISPLAY 스토리 v3(사용자 관찰 '주체는 가만히, 내가 움직인다') 원고와 한 장면 청사진 THE STILL RUNWAY(Codex 컨셉 이미지 + three.js 장노출 렌더, A3)가 나왔다(10-15 15:10). 판형 A4 가로 · 젠틀몬스터 스토리 무시 · 상품연출/착장 VMD 방향은 사용자 확정. 표지 · 한 줄 · 기획안 등 5가지는 사용자 결정 대기."
+ ]
 }

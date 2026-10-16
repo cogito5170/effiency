@@ -1,5 +1,7 @@
 # W6 · 도구 · 인프라
 
+> 새 세션은 이 문서 대신 [RESUME.md](RESUME.md)(2000자 이하)부터 읽는다. 지금 유효한 상태는 `state.json`, 지난 이력은 `history.jsonl`. 이 문서는 모듈 설명이고 상태 서술은 만든 시점(10-16 03:30) 기준이다.
+
 `ws:w6-tools-infra` · 도메인 software · 계약 [ws-module/1](../CONTRACT.md) · 상태 기준 2026-10-16T03:30Z
 
 relay(토큰 절감 · VM 요청 · 보관), gentle_monster 기억 · 프론트엔드 · 커버 도구를 오퍼레이션으로 제공한다.

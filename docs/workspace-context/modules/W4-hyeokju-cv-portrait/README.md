@@ -1,5 +1,7 @@
 # W4 · 혁주 CV · 인물 사진
 
+> 새 세션은 이 문서 대신 [RESUME.md](RESUME.md)(2000자 이하)부터 읽는다. 지금 유효한 상태는 `state.json`, 지난 이력은 `history.jsonl`. 이 문서는 모듈 설명이고 상태 서술은 만든 시점(10-16 03:30) 기준이다.
+
 `ws:w4-hyeokju-cv-portrait` · 도메인 interior + fashion · 계약 [ws-module/1](../CONTRACT.md) · 상태 기준 2026-10-16T03:30Z
 
 사실 · 레이아웃 유형을 받아 CV 지면(.ai/PDF)과 인물 사진 요청을 낸다.

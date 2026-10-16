@@ -1,5 +1,7 @@
 # W3 · 젠틀몬스터 공간 포트폴리오 SPA
 
+> 새 세션은 이 문서 대신 [RESUME.md](RESUME.md)(2000자 이하)부터 읽는다. 지금 유효한 상태는 `state.json`, 지난 이력은 `history.jsonl`. 이 문서는 모듈 설명이고 상태 서술은 만든 시점(10-16 03:30) 기준이다.
+
 `ws:w3-gm-space-portfolio-spa` · 도메인 interior · 계약 [ws-module/1](../CONTRACT.md) · 상태 기준 2026-10-16T03:30Z
 
 섹션 원고 · 사진을 받아 SPA 원고, 잡지 레이아웃(PDF/HTML), 띠 이미지 요청, 설치작품 렌더를 낸다.
