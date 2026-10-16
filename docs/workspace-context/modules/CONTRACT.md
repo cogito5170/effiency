@@ -80,11 +80,14 @@ W6 ─┴─ cover ─────────┘
 | token (백엔드 읽기) | `checkpoint.refs` 의 커밋 뒤만 읽는다: 커밋 제목 · 바뀐 파일 수 → 필요한 파일만 `git show <commit>:<path>` | 파일은 한 번에 200줄 이하 구간. 결정 근거는 그 줄 번호로 남긴다 |
 | token (세션 원본) | 저장소 파일에 기록이 없는 사용자 결정만 세션 이벤트에서 찾는다. `kinds=["user"]`, `checkpoint.sessions` 의 마지막 이벤트 뒤부터 | 한 세션에 100개씩 3쪽까지. 넘으면 `unverified` 로 두고 사용자에게 묻는다 |
 
+실측 (10-16 06:50, W1 3커밋 · W2 6커밋): sync_delta 출력 약 2.7천 자 0.3초, 읽은 파일 구간 약 6천 자, 패치 6.3천 자, 반영 · RESUME · 검사 0.4초. RESUME.md 는 1230~1897자(UTF-8 1.9~3.0KB), SessionStart 주입 1.7초.
+
 세션 이벤트를 커밋보다 뒤에 두는 이유: 10-16 06:16~06:25 의 W2 세션 이벤트 15개가 도구 결과(이미지 포함) 때문에 약 150만 자였다. 같은 구간의 커밋 기록은 4줄이다.
 
 **동기화 한 번** (백엔드)
 1. `python3 scripts/sync_delta.py docs/workspace-context/modules --git ../gentleMonster --git .` — 모듈별 새 커밋과 어느 모듈에도 없는 새 브랜치.
-2. 새 커밋이 있는 모듈만 그 파일 구간을 읽고 `state.json` 에 confirmed · decisions · open · artifacts 를 더한다. 대체된 것은 `history.jsonl` 로 옮기고, `checkpoint` 를 새 커밋으로 올린다.
+2. 새 커밋이 있는 모듈만 그 파일 구간을 읽고, 더할 confirmed · decisions · open · artifacts 와 닫을 id 만 담은 작은 패치를 써서
+   `python3 scripts/apply_delta.py docs/workspace-context/modules patch.json` — 대체 · 종료된 것은 `history.jsonl` 로 가고 `checkpoint` 가 올라간다. state.json 전체를 다시 쓰지 않는다.
 3. `python3 scripts/build_resume.py docs/workspace-context/modules` → `python3 scripts/check_modules.py …` 통과 뒤 커밋 · 푸시.
 
 **세션 교대** (의뢰인)

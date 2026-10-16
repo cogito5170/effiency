@@ -22,6 +22,10 @@ import sys
 from pathlib import Path
 
 HEX = re.compile(r"^[0-9a-f]{7,40}$")
+# 백엔드 자신이 만든 커밋 · 브랜치는 변경으로 세지 않는다 (10-16 실측: 이것만으로 W5 · W6 에 가짜 변경 4건)
+BACKEND_PATHS = ("docs/workspace-context/", "scripts/check_modules.py", "scripts/sync_delta.py",
+                 "scripts/build_resume.py", "scripts/apply_delta.py", "tests/test_module_contracts.py")
+BACKEND_REFS = {"claude/project-thread-uqkc04"}
 
 
 def git(clone: Path, *args: str) -> str:
@@ -71,14 +75,15 @@ def delta(root: Path, clones: list[Path]) -> dict:
             if not tip:
                 mod["refs"][key] = {"skipped": "원격에 없음"}
                 continue
-            log = git(clone, "log", "--reverse", "--format=%h\t%cI\t%s", "--shortstat", f"{commit}..origin/{ref}")
+            log = git(clone, "log", "--reverse", "--no-merges", "--format=\x1e%h\t%cI\t%s", "--name-only",
+                      f"{commit}..origin/{ref}")
             commits = []
-            for line in log.splitlines():
-                if "\t" in line:
-                    h, t, s = line.split("\t", 2)
-                    commits.append({"commit": h, "at": t[:16], "subject": s})
-                elif line.strip() and commits:
-                    commits[-1]["files"] = int(line.split()[0])
+            for block in log.split("\x1e")[1:]:
+                head, *names = [x for x in block.splitlines() if x.strip()]
+                h, t, s = head.split("\t", 2)
+                if names and all(n.startswith(BACKEND_PATHS) for n in names):
+                    continue
+                commits.append({"commit": h, "at": t[:16], "subject": s, "files": len(names)})
             if commits:
                 mod["refs"][key] = {"from": commit, "tip": tip, "commits": commits}
         result["modules"][mid] = mod
@@ -88,7 +93,7 @@ def delta(root: Path, clones: list[Path]) -> dict:
         for line in out.splitlines():
             ref, _, t = line.partition("\t")
             ref = ref.removeprefix("origin/")
-            if ref in ("HEAD", "origin") or (repo, ref) in known:
+            if ref in ("HEAD", "origin") or ref in BACKEND_REFS or (repo, ref) in known:
                 continue
             if earliest and t[:16] > earliest.replace("Z", "")[:16]:
                 result["unassigned"].append({"repo": repo, "ref": ref, "last_commit_at": t[:16]})

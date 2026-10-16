@@ -7,6 +7,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
+import apply_delta  # noqa: E402
 import build_resume  # noqa: E402
 import check_modules  # noqa: E402
 import subprocess  # noqa: E402
@@ -108,6 +109,22 @@ class ModuleContractTest(unittest.TestCase):
         res = sync_delta.delta(tmp / "modules", [clone])
         commits = res["modules"]["W9"]["refs"]["demo@main"]["commits"]
         self.assertEqual([c["subject"] for c in commits], ["c1", "c2"])
+
+    def test_apply_delta_moves_superseded_and_closed(self):
+        root = self.copy()
+        s = json.loads(next(root.glob("W2-*/state.json")).read_text(encoding="utf-8"))
+        last, first_open = s["decisions"][-1]["id"], s["open"][0]["id"]
+        apply_delta.apply(root, {"W2": {"at": "2030-01-01T00:00Z",
+                                        "add": {"decisions": [{"id": "W2-D99", "decision": "새 결정", "supersedes": last}]},
+                                        "close": {"open": {first_open: "끝남"}},
+                                        "refs": {"gentleMonster@main": "abc1234"}}})
+        s = json.loads(next(root.glob("W2-*/state.json")).read_text(encoding="utf-8"))
+        self.assertNotIn(last, [d["id"] for d in s["decisions"]])
+        self.assertNotIn(first_open, [o["id"] for o in s["open"]])
+        self.assertEqual(s["checkpoint"]["refs"]["gentleMonster@main"], "abc1234")
+        hist = next(root.glob("W2-*/history.jsonl")).read_text(encoding="utf-8")
+        self.assertIn(f'"superseded_by": "W2-D99"', hist)
+        self.assertEqual(check_modules.check(root), [])
 
 
 if __name__ == "__main__":

@@ -1,11 +1,11 @@
 {
  "module": "W2",
  "title": "패션 · VMD 지원 포트폴리오 (신세계 VMD 'ON DISPLAY', 패션 공간 직군 조사, AI×패션 시안)",
- "as_of": "2026-10-16T06:30Z",
+ "as_of": "2026-10-16T06:50Z",
  "checkpoint": {
-  "at": "2026-10-16T06:30Z",
+  "at": "2026-10-16T06:50Z",
   "refs": {
-   "gentleMonster@claude/friendly-gates-0u80ge": "a95c85d",
+   "gentleMonster@claude/friendly-gates-0u80ge": "47b5377",
    "gentleMonster@claude/project-thread-n4rxnf": "cd4f4d2",
    "gentleMonster@main": "6acff99"
   },
@@ -21,11 +21,11 @@
    }
   }
  },
- "latest_confirmed": "안에서 바라보는 시선(사용자 관점, 10-16 03:12)으로 v4 FROM THE INSIDE 를 진행 중: 이야기 단락 A(다짐형) 확정(05:49), 무대는 백화점 실내, 진열은 제작자 세 요소(WEAR · SEE · BUILD)로 청사진(67dfff0). 006 · 007 이미지 요청이 VM 에 걸려 있다.",
+ "latest_confirmed": "v4 FROM THE INSIDE: 이야기 단락 A 확정(05:49). 진열은 VMD 의 일 세 요소 입히다 · 비추다 · 짓다로 옮겼고(짓다 확정, 167b482), 그 한 장면 이미지 008 이 나왔다(47b5377). '얼굴 없는 사람들'은 보류.",
  "resume_point": {
   "op": "cover_image",
-  "input_hint": "relay 006 · 007 의 response.json 을 확인하고 005 · 006 · 007 세 장을 사용자에게 보여 표지 진열안을 고르게 한다. 함께 v4 '정해야 할 것' 4가지(W2-O11)와 v4 · glass 뼈대 선택(W2-O9)을 묻는다.",
-  "precondition": "사용자 확인 필요. 확인 없이 할 수 있는 것: 006 · 007 결과 확인, 고른 이미지로 inside_blueprint 다시 빌드."
+  "input_hint": "008 이미지를 사용자에게 보여 표지로 쓸지 묻고, 정해지면 tools/inside_blueprint 를 008 기준으로 다시 빌드한다. 함께 v4 '정해야 할 것'(W2-O11)과 v4 · glass 뼈대 선택(W2-O9)을 묻는다.",
+  "precondition": "사용자 확인 필요. 확인 없이 할 수 있는 것: 008 기준 spots 파일 준비."
  },
  "confirmed": [
   {
@@ -237,6 +237,20 @@
    },
    "decided_at": "2026-10-16T06:21Z",
    "file_verified": true
+  },
+  {
+   "id": "W2-C16",
+   "statement": "relay 006 · 007 · 008-combine-light-build: VM Codex 이미지 status=done, exit_code=0 (008 = 조합하다 · 비추다 · 짓다 한 장면)",
+   "source": "도구출력",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/friendly-gates-0u80ge",
+    "path": ".relay/tasks/008-combine-light-build/response.json",
+    "commit": "47b5377"
+   },
+   "decided_at": "2026-10-16T06:45Z",
+   "file_verified": true,
+   "note": "006 fcca1e7, 007 af63442"
   }
  ],
  "decisions": [
@@ -380,19 +394,32 @@
    }
   },
   {
-   "id": "W2-D16",
-   "date": "2026-10-16T06:21Z",
-   "decision": "쇼윈도에 상품 대신 제작자를 진열: WEAR(롱코트 마네킹) · SEE(필름 카메라) · BUILD(쇼윈도 모형)",
-   "by": "파일 기록 (사용자 원문 미확인)",
-   "supersedes": "W2-D15",
+   "id": "W2-D17",
+   "date": "2026-10-16T06:36Z",
+   "decision": "제작자 세 사물(코트 · 카메라 · 모형)은 VMD 로 읽히지 않는다는 판단 → VMD 의 일 세 요소로: 입히다(조합해 입히는 마네킹) · 비추다(스폿 조명) · 짓다(1:10 진열 목업, 확정)",
+   "by": "파일 기록 (짓다 '확정' 표기, 사용자 원문 미확인)",
+   "supersedes": "W2-D16",
    "evidence": {
     "repo": "cogito5170/gentleMonster",
     "ref": "claude/friendly-gates-0u80ge",
     "path": "docs/shinsegae_vmd/storyline_inside.md",
-    "line": 51,
-    "commit": "67dfff0"
-   },
-   "note": "실내 무대는 유지, 진열 사물만 바뀜"
+    "line": 88,
+    "commit": "167b482"
+   }
+  },
+  {
+   "id": "W2-D18",
+   "date": "2026-10-16T06:36Z",
+   "decision": "새 컨셉 '얼굴 없는 사람들'(지나가는 사람은 얼굴이 없고 멈추면 생긴다, WINDOW LOG 3×3 격자)은 보류",
+   "by": "파일 기록 (사용자 원문 미확인)",
+   "supersedes": null,
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/friendly-gates-0u80ge",
+    "path": "docs/shinsegae_vmd/storyline_inside.md",
+    "line": 110,
+    "commit": "167b482"
+   }
   }
  ],
  "open": [
@@ -478,19 +505,6 @@
    "source": "도구출력"
   },
   {
-   "id": "W2-O10",
-   "item": "relay 006-maker-no-reflection(반사 없는 제작자 진열) · 007-vmd-tools(시침핀 · 스폿 · 1:10 목업) 요청 결과 대기",
-   "waiting_on": "VM (Codex)",
-   "blocking": false,
-   "source": "도구출력",
-   "evidence": {
-    "repo": "cogito5170/gentleMonster",
-    "ref": "claude/friendly-gates-0u80ge",
-    "path": ".relay/tasks/007-vmd-tools/request.json",
-    "commit": "a95c85d"
-   }
-  },
-  {
    "id": "W2-O11",
    "item": "v4 '정해야 할 것' 4가지: ① v4 를 뼈대로 할지 v3 와 합칠지 ② 하루의 순서(07:00→21:00) ③ WINDOW LOG 관찰을 직접 할 수 있는지 ④ 기획 제안을 양면 쇼윈도로",
    "waiting_on": "사용자",
@@ -502,6 +516,19 @@
     "path": "docs/shinsegae_vmd/storyline_inside.md",
     "line": 155,
     "commit": "67dfff0"
+   }
+  },
+  {
+   "id": "W2-O12",
+   "item": "표지 이미지 008(조합 · 조명 · 목업)을 고를지, 청사진을 008 기준으로 다시 빌드할지",
+   "waiting_on": "사용자",
+   "blocking": true,
+   "source": "도구출력",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/friendly-gates-0u80ge",
+    "path": ".relay/tasks/008-combine-light-build/image.png",
+    "commit": "47b5377"
    }
   }
  ],
@@ -648,9 +675,9 @@
    "repo": "cogito5170/gentleMonster",
    "ref": "claude/friendly-gates-0u80ge",
    "path": "docs/shinsegae_vmd/storyline_inside.md",
-   "commit": "67dfff0",
+   "commit": "167b482",
    "status": "draft",
-   "note": "v4 안에서 본 쇼윈도 (session_01PEVQJ)"
+   "note": "v4 + 세 요소 판단 · 얼굴 없는 사람들(보류)"
   },
   {
    "kind": "doc",
@@ -683,10 +710,10 @@
    "kind": "image",
    "repo": "cogito5170/gentleMonster",
    "ref": "claude/friendly-gates-0u80ge",
-   "path": ".relay/tasks/005-selling-the-maker/image.png",
-   "commit": "93f9a25",
+   "path": ".relay/tasks/008-combine-light-build/image.png",
+   "commit": "47b5377",
    "status": "draft",
-   "note": "제작자 진열 (003 · 004 는 앞 단계)"
+   "note": "현재 표지 후보"
   }
  ],
  "unverified": [
