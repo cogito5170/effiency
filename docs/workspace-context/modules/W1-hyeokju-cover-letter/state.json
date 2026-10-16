@@ -1,14 +1,14 @@
 {
  "module": "W1",
  "title": "혁주 자기소개서 (신세계인터내셔날 해외패션 라운딩 VMD)",
- "as_of": "2026-10-16T06:50Z",
+ "as_of": "2026-10-16T07:45Z",
  "checkpoint": {
-  "at": "2026-10-16T06:50Z",
+  "at": "2026-10-16T07:45Z",
   "refs": {
    "gentleMonster@claude/clever-knuth-1dezlo": "56d69a1",
    "gentleMonster@claude/beautiful-gates-e42a5m": "76d0f6d",
    "gentleMonster@claude/modest-cannon-ha8zs3": "79ba2dc",
-   "gentleMonster@main": "6acff99"
+   "gentleMonster@main": "bdee7d6"
   },
   "method": "scripts/sync_delta.py: 체크포인트 커밋 뒤의 커밋 · 바뀐 파일만 읽음. 세션 대화 원본은 읽지도 고치지도 않음",
   "not_cloned": [

@@ -1,11 +1,11 @@
 {
  "module": "W4",
  "title": "혁주 CV · 인물 사진 (CV 청사진 → .ai, RELIEF 지면 엔진, CV 히어로 실사 인물)",
- "as_of": "2026-10-16T03:30Z",
+ "as_of": "2026-10-16T07:45Z",
  "checkpoint": {
-  "at": "2026-10-16T03:30Z",
+  "at": "2026-10-16T07:45Z",
   "refs": {
-   "gentleMonster@main": "6acff99",
+   "gentleMonster@main": "bdee7d6",
    "gentleMonster@claude/cv-blueprint": "6a1d95c",
    "gentleMonster@claude/hyeokju-cv": "84980aa",
    "gentleMonster@claude/gentle-monster-magazine-system-xh6ijk": "d10b8ee"

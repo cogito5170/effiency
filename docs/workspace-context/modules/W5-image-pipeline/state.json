@@ -1,11 +1,11 @@
 {
  "module": "W5",
  "title": "이미지 생성 경로 (로컬 확산 · Gemini · Codex)",
- "as_of": "2026-10-16T03:30Z",
+ "as_of": "2026-10-16T07:45Z",
  "checkpoint": {
-  "at": "2026-10-16T03:30Z",
+  "at": "2026-10-16T07:45Z",
   "refs": {
-   "gentleMonster@main": "6acff99",
+   "gentleMonster@main": "bdee7d6",
    "effiency@main": "8724b6c",
    "gentleMonster@claude/codex-all-images": "12ecdbd",
    "gentleMonster@claude/project-thread-603jt3": "05ef106",
