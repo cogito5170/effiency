@@ -1,0 +1,86 @@
+[
+ {
+  "op": "manuscript",
+  "purpose": "SPA 섹션(cover · 01 STYLE · 02 PICTURE · 03 ARCHITECTURE) 원고를 docs/portfolio 의 확정 원고 틀(여는 글 + Q1·Q2·Q3 + MY ○○, '그래서 내 n번째 이야기는 ○○이다')로 쓰거나 고친다",
+  "input": {
+   "section": "string: cover | 01_style | 02_picture | 03_architecture",
+   "base_ref": "string: 기준 브랜치/커밋 (기본 main; 03 은 후보 215e2a0 · 64e5497 · 5ce2674 중 사용자 채택본)",
+   "user_facts": "string[]: 사용자가 준 사실(빈칸 채움). 없으면 빈칸을 ____ 로 남긴다",
+   "instruction": "string: 사용자 지시 원문 (정정은 그대로)"
+  },
+  "output": {
+   "md_path": "string: docs/portfolio/<section>.md",
+   "commit": "string: 커밋 sha (claude/* 브랜치)",
+   "blanks": "string[]: 남은 빈칸",
+   "changed_from": "string: 이전 판 커밋"
+  },
+  "impl": "허브 세션이 docs/portfolio/{cover,storyline,philosophy,01_style,02_picture,03_architecture}.md 를 직접 편집. 질문 기록은 docs/portfolio/questions.md 형식(### n. 날짜 / > 원문 / → 결과)에 추가. 모델은 사실을 지어내지 않는다(빈칸 ____).",
+  "runs_where": "허브",
+  "side_effects": "git commit + push (claude/* 브랜치)",
+  "calls": []
+ },
+ {
+  "op": "magazine_layout",
+  "purpose": "확정 원고와 사진으로 잡지 지면(HTML/PDF)을 만들고 재단선 · 넘침 · 최소 활자 · 대비를 자동 검사한다",
+  "input": {
+   "mode": "string: variant (원고 잡지 시안, design_variant/1) | photo_issue (사용자 사진 매거진) | idml (InDesign 지면 반영)",
+   "manuscript_ref": "string: 원고 브랜치/경로",
+   "photos": "string[]: 사진 경로 (gm-photos private 사본만, 공개 위치 금지) 또는 W3.band_image/W5.image 결과 png",
+   "issue_spec": "string: photo_issue 일 때 editorial/issues/<id>.json",
+   "variant_dir": "string: variant 일 때 docs/portfolio/magazine/<variant>/"
+  },
+  "output": {
+   "pdf": "string: magazine.pdf 경로",
+   "html": "string: magazine.html 경로",
+   "checks": "object: render/checks.json (실패 항목 수 포함)",
+   "spreads": "string[]: render/spread_*.png"
+  },
+  "impl": "variant: docs/portfolio/magazine/<variant>/design_variant.json + magazine.html 을 쓰고 `NODE_PATH=$(npm root -g) node docs/portfolio/magazine/render.js docs/portfolio/magazine/<variant>` (claude/sharp-noether-9am24c). photo_issue: `python3 -m gentle_monster photo-issue editorial/issues/spa_00_stops.json --name spa00` (claude/gentle-monster-magazine-system-xh6ijk, gentle_monster/magazine/{photo_issue,render,qa}.py, Gemini 금지 테스트 tests/test_magazine.py). idml: docs/portfolio/scripts/idml_*.py (카드 없는 IDML 브랜치들).",
+  "runs_where": "허브",
+  "side_effects": "git commit + push (claude/* 브랜치); out/ 산출물은 git 미포함",
+  "calls": []
+ },
+ {
+  "op": "band_image",
+  "purpose": "섹션 머리의 574×172 가로 띠 이미지(컨셉 이미지)를 요청한다 — 이미지는 W5 만 만든다",
+  "input": {
+   "section": "string: 01 STYLE | 02 PICTURE | 03 ARCHITECTURE",
+   "direction": "string: docs/portfolio/01_style_image.md 줄 37-39 의 방향성 문장 (현행 확정)",
+   "object": "string|null: 사용자가 정할 오브제 (미정이면 호출 보류)",
+   "materiality": "string|null: 사용자가 정할 물성(재질·빛·톤·렌즈)"
+  },
+  "output": {
+   "png": "string: .relay/tasks/<NNN>-band-<section>/image.png (W5 결과)",
+   "response": "object: response.json (status done | failed, 실패 시 이유 그대로)",
+   "crop": "string: 574×172 크롭 경로 (코드로 자르기만, 그리지 않음)"
+  },
+  "impl": "W3 는 image-spec 필드(subject=방향성 문장 요지, purpose='포트폴리오 섹션 띠 이미지 574x172', size=1536x1024, notes='10:3 가로 띠로 크롭') 만 만들어 W5.image 에 넘긴다. Midjourney/Gemini 경로는 2026-10-15 CLAUDE.md 로 폐기.",
+  "runs_where": "허브 (스펙) → VM (생성, W5)",
+  "side_effects": "W5.image 를 통한 git push (.relay/tasks)",
+  "calls": [
+   "W5.image"
+  ]
+ },
+ {
+  "op": "install_scene",
+  "purpose": "03 ARCHITECTURE 설치작품(FRAME & INTERIOR, 로봇팔이 무언가를 만드는 장면)을 작업 데이터에서 결정적으로 three.js 스틸 · 레이아웃 · 청사진 PDF 로 렌더링한다",
+  "input": {
+   "idea": "string: 장면 설명 (예: MEMORY FRAME 01, form eyewear | 흉상(미구현))",
+   "job": "string: 작업 이름 또는 job.json 경로 (shapes: robot_arm · memory_frame{form} · reflect_basin, light: cold_spot | white_gallery …)",
+   "variant": "string: A(어두운 티타늄 팔 · 밝은 콘크리트) | B(흰 갤러리 · 흰 팔) 등",
+   "with_cover": "boolean: 청사진 1쪽 실사 커버 요청 여부"
+  },
+  "output": {
+   "layout_pdf": "string: out/<job>/ 레이아웃 · 무드보드 PDF",
+   "blueprint_pdf": "string: out/<job>/ 청사진 A3 PDF (three.js 스틸 + 도면)",
+   "cover_task": "string|null: .relay/tasks/<NNN>-cover-<job>/ (with_cover 일 때)"
+  },
+  "impl": "claude/youthful-ride-kehgoo 의 gentle_monster(spec.py SHAPES · web/scene.js; 이 형상들은 main 에 없음). `python3 -m gentle_monster check <job.json>` → `python3 -m gentle_monster layout <job>` → `python3 -m gentle_monster blueprint <job>`. 실사 커버는 `python3 -m gentle_monster cover <job>` 가 three.js 장면 데이터로 스펙을 쓰고(main gentle_monster/cover.py), 생성은 W5, 결과는 `cover <job> --attach .relay/tasks/<NNN>-cover-<job>` 후 blueprint 재실행.",
+  "runs_where": "허브",
+  "side_effects": "out/ 파일 생성 (git 미포함); with_cover 면 .relay/tasks git push",
+  "calls": [
+   "W5.image"
+  ],
+  "call_note": "W5.image (with_cover 일 때만, cover 명령이 스펙 작성)"
+ }
+]

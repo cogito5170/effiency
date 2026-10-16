@@ -1,0 +1,459 @@
+{
+ "module": "W4",
+ "title": "혁주 CV · 인물 사진 (CV 청사진 → .ai, RELIEF 지면 엔진, CV 히어로 실사 인물)",
+ "as_of": "2026-10-16T03:30Z",
+ "synced_from": {
+  "sessions_checked": [
+   "session_011o2Zk5R9TTMbgacGgwBcjp",
+   "session_01EwZvjiXu5ppJiaJniHRYoT",
+   "session_017EVHBofkdPhvYSUBCeRAH4"
+  ],
+  "method": "세션 카드 + ws_out/W4 스냅숏(2026-10-15) 대조, 저장소 파일 재확인. 세션 이벤트는 새로 읽지 않음.",
+  "branches_checked": {
+   "gentleMonster@main": "6acff99 (docs/cv · relief 없음)",
+   "gentleMonster@claude/cv-blueprint": "6a1d95c",
+   "gentleMonster@claude/hyeokju-cv": "84980aa",
+   "gentleMonster@claude/relief-photos": "원격에 없음",
+   "gentleMonster@claude/gentle-monster-magazine-system-xh6ijk": "d10b8ee (W3 소속 세션이지만 `gentle_monster cv` 테스트 CV 레이아웃 포함, 참고만)"
+  }
+ },
+ "confirmed": [
+  {
+   "id": "W4-C1",
+   "statement": "제출 문서 구성: CV 1장 + 자기소개서 1장 = 한 PDF, 포트폴리오와 별도",
+   "source": "사용자",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/cv-blueprint",
+    "path": "docs/cv/blueprint/page2.py",
+    "line": 1,
+    "commit": "70c1a58",
+    "event": "481ff17a-0656-44b3-ac6c-944cf426c6bf",
+    "note": "파일은 'CV 2/2 — cover-letter page' 구조로 반영; '한 PDF' 문구 자체는 파일에 없음"
+   },
+   "decided_at": "2026-10-09T12:19Z",
+   "file_verified": true
+  },
+  {
+   "id": "W4-C2",
+   "statement": "1페이지는 TYPE 1(카드 그리드) 채택, 헤드라인은 문장 아닌 두 단어 — W4 'FRAME & INTERIOR' 선정, CV_TYPE1_CARD_GRID.ai 에 반영",
+   "source": "사용자",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/cv-blueprint",
+    "path": "docs/cv/blueprint/hero_words.py",
+    "line": 28,
+    "commit": "c5b355d",
+    "event": "f797e907-c145-4675-83c6-1e109a7bf5dd",
+    "note": "072d3583(단어 9안 → 178d8d9), 73bdf09c-…(TYPE 1 채택)"
+   },
+   "decided_at": "2026-10-09T14:27Z",
+   "file_verified": true
+  },
+  {
+   "id": "W4-C3",
+   "statement": "CV 는 '우리의 엔진'으로 생성 → 페이지 엔진 이름 RELIEF (구 cv3d), TYPE 1 레이아웃 SVG 를 3D 세트로 렌더",
+   "source": "사용자",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/hyeokju-cv",
+    "path": "gentle_monster/relief/__init__.py",
+    "line": 1,
+    "commit": "74476c2",
+    "event": "c17d4209-3364-44e2-b7a3-6b1a490dd2ef, 7f686820-c507-4cd0-b7ab-610d1af4e3cb"
+   },
+   "decided_at": "2026-10-09T17:00Z",
+   "file_verified": true
+  },
+  {
+   "id": "W4-C4",
+   "statement": "2페이지는 B안(여백 표시 1단 사이드노트)을 .ai 로",
+   "source": "사용자",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/cv-blueprint",
+    "path": "docs/cv/ai/CV_PAGE2_B_SIDENOTE.ai",
+    "commit": "63ee8fe",
+    "event": "2fcc97ca-9517-403b-96a6-b3d995cdc66e"
+   },
+   "decided_at": "2026-10-10T00:07Z",
+   "file_verified": true
+  },
+  {
+   "id": "W4-C5",
+   "statement": "CV 히어로 인물은 일러스트가 아니라 실제 사람처럼 (실사 사진)",
+   "source": "사용자",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/hyeokju-cv",
+    "path": "gentle_monster/relief/photo.py",
+    "line": 58,
+    "commit": "ec5163a",
+    "event": "dc7760ed-a191-4e8c-9a2e-f6ae9d9c7b35"
+   },
+   "decided_at": "2026-10-10T01:31Z",
+   "file_verified": true
+  },
+  {
+   "id": "W4-C6",
+   "statement": "2페이지에 문항 1 원고 〈계단을 통로가 아닌 전시로 만든 곳〉(861자) 추가",
+   "source": "사용자",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/cv-blueprint",
+    "path": "docs/cv/blueprint/page2.py",
+    "commit": "9c33997",
+    "event": "ca924d03-c9b8-4139-9de4-382938dd1cd7"
+   },
+   "decided_at": "2026-10-10T09:27Z",
+   "file_verified": true
+  },
+  {
+   "id": "W4-C7",
+   "statement": "2페이지 회색 바탕(#2E2E2E) 채택, 01/02 상하 순서 교체(본인 소개 위 · 지원 이유 아래) — CV_PAGE2_B_SIDENOTE_GRAY.ai",
+   "source": "사용자",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/cv-blueprint",
+    "path": "docs/cv/blueprint/page2.py",
+    "line": 392,
+    "commit": "6a1d95c",
+    "event": "5e04e575-dc2e-44f3-8523-14e913675c6f",
+    "note": "page2.py:180 'reading order chosen by the applicant: self-introduction first'"
+   },
+   "decided_at": "2026-10-10T10:10Z",
+   "file_verified": true
+  },
+  {
+   "id": "W4-C8",
+   "statement": "새 이미지(인물 포함)는 Codex(codex-image, image-spec.json → VM)로만; Gemini 직접 호출 금지",
+   "source": "사용자",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "main",
+    "path": "CLAUDE.md",
+    "line": 3,
+    "commit": "12ecdbd"
+   },
+   "decided_at": "2026-10-15T14:39Z",
+   "file_verified": true
+  },
+  {
+   "id": "W4-C9",
+   "statement": "Gemini 이미지 생성 시도는 HTTP 429(free tier limit 0)로 실패, 이미지 0장; claude/relief-photos 브랜치는 원격에 없음",
+   "source": "도구출력",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/hyeokju-cv",
+    "path": "docs/relief/requests/CMD-REL1.md",
+    "line": 4,
+    "commit": "84980aa",
+    "note": "CMD-REL1 'why' 에 429 기록(session_017EVHBofkdPhvYSUBCeRAH4); git branch -r 에 relief-photos 없음 재확인"
+   },
+   "decided_at": "2026-10-10T01:39Z",
+   "file_verified": true
+  }
+ ],
+ "decisions": [
+  {
+   "id": "W4-D1",
+   "date": "2026-10-09",
+   "decision": "CV 1장 + 자기소개서 1장 = 한 PDF, 포트폴리오와 별도",
+   "by": "사용자",
+   "supersedes": null,
+   "evidence": {
+    "event": "481ff17a-0656-44b3-ac6c-944cf426c6bf"
+   }
+  },
+  {
+   "id": "W4-D2",
+   "date": "2026-10-09",
+   "decision": "1페이지 TYPE 1(카드 그리드) 채택 (TYPE 2 사이드바 탈락)",
+   "by": "사용자",
+   "supersedes": null,
+   "evidence": {
+    "event": "73bdf09c-…",
+    "commit": "ba4efa2"
+   }
+  },
+  {
+   "id": "W4-D3",
+   "date": "2026-10-09",
+   "decision": "헤드라인은 문장이 아닌 두 단어, 9안 중 W4 FRAME & INTERIOR",
+   "by": "사용자",
+   "supersedes": "C-01 헤드라인 6안(84460dc, 문장형)",
+   "evidence": {
+    "event": "072d3583-338b-42ce-bd62-d0f6f0632af4, f797e907-c145-4675-83c6-1e109a7bf5dd",
+    "commit": "c5b355d"
+   }
+  },
+  {
+   "id": "W4-D4",
+   "date": "2026-10-09",
+   "decision": "Remarque Atelier 디자인 시스템 → 혁주 CV(젠틀몬스터 매거진풍)로 전환, 글은 줄이고 이미지·무드로",
+   "by": "사용자",
+   "supersedes": "디자인 시스템 요청(a738945e)",
+   "evidence": {
+    "event": "4dc89273-2654-45d7-ae26-765000ba8e90, 9dbe99b1-fb15-4e05-b037-ffffeca7a8be",
+    "commit": "7deade0",
+    "file_verified": false
+   }
+  },
+  {
+   "id": "W4-D5",
+   "date": "2026-10-09",
+   "decision": "CV 는 '우리의 엔진'(RELIEF)으로 생성, 엔진 이름 RELIEF",
+   "by": "사용자",
+   "supersedes": null,
+   "evidence": {
+    "event": "c17d4209-3364-44e2-b7a3-6b1a490dd2ef",
+    "commit": "74476c2"
+   }
+  },
+  {
+   "id": "W4-D6",
+   "date": "2026-10-10",
+   "decision": "2페이지 B안, 배경은 당시 PDF 색(#E6E2DA)으로 .ai",
+   "by": "사용자",
+   "supersedes": null,
+   "evidence": {
+    "event": "2fcc97ca-9517-403b-96a6-b3d995cdc66e",
+    "commit": "63ee8fe"
+   }
+  },
+  {
+   "id": "W4-D7",
+   "date": "2026-10-10",
+   "decision": "인물은 일러스트 말고 실제 사람; 'Gemini 대신 너가' → 'baseline 통해 VM 에 전달'",
+   "by": "사용자",
+   "supersedes": null,
+   "evidence": {
+    "event": "dc7760ed-a191-4e8c-9a2e-f6ae9d9c7b35, efb75d5c-12d0-4a9c-8872-529f27bcdad7, 80f5b043-847a-4fc9-b669-f168429c78f0",
+    "commit": "84980aa"
+   }
+  },
+  {
+   "id": "W4-D8",
+   "date": "2026-10-10",
+   "decision": "2페이지에 문항 1 원고(861자) 추가",
+   "by": "사용자",
+   "supersedes": null,
+   "evidence": {
+    "event": "ca924d03-c9b8-4139-9de4-382938dd1cd7",
+    "commit": "9c33997"
+   }
+  },
+  {
+   "id": "W4-D9",
+   "date": "2026-10-10",
+   "decision": "검은 · 회색 바탕 버전 제작 → 회색(#2E2E2E) 채택, 01/02 상하 교체 — W4 의 가장 최근 디자인 확정",
+   "by": "사용자",
+   "supersedes": "W4-D6 의 #E6E2DA 바탕",
+   "evidence": {
+    "event": "c91cd712-04e0-4f39-9686-1ca74f165d43, 5e04e575-dc2e-44f3-8523-14e913675c6f",
+    "commit": "6a1d95c"
+   }
+  },
+  {
+   "id": "W4-D10",
+   "date": "2026-10-15",
+   "decision": "모든 새 이미지는 Codex(codex-image) — 인물 사진 A–D 의 Gemini(relief photo) · VM 오픈 모델(CMD-REL1) 경로 대체",
+   "by": "사용자",
+   "supersedes": "W4-D7 의 생성 경로 (실사 인물이라는 내용 결정은 유지)",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "main",
+    "path": "CLAUDE.md",
+    "line": 3,
+    "commit": "12ecdbd"
+   }
+  }
+ ],
+ "latest_confirmed": "2026-10-10 10:10 '그레이로 채택, 01과 02 상하 교체' (6a1d95c, CV_PAGE2_B_SIDENOTE_GRAY.ai). 이후 2026-10-15 CLAUDE.md 로 인물 사진 생성 경로가 Codex(W5)로 바뀜.",
+ "open": [
+  {
+   "id": "W4-O1",
+   "item": "1페이지 + 2페이지를 하나의 PDF 로 합친 최종본 없음 (W4-D1 미실행)",
+   "waiting_on": "허브 (W4.cv_layout)",
+   "blocking": false,
+   "source": "도구출력",
+   "resolved_by": "초안 docs/cv/CV_2PAGE_DRAFT.pdf (gentleMonster@claude/project-thread-o0m9e5 bfdf3f2), 최종본은 사용자 결정 뒤"
+  },
+  {
+   "id": "W4-O2",
+   "item": "1페이지 출처 선택: cv-blueprint 의 CV_TYPE1_CARD_GRID.ai(W4 헤드라인) vs hyeokju-cv 의 RELIEF CV_HOME.pdf(같은 TYPE 1 레이아웃의 3D 렌더) — 사용자 명시 선택 기록 없음",
+   "waiting_on": "사용자",
+   "blocking": true,
+   "source": "추론·미검증"
+  },
+  {
+   "id": "W4-O3",
+   "item": "CV 히어로 실사 인물 사진 A–D 0장 — 프롬프트 A–D 는 docs/cv/photos/*.prompt.txt 에 있음, 이제 W5.image 로 요청해야 함",
+   "waiting_on": "다른 모듈 W5",
+   "blocking": false,
+   "source": "도구출력"
+  },
+  {
+   "id": "W4-O4",
+   "item": "CV 빈칸(학교명 · 기간 · 사무소명 · 연락처 · 어학 등) 사실 입력",
+   "waiting_on": "사용자",
+   "blocking": true,
+   "source": "추론·미검증"
+  },
+  {
+   "id": "W4-O5",
+   "item": "RELIEF 가 쓰는 머리 스캔(LeePerrySmith, CC BY 3.0) 출처 표기 미반영",
+   "waiting_on": "허브",
+   "blocking": false,
+   "source": "추론·미검증"
+  },
+  {
+   "id": "W4-O6",
+   "item": "12:45 '오픈소스로 잡지를 만들어라'(Penpot·Inkscape 등) 요청 결과가 브랜치에 없음 — 처리 여부 불명",
+   "waiting_on": "사용자",
+   "blocking": false,
+   "source": "추론·미검증"
+  },
+  {
+   "id": "W4-O7",
+   "item": "cv-blueprint · hyeokju-cv PR · main 머지 없음",
+   "waiting_on": "사용자",
+   "blocking": false,
+   "source": "도구출력"
+  }
+ ],
+ "artifacts": [
+  {
+   "kind": "pdf",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/project-thread-o0m9e5",
+   "path": "docs/cv/CV_2PAGE_DRAFT.pdf",
+   "commit": "bfdf3f2",
+   "status": "draft",
+   "note": "2026-10-16 resume: 확정 1쪽(c5b355d) + 2쪽(6a1d95c) 을 pdfunite 로 이은 A4 2쪽. 내용 수정 없음, 히어로 사진 자리 비어 있음."
+  },
+  {
+   "kind": "ai",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/cv-blueprint",
+   "path": "docs/cv/ai/CV_TYPE1_CARD_GRID.ai (+ __T1_03_HERO.ai, .svg)",
+   "commit": "c5b355d",
+   "status": "final"
+  },
+  {
+   "kind": "ai",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/cv-blueprint",
+   "path": "docs/cv/ai/CV_PAGE2_B_SIDENOTE_GRAY.ai (+ .svg)",
+   "commit": "6a1d95c",
+   "status": "final"
+  },
+  {
+   "kind": "ai",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/cv-blueprint",
+   "path": "docs/cv/ai/CV_PAGE2_B_SIDENOTE.ai, CV_PAGE2_B_SIDENOTE_BLACK.ai",
+   "commit": "6a1d95c",
+   "status": "superseded"
+  },
+  {
+   "kind": "ai",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/cv-blueprint",
+   "path": "docs/cv/ai/CV_TYPE2_SIDEBAR.ai",
+   "commit": "ba4efa2",
+   "status": "superseded"
+  },
+  {
+   "kind": "pdf",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/cv-blueprint",
+   "path": "docs/cv/blueprint/{cv_blueprint,cv_types,hero_options,hero_words,page2_options}.pdf, types/*",
+   "commit": "6a1d95c",
+   "status": "draft"
+  },
+  {
+   "kind": "code",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/cv-blueprint",
+   "path": "docs/cv/blueprint/{bp,cv_blueprint,cv_types,hero_options,hero_words,page2,export_ai}.py",
+   "commit": "6a1d95c",
+   "status": "final"
+  },
+  {
+   "kind": "code",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/hyeokju-cv",
+   "path": "gentle_monster/relief/* (RELIEF 0.1), layouts/type1_card_grid.svg",
+   "commit": "84980aa",
+   "status": "draft"
+  },
+  {
+   "kind": "doc",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/hyeokju-cv",
+   "path": "docs/portfolio/cv.html",
+   "commit": "7deade0",
+   "status": "draft"
+  },
+  {
+   "kind": "doc",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/hyeokju-cv",
+   "path": "docs/cv/photos/{A,B,C,D}.prompt.txt",
+   "commit": "84980aa",
+   "status": "draft"
+  },
+  {
+   "kind": "doc",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/hyeokju-cv",
+   "path": "docs/relief/requests/CMD-REL1.md (VM 오픈 모델 지시 초안)",
+   "commit": "84980aa",
+   "status": "superseded"
+  },
+  {
+   "kind": "code",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/hyeokju-cv",
+   "path": "gentle_monster/relief/photo.py (Gemini 이미지 경로)",
+   "commit": "9a62f70",
+   "status": "superseded"
+  }
+ ],
+ "unverified": [
+  {
+   "statement": "최종 전달물은 CV_PAGE2_B_SIDENOTE_GRAY.ai (2페이지) — 파일과 커밋은 확인, '최종'이라는 판단은 모델 보고",
+   "where": "session_011o2Zk5R9TTMbgacGgwBcjp"
+  },
+  {
+   "statement": "JEONG_HYEOKJU_SPA_CV.pdf(A4 5쪽) · CV_HOME.pdf 렌더 — out/ 산출물, git 에 없음",
+   "where": "session_01EwZvjiXu5ppJiaJniHRYoT"
+  },
+  {
+   "statement": "Monochrome Résumé 아티팩트 K7WAqyzQ1CY5BNMd9D45ZK (split · bleed · poster)",
+   "where": "session_01EwZvjiXu5ppJiaJniHRYoT"
+  },
+  {
+   "statement": "VM(agy) 로그인 만료로 baseline 이슈 #83 declined",
+   "where": "session_01EwZvjiXu5ppJiaJniHRYoT"
+  },
+  {
+   "statement": "relief-photos 세션이 A.prompt.txt 만 로컬에 썼다는 보고 — 단, hyeokju-cv(84980aa)에는 A–D 프롬프트 4개가 모두 커밋되어 있음 (카드/W4 파일의 '커밋 안 함'은 relief-photos 세션 로컬 한정)",
+   "where": "session_017EVHBofkdPhvYSUBCeRAH4 vs gentleMonster@claude/hyeokju-cv"
+  },
+  {
+   "statement": "page2.py 머리말은 'Q1 still being written, reserved as grey bars' 라고 적혀 있으나 이후 9c33997 에서 문항 1 원고(861자)가 반영됨 — 독스트링이 오래됨",
+   "where": "docs/cv/blueprint/page2.py:5"
+  },
+  {
+   "statement": "2페이지 원고는 W1(혁주 자소서 session_01FYwvzhDCTYAAM1u37s5yGE)와 맞물림",
+   "where": "session_011o2Zk5R9TTMbgacGgwBcjp 카드"
+  }
+ ],
+ "resume_point": {
+  "op": "cv_layout",
+  "input_hint": "초안 docs/cv/CV_2PAGE_DRAFT.pdf (bfdf3f2) 다음: 사용자가 (1) 1쪽 원본(TYPE1 .ai / RELIEF 렌더) (2) CV 빈칸 사실 (3) 히어로 사진을 portrait→W5.image 로 요청할지 정하면 최종본",
+  "precondition": "사용자 확인 필요"
+ }
+}

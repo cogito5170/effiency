@@ -1,0 +1,38 @@
+{
+ "contract": "ws-module/1",
+ "id": "W5",
+ "name": "이미지 경로 (Codex)",
+ "slug": "image-pipeline",
+ "owner_tag": "ws:w5-image-pipeline",
+ "domain": "software",
+ "purpose": "짧은 image-spec 을 받아 VM Codex 가 만든 이미지와 response.json 을 돌려준다. 이미지는 모두 이 모듈을 거친다.",
+ "exposes": [
+  "image",
+  "status"
+ ],
+ "consumes": [],
+ "state": "state.json",
+ "interface": "ops.json",
+ "internal": {
+  "note": "호출자는 이 칸에 기대지 않는다. 세션 · 브랜치 · 스크립트는 바뀔 수 있다.",
+  "sessions": [
+   "session_013E5kLcQZ6fo4dSTkiFj8BB",
+   "session_0148K7k8z954TzbiEnuhyCir",
+   "session_01KHd6Ft8vzjYffMcwhTDwcy"
+  ],
+  "branches": {
+   "gentleMonster@main": "6acff99",
+   "effiency@main": "8724b6c",
+   "gentleMonster@claude/codex-all-images": "12ecdbd (main 에 머지됨)",
+   "gentleMonster@claude/project-thread-603jt3": "05ef106 (main 에 머지됨)",
+   "gentleMonster@claude/project-thread-95j1zd": "cb7027b (main 대비 2커밋 앞섬: 001-codex-test)",
+   "effiency@claude/codex-image-pipeline-lgeo10": "main 에 머지됨",
+   "effiency@claude/context-archive": "6f7510c (main 대비 1커밋 앞섬: 005 결과 중복 커밋)",
+   "effiency@claude/jolly-knuth-5oxkld": "원격 없음",
+   "gentleMonster@claude/code-agent-image-gen-cz6kfx": "원격 없음",
+   "gentleMonster@claude/sleepy-cori-h0ug3b": "원격 없음",
+   "diffusion_model@claude/code-agent-image-gen-cz6kfx": "클론 없음 (미확인)",
+   "gentleMonster_gemini@claude/sleepy-cori-h0ug3b": "클론 없음 (미확인)"
+  }
+ }
+}

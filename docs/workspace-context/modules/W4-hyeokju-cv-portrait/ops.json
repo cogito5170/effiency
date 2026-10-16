@@ -1,0 +1,59 @@
+[
+ {
+  "op": "cv_layout",
+  "purpose": "확정된 CV 사실과 유형으로 A4 CV 지면을 청사진 → 유형안 → .ai/PDF 로 만들고, 최종본은 1페이지(CV) + 2페이지(자기소개서)를 한 PDF 로 합친다",
+  "input": {
+   "type": "string: blueprint | types | hero | page2 | export_ai | final_pdf | relief_home",
+   "facts": "string: CV 사실 파일 (fill_blanks 결과) — 빈 값은 빈칸으로 남김",
+   "page1": "string: docs/cv/ai/CV_TYPE1_CARD_GRID.ai (현행) 또는 RELIEF out/CV_HOME.pdf (사용자 선택 시)",
+   "page2": "string: docs/cv/ai/CV_PAGE2_B_SIDENOTE_GRAY.ai (현행 확정)",
+   "hero_png": "string|null: W4.portrait 결과 이미지 (없으면 자리 비움)"
+  },
+  "output": {
+   "ai": "string[]: docs/cv/ai/*.ai (+ .svg, 존 그룹 id 유지)",
+   "pdf": "string: 유형안 PDF 또는 최종 2쪽 PDF 경로",
+   "commit": "string: claude/cv-blueprint (또는 새 claude/* 브랜치) 커밋 sha"
+  },
+  "impl": "claude/cv-blueprint 의 스크립트: `python3 docs/cv/blueprint/cv_blueprint.py` · `cv_types.py` (types/B-0*.svg, cv_types.pdf) · `hero_options.py` · `hero_words.py` · `page2.py` (D-00, P2-A/B/C, BLACK/GRAY) · `export_ai.py 1 2` / `export_ai.py 1:T1_03_HERO` (Inkscape → PDF 1.5 를 .ai 이름으로). final_pdf: .ai 가 PDF 호환이므로 `pdfunite <page1>.ai <page2>.ai <out>.pdf`. relief_home: claude/hyeokju-cv 에서 `python -m gentle_monster.relief home --layout gentle_monster/relief/layouts/type1_card_grid.svg` (bpy 필요) → out/CV_HOME.pdf.",
+  "runs_where": "허브",
+  "side_effects": "git commit + push (claude/* 브랜치); RELIEF 산출물은 out/ (git 미포함)",
+  "calls": []
+ },
+ {
+  "op": "portrait",
+  "purpose": "CV 히어로(PHOTO 01)용 실사 인물 사진 — 중앙에 멈춰 선 사람, 슬로 셔터로 흐르는 군중 — 을 요청한다. 이미지는 W5 만 만든다",
+  "input": {
+   "scene": "string: A(흰 스튜디오 좌대) | B(회색 전시장) | C(비 갠 횡단보도) | D(붐비는 거리)",
+   "brief": "string: docs/cv/photos/<scene>.prompt.txt 의 요지 (실제 사진, 일러스트 · CGI 아님, 회색 필름 톤, 4:5, SECTOR A 착장: 검은 롱코트 · 뿔테 안경)",
+   "face_ref": "null: 쓰지 않음 (생성된 인물, 실존 인물 아님)"
+  },
+  "output": {
+   "png": "string: .relay/tasks/<NNN>-cv-portrait-<scene>/image.png",
+   "response": "object: response.json (status done | failed, 실패 이유는 그대로 사용자에게)",
+   "graded": "string|null: RELIEF 6단 회색 잉크 보정 후 히어로 창 장착본 (선택, relief home)"
+  },
+  "impl": "W4 는 짧은 image-spec 필드(subject, purpose='CV 히어로 실사 인물', style='실사 35mm 필름 사진', composition='중앙 인물 정지 · 주변 모션 블러', palette='무채 회색', size=1024x1536, avoid=['일러스트','텍스트','워터마크'])만 만들어 W5.image 에 넘긴다. gentle_monster.relief photo(Gemini) 와 CMD-REL1(VM 오픈 모델)은 2026-10-15 CLAUDE.md 로 대체됨 — 부르지 않는다.",
+  "runs_where": "허브 (스펙) → VM (생성, W5)",
+  "side_effects": "W5.image 를 통한 git push (.relay/tasks)",
+  "calls": [
+   "W5.image"
+  ]
+ },
+ {
+  "op": "fill_blanks",
+  "purpose": "CV 의 빈칸(학교명 · 기간 · 사무소명 · 연락처 · 어학 등)을 사용자가 준 사실로만 채우고, 남은 빈칸 목록을 돌려준다 (지어내지 않음)",
+  "input": {
+   "facts": "object: 사용자가 준 사실 {필드: 값}",
+   "source_files": "string[]: 현재 CV 원본 — docs/cv/blueprint/cv_types.py · page2.py 의 문구, docs/portfolio/cv.html (hyeokju-cv)"
+  },
+  "output": {
+   "cv": "object: 채워진 CV 사실 (필드별 값 + 출처: 사용자 발언 event / 파일)",
+   "remaining_blanks": "string[]: 아직 빈 필드",
+   "changed_files": "string[]: 갱신된 스크립트/HTML 경로"
+  },
+  "impl": "허브 세션이 사실을 cv_types.py / page2.py 문구와 cv.html 에 반영하고, 빈 값은 빨간 [blank] 로 둔다 (gentle_monster/magazine/cv.py 의 규칙과 같음: 'nothing is invented'). 반영 뒤 W4.cv_layout(export_ai / final_pdf) 를 다시 돌린다.",
+  "runs_where": "허브",
+  "side_effects": "git commit + push (claude/* 브랜치)",
+  "calls": []
+ }
+]

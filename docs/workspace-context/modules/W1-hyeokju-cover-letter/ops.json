@@ -1,0 +1,75 @@
+[
+ {
+  "op": "analyze_posting",
+  "purpose": "공고(캡처·본문)를 저장하고 담당업무 · 자격 · 문항 · 브랜드 근거를 분석한다",
+  "input": {
+   "posting": "string | image — 사용자가 준 공고 본문 또는 캡처",
+   "posting_id": "string — 파일 이름 (예: sikorea_rounding_vmd)",
+   "research": "string[] — 조사할 것 (예: brand_facts, common_threads, answer_types, user_questions)"
+  },
+  "output": {
+   "posting_md": "path — docs/portfolio/postings/<posting_id>.md",
+   "analysis": "path — docs/portfolio/handoff/CMD-HJ<n>.result.json (brand_facts[{brand,fact,source,level}], answer_types A~F, user_questions UQ<n>, recommend)",
+   "directive": "string — CMD-HJ<n>"
+  },
+  "impl": "허브 세션이 postings/<id>.md 와 handoff/CMD-HJ<n>.input.json(hj_handoff/1) 작성·푸시 → directive/2 를 분석 세션(Context Analysis, session_01GGPjmZVBdKmygvWvYsFFv6)에 send_message(+대비 send_later) → 분석 세션이 claude/modest-cannon-ha8zs3 에 result 커밋 → report/2 → 허브가 git show 로 복사. 규약: docs/portfolio/agent_protocol.md §2, PROCESS.md 부록 A",
+  "runs_where": "허브",
+  "side_effects": "git push (claude/clever-knuth-1dezlo, claude/modest-cannon-ha8zs3), 세션 간 send_message",
+  "calls": []
+ },
+ {
+  "op": "diagnose",
+  "purpose": "원고(단락)를 합격 사례와 비교해 부족한 점을 P0~P3 로 진단한다 (고쳐 쓰지 않음)",
+  "input": {
+   "draft": "string — 대상 단락 전문 (또는 selection 파일 경로 + 키)",
+   "cases": "path[] — docs/portfolio/references/shinsegae_samples/S1~S5.jpg, self_intro_cases.md, case_studies.md 등",
+   "goal": "string — 단락이 답해야 할 질문"
+  },
+  "output": {
+   "gaps": "object[] — {priority P0~P3, issue, evidence}",
+   "repair_intent": "object[] — P0·P1 에서 3곳 이하",
+   "user_questions": "object[] — 사실이 없어 사용자에게 물어야 할 것"
+  },
+  "impl": "허브가 CMD-HJ<n>.input.json 작성 → directive/2 → 분석 세션(session_01GGPjmZVBdKmygvWvYsFFv6). 분석 세션 규칙: docs/portfolio/analysis_session_rules.md (modest-cannon 브랜치). 결과 CMD-HJ<n>.result.json",
+  "runs_where": "허브",
+  "side_effects": "git push, 세션 간 send_message",
+  "calls": []
+ },
+ {
+  "op": "draft_paragraph",
+  "purpose": "슬롯 하나(단락·문장)의 대안을 만든다 — 확정본 FINAL 과 비교판 ALT, 또는 3~5개 안",
+  "input": {
+   "slot": "string — 예 'Q1 자기소개 셋째 단락'",
+   "base": "string — 고정할 앞 단락 / 바꿀 원문",
+   "constraints": "object — limit_chars, 문장 ≤60자, 합니다체·지칭어 없음, 새 사실 금지, 거절 소재 (PROCESS.md §0), hub_decision(있으면)",
+   "facts": "path — docs/portfolio/context_handoff.md (사용자 사실 원천)"
+  },
+  "output": {
+   "options": "object[] — editor_options/1: {id(FINAL|ALT|V1..), text, chars, sentence_chars, over60, needs_user_check[], one_line, risk}",
+   "recommend": "object — {id, second, why}",
+   "blocked_questions": "object[] — {id, where, ask, placeholder}",
+   "result_path": "path — docs/portfolio/handoff/CMD-HJ<n>.result.json"
+  },
+  "impl": "허브가 CMD-HJ<n>.input.json(hj_handoff/1) → directive/2 → 편집 세션(Editor_Writer, session_0122yxjinLCToP7QLnhJbJka, claude/beautiful-gates-e42a5m) → report/2 → 허브가 결과 복사 · 원문 대비 target 만 바뀌었는지 확인 (PROCESS.md 부록 A 5단계)",
+  "runs_where": "허브",
+  "side_effects": "git push (clever-knuth-1dezlo, beautiful-gates-e42a5m), 세션 간 send_message",
+  "calls": []
+ },
+ {
+  "op": "finalize",
+  "purpose": "사용자가 고른 안을 원고에 반영하고 전문 · 글자 수를 기록한다",
+  "input": {
+   "selection": "object — {question_key (예 Q1_selfintro), part (p1|p2|p3), option_id, source_directive}",
+   "user_text": "string? — 사용자가 직접 준 문장 (그대로 반영)"
+  },
+  "output": {
+   "self_intro": "object — {text, chars(len, 공백·줄바꿈 포함), remaining}",
+   "selection_file": "path — docs/portfolio/handoff/selection_sikorea_vmd_3q.json (current · edits[] 갱신)",
+   "fact_log": "path — docs/portfolio/context_handoff.md 에 채택 한 줄"
+  },
+  "impl": "허브 세션이 직접 파일 편집 · 커밋 (PROCESS.md 부록 A '채택 반영'), 사용자에게 전·후 전문과 글자 수 표시. 사용자 선택이 없으면 실행하지 않음",
+  "runs_where": "허브",
+  "side_effects": "git push (claude/clever-knuth-1dezlo)",
+  "calls": []
+ }
+]

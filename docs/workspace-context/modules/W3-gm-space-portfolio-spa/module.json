@@ -1,0 +1,50 @@
+{
+ "contract": "ws-module/1",
+ "id": "W3",
+ "name": "젠틀몬스터 공간 포트폴리오 SPA",
+ "slug": "gm-space-portfolio-spa",
+ "owner_tag": "ws:w3-gm-space-portfolio-spa",
+ "domain": "interior",
+ "purpose": "섹션 원고 · 사진을 받아 SPA 원고, 잡지 레이아웃(PDF/HTML), 띠 이미지 요청, 설치작품 렌더를 낸다.",
+ "exposes": [
+  "manuscript",
+  "magazine_layout",
+  "band_image",
+  "install_scene"
+ ],
+ "consumes": [
+  "W5.image"
+ ],
+ "state": "state.json",
+ "interface": "ops.json",
+ "internal": {
+  "note": "호출자는 이 칸에 기대지 않는다. 세션 · 브랜치 · 스크립트는 바뀔 수 있다.",
+  "sessions": [
+   "session_01EqaBKYMCogKN9ZcBMEEYg1",
+   "session_013QA6yMi7zoJtgs4awRozzy",
+   "session_01SHpJKXvNQbw7VDJuuv7F17",
+   "session_01BmC15srtgb8bGm74ACyy9e",
+   "session_016V61XTdZkW2gfhVE9LQw54",
+   "session_01DaTRXfL7DvzEVZAbcqPU6y"
+  ],
+  "branches": {
+   "gentleMonster@main": "6acff99",
+   "gentleMonster@claude/midjourney-574x172-image-sy9gq3": "b3f3eda",
+   "gentleMonster@claude/youthful-ride-kehgoo": "cd6d457",
+   "gentleMonster@claude/gentle-monster-magazine-system-xh6ijk": "d10b8ee",
+   "gentleMonster@claude/sharp-noether-9am24c": "270aec8",
+   "gentleMonster@claude/gifted-galileo-ko9xvw": "a73c3e2 (main 에 머지됨, main 대비 앞선 커밋 0)",
+   "gentleMonster@claude/project-thread-j7zduo": "215e2a0 (카드 없음, 03_architecture.md 를 건드려 추가 확인)",
+   "gentleMonster@claude/gracious-knuth-26ef48": "64e5497 (카드 없음)",
+   "gentleMonster@claude/determined-thompson-7u6k2k": "5ce2674 (카드 없음)",
+   "gentleMonster@claude/hyukjoo-design-workspace-cvrexh": "396cd8c (카드 없음, IDML)",
+   "gentleMonster@claude/inspiring-fermi-jazv4f": "e1c49e7 (카드 없음, IDML)",
+   "gentleMonster@claude/serene-hopper-2dfx98": "f5bd432 (카드 없음, IDML)",
+   "gentleMonster@claude/serene-turing-56eivc": "33f558b (카드 없음, IDML)",
+   "gentleMonster@claude/stoic-shannon-i1fgh4": "ba10ae6 (카드 없음, IDML)",
+   "diffusion_model@claude/midjourney-574x172-image-sy9gq3": "클론 없음 (file_verified:false)",
+   "se_new@claude/youthful-ride-kehgoo": "클론 없음",
+   "se_new@claude/gentle-monster-magazine-system-xh6ijk": "클론 없음"
+  }
+ }
+}

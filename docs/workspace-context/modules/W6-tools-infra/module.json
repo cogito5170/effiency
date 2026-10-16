@@ -1,0 +1,46 @@
+{
+ "contract": "ws-module/1",
+ "id": "W6",
+ "name": "도구 · 인프라",
+ "slug": "tools-infra",
+ "owner_tag": "ws:w6-tools-infra",
+ "domain": "software",
+ "purpose": "relay(토큰 절감 · VM 요청 · 보관), gentle_monster 기억 · 프론트엔드 · 커버 도구를 오퍼레이션으로 제공한다.",
+ "exposes": [
+  "relay_run",
+  "relay_ask",
+  "relay_request",
+  "archive_recall",
+  "memory_context",
+  "frontend_render",
+  "cover"
+ ],
+ "consumes": [
+  "W5.image"
+ ],
+ "state": "state.json",
+ "interface": "ops.json",
+ "internal": {
+  "note": "호출자는 이 칸에 기대지 않는다. 세션 · 브랜치 · 스크립트는 바뀔 수 있다.",
+  "sessions": [
+   "session_01WmF4xunApKVcUzRM7EN111",
+   "session_01DK8uaSBXFMiLZbhtqgWjy4",
+   "session_01EKnjXV12oRn3AMLTqp1RFZ",
+   "session_01DFhceYvuVFeYdA3KHy1b4c"
+  ],
+  "branches": {
+   "gentleMonster@main": "6acff99",
+   "effiency@main": "8724b6c",
+   "gentleMonster@claude/confident-goldberg-vpwcje": "0649ecb (main 에 머지됨)",
+   "gentleMonster@claude/slot-correction-tests": "5fd19f4 (main 에 머지됨)",
+   "gentleMonster@claude/relay-context-archive": "5870b7c (main 에 머지됨)",
+   "gentleMonster@claude/dazzling-fermat-5j22zb": "97ded21 (main 에 머지됨)",
+   "gentleMonster@claude/zen-bell-gd7gdj": "원격 없음",
+   "effiency@claude/zealous-goodall-wkb3yz": "03eb32a (main 대비 5커밋 앞섬: relay ask 9파일)",
+   "effiency@claude/context-archive": "6f7510c (main 대비 1커밋, W5 결과 중복)",
+   "effiency@claude/project-thread-susdx3": "ddc7904 (main 대비 1커밋: relay recall 오탐 수정)",
+   "effiency@claude/confident-goldberg-vpwcje": "원격 없음",
+   "se_new@claude/confident-goldberg-vpwcje": "클론 없음 (미확인)"
+  }
+ }
+}
