@@ -12,6 +12,7 @@
 | [TIMELINE.md](TIMELINE.md) | 세션을 가로지른 사용자 요청 201줄, 최근순 | "최근에 무엇을 했나" |
 | [sessions/](sessions/) | 세션 카드 (60줄 이내, 줄마다 출처 표지와 event ID) | 원본을 열기 직전 |
 | [index.json](index.json) | 같은 포인터의 기계용 목록 | 스크립트 · 다른 세션 |
+| [workspaces/](workspaces/README.md) | 작업 공간 7개: 구성원 · 확정 사항 · 산출물 · 열린 일 · 이어받는 법, 태그 `ws:w<n>-…` | 한 작업 공간을 통째로 이어받을 때 |
 
 ## 묶음
 
