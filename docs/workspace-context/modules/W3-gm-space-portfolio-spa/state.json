@@ -1,0 +1,591 @@
+{
+ "module": "W3",
+ "title": "젠틀몬스터 공간 포트폴리오 SPA (원고 · 잡지 · 띠 이미지 · 03 ARCHITECTURE 설치작품)",
+ "as_of": "2026-10-16T03:30Z",
+ "synced_from": {
+  "sessions_checked": [
+   "session_01EqaBKYMCogKN9ZcBMEEYg1",
+   "session_013QA6yMi7zoJtgs4awRozzy",
+   "session_01SHpJKXvNQbw7VDJuuv7F17",
+   "session_01BmC15srtgb8bGm74ACyy9e",
+   "session_016V61XTdZkW2gfhVE9LQw54",
+   "session_01DaTRXfL7DvzEVZAbcqPU6y"
+  ],
+  "method": "세션 카드 + ws_out/W3 스냅숏(2026-10-15) 대조, 저장소 파일 재확인. 세션 이벤트는 새로 읽지 않음 (허브: 10-15 이후 활동·브랜치 이동 없음).",
+  "branches_checked": {
+   "gentleMonster@main": "6acff99",
+   "gentleMonster@claude/midjourney-574x172-image-sy9gq3": "b3f3eda",
+   "gentleMonster@claude/youthful-ride-kehgoo": "cd6d457",
+   "gentleMonster@claude/gentle-monster-magazine-system-xh6ijk": "d10b8ee",
+   "gentleMonster@claude/sharp-noether-9am24c": "270aec8",
+   "gentleMonster@claude/gifted-galileo-ko9xvw": "a73c3e2 (main 에 머지됨, main 대비 앞선 커밋 0)",
+   "gentleMonster@claude/project-thread-j7zduo": "215e2a0 (카드 없음, 03_architecture.md 를 건드려 추가 확인)",
+   "gentleMonster@claude/gracious-knuth-26ef48": "64e5497 (카드 없음)",
+   "gentleMonster@claude/determined-thompson-7u6k2k": "5ce2674 (카드 없음)",
+   "gentleMonster@claude/hyukjoo-design-workspace-cvrexh": "396cd8c (카드 없음, IDML)",
+   "gentleMonster@claude/inspiring-fermi-jazv4f": "e1c49e7 (카드 없음, IDML)",
+   "gentleMonster@claude/serene-hopper-2dfx98": "f5bd432 (카드 없음, IDML)",
+   "gentleMonster@claude/serene-turing-56eivc": "33f558b (카드 없음, IDML)",
+   "gentleMonster@claude/stoic-shannon-i1fgh4": "ba10ae6 (카드 없음, IDML)",
+   "diffusion_model@claude/midjourney-574x172-image-sy9gq3": "클론 없음 (file_verified:false)",
+   "se_new@claude/youthful-ride-kehgoo": "클론 없음",
+   "se_new@claude/gentle-monster-magazine-system-xh6ijk": "클론 없음"
+  }
+ },
+ "confirmed": [
+  {
+   "id": "W3-C1",
+   "statement": "커버 SPA 는 사람이 아니라 대상: STYLIST·PHOTOGRAPHER·ARCHITECT → STYLE·PICTURE·ARCHITECTURE. 지면의 두 번째 대상은 현재 PICTURE",
+   "source": "도구출력",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "main",
+    "path": "docs/portfolio/cover.md",
+    "line": 20,
+    "commit": "e5cb988"
+   },
+   "decided_at": "2026-09-30T12:49Z",
+   "file_verified": true
+  },
+  {
+   "id": "W3-C2",
+   "statement": "원고 언어를 직관적으로 수정하라는 정정 후 '수정된 내용을 만족한다' (questions.md #33 · #34)",
+   "source": "사용자",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "main",
+    "path": "docs/portfolio/questions.md",
+    "line": 295,
+    "commit": "e5cb988",
+    "note": "#33 줄 293-297, #34 줄 299-303 (세션이 사용자 원문을 인용해 기록)"
+   },
+   "decided_at": "2026-10-01T09:37Z",
+   "file_verified": true
+  },
+  {
+   "id": "W3-C3",
+   "statement": "01 STYLE 첫 페이지 여는 글 A안 채택 (범주: 머리·옷·악세사리 + 안경·신발·색·향) → 01_style.md",
+   "source": "사용자",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "main",
+    "path": "docs/portfolio/questions.md",
+    "line": 330,
+    "commit": "e5cb988"
+   },
+   "decided_at": "2026-10-02T02:34Z",
+   "file_verified": true
+  },
+  {
+   "id": "W3-C4",
+   "statement": "포트폴리오 원본 사진은 공개 위치 금지 — gm-photos(private) 에만",
+   "source": "사용자",
+   "evidence": {
+    "repo": "cogito5170/gm-photos",
+    "ref": "main",
+    "commit": "780f412",
+    "event": "b704e70d-9eed-4e17-b2c2-1ef30bbd5cbb"
+   },
+   "decided_at": "2026-10-03T11:09Z",
+   "file_verified": false
+  },
+  {
+   "id": "W3-C5",
+   "statement": "잡지는 설계 도면이 아니라 잡지로 만든다 → 시안 A '정지선' (design_variant/1, A4 PDF·HTML, Chromium 검사 render.js)",
+   "source": "사용자",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/sharp-noether-9am24c",
+    "path": "docs/portfolio/magazine/variant_a_stopline/design_variant.json",
+    "commit": "270aec8",
+    "event": "966920a4-f3d8-4579-b4f1-7ca8ba4893b5"
+   },
+   "decided_at": "2026-10-09T06:10Z",
+   "file_verified": true
+  },
+  {
+   "id": "W3-C6",
+   "statement": "매거진 시스템은 Gemini 를 쓰지 않는다 (문서 규칙 + 테스트 가드)",
+   "source": "사용자",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/gentle-monster-magazine-system-xh6ijk",
+    "path": "docs/MAGAZINE_SYSTEM.md",
+    "line": 39,
+    "commit": "c59467a",
+    "event": "06cf9bd2-d688-43ef-8edb-74faede2d260",
+    "note": "tests/test_magazine.py:148 '[no Gemini]' 가드"
+   },
+   "decided_at": "2026-10-09T10:55Z",
+   "file_verified": true
+  },
+  {
+   "id": "W3-C7",
+   "statement": "목표는 매거진; '잡지 같지 않다 … 전부 개선' 정정 후 photo-issue 를 잡지로 재구성 (SPA 00, 26쪽, 미러 여백, Noto Serif KR · Pretendard 동봉, MCA 보드)",
+   "source": "사용자",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/gentle-monster-magazine-system-xh6ijk",
+    "path": "gentle_monster/magazine/photo_issue.py",
+    "commit": "d5d0404 → b412280",
+    "event": "217ebfff-5c23-4176-8b98-8c093f92bb7d"
+   },
+   "decided_at": "2026-10-09T11:50Z",
+   "file_verified": true
+  },
+  {
+   "id": "W3-C8",
+   "statement": "03 ARCHITECTURE 설치작품(FRAME & INTERIOR): 근거 없이 메탈릭 · 딥하우스 · 흰 배경, 오브제는 명확한 대상 → robot_arm · memory_frame · reflect_basin · cold_spot, memory_frame form \"eyewear\"(방 크기의 반쯤 만든 안경)",
+   "source": "사용자",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/youthful-ride-kehgoo",
+    "path": "gentle_monster/web/scene.js",
+    "line": 240,
+    "commit": "cd6d457",
+    "event": "7be12686-c601-43c4-81f9-3e09066c78cd",
+    "note": "spec.py:44-46 형상 정의, scene.js:206 'FRAME & INTERIOR' 블록; d1828bcd(메탈릭·흰 배경) 반영"
+   },
+   "decided_at": "2026-10-10T08:55Z",
+   "file_verified": true
+  },
+  {
+   "id": "W3-C9",
+   "statement": "574×172 띠 이미지: 물성(재질·빛·톤·렌즈)은 따로 정의하고, 오브제도 나중에 — 지금은 화자의 방향성 프롬프트 3종(01 STYLE · 02 PICTURE · 03 ARCHITECTURE)만. 이전 버전(오브제·물성 포함)은 파일에 '이전 버전'으로 남김",
+   "source": "사용자",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/midjourney-574x172-image-sy9gq3",
+    "path": "docs/portfolio/01_style_image.md",
+    "line": 31,
+    "commit": "b3f3eda",
+    "event": "cb3e52d0-ccbe-4bc9-83ac-7b4a168941ba",
+    "note": "줄 31-39 방향성 프롬프트, 줄 42-45 작가 컨셉(물성 분리, 94f3e2a, event 76c61f77)"
+   },
+   "decided_at": "2026-10-10T10:16Z",
+   "file_verified": true
+  },
+  {
+   "id": "W3-C10",
+   "statement": "새 이미지는 종류 불문 Codex(codex-image 스킬, image-spec.json → VM)로 만들고 Gemini·Midjourney 등 다른 경로를 쓰지 않는다. 렌더링(three.js·PDF·레이아웃)은 코드 그대로",
+   "source": "사용자",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "main",
+    "path": "CLAUDE.md",
+    "line": 3,
+    "commit": "12ecdbd"
+   },
+   "decided_at": "2026-10-15T14:39Z",
+   "file_verified": true
+  }
+ ],
+ "decisions": [
+  {
+   "id": "W3-D1",
+   "date": "2026-09-30",
+   "decision": "SPA 를 사람(직업)이 아니라 대상(STYLE · PICTURE · ARCHITECTURE)으로",
+   "by": "사용자",
+   "supersedes": null,
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "main",
+    "path": "docs/portfolio/cover.md",
+    "line": 20
+   }
+  },
+  {
+   "id": "W3-D2",
+   "date": "2026-10-01",
+   "decision": "추상적 표현 → 직관적 언어로 정정, 수정본 만족",
+   "by": "사용자",
+   "supersedes": null,
+   "evidence": {
+    "path": "docs/portfolio/questions.md",
+    "line": 295,
+    "ref": "main"
+   }
+  },
+  {
+   "id": "W3-D3",
+   "date": "2026-10-02",
+   "decision": "01 STYLE 여는 글 A안 채택",
+   "by": "사용자",
+   "supersedes": null,
+   "evidence": {
+    "path": "docs/portfolio/questions.md",
+    "line": 330,
+    "ref": "main"
+   }
+  },
+  {
+   "id": "W3-D4",
+   "date": "2026-10-03",
+   "decision": "원본 사진 14장은 private gm-photos 에만, 공개 위치 금지",
+   "by": "사용자",
+   "supersedes": null,
+   "evidence": {
+    "event": "b704e70d-9eed-4e17-b2c2-1ef30bbd5cbb",
+    "repo": "cogito5170/gm-photos",
+    "commit": "780f412",
+    "file_verified": false
+   }
+  },
+  {
+   "id": "W3-D5",
+   "date": "2026-10-09",
+   "decision": "설계 도면(공간 무드보드)이 아니라 잡지 → 시안 A 정지선",
+   "by": "사용자",
+   "supersedes": null,
+   "evidence": {
+    "event": "966920a4-f3d8-4579-b4f1-7ca8ba4893b5",
+    "commit": "270aec8"
+   }
+  },
+  {
+   "id": "W3-D6",
+   "date": "2026-10-09",
+   "decision": "매거진 시스템에서 Gemini 사용 금지",
+   "by": "사용자",
+   "supersedes": null,
+   "evidence": {
+    "event": "06cf9bd2-d688-43ef-8edb-74faede2d260",
+    "commit": "c59467a",
+    "path": "docs/MAGAZINE_SYSTEM.md",
+    "line": 39
+   }
+  },
+  {
+   "id": "W3-D7",
+   "date": "2026-10-09",
+   "decision": "목표는 '매거진'(리서치 파이프라인이 아니라 지면)",
+   "by": "사용자",
+   "supersedes": null,
+   "evidence": {
+    "event": "3ee166b5-eb40-4d23-bcab-0e05721c1e8f"
+   }
+  },
+  {
+   "id": "W3-D8",
+   "date": "2026-10-09",
+   "decision": "'잡지 같지 않다' — 레이아웃 · 폰트 · 여백 전부 개선 → photo-issue 잡지 재구성",
+   "by": "사용자",
+   "supersedes": "W3-D7 의 첫 결과(e76b55d/9ec5185 판)",
+   "evidence": {
+    "event": "217ebfff-5c23-4176-8b98-8c093f92bb7d",
+    "commit": "d5d0404"
+   }
+  },
+  {
+   "id": "W3-D9",
+   "date": "2026-10-09",
+   "decision": "인쇄 잡지 도구 조합: Scribus · darktable · Real-ESRGAN · BiRefNet, 스타일 가이드 제작 수락",
+   "by": "사용자",
+   "supersedes": null,
+   "evidence": {
+    "event": "ee99f16d…, eb5a7fbf…",
+    "file_verified": false,
+    "note": "브랜치 없음, 산출물은 아티팩트뿐"
+   }
+  },
+  {
+   "id": "W3-D10",
+   "date": "2026-10-10",
+   "decision": "03 설치작품: 근거 불요, 메탈릭 · 딥하우스 · 흰 배경, 청사진 레이아웃에 이미지 배치",
+   "by": "사용자",
+   "supersedes": null,
+   "evidence": {
+    "event": "d1828bcd-be25-4208-871a-6abf13346455",
+    "commit": "78d665c"
+   }
+  },
+  {
+   "id": "W3-D11",
+   "date": "2026-10-10",
+   "decision": "오브제가 너무 추상적 → 명확한 대상을 만드는 장면 (eyewear form)",
+   "by": "사용자",
+   "supersedes": "W3-D10 의 추상 memory_frame 형상",
+   "evidence": {
+    "event": "7be12686-c601-43c4-81f9-3e09066c78cd",
+    "commit": "cd6d457"
+   }
+  },
+  {
+   "id": "W3-D12",
+   "date": "2026-10-10",
+   "decision": "로봇팔이 만드는 것 = 한 인물의 흉상을 2D로 쌓음, 질감은 플라스틱 말고 메탈릭; 프롬프트 먼저 → '구현하여라'",
+   "by": "사용자",
+   "supersedes": "W3-D11 (만드는 대상: 안경 → 흉상)",
+   "evidence": {
+    "event": "dc4ea604-4bd2-4105-a958-1940f2d1dfc4, 07ccb194-f32a-4509-a2bc-07bcb154155b, e8e00382-a4c6-4a27-8824-97733efaca58",
+    "file_verified": false,
+    "note": "저장소에 흉상(Printed Self) 구현 없음 — 마지막 턴 error_during_execution, 09:26 사용자 중단"
+   }
+  },
+  {
+   "id": "W3-D13",
+   "date": "2026-10-10",
+   "decision": "띠 이미지 프롬프트: 물성은 따로 정의, 작가 컨셉만 소프트하게",
+   "by": "사용자",
+   "supersedes": "5e6f178 의 확정 프롬프트(물성 포함)",
+   "evidence": {
+    "event": "76c61f77-ce32-4e44-82da-b90589255bf3",
+    "commit": "94f3e2a",
+    "path": "docs/portfolio/01_style_image.md",
+    "line": 42
+   }
+  },
+  {
+   "id": "W3-D14",
+   "date": "2026-10-10",
+   "decision": "오브제는 나중에, 사용자 방향성만 (방향성 프롬프트 3종) — 띠 이미지의 가장 최근 확정",
+   "by": "사용자",
+   "supersedes": "W3-D13",
+   "evidence": {
+    "event": "cb3e52d0-ccbe-4bc9-83ac-7b4a168941ba",
+    "commit": "b3f3eda",
+    "path": "docs/portfolio/01_style_image.md",
+    "line": 31
+   }
+  },
+  {
+   "id": "W3-D15",
+   "date": "2026-10-15",
+   "decision": "모든 새 이미지는 Codex(codex-image) 경로 — 띠 이미지의 Midjourney 경로와 설치작품 실사 이미지는 이제 W5.image 로만",
+   "by": "사용자",
+   "supersedes": "W3-D13/D14 의 '미드저니로 만들어줘' 생성 경로 (프롬프트 내용 결정은 유지)",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "main",
+    "path": "CLAUDE.md",
+    "line": 3,
+    "commit": "12ecdbd"
+   }
+  }
+ ],
+ "latest_confirmed": "2026-10-15 CLAUDE.md(12ecdbd): 이미지는 모두 Codex. 그 직전 W3 작업 결정은 2026-10-10 10:16 띠 이미지 '방향성 프롬프트 3종, 오브제 · 물성은 나중에' (b3f3eda). 설치작품은 10-10 09:00 흉상 지시가 마지막이나 구현은 커밋되지 않음.",
+ "open": [
+  {
+   "id": "W3-O1",
+   "item": "띠 이미지의 오브제 프롬프트 · 물성 프롬프트 정의 (사용자가 '나중에 정한다'고 보류) — 정해지기 전에는 이미지 스펙을 쓸 근거가 없음",
+   "waiting_on": "사용자",
+   "blocking": true,
+   "source": "도구출력"
+  },
+  {
+   "id": "W3-O2",
+   "item": "03 ARCHITECTURE 원고: 카드에 없는 세 초안이 경쟁 — gracious-knuth 64e5497(21-24쪽), determined-thompson 5ce2674(25-28쪽), project-thread-j7zduo 215e2a0(10-15 '방향 제안', 7·8·9 구성, 빈칸 남음). 어느 것도 main 미머지, 사용자 채택 기록 없음",
+   "waiting_on": "사용자",
+   "blocking": true,
+   "source": "도구출력"
+  },
+  {
+   "id": "W3-O3",
+   "item": "흉상(Printed Self) 설치작품 구현 미완 (마지막 턴 오류 · 중단, 저장소에 흔적 없음). '정안부' 해석 확인 필요",
+   "waiting_on": "사용자",
+   "blocking": false,
+   "source": "도구출력"
+  },
+  {
+   "id": "W3-O4",
+   "item": "커버 두 번째 대상 PICTURE vs PASSION 표기 (cover.md '확인할 것')",
+   "waiting_on": "사용자",
+   "blocking": false,
+   "source": "도구출력"
+  },
+  {
+   "id": "W3-O5",
+   "item": "잡지 시안/사진 매거진에 원본 사진 투입 (시안 A 는 빗금 자리표시, 사진 매거진 인쇄 해상도) — 원본은 gm-photos private 에서만",
+   "waiting_on": "사용자",
+   "blocking": false,
+   "source": "추론·미검증"
+  },
+  {
+   "id": "W3-O6",
+   "item": "브랜치 PR · main 머지 없음: midjourney-574x172, youthful-ride-kehgoo, magazine-system(13커밋), sharp-noether, 03 원고·IDML 브랜치들",
+   "waiting_on": "사용자",
+   "blocking": false,
+   "source": "도구출력"
+  },
+  {
+   "id": "W3-O7",
+   "item": "잡지 제작 오픈소스 세션의 AskUserQuestion(이력서 레퍼런스 5장의 용도 · 스타일) 미응답 — 이후 CV 작업은 W4 로 이동",
+   "waiting_on": "사용자",
+   "blocking": false,
+   "source": "도구출력"
+  },
+  {
+   "id": "W3-O8",
+   "item": "Gyul56720/SE 원격 not found, 로컬 커밋 ad575b7 미푸시 (내용은 gentleMonster#1 에 있음) — 처리 결정",
+   "waiting_on": "사용자",
+   "blocking": false,
+   "source": "추론·미검증"
+  }
+ ],
+ "artifacts": [
+  {
+   "kind": "doc",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "main",
+   "path": "docs/portfolio/{README,cover,storyline,philosophy,01_style,02_picture,questions}.md",
+   "commit": "e5cb988",
+   "status": "final"
+  },
+  {
+   "kind": "doc",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "main",
+   "path": "data/user_questions/questions.semantic.json",
+   "commit": "a73c3e2",
+   "status": "final"
+  },
+  {
+   "kind": "doc",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/midjourney-574x172-image-sy9gq3",
+   "path": "docs/portfolio/01_style_image.md (줄 31-39 방향성 프롬프트 = 현행, 이하 이전 버전)",
+   "commit": "b3f3eda",
+   "status": "draft"
+  },
+  {
+   "kind": "doc",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/midjourney-574x172-image-sy9gq3",
+   "path": "docs/portfolio/storytelling.md",
+   "commit": "8ec8926",
+   "status": "draft"
+  },
+  {
+   "kind": "doc",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/youthful-ride-kehgoo",
+   "path": "docs/portfolio/03_architecture_ideas.md",
+   "commit": "c04c825",
+   "status": "draft"
+  },
+  {
+   "kind": "code",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/youthful-ride-kehgoo",
+   "path": "gentle_monster/{spec.py,web/scene.js,documents.py} (robot_arm · memory_frame(eyewear) · reflect_basin · cold_spot)",
+   "commit": "cd6d457",
+   "status": "draft"
+  },
+  {
+   "kind": "render",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "(out/, git 미포함)",
+   "path": "MEMORY FRAME 01 A/B 히어로 · 레이아웃 · 청사진 PDF",
+   "commit": null,
+   "status": "draft",
+   "note": "모델 보고뿐, 파일 미확인"
+  },
+  {
+   "kind": "pdf",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/sharp-noether-9am24c",
+   "path": "docs/portfolio/magazine/variant_a_stopline/{magazine.pdf,magazine.html,design_variant.json,render/}",
+   "commit": "270aec8",
+   "status": "draft"
+  },
+  {
+   "kind": "code",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/sharp-noether-9am24c",
+   "path": "docs/portfolio/magazine/render.js",
+   "commit": "270aec8",
+   "status": "final"
+  },
+  {
+   "kind": "code",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/gentle-monster-magazine-system-xh6ijk",
+   "path": "gentle_monster/magazine/*, editorial/issues/spa_00_stops.json, docs/MAGAZINE_SYSTEM.md, docs/SPA00_DESIGN.md, tests/test_{magazine,photo_issue,cv}.py",
+   "commit": "d10b8ee",
+   "status": "draft"
+  },
+  {
+   "kind": "pdf",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/gentle-monster-magazine-system-xh6ijk",
+   "path": "SPA 00 photo-issue 첫 판(e76b55d · 9ec5185)",
+   "commit": "9ec5185",
+   "status": "superseded"
+  },
+  {
+   "kind": "doc",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/project-thread-j7zduo",
+   "path": "docs/portfolio/03_architecture.md (방향 제안)",
+   "commit": "215e2a0",
+   "status": "draft"
+  },
+  {
+   "kind": "doc",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/gracious-knuth-26ef48",
+   "path": "docs/portfolio/03_architecture.md (21-24 지면)",
+   "commit": "64e5497",
+   "status": "draft"
+  },
+  {
+   "kind": "doc",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/determined-thompson-7u6k2k",
+   "path": "docs/portfolio/03_architecture.md (25-28 지면)",
+   "commit": "5ce2674",
+   "status": "draft"
+  },
+  {
+   "kind": "doc",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/{inspiring-fermi-jazv4f,serene-hopper-2dfx98,serene-turing-56eivc,stoic-shannon-i1fgh4,hyukjoo-design-workspace-cvrexh}",
+   "path": "docs/portfolio/idml/*.idml, docs/portfolio/scripts/*.{py,jsx}, v2_*.md (InDesign 지면 반영)",
+   "commit": "e1c49e7 · f5bd432 · 33f558b · ba10ae6 · 396cd8c",
+   "status": "draft"
+  }
+ ],
+ "unverified": [
+  {
+   "statement": "방향성 프롬프트 3종이 모두 'the instant…'로 시작해 '멈춘다'를 공유 — 파일상 시작어는 확인됨(01_style_image.md:37-39), 의미 해석은 모델 설명",
+   "where": "session_01EqaBKYMCogKN9ZcBMEEYg1"
+  },
+  {
+   "statement": "MEMORY FRAME 01 A안/B안 히어로·레이아웃·청사진 PDF 를 out/ 에 생성 (git 미포함)",
+   "where": "session_013QA6yMi7zoJtgs4awRozzy"
+  },
+  {
+   "statement": "흉상 프롬프트 'The Printed Self' 제공, '정안부'를 '하안부'로 해석 — 저장소에 'Printed Self' 문자열 없음",
+   "where": "session_013QA6yMi7zoJtgs4awRozzy"
+  },
+  {
+   "statement": "예술형 CV 인쇄 해상도 FAIL(상단 사진 57dpi), CV 빈칸 27개 — test_cv.json 에서 빈 값 약 28개는 재확인(대략)",
+   "where": "session_01SHpJKXvNQbw7VDJuuv7F17 / editorial/cv/test_cv.json"
+  },
+  {
+   "statement": "시안 A 디자인 가설(빨간 정지선 하나, 12단, 한글 본문 먼저), 자동 검사 실패 0건, 사진 원본 IMG-01~07 없음, 서체 WenQuanYi 임시",
+   "where": "session_016V61XTdZkW2gfhVE9LQw54 (render/checks.json 존재는 확인)"
+  },
+  {
+   "statement": "LENS 편집 스타일 가이드 아티팩트 NzMX4yb8rHYSe2e63FNv6z (230×300mm, 12단, CMYK 5색) — 저장소 밖",
+   "where": "session_01BmC15srtgb8bGm74ACyy9e"
+  },
+  {
+   "statement": "jaso 작업 폴더 git-ignore, 자소서 3번 문항 완성 문단은 로컬에만",
+   "where": "session_01DaTRXfL7DvzEVZAbcqPU6y"
+  },
+  {
+   "statement": "카드 없는 03 원고 · IDML 브랜치 8개의 작성 세션과 사용자 지시 원문 미확인 — 커밋은 존재(Claude 작성)하나 어느 세션/사용자 결정인지 모름",
+   "where": "gentleMonster 원격 브랜치 (위 branches_checked)"
+  },
+  {
+   "statement": "diffusion_model@claude/midjourney-574x172-image-sy9gq3 내용",
+   "where": "클론 없음"
+  }
+ ],
+ "resume_point": {
+  "op": "band_image",
+  "input_hint": "섹션(01 STYLE · 02 PICTURE · 03 ARCHITECTURE) + 01_style_image.md:37-39 방향성 문장 + 사용자가 정할 오브제 · 물성 → W5.image 스펙(size 1536x1024 생성 후 574×172 로 크롭, 또는 notes 에 10:3 비율). 병행 결정: 03 ARCHITECTURE 원고 3안(215e2a0 / 64e5497 / 5ce2674) 중 채택",
+  "precondition": "사용자 확인 필요 — 오브제 · 물성은 사용자가 '나중에 정한다'고 보류했으므로, 이를 받거나 '방향성만으로 생성'을 허락받아야 W5.image 호출 가능. 확인 없이 할 수 있는 것은 세 03 원고 비교표 작성(manuscript, 읽기 전용)까지."
+ }
+}

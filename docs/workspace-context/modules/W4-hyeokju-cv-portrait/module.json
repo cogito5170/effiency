@@ -1,0 +1,34 @@
+{
+ "contract": "ws-module/1",
+ "id": "W4",
+ "name": "혁주 CV · 인물 사진",
+ "slug": "hyeokju-cv-portrait",
+ "owner_tag": "ws:w4-hyeokju-cv-portrait",
+ "domain": "interior + fashion",
+ "purpose": "사실 · 레이아웃 유형을 받아 CV 지면(.ai/PDF)과 인물 사진 요청을 낸다.",
+ "exposes": [
+  "cv_layout",
+  "portrait",
+  "fill_blanks"
+ ],
+ "consumes": [
+  "W5.image"
+ ],
+ "state": "state.json",
+ "interface": "ops.json",
+ "internal": {
+  "note": "호출자는 이 칸에 기대지 않는다. 세션 · 브랜치 · 스크립트는 바뀔 수 있다.",
+  "sessions": [
+   "session_011o2Zk5R9TTMbgacGgwBcjp",
+   "session_01EwZvjiXu5ppJiaJniHRYoT",
+   "session_017EVHBofkdPhvYSUBCeRAH4"
+  ],
+  "branches": {
+   "gentleMonster@main": "6acff99 (docs/cv · relief 없음)",
+   "gentleMonster@claude/cv-blueprint": "6a1d95c",
+   "gentleMonster@claude/hyeokju-cv": "84980aa",
+   "gentleMonster@claude/relief-photos": "원격에 없음",
+   "gentleMonster@claude/gentle-monster-magazine-system-xh6ijk": "d10b8ee (W3 소속 세션이지만 `gentle_monster cv` 테스트 CV 레이아웃 포함, 참고만)"
+  }
+ }
+}

@@ -1,0 +1,620 @@
+{
+ "module": "W2",
+ "title": "패션 · VMD 지원 포트폴리오 (신세계 VMD 'ON DISPLAY', 패션 공간 직군 조사, AI×패션 시안)",
+ "as_of": "2026-10-16T03:30Z",
+ "synced_from": {
+  "sessions_checked": [
+   "session_01PEVQJv8SCpLFv14iXTm9Ek",
+   "session_01Ctu8Xc8KMJPnwqyzGUHcmY",
+   "session_011RbA1e4nPywwwdsq2ZNe4N"
+  ],
+  "branches_checked": {
+   "gentleMonster@claude/friendly-gates-0u80ge": "8106369",
+   "gentleMonster@claude/magical-bell-u02os9": "origin 에 없음",
+   "gentleMonster@claude/blissful-cori-hookcx": "origin 에 없음",
+   "gentleMonster@main": "6acff99"
+  },
+  "not_cloned": [
+   "cogito5170/se_new@claude/blissful-cori-hookcx"
+  ],
+  "method": "2026-10-15 카드 스냅숏 + git show/grep. 세션 이벤트는 새로 읽지 않음"
+ },
+ "confirmed": [
+  {
+   "id": "W2-C1",
+   "statement": "젠틀몬스터 포트폴리오(SPA) 스토리라인은 쓰지 않고 새로 짠다 (사진 · 스타일 기록 · 공간 작업 도구만 가져옴)",
+   "source": "사용자",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/friendly-gates-0u80ge",
+    "path": "docs/shinsegae_vmd/storyline.md",
+    "line": 4,
+    "commit": "ebec462",
+    "event": "a6d2b690-cd32-4bdc-8fb6-b91680fd6546"
+   },
+   "decided_at": "2026-10-15T12:16Z",
+   "file_verified": true
+  },
+  {
+   "id": "W2-C2",
+   "statement": "포트폴리오 판형 A4 가로",
+   "source": "사용자",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/friendly-gates-0u80ge",
+    "path": "docs/shinsegae_vmd/storyline.md",
+    "line": 3,
+    "commit": "ebec462",
+    "event": "68dcd009-90cb-48c1-b87e-a74ccf2995cd"
+   },
+   "decided_at": "2026-10-15T12:25Z",
+   "file_verified": true,
+   "note": "storyline_v3.md:37 '이야기 (A4 가로 · 약 20쪽)' 로 유지"
+  },
+  {
+   "id": "W2-C3",
+   "statement": "방향: '나는 상품을 연출하고 마네킹에 착장을 입히는 VMD' — 책은 나를 진열한 매장, 읽는 사람이 나를 '소비'하도록",
+   "source": "사용자",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/friendly-gates-0u80ge",
+    "path": "docs/shinsegae_vmd/storyline.md",
+    "line": 7,
+    "commit": "ebec462",
+    "event": "68dcd009-90cb-48c1-b87e-a74ccf2995cd"
+   },
+   "decided_at": "2026-10-15T12:25Z",
+   "file_verified": true
+  },
+  {
+   "id": "W2-C4",
+   "statement": "컨셉: 보다 · 집다 · 챙기다 세 행위를 합친 전달",
+   "source": "사용자",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/friendly-gates-0u80ge",
+    "path": "docs/shinsegae_vmd/see_pick_keep.md",
+    "line": 1,
+    "commit": "f350ed8",
+    "event": "0be17d8a-0d8d-4579-aace-48425a8bfc99"
+   },
+   "decided_at": "2026-10-15T12:50Z",
+   "file_verified": true
+  },
+  {
+   "id": "W2-C5",
+   "statement": "사용자 관찰: 쇼핑은 패션쇼 같지만 반대 — 패션쇼는 주체가 걷고 나는 앉아 있고, 쇼핑은 주체가 가만히 있고 내가 움직인다. 조화로운 아이템 앞으로 발걸음을 옮긴다",
+   "source": "사용자",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/friendly-gates-0u80ge",
+    "path": "docs/shinsegae_vmd/storyline_v3.md",
+    "line": 5,
+    "commit": "1d0ef4c",
+    "event": "b9adcc7c-2b6a-49e5-96d3-232d6c2ef227"
+   },
+   "decided_at": "2026-10-15T13:19Z",
+   "file_verified": true
+  },
+  {
+   "id": "W2-C6",
+   "statement": "이미지 안을 만들기 전에 스토리를 문장으로 먼저 다듬는다",
+   "source": "사용자",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/friendly-gates-0u80ge",
+    "path": "docs/shinsegae_vmd/story_text.md",
+    "line": 1,
+    "commit": "8636a83",
+    "event": "0d235792-7163-4ea5-ac6e-5ca1ccd6604b"
+   },
+   "decided_at": "2026-10-15T13:23Z",
+   "file_verified": true
+  },
+  {
+   "id": "W2-C7",
+   "statement": "새 이미지는 모두 Codex 로 만든다 (사용자 결정) — 10-15 12:06 의 '프롬프트는 Claude, 생성은 미드저니' 지시를 대체",
+   "source": "사용자",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "main",
+    "path": "CLAUDE.md",
+    "line": 3,
+    "commit": "6acff99",
+    "event": "f185f23b-5223-44df-b907-c6bfd75a861b (미드저니 지시, 대체됨)"
+   },
+   "decided_at": "2026-10-15",
+   "file_verified": true,
+   "note": "friendly-gates 브랜치는 15:05 b485793 에서 main 을 병합한 뒤 relay 로 Codex 이미지를 받음"
+  },
+  {
+   "id": "W2-C8",
+   "statement": "relay 002-still-runway: VM Codex 이미지 생성 status=done, exit_code=0, image.png (118초)",
+   "source": "도구출력",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/friendly-gates-0u80ge",
+    "path": ".relay/tasks/002-still-runway/response.json",
+    "line": 4,
+    "commit": "467a309"
+   },
+   "decided_at": "2026-10-15T15:08Z",
+   "file_verified": true
+  },
+  {
+   "id": "W2-C9",
+   "statement": "THE STILL RUNWAY 한 장면 청사진 빌드: still_runway_blueprint.pdf(A3 420×297) · _preview.jpg · still_runway_render.jpg",
+   "source": "도구출력",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/friendly-gates-0u80ge",
+    "path": "tools/scene_blueprint/build.mjs",
+    "line": 50,
+    "commit": "8106369"
+   },
+   "decided_at": "2026-10-15T15:10Z",
+   "file_verified": true
+  },
+  {
+   "id": "W2-C10",
+   "statement": "(AI×패션 시안) 3D 렌더링이 필요한 시안은 제외하고 RELIEF(부조)를 쓴다",
+   "source": "사용자",
+   "evidence": {
+    "event": "36eafa9b-efc1-4813-9989-30736a96dca9",
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/blissful-cori-hookcx (origin 에 없음)"
+   },
+   "decided_at": "2026-10-09T17:05Z",
+   "file_verified": false
+  },
+  {
+   "id": "W2-C11",
+   "statement": "(AI×패션 시안) 표현은 '조형적으로', '트리거가 발생하면 조형물이 움직이는 원리'로",
+   "source": "사용자",
+   "evidence": {
+    "event": "06428777-… / 7ae1337e-… (카드에 축약 id)"
+   },
+   "decided_at": "2026-10-09T17:21Z",
+   "file_verified": false
+  }
+ ],
+ "decisions": [
+  {
+   "id": "W2-D1",
+   "date": "2026-10-09T17:05Z",
+   "decision": "AI×패션 시안: RELIEF(부조) 사용, 3D 렌더 시안 제외",
+   "by": "사용자",
+   "supersedes": null,
+   "evidence": {
+    "event": "36eafa9b-efc1-4813-9989-30736a96dca9",
+    "file_verified": false
+   }
+  },
+  {
+   "id": "W2-D2",
+   "date": "2026-10-09T17:21Z",
+   "decision": "AI×패션 시안 표현을 '조형적 · 트리거로 움직이는 조형물'로 좁힘 (17:12 drift 소설 요청은 사용자가 중단)",
+   "by": "사용자",
+   "supersedes": "W2-D1",
+   "evidence": {
+    "event": "06428777-… / 7ae1337e-…",
+    "file_verified": false
+   }
+  },
+  {
+   "id": "W2-D3",
+   "date": "2026-10-15T12:06Z",
+   "decision": "신세계 VMD 포트폴리오 커버 컨셉 이미지: 프롬프트는 Claude, 생성은 미드저니",
+   "by": "사용자",
+   "supersedes": null,
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/friendly-gates-0u80ge",
+    "path": "docs/shinsegae_vmd/image_prompts.md",
+    "commit": "0440532",
+    "event": "f185f23b-5223-44df-b907-c6bfd75a861b"
+   }
+  },
+  {
+   "id": "W2-D4",
+   "date": "2026-10-15T12:16Z",
+   "decision": "젠틀몬스터 스토리라인 무시, 새 스토리라인 (v1 WINDOWS OF TIME)",
+   "by": "사용자",
+   "supersedes": null,
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/friendly-gates-0u80ge",
+    "path": "docs/shinsegae_vmd/storyline.md",
+    "line": 4,
+    "commit": "e1f8b82",
+    "event": "a6d2b690-cd32-4bdc-8fb6-b91680fd6546"
+   }
+  },
+  {
+   "id": "W2-D5",
+   "date": "2026-10-15T12:25Z",
+   "decision": "A4 가로, 쇼윈도에 나를 설명하는 요소 3가지, 상품연출 · 착장 VMD 방향 → v2 'ON DISPLAY(나를 진열한 매장)'",
+   "by": "사용자",
+   "supersedes": "W2-D4",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/friendly-gates-0u80ge",
+    "path": "docs/shinsegae_vmd/storyline.md",
+    "line": 3,
+    "commit": "ebec462",
+    "event": "68dcd009-90cb-48c1-b87e-a74ccf2995cd"
+   }
+  },
+  {
+   "id": "W2-D6",
+   "date": "2026-10-15T12:50Z",
+   "decision": "보다 · 집다 · 챙기다 세 행위 컨셉",
+   "by": "사용자",
+   "supersedes": null,
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/friendly-gates-0u80ge",
+    "path": "docs/shinsegae_vmd/see_pick_keep.md",
+    "commit": "f350ed8",
+    "event": "0be17d8a-0d8d-4579-aace-48425a8bfc99"
+   }
+  },
+  {
+   "id": "W2-D7",
+   "date": "2026-10-15T12:55Z",
+   "decision": "컨셉 이미지를 청사진으로 보이기 → 표지 1-D(SEE · PICK · KEEP 쇼윈도) A3 청사진",
+   "by": "사용자",
+   "supersedes": null,
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/friendly-gates-0u80ge",
+    "path": "tools/window_blueprint/build.mjs",
+    "commit": "b10b245",
+    "event": "d085bdfb-8aa4-44df-9da9-a3ce0c1b7035"
+   }
+  },
+  {
+   "id": "W2-D8",
+   "date": "2026-10-15T13:19Z",
+   "decision": "사용자 관찰(주체는 가만히, 내가 움직인다)로 이야기 첫 문장을 다시 세움 → v3 (v2 뼈대 유지)",
+   "by": "사용자",
+   "supersedes": "W2-D5",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/friendly-gates-0u80ge",
+    "path": "docs/shinsegae_vmd/storyline_v3.md",
+    "line": 3,
+    "commit": "1d0ef4c",
+    "event": "b9adcc7c-2b6a-49e5-96d3-232d6c2ef227"
+   }
+  },
+  {
+   "id": "W2-D9",
+   "date": "2026-10-15T13:23Z",
+   "decision": "이미지 전에 스토리를 문장으로 → ON DISPLAY 원고",
+   "by": "사용자",
+   "supersedes": null,
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/friendly-gates-0u80ge",
+    "path": "docs/shinsegae_vmd/story_text.md",
+    "commit": "8636a83",
+    "event": "0d235792-7163-4ea5-ac6e-5ca1ccd6604b"
+   }
+  },
+  {
+   "id": "W2-D10",
+   "date": "2026-10-15T13:27Z",
+   "decision": "스토리 전체를 하나의 청사진으로",
+   "by": "사용자",
+   "supersedes": null,
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/friendly-gates-0u80ge",
+    "path": "tools/story_blueprint/build.mjs",
+    "commit": "c852c71",
+    "event": "daf55d50-88da-43cd-9637-0e26ad4aa4da"
+   }
+  },
+  {
+   "id": "W2-D11",
+   "date": "2026-10-15",
+   "decision": "이미지 생성 경로를 미드저니에서 Codex(VM relay)로 — main CLAUDE.md '이미지는 모두 Codex' (사용자 결정)",
+   "by": "사용자",
+   "supersedes": "W2-D3",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "main",
+    "path": "CLAUDE.md",
+    "line": 3,
+    "commit": "6acff99"
+   }
+  },
+  {
+   "id": "W2-D12",
+   "date": "2026-10-15T15:05Z",
+   "decision": "하나의 장면을 묘사하는 '이미지적 표현'의 청사진을 만든다 (13:38 요청이 중단된 뒤 재요청) → THE STILL RUNWAY",
+   "by": "사용자",
+   "supersedes": null,
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/friendly-gates-0u80ge",
+    "path": "tools/scene_blueprint/build.mjs",
+    "commit": "8106369",
+    "event": "d4d45ba2-6773-47be-ae0a-ef3047b0bc66"
+   },
+   "note": "장면을 THE STILL RUNWAY 로 고른 것과 그것을 표지로 쓸지는 모델 제안 — W2-O1"
+  }
+ ],
+ "open": [
+  {
+   "id": "W2-O1",
+   "item": "storyline_v3 '정해야 할 것' 5가지: ① 한 줄 '패션쇼에서는 옷이 걷는다. 매장에서는 내가 걷는다.' ② 표지를 쇼윈도(①-D)에서 THE STILL RUNWAY 로 바꿀지 ③ 기획안 P1 WINDOWS OF TIME / P2 REVERSE RUNWAY / 둘 다 ④ 빨강 한 점 ⑤ 표지 직접 촬영 가능 여부",
+   "waiting_on": "사용자",
+   "blocking": true,
+   "source": "도구출력",
+   "evidence": {
+    "path": "docs/shinsegae_vmd/storyline_v3.md",
+    "line": 105
+   }
+  },
+  {
+   "id": "W2-O2",
+   "item": "원고 빈칸 ____: LOOK 착장 세부 · '오늘 ____ 에 간다', 설치 시간 · 인원 · 예산 · 재사용 비율, 연락처",
+   "waiting_on": "사용자",
+   "blocking": true,
+   "source": "도구출력",
+   "evidence": {
+    "path": "docs/shinsegae_vmd/story_text.md",
+    "line": 106
+   }
+  },
+  {
+   "id": "W2-O3",
+   "item": "READING SHINSEGAE 사실(2014년 · 1935년 · 10년 · 레드닷) 재확인, SCENT 향수 브랜드명 노출 여부",
+   "waiting_on": "사용자(브랜드명) · 허브(사실 확인)",
+   "blocking": false,
+   "source": "도구출력",
+   "evidence": {
+    "path": "docs/shinsegae_vmd/story_text.md",
+    "line": 177
+   }
+  },
+  {
+   "id": "W2-O4",
+   "item": "같은 공고 조건: 포트폴리오는 이메일 첨부 10MB 이내 · 면접 10월 내 · 조기 마감 가능 (W1 공고 파일)",
+   "waiting_on": "사용자",
+   "blocking": false,
+   "source": "도구출력",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/clever-knuth-1dezlo",
+    "path": "docs/portfolio/postings/sikorea_rounding_vmd.md",
+    "line": 27
+   }
+  },
+  {
+   "id": "W2-O5",
+   "item": "청사진 3종은 A3(420×297) 작업 도면, 포트폴리오 본문은 A4 가로 — 지면 배치(레이아웃) 단계는 아직 없음",
+   "waiting_on": "허브",
+   "blocking": false,
+   "source": "추론·미검증"
+  },
+  {
+   "id": "W2-O6",
+   "item": "채용공고 조사(01Ctu8): 유니클로 VMD Designer(마감 10/19, 경력 3년+) 등 결과가 검색 요약뿐 — 원문 확인 필요, 파일 · 커밋 없음",
+   "waiting_on": "사용자 (후속 요청 없음, REVIEW_READY)",
+   "blocking": false,
+   "source": "추론·미검증"
+  },
+  {
+   "id": "W2-O7",
+   "item": "AI×패션 시안: '안경을 만들어주는가?'에 대한 A(시착 검증) / B(얼굴 치수 입력) 선택 없음, 제출 문항(AI 기술 1개 서술) 작성 여부 불명",
+   "waiting_on": "사용자",
+   "blocking": false,
+   "source": "추론·미검증"
+  },
+  {
+   "id": "W2-O8",
+   "item": "claude/friendly-gates-0u80ge 는 PR 없이 원격에만 있음 (main 미병합, main 은 병합해 둠)",
+   "waiting_on": "사용자",
+   "blocking": false,
+   "source": "도구출력"
+  }
+ ],
+ "artifacts": [
+  {
+   "kind": "doc",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/friendly-gates-0u80ge",
+   "path": "docs/shinsegae_vmd/story_text.md",
+   "commit": "8636a83",
+   "status": "draft",
+   "note": "ON DISPLAY 원고 (빈칸 남음)"
+  },
+  {
+   "kind": "doc",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/friendly-gates-0u80ge",
+   "path": "docs/shinsegae_vmd/storyline_v3.md",
+   "commit": "1d0ef4c",
+   "status": "draft",
+   "note": "현재 스토리라인 (정해야 할 것 5개)"
+  },
+  {
+   "kind": "doc",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/friendly-gates-0u80ge",
+   "path": "docs/shinsegae_vmd/storyline.md",
+   "commit": "ebec462",
+   "status": "superseded",
+   "note": "v1 → v2. 뼈대 · 판형 · 방향은 v3 에서 유지"
+  },
+  {
+   "kind": "doc",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/friendly-gates-0u80ge",
+   "path": "docs/shinsegae_vmd/see_pick_keep.md",
+   "commit": "f350ed8",
+   "status": "draft"
+  },
+  {
+   "kind": "doc",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/friendly-gates-0u80ge",
+   "path": "docs/shinsegae_vmd/concepts_beyond_window.md",
+   "commit": "6cd8d30",
+   "status": "draft",
+   "note": "쇼윈도 밖 컨셉 6안"
+  },
+  {
+   "kind": "doc",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/friendly-gates-0u80ge",
+   "path": "docs/shinsegae_vmd/image_prompts.md",
+   "commit": "e1f8b82",
+   "status": "superseded",
+   "note": "미드저니 프롬프트 — Codex 규칙(W2-D11)으로 대체"
+  },
+  {
+   "kind": "pdf",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/friendly-gates-0u80ge",
+   "path": "docs/shinsegae_vmd/blueprint/still_runway_blueprint.pdf",
+   "commit": "8106369",
+   "status": "draft",
+   "note": "+ still_runway_blueprint_preview.jpg"
+  },
+  {
+   "kind": "render",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/friendly-gates-0u80ge",
+   "path": "docs/shinsegae_vmd/blueprint/still_runway_render.jpg",
+   "commit": "8106369",
+   "status": "draft"
+  },
+  {
+   "kind": "image",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/friendly-gates-0u80ge",
+   "path": ".relay/tasks/002-still-runway/image.png",
+   "commit": "467a309",
+   "status": "draft",
+   "note": "Codex 컨셉 이미지 (가상 인물), 스펙 image-spec.json"
+  },
+  {
+   "kind": "pdf",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/friendly-gates-0u80ge",
+   "path": "docs/shinsegae_vmd/blueprint/story_blueprint.pdf",
+   "commit": "c852c71",
+   "status": "draft"
+  },
+  {
+   "kind": "pdf",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/friendly-gates-0u80ge",
+   "path": "docs/shinsegae_vmd/blueprint/cover_blueprint.pdf",
+   "commit": "b10b245",
+   "status": "draft",
+   "note": "표지 ①-D 쇼윈도 안 (+ cover_concept_render.jpg). W2-O1 ② 결정에 따라 대체될 수 있음"
+  },
+  {
+   "kind": "code",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/friendly-gates-0u80ge",
+   "path": "tools/scene_blueprint/",
+   "commit": "8106369",
+   "status": "final",
+   "note": "build.mjs · dims.mjs · scene.js · sheet.mjs"
+  },
+  {
+   "kind": "code",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/friendly-gates-0u80ge",
+   "path": "tools/window_blueprint/",
+   "commit": "b10b245",
+   "status": "final"
+  },
+  {
+   "kind": "code",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/friendly-gates-0u80ge",
+   "path": "tools/story_blueprint/build.mjs",
+   "commit": "c852c71",
+   "status": "final"
+  },
+  {
+   "kind": "code",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/friendly-gates-0u80ge",
+   "path": "tools/contest_jpeg.py",
+   "commit": "6b02cd3",
+   "status": "final",
+   "note": "사진 공모전 제출 JPG (10-13, 같은 세션의 다른 주제)"
+  },
+  {
+   "kind": "doc",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/friendly-gates-0u80ge",
+   "path": "docs/contests.md",
+   "commit": "16b89d9",
+   "status": "final",
+   "note": "+ docs/contests_winners.md (10-13 공모전 조사)"
+  },
+  {
+   "kind": "doc",
+   "repo": "claude.ai",
+   "ref": "artifact",
+   "path": "https://claude.ai/artifact/UcSTSA7Bxd2BxNPALedxSM",
+   "status": "draft",
+   "note": "'선글라스를 만들어라' (AI×패션 시안, git 아님)"
+  },
+  {
+   "kind": "doc",
+   "repo": "claude.ai",
+   "ref": "artifact",
+   "path": "https://claude.ai/artifact/H7V166vea7LHa6r5SqU2Hu",
+   "status": "draft",
+   "note": "'REREAD 다시 읽는 기계' (git 아님)"
+  }
+ ],
+ "unverified": [
+  {
+   "statement": "장면 THE STILL RUNWAY(흰 큐브에 앉은 사람 + 흐리게 지나가는 사람들, 걷다 · 꺾이다 · 집다 · 챙기다)를 표지로",
+   "where": "session_01PEVQJv8SCpLFv14iXTm9Ek / storyline_v3.md:108",
+   "check": "파일에 장면은 있으나 표지 채택은 '정해야 할 것' ②로 미정"
+  },
+  {
+   "statement": "한 줄 '패션쇼에서는 옷이 걷는다. 매장에서는 내가 걷는다.' · 책 제목 ON DISPLAY",
+   "where": "storyline_v3.md:11, storyline.md",
+   "check": "모델이 다듬은 문장. 사용자 확정 없음 (정해야 할 것 ①)"
+  },
+  {
+   "statement": "도면 수치(스튜디오 8×8.2 m, 카메라 1.2 m 등)",
+   "where": "tools/scene_blueprint/dims.mjs:5-6",
+   "check": "가정값. dims.mjs 한 곳에서 고침"
+  },
+  {
+   "statement": "카드의 tools/scene_blueprint/{build,dims,scene,sheet}.mjs 표기",
+   "where": "session_01PEVQJv8SCpLFv14iXTm9Ek 카드",
+   "check": "실제는 scene.js (나머지 .mjs)"
+  },
+  {
+   "statement": "패션 공간 직군 공고 현황(유니클로 10/19, 무신사 마감, 해외 COS VMD 마감일 등)",
+   "where": "session_01Ctu8Xc8KMJPnwqyzGUHcmY",
+   "check": "검색 요약, 원문 미확인, 파일 없음"
+  },
+  {
+   "statement": "REREAD 는 안경을 만들지 않음 · A/B 단계 추가 필요, 추천 A",
+   "where": "session_011RbA1e4nPywwwdsq2ZNe4N",
+   "check": "모델 답. se_new 클론 없음"
+  }
+ ],
+ "resume_point": {
+  "op": "storyline",
+  "input_hint": "storyline_v3.md '정해야 할 것' 1~5 와 story_text.md 빈칸(____)을 사용자에게 묻고 답을 v3 · 원고에 반영. 표지가 THE STILL RUNWAY 로 정해지고 직접 촬영이 어려우면 cover_image(→W5.image, 002 스펙 재사용·수정), 촬영 가능하면 촬영 준비 목록을 scene_blueprint 값(dims.mjs)으로 만든다.",
+  "precondition": "사용자 확인 필요 (5가지 결정 · 빈칸 사실은 지어낼 수 없음). 확인 없이 할 수 있는 것: READING SHINSEGAE 사실 출처 재확인."
+ },
+ "latest_confirmed": "ON DISPLAY 스토리 v3(사용자 관찰 '주체는 가만히, 내가 움직인다') 원고와 한 장면 청사진 THE STILL RUNWAY(Codex 컨셉 이미지 + three.js 장노출 렌더, A3)가 나왔다(10-15 15:10). 판형 A4 가로 · 젠틀몬스터 스토리 무시 · 상품연출/착장 VMD 방향은 사용자 확정. 표지 · 한 줄 · 기획안 등 5가지는 사용자 결정 대기."
+}
