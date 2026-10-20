@@ -1,14 +1,14 @@
 {
  "module": "W2",
  "title": "패션 · VMD 지원 포트폴리오 (신세계 VMD 'ON DISPLAY', 패션 공간 직군 조사, AI×패션 시안)",
- "as_of": "2026-10-20T06:42Z",
+ "as_of": "2026-10-20T07:41Z",
  "checkpoint": {
-  "at": "2026-10-20T06:42Z",
+  "at": "2026-10-20T07:41Z",
   "refs": {
    "gentleMonster@claude/friendly-gates-0u80ge": "22a94ed",
    "gentleMonster@claude/project-thread-n4rxnf": "cd4f4d2",
    "gentleMonster@main": "bdee7d6",
-   "gentleMonster@claude/magical-bell-u02os9": "cf27441"
+   "gentleMonster@claude/magical-bell-u02os9": "b7c9bfd"
   },
   "method": "scripts/sync_delta.py: 체크포인트 커밋 뒤의 커밋 · 바뀐 파일만 읽음. 세션 대화 원본은 읽지도 고치지도 않음",
   "not_cloned": [
@@ -22,10 +22,10 @@
    }
   }
  },
- "latest_confirmed": "v4 FROM THE INSIDE: 이야기 단락 A · 세 요소(조합하다 · 비추다 · 짓다) 확정안. 10-20 표지를 스토리 문장 기준으로 다시 잡아 미드저니 수정 지시 · 수정 청사진(22a94ed)까지 나왔고, 다른 세션이 ETÉREO 펼침면 문법으로 목차 · 흐름 초안을 냈다(magical-bell, cf27441).",
+ "latest_confirmed": "v4 FROM THE INSIDE: 이야기 단락 A · 세 요소 확정안. 표지는 스토리 문장 기준 미드저니 수정(22a94ed). 10-20 사용자가 ETÉREO 펼침면 문법의 흐름을 P1 으로 정했고(magical-bell), 목차는 p1_types.md 타입 10가지로 다시 짰다.",
  "resume_point": {
   "op": "storyline",
-  "input_hint": "v4 '정해야 할 것'(W2-O11: 뼈대 · 하루의 순서 · WINDOW LOG 직접 관찰 · 양면 쇼윈도)과 v4 · glass 뼈대 선택(W2-O9)을 사용자에게 묻고 답을 storyline_inside.md 에 반영한다. 표지는 008 + 청사진(62fb588)이 현재본.",
+  "input_hint": "P1 목차(p1_types.md §3, v4 뼈대)가 기대는 열린 결정(W2-O11: 하루의 순서 · WINDOW LOG 직접 관찰 · 양면 쇼윈도, W2-O9 뼈대)과 p1_story_flow.md §5 제안 반영 여부를 사용자에게 묻는다. 표지는 midjourney_prompt_inside.md 의 수정 지시가 현재본.",
   "precondition": "사용자 확인 필요."
  },
  "confirmed": [
@@ -460,6 +460,19 @@
     "line": 81,
     "commit": "23507bb"
    }
+  },
+  {
+   "id": "W2-D22",
+   "date": "2026-10-20T06:53Z",
+   "decision": "P1(포트폴리오 1안) = flow_etereo.md 의 목차 · 흐름(ETÉREO 펼침면 문법, v4 뼈대 기준). 펼침면 종류와 목차는 ETÉREO 11장 원본으로 다시 짠 p1_types.md(타입 10가지)가 대신한다",
+   "by": "사용자 결정 (파일 기록)",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/magical-bell-u02os9",
+    "path": "docs/shinsegae_vmd/p1_etereo_reference.md",
+    "line": 3,
+    "commit": "eb860d3"
+   }
   }
  ],
  "open": [
@@ -569,6 +582,20 @@
     "ref": "claude/friendly-gates-0u80ge",
     "path": "docs/shinsegae_vmd/midjourney_prompt_inside.md",
     "commit": "f76c3b1"
+   }
+  },
+  {
+   "id": "W2-O14",
+   "item": "p1_story_flow.md §5 의 흐름 제안을 P1 목차(p1_types.md §3)에 반영할지",
+   "waiting_on": "사용자",
+   "blocking": false,
+   "source": "도구출력",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/magical-bell-u02os9",
+    "path": "docs/shinsegae_vmd/p1_story_flow.md",
+    "line": 81,
+    "commit": "b7c9bfd"
    }
   }
  ],
@@ -777,10 +804,28 @@
    "kind": "doc",
    "repo": "cogito5170/gentleMonster",
    "ref": "claude/magical-bell-u02os9",
-   "path": "docs/shinsegae_vmd/flow_etereo.md",
-   "commit": "cf27441",
+   "path": "docs/shinsegae_vmd/p1_types.md",
+   "commit": "eb860d3",
    "status": "draft",
-   "note": "ETÉREO 펼침면 문법(A~F)으로 짠 목차 · 흐름, v4 뼈대 기준. W2-O9 · O11 결정에 기댐"
+   "note": "P1 타입 10가지 + P1 목차 (§3)"
+  },
+  {
+   "kind": "doc",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/magical-bell-u02os9",
+   "path": "docs/shinsegae_vmd/p1_story_flow.md",
+   "commit": "b7c9bfd",
+   "status": "draft",
+   "note": "바깥에서 안으로 · 장 사이 다리 · 처음으로 돌아와 닫기. §5 는 제안, 목차는 아직 안 바꿈"
+  },
+  {
+   "kind": "doc",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/magical-bell-u02os9",
+   "path": "docs/shinsegae_vmd/p1_etereo_reference.md",
+   "commit": "eb860d3",
+   "status": "final",
+   "note": "ETÉREO 11장 펼침면 기록"
   }
  ],
  "unverified": [
