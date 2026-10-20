@@ -1,8 +1,8 @@
 # W2 패션 · VMD 지원 포트폴리오 (신세계 VMD 'ON DISPLAY', 패션 공간 직군 조사, AI×패션 시안)
-기준 2026-10-16T07:45Z · 체크포인트 claude/friendly-gates-0u80ge@62fb588, claude/project-thread-n4rxnf@cd4f4d2, main@bdee7d6
+기준 2026-10-20T05:42Z · 체크포인트 claude/friendly-gates-0u80ge@f76c3b1, claude/project-thread-n4rxnf@cd4f4d2, main@bdee7d6
 
 ## 지금
-v4 FROM THE INSIDE: 이야기 단락 A 확정(05:49). 진열 세 요소는 조합하다 · 비추다 · 짓다로 확정안(62fb588), 008 이미지 기준 청사진까지 나왔다. '얼굴 없는 사람들'은 보류.
+v4 FROM THE INSIDE: 이야기 단락 A 확정, 진열 세 요소 조합하다 · 비추다 · 짓다 확정안(62fb588). 10-20 표지 방향을 스토리 문장 기준으로 재설정(비유 철회, 미드저니 프롬프트 f76c3b1). '얼굴 없는 사람들'은 보류.
 
 ## 이어 할 일: `storyline`
 v4 '정해야 할 것'(W2-O11: 뼈대 · 하루의 순서 · WINDOW LOG 직접 관찰 · 양면 쇼윈도)과 v4 · glass 뼈대 선택(W2-O9)을 사용자에게 묻고 답을 storyline_inside.md 에 반영한다. 표지는 008 + 청사진(62fb588)이 현재본.
@@ -15,20 +15,20 @@ v4 '정해야 할 것'(W2-O11: 뼈대 · 하루의 순서 · WINDOW LOG 직접 �
 - 외 1개 → state.json open
 
 ## 지금 유효한 결정 (최근순)
+- W2-D20 표지 이미지 방향 재설정: '극장 · 강물 · 돌 · 신호' 비유 철회, 스토리 문장에 있는 것만 그린다(유리 위 두 시선, 초점은 얼굴, 진열은 등, 이름은 거꾸로, 빨강은 진열품 하나). 생성 도구는 미드저니로…
 - W2-D19 세 요소 확정안: 조합하다(여러 아이템의 합) · 비추다(기구는 숨기고 빛 웅덩이만, 빨간 한 점에) · 짓다(1:10 진열 목업). 빈 액자는 다음 후보
 - W2-D18 새 컨셉 '얼굴 없는 사람들'(지나가는 사람은 얼굴이 없고 멈추면 생긴다, WINDOW LOG 3×3 격자)은 보류
 - W2-D14 v4 이야기 단락 A(다짐형) 확정
-- W2-D13 안에서 바라보는 시선으로 스토리라인을 다시 짬 → v4 storyline_inside.md(의뢰인 세션)와 storyline_glass.md(프로젝트 스레드) 두 안
-- 외 8개 → state.json decisions
+- 외 9개 → state.json decisions
 
 ## 작업 중인 파일
-- docs/shinsegae_vmd/storyline_inside.md @62fb588
 - docs/shinsegae_vmd/storyline_glass.md @cd4f4d2
 - docs/shinsegae_vmd/blueprint/from_the_inside_blueprint.pdf @62fb588
 - .relay/tasks/008-combine-light-build/image.png @47b5377
-- 외 11개 → state.json artifacts
+- docs/shinsegae_vmd/midjourney_prompt_inside.md @f76c3b1
+- 외 12개 → state.json artifacts
 
 ## 읽는 법
 - 이 파일만 읽고 시작한다. 더 필요하면 `W2-fashion-vmd-portfolio/state.json` 의 해당 id 만 연다. 지난 이력은 `history.jsonl`.
-- 미확인 6개는 결론으로 쓰지 않는다. 확정은 저장소 파일로 다시 확인한다.
+- 미확인 7개는 결론으로 쓰지 않는다. 확정은 저장소 파일로 다시 확인한다.
 - 결정 · 산출물은 저장소에 커밋해 둔다. 백엔드가 커밋에서 다음 요약을 만든다.
