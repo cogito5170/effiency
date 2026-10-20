@@ -1,13 +1,14 @@
 {
  "module": "W2",
  "title": "패션 · VMD 지원 포트폴리오 (신세계 VMD 'ON DISPLAY', 패션 공간 직군 조사, AI×패션 시안)",
- "as_of": "2026-10-20T05:42Z",
+ "as_of": "2026-10-20T06:42Z",
  "checkpoint": {
-  "at": "2026-10-20T05:42Z",
+  "at": "2026-10-20T06:42Z",
   "refs": {
-   "gentleMonster@claude/friendly-gates-0u80ge": "f76c3b1",
+   "gentleMonster@claude/friendly-gates-0u80ge": "22a94ed",
    "gentleMonster@claude/project-thread-n4rxnf": "cd4f4d2",
-   "gentleMonster@main": "bdee7d6"
+   "gentleMonster@main": "bdee7d6",
+   "gentleMonster@claude/magical-bell-u02os9": "cf27441"
   },
   "method": "scripts/sync_delta.py: 체크포인트 커밋 뒤의 커밋 · 바뀐 파일만 읽음. 세션 대화 원본은 읽지도 고치지도 않음",
   "not_cloned": [
@@ -21,7 +22,7 @@
    }
   }
  },
- "latest_confirmed": "v4 FROM THE INSIDE: 이야기 단락 A 확정, 진열 세 요소 조합하다 · 비추다 · 짓다 확정안(62fb588). 10-20 표지 방향을 스토리 문장 기준으로 재설정(비유 철회, 미드저니 프롬프트 f76c3b1). '얼굴 없는 사람들'은 보류.",
+ "latest_confirmed": "v4 FROM THE INSIDE: 이야기 단락 A · 세 요소(조합하다 · 비추다 · 짓다) 확정안. 10-20 표지를 스토리 문장 기준으로 다시 잡아 미드저니 수정 지시 · 수정 청사진(22a94ed)까지 나왔고, 다른 세션이 ETÉREO 펼침면 문법으로 목차 · 흐름 초안을 냈다(magical-bell, cf27441).",
  "resume_point": {
   "op": "storyline",
   "input_hint": "v4 '정해야 할 것'(W2-O11: 뼈대 · 하루의 순서 · WINDOW LOG 직접 관찰 · 양면 쇼윈도)과 v4 · glass 뼈대 선택(W2-O9)을 사용자에게 묻고 답을 storyline_inside.md 에 반영한다. 표지는 008 + 청사진(62fb588)이 현재본.",
@@ -446,6 +447,19 @@
     "line": 6,
     "commit": "f76c3b1"
    }
+  },
+  {
+   "id": "W2-D21",
+   "date": "2026-10-20T05:47Z",
+   "decision": "표지의 웃는 사람은 특정 인물이 아니라 '누군가': 거꾸로 된 이름이 눈을 가리고(A), 행인만 얼굴 없이(B), 성별 · 나이를 흐리게(C). 미소는 남긴다",
+   "by": "파일 기록 (권장안, 사용자 채택 원문 미확인)",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/friendly-gates-0u80ge",
+    "path": "docs/shinsegae_vmd/midjourney_prompt_inside.md",
+    "line": 81,
+    "commit": "23507bb"
+   }
   }
  ],
  "open": [
@@ -746,9 +760,27 @@
    "repo": "cogito5170/gentleMonster",
    "ref": "claude/friendly-gates-0u80ge",
    "path": "docs/shinsegae_vmd/midjourney_prompt_inside.md",
-   "commit": "f76c3b1",
+   "commit": "22a94ed",
    "status": "draft",
-   "note": "표지 프롬프트 · 문장→화면 표 · 고치기 지시 (gemini_prompt_inside.md 는 삭제됨)"
+   "note": "표지 프롬프트 + 누군가 표현 · 에디터 수정 · 유리 글자 HYEOK JU 뒤집기"
+  },
+  {
+   "kind": "pdf",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/friendly-gates-0u80ge",
+   "path": "docs/shinsegae_vmd/edit_blueprint/cover_edit_blueprint.pdf",
+   "commit": "3e326c6",
+   "status": "draft",
+   "note": "표지 수정 청사진 BEFORE · AFTER · 순서 (tools/edit_blueprint/build.mjs)"
+  },
+  {
+   "kind": "doc",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/magical-bell-u02os9",
+   "path": "docs/shinsegae_vmd/flow_etereo.md",
+   "commit": "cf27441",
+   "status": "draft",
+   "note": "ETÉREO 펼침면 문법(A~F)으로 짠 목차 · 흐름, v4 뼈대 기준. W2-O9 · O11 결정에 기댐"
   }
  ],
  "unverified": [
