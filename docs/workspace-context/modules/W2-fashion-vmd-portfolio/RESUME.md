@@ -1,11 +1,11 @@
 # W2 패션 · VMD 지원 포트폴리오 (JAJU 라운딩 VMD · 이전 신세계 FROM THE INSIDE)
-기준 2026-10-21T06:41Z · 체크포인트 claude/friendly-gates-0u80ge@0be22a5, claude/project-thread-n4rxnf@cd4f4d2, main@bdee7d6
+기준 2026-10-21T07:42Z · 체크포인트 claude/friendly-gates-0u80ge@0be22a5, claude/project-thread-n4rxnf@cd4f4d2, main@bdee7d6
 
 ## 지금
-10-21 대상을 JAJU 라운딩 VMD 로 바꿨다. 표지 · 1쪽은 B안(사진 띠 + 검정)을 이어 쓰고, 장 순서는 사진 → 건축 → 패션(사용자 결정). 장 1 사진은 재료 17장 중 15장 파일을 받아 2~4쪽 시안(3bdb976)까지 왔다.
+JAJU 포트폴리오: 사진 → 건축 → 패션 세 장을 모두 채운 수정안 B2(B안 톤 + C안 건축 레이아웃, 13쪽, f72ef6b)가 사용자 지시대로 나온 현재본이다. 그 뒤 레퍼런스 사례 5(VERLAG)로 변형안 D(14쪽)를 제안했고 사용자 확인 전이다.
 
 ## 이어 할 일: `storyline`
-docs/jaju_rounding_vmd/process.md 의 단계대로 이어 간다. 지금은 장 1 사진: assets.md 의 고르기 제안(W2-O20)과 ch1_photo.pdf 시안을 사용자가 확인하고, 사진마다 장소 · 때를 받는다. 그 다음 장 2 건축 재료.
+W2-O21: plan_b2.pdf(현재본)와 plan_d.pdf(제안) 중 고르게 한다. 정해지면 process.md 의 6단계(전체 묶기) → 7단계(InDesign) → 8단계(10MB 이내 제출본)로 간다.
 - 조건: 사용자 확인 필요.
 
 ## 사용자에게 물을 것
@@ -15,18 +15,18 @@ docs/jaju_rounding_vmd/process.md 의 단계대로 이어 간다. 지금은 장 
 - 외 2개 → state.json open
 
 ## 지금 유효한 결정 (최근순)
+- W2-D26 JAJU 포트폴리오 수정안 B2: 전체 톤은 B안, 건축은 C안 9 · 10쪽 레이아웃, 압축(13쪽). 장 2 여는 면(C안) 다시 넣고, 세 장의 여는 면을 01 Observe 2쪽과 같은 틀로
 - W2-D25 JAJU 포트폴리오 장 순서: 표지 → 사진(관찰하다 · 뷰파인더) → 건축(담다 · 마당) → 패션(채우다 · 작은 따옴표). 재료는 지원자의 사진 · 패션 · 건축만, JAJU 로고 · 사진은 쓰지 않음. 장마…
 - W2-D24 포트폴리오 대상을 JAJU 라운딩 VMD 로 전환. 기존 P1(FROM THE INSIDE) · v5 는 보존, 표지 · 1쪽은 B안을 그대로 쓴다
 - W2-D23 P1 표지 + 1쪽은 B안(Galatasaray 방식: 사진 띠 + 검정 · 메시지 한 문장)으로. 표지 이미지는 사용자 제공. cover_b.* (InDesign IDML · JSX · zip)가 현재본
-- W2-D22 P1(포트폴리오 1안) = flow_etereo.md 의 목차 · 흐름(ETÉREO 펼침면 문법, v4 뼈대 기준). 펼침면 종류와 목차는 ETÉREO 11장 원본으로 다시 짠 p1_types.md(타입 10가지)…
-- 외 14개 → state.json decisions
+- 외 15개 → state.json decisions
 
 ## 작업 중인 파일
-- docs/shinsegae_vmd/p1_layout/cover_b_indesign.zip @4db537a
-- docs/jaju_rounding_vmd/process.md @62ae319
-- docs/jaju_rounding_vmd/assets.md @3bdb976
-- docs/jaju_rounding_vmd/layout/ch1_photo.pdf @3bdb976
-- 외 25개 → state.json artifacts
+- docs/jaju_rounding_vmd/assets.md @94a6682
+- docs/jaju_rounding_vmd/layout/plan_b2.pdf @f72ef6b
+- docs/jaju_rounding_vmd/layout/plan_d.pdf @be7a99e
+- docs/jaju_rounding_vmd/layout/plan_c.pdf @7443aa7
+- 외 27개 → state.json artifacts
 
 ## 읽는 법
 - 이 파일만 읽고 시작한다. 더 필요하면 `W2-fashion-vmd-portfolio/state.json` 의 해당 id 만 연다. 지난 이력은 `history.jsonl`.
