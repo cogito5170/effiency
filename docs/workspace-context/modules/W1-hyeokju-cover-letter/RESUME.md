@@ -1,15 +1,15 @@
 # W1 혁주 자기소개서 (JAJU 라운딩 VMD · 이전 신세계인터내셔날 해외패션)
-기준 2026-10-21T07:42Z · 체크포인트 claude/clever-knuth-1dezlo@459531d, claude/beautiful-gates-e42a5m@76d0f6d, claude/modest-cannon-ha8zs3@79ba2dc
+기준 2026-10-21T10:42Z · 체크포인트 claude/clever-knuth-1dezlo@e3d0507, claude/beautiful-gates-e42a5m@76d0f6d, claude/modest-cannon-ha8zs3@79ba2dc
 
 ## 지금
-10-21 대상을 JAJU 라운딩 VMD 로 바꿨고, 문항은 신세계 3문항과 같게 하라는 사용자 지시로 JAJU rev1(933 · 946 · 975자, 459531d)을 썼다. 신세계 FINAL 은 Word 파일까지 보존. 공고 마감 여부는 문의 답을 기다린다.
+대상은 JAJU 라운딩 VMD(10-21 사용자), 문항은 신세계 3문항과 같게. JAJU 자기소개서 rev2(914 · 939 · 977자, e3d0507)가 현재본이고 채택 전. 신세계 FINAL 은 보존, 공고 마감 여부는 문의 답 대기.
 
 ## 이어 할 일: `draft_paragraph`
-jaju_rounding_vmd_Q1-3_draft.md 의 rev1 세 문항을 사용자와 검토한다(W1-O18). JAJU 근거는 company_analysis/jaju/04a_brand_image.md · 02b_captures.md(1차 출처). 채택되면 JAJU FINAL 을 남긴다.
+jaju_rounding_vmd_Q1-3_draft.md rev2 세 문항을 사용자와 검토한다(W1-O18). JAJU 근거는 company_analysis/jaju/04a_brand_image.md · 02b_captures.md. 채택되면 JAJU FINAL 을 남긴다.
 - 조건: 사용자 확인 필요.
 
 ## 사용자에게 물을 것
-- W1-O18 JAJU 자기소개서 rev1(Q1 933 · Q2 946 · Q3 975자) 검토와 채택. Q1 둘째 단락은 'JAJU 는 생활을 먼저 관찰하는 브랜드'로 새로 씀
+- W1-O18 JAJU 자기소개서 rev2(Q1 914 · Q2 939 · Q3 977자, 사례 기준 보완) 검토와 채택
 
 ## 지금 유효한 결정 (최근순)
 - W1-D25 JAJU 자기소개서 문항은 신세계 3문항과 같게(자기소개 · 지원동기 / 하고 싶은 일 · 차별화 능력 / 학업 외 몰입 · 성과). 신세계 FINAL 을 바탕으로 rev1 작성
@@ -25,7 +25,7 @@ jaju_rounding_vmd_Q1-3_draft.md 의 rev1 세 문항을 사용자와 검토한다
 - docs/portfolio/handoff/prove_capability_drafts.json @f2a182e
 - docs/portfolio/handoff/sikorea_q2_draft.json @59f720a
 - docs/company_analysis/jaju/04a_brand_image.md @c6deb58
-- docs/portfolio/jaju/jaju_rounding_vmd_Q1-3_draft.md @459531d
+- docs/portfolio/jaju/jaju_rounding_vmd_Q1-3_draft.md @e3d0507
 - 외 1개 → state.json artifacts
 
 ## 읽는 법

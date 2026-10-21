@@ -1,11 +1,11 @@
 {
  "module": "W1",
  "title": "혁주 자기소개서 (JAJU 라운딩 VMD · 이전 신세계인터내셔날 해외패션)",
- "as_of": "2026-10-21T07:42Z",
+ "as_of": "2026-10-21T10:42Z",
  "checkpoint": {
-  "at": "2026-10-21T07:42Z",
+  "at": "2026-10-21T10:42Z",
   "refs": {
-   "gentleMonster@claude/clever-knuth-1dezlo": "459531d",
+   "gentleMonster@claude/clever-knuth-1dezlo": "e3d0507",
    "gentleMonster@claude/beautiful-gates-e42a5m": "76d0f6d",
    "gentleMonster@claude/modest-cannon-ha8zs3": "79ba2dc",
    "gentleMonster@main": "bdee7d6",
@@ -17,10 +17,10 @@
    "cogito5170/analy_agent@claude/modest-cannon-ha8zs3"
   ]
  },
- "latest_confirmed": "10-21 대상을 JAJU 라운딩 VMD 로 바꿨고, 문항은 신세계 3문항과 같게 하라는 사용자 지시로 JAJU rev1(933 · 946 · 975자, 459531d)을 썼다. 신세계 FINAL 은 Word 파일까지 보존. 공고 마감 여부는 문의 답을 기다린다.",
+ "latest_confirmed": "대상은 JAJU 라운딩 VMD(10-21 사용자), 문항은 신세계 3문항과 같게. JAJU 자기소개서 rev2(914 · 939 · 977자, e3d0507)가 현재본이고 채택 전. 신세계 FINAL 은 보존, 공고 마감 여부는 문의 답 대기.",
  "resume_point": {
   "op": "draft_paragraph",
-  "input_hint": "jaju_rounding_vmd_Q1-3_draft.md 의 rev1 세 문항을 사용자와 검토한다(W1-O18). JAJU 근거는 company_analysis/jaju/04a_brand_image.md · 02b_captures.md(1차 출처). 채택되면 JAJU FINAL 을 남긴다.",
+  "input_hint": "jaju_rounding_vmd_Q1-3_draft.md rev2 세 문항을 사용자와 검토한다(W1-O18). JAJU 근거는 company_analysis/jaju/04a_brand_image.md · 02b_captures.md. 채택되면 JAJU FINAL 을 남긴다.",
   "precondition": "사용자 확인 필요."
  },
  "confirmed": [
@@ -422,15 +422,16 @@
   },
   {
    "id": "W1-O18",
-   "item": "JAJU 자기소개서 rev1(Q1 933 · Q2 946 · Q3 975자) 검토와 채택. Q1 둘째 단락은 'JAJU 는 생활을 먼저 관찰하는 브랜드'로 새로 씀",
+   "item": "JAJU 자기소개서 rev2(Q1 914 · Q2 939 · Q3 977자, 사례 기준 보완) 검토와 채택",
    "waiting_on": "사용자",
    "blocking": true,
    "source": "도구출력",
    "evidence": {
     "repo": "cogito5170/gentleMonster",
     "ref": "claude/clever-knuth-1dezlo",
-    "path": "docs/portfolio/jaju/jaju_rounding_vmd_Q1-3_draft.md",
-    "commit": "459531d"
+    "path": "docs/portfolio/handoff/jaju_selfintro_draft.json",
+    "line": 21,
+    "commit": "e3d0507"
    }
   }
  ],
@@ -588,9 +589,9 @@
    "repo": "cogito5170/gentleMonster",
    "ref": "claude/clever-knuth-1dezlo",
    "path": "docs/portfolio/jaju/jaju_rounding_vmd_Q1-3_draft.md",
-   "commit": "459531d",
+   "commit": "e3d0507",
    "status": "draft",
-   "note": "JAJU 3문항 rev1 (원본 handoff/jaju_selfintro_draft.json)"
+   "note": "JAJU 3문항 rev2"
   },
   {
    "kind": "docx",
