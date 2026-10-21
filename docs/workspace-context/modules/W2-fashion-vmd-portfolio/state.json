@@ -1,14 +1,14 @@
 {
  "module": "W2",
  "title": "패션 · VMD 지원 포트폴리오 (신세계 VMD 'ON DISPLAY', 패션 공간 직군 조사, AI×패션 시안)",
- "as_of": "2026-10-21T03:42Z",
+ "as_of": "2026-10-21T04:41Z",
  "checkpoint": {
-  "at": "2026-10-21T03:42Z",
+  "at": "2026-10-21T04:41Z",
   "refs": {
-   "gentleMonster@claude/friendly-gates-0u80ge": "6229430",
+   "gentleMonster@claude/friendly-gates-0u80ge": "0be22a5",
    "gentleMonster@claude/project-thread-n4rxnf": "cd4f4d2",
    "gentleMonster@main": "bdee7d6",
-   "gentleMonster@claude/magical-bell-u02os9": "277a190"
+   "gentleMonster@claude/magical-bell-u02os9": "7af3dae"
   },
   "method": "scripts/sync_delta.py: 체크포인트 커밋 뒤의 커밋 · 바뀐 파일만 읽음. 세션 대화 원본은 읽지도 고치지도 않음",
   "not_cloned": [
@@ -22,10 +22,10 @@
    }
   }
  },
- "latest_confirmed": "v4 FROM THE INSIDE, P1 은 ETÉREO 펼침면 문법의 흐름(10-20 사용자 결정). 10-21 사용자가 재료 조건(사진 · 패션 · 건축 세 가지, 글은 적게, VMD 결과물 없음)을 주었고, 그에 맞춘 P1 방향 제안(277a190)과 표지 연결 제안(6229430)이 사용자 확인을 기다린다.",
+ "latest_confirmed": "P1 은 ETÉREO 흐름(10-20 결정), 재료 조건은 사진 · 패션 · 건축 세 가지(10-21 사용자). 10-21 오전 두 갈래가 함께 진행됐다: v5 THE FACE IS YOURS 스토리 · Codex 이미지 · 청사진(0be22a5)과 FROM THE INSIDE P1 의 9쪽 레이아웃 · 이야기 단락 편집본(7af3dae). 어느 쪽으로 갈지는 정해지지 않았다.",
  "resume_point": {
   "op": "storyline",
-  "input_hint": "p1_assets_direction.md '정할 것' 4가지(W2-O15)를 사용자에게 묻는다: 목차 교체, 표지(미드저니 시안 / 직접 찍은 사진), 제안 쪽, 세 재료 이미지 받기. 표지 연결 제안(W2-O16)도 함께.",
+  "input_hint": "먼저 W2-O17(v5 / FROM THE INSIDE P1)을 사용자에게 묻는다. FROM THE INSIDE 면 W2-O15(P1 방향 제안 4가지) · O18(마지막 문장)을, v5 면 storyline_blank_face.md 의 커버 · 청사진을 이어 간다.",
   "precondition": "사용자 확인 필요."
  },
  "confirmed": [
@@ -639,6 +639,35 @@
     "line": 186,
     "commit": "6229430"
    }
+  },
+  {
+   "id": "W2-O17",
+   "item": "스토리 두 갈래 중 무엇으로 갈지: v5 THE FACE IS YOURS(마네킹 = 얼굴 없는 사람, storyline_blank_face.md, friendly-gates) / FROM THE INSIDE P1(magical-bell, 이야기 단락 편집본 p1_text.md)",
+   "waiting_on": "사용자",
+   "blocking": true,
+   "source": "추론·미검증",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/friendly-gates-0u80ge",
+    "path": "docs/shinsegae_vmd/storyline_blank_face.md",
+    "line": 3,
+    "commit": "a8600ae"
+   },
+   "note": "v5 파일은 '이전 스토리는 두고 새로 쓴다'고만 적었고, 사용자가 v5 로 바꾼다는 원문은 파일에 없음"
+  },
+  {
+   "id": "W2-O18",
+   "item": "P1 이야기 단락 편집본의 마지막 문장: '되려 한다'(편집본) / '되겠다'(다짐, 확정안 A 말투)",
+   "waiting_on": "사용자",
+   "blocking": false,
+   "source": "도구출력",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/magical-bell-u02os9",
+    "path": "docs/shinsegae_vmd/p1_text.md",
+    "line": 50,
+    "commit": "7af3dae"
+   }
   }
  ],
  "artifacts": [
@@ -877,6 +906,60 @@
    "commit": "277a190",
    "status": "draft",
    "note": "P1 가진 재료로 만드는 방향(제안, 사용자 확인 전), 12쪽 목차안"
+  },
+  {
+   "kind": "doc",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/friendly-gates-0u80ge",
+   "path": "docs/shinsegae_vmd/storyline_blank_face.md",
+   "commit": "0be22a5",
+   "status": "draft",
+   "note": "v5 THE FACE IS YOURS: 스토리 255자 · 강제 원근 커버 · 청사진"
+  },
+  {
+   "kind": "pdf",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/friendly-gates-0u80ge",
+   "path": "docs/shinsegae_vmd/blueprint/the_face_is_yours_blueprint.pdf",
+   "commit": "0be22a5",
+   "status": "draft",
+   "note": "Codex 이미지 010 기준 단면 · 평면 · 촬영 값 (tools/face_blueprint)"
+  },
+  {
+   "kind": "image",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/friendly-gates-0u80ge",
+   "path": ".relay/tasks/010-the-face-is-yours-cues/image.png",
+   "commit": "e0b5276",
+   "status": "draft",
+   "note": "Codex 생성 (009 도 있음)"
+  },
+  {
+   "kind": "doc",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/magical-bell-u02os9",
+   "path": "docs/shinsegae_vmd/p1_text.md",
+   "commit": "7af3dae",
+   "status": "draft",
+   "note": "FROM THE INSIDE 이야기 단락 지면 편집본 · 영문 · 짧은 판"
+  },
+  {
+   "kind": "pdf",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/magical-bell-u02os9",
+   "path": "docs/shinsegae_vmd/p1_layout/page09_layout.pdf",
+   "commit": "01c962e",
+   "status": "draft",
+   "note": "P1 9쪽(하나의 창 · 제안) 레이아웃 시안, 이미지 슬롯 A~D"
+  },
+  {
+   "kind": "doc",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/magical-bell-u02os9",
+   "path": "docs/shinsegae_vmd/ref_galatasaray.md",
+   "commit": "ac010e6",
+   "status": "final",
+   "note": "레퍼런스 분석 (메시지 · 구성 · 전개)"
   }
  ],
  "unverified": [
