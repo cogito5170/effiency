@@ -1,11 +1,11 @@
 # W2 패션 · VMD 지원 포트폴리오 (JAJU 라운딩 VMD · 이전 신세계 FROM THE INSIDE)
-기준 2026-10-21T12:42Z · 체크포인트 claude/friendly-gates-0u80ge@c19854d, claude/project-thread-n4rxnf@cd4f4d2, main@bdee7d6
+기준 2026-10-21T13:41Z · 체크포인트 claude/friendly-gates-0u80ge@fcf62dd, claude/project-thread-n4rxnf@cd4f4d2, main@bdee7d6
 
 ## 지금
-JAJU 포트폴리오 현재본은 B15 17쪽(66c13e1): 03 쪽은 2-2 세션에서 확정한 안 A + 짧은 질문 서술, 첫 표지는 사용자가 준 흑백 사진 한 장, 03 왼쪽 단은 안 A 시안 배치. 자주 스타일 시도는 B10 흐름으로 복구됨.
+JAJU 포트폴리오 현재본은 B16 18쪽(4692010): 첫 표지 흑백 사진, 그다음 쪽은 사용자가 준 책 펼친 사진만, 03 쪽은 2-2 세션에서 확정한 안 A + 짧은 질문 서술. 자주 스타일 시도는 B10 흐름으로 복구됨.
 
 ## 이어 할 일: `storyline`
-plan_b13.md 의 B15 를 기준으로 남은 쪽을 다듬는다. ref_case1_etereo_b9.md 의 부족한 점, W2-O25(뒤표지 · 14쪽 사진 출처) · W2-O23(자기 소개 쪽 정보)이 남아 있다. 그 뒤 process.md 6~8단계(InDesign · 10MB 이내 제출본).
+plan_b13.md 의 B16 을 기준으로 남은 쪽을 다듬는다. ref_case1_etereo_b9.md 의 부족한 점, W2-O25(뒤표지 · 14쪽 사진 출처) · W2-O23(자기 소개 쪽 정보)이 남아 있다. 그 뒤 process.md 6~8단계(InDesign · 10MB 이내 제출본).
 - 조건: 사용자 확인 필요.
 
 ## 사용자에게 물을 것
@@ -25,7 +25,7 @@ plan_b13.md 의 B15 를 기준으로 남은 쪽을 다듬는다. ref_case1_etere
 - docs/jaju_rounding_vmd/layout/plan_e.pdf @940e96a
 - docs/jaju_rounding_vmd/ref_case1_etereo_b9.md @2d85dac
 - docs/jaju_rounding_vmd/book_mockup_selection.md @ded68aa
-- docs/jaju_rounding_vmd/layout/plan_b15.pdf @66c13e1
+- docs/jaju_rounding_vmd/layout/plan_b16.pdf @4692010
 - 외 31개 → state.json artifacts
 
 ## 읽는 법
