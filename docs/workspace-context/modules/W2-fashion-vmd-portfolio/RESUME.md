@@ -1,18 +1,18 @@
 # W2 패션 · VMD 지원 포트폴리오 (신세계 VMD 'ON DISPLAY', 패션 공간 직군 조사, AI×패션 시안)
-기준 2026-10-20T07:41Z · 체크포인트 claude/friendly-gates-0u80ge@22a94ed, claude/project-thread-n4rxnf@cd4f4d2, main@bdee7d6
+기준 2026-10-21T03:42Z · 체크포인트 claude/friendly-gates-0u80ge@6229430, claude/project-thread-n4rxnf@cd4f4d2, main@bdee7d6
 
 ## 지금
-v4 FROM THE INSIDE: 이야기 단락 A · 세 요소 확정안. 표지는 스토리 문장 기준 미드저니 수정(22a94ed). 10-20 사용자가 ETÉREO 펼침면 문법의 흐름을 P1 으로 정했고(magical-bell), 목차는 p1_types.md 타입 10가지로 다시 짰다.
+v4 FROM THE INSIDE, P1 은 ETÉREO 펼침면 문법의 흐름(10-20 사용자 결정). 10-21 사용자가 재료 조건(사진 · 패션 · 건축 세 가지, 글은 적게, VMD 결과물 없음)을 주었고, 그에 맞춘 P1 방향 제안(277a190)과 표지 연결 제안(6229430)이 사용자 확인을 기다린다.
 
 ## 이어 할 일: `storyline`
-P1 목차(p1_types.md §3, v4 뼈대)가 기대는 열린 결정(W2-O11: 하루의 순서 · WINDOW LOG 직접 관찰 · 양면 쇼윈도, W2-O9 뼈대)과 p1_story_flow.md §5 제안 반영 여부를 사용자에게 묻는다. 표지는 midjourney_prompt_inside.md 의 수정 지시가 현재본.
+p1_assets_direction.md '정할 것' 4가지(W2-O15)를 사용자에게 묻는다: 목차 교체, 표지(미드저니 시안 / 직접 찍은 사진), 제안 쪽, 세 재료 이미지 받기. 표지 연결 제안(W2-O16)도 함께.
 - 조건: 사용자 확인 필요.
 
 ## 사용자에게 물을 것
 - W2-O1 storyline_v3 '정해야 할 것' 5가지: ① 한 줄 '패션쇼에서는 옷이 걷는다. 매장에서는 내가 걷는다.' ② 표지를 쇼윈도(①-D)에서 THE STILL RUNWAY 로 바꿀지 ③ 기획안 P1 WINDOWS OF TIME / P2 REVE…
 - W2-O2 원고 빈칸 ____: LOOK 착장 세부 · '오늘 ____ 에 간다', 설치 시간 · 인원 · 예산 · 재사용 비율, 연락처
 - W2-O9 안의 시선 스토리라인 두 안 중 뼈대 선택: storyline_inside.md(v4, 하루의 순서 · 얼굴) / storyline_glass.md(유리 안쪽 · 겹침 · FITTING WINDOW) / 섞기
-- 외 1개 → state.json open
+- 외 2개 → state.json open
 
 ## 지금 유효한 결정 (최근순)
 - W2-D22 P1(포트폴리오 1안) = flow_etereo.md 의 목차 · 흐름(ETÉREO 펼침면 문법, v4 뼈대 기준). 펼침면 종류와 목차는 ETÉREO 11장 원본으로 다시 짠 p1_types.md(타입 10가지)…
@@ -22,11 +22,11 @@ P1 목차(p1_types.md §3, v4 뼈대)가 기대는 열린 결정(W2-O11: 하루�
 - 외 11개 → state.json decisions
 
 ## 작업 중인 파일
-- docs/shinsegae_vmd/midjourney_prompt_inside.md @22a94ed
 - docs/shinsegae_vmd/edit_blueprint/cover_edit_blueprint.pdf @3e326c6
 - docs/shinsegae_vmd/p1_types.md @eb860d3
 - docs/shinsegae_vmd/p1_story_flow.md @b7c9bfd
-- 외 15개 → state.json artifacts
+- docs/shinsegae_vmd/p1_assets_direction.md @277a190
+- 외 16개 → state.json artifacts
 
 ## 읽는 법
 - 이 파일만 읽고 시작한다. 더 필요하면 `W2-fashion-vmd-portfolio/state.json` 의 해당 id 만 연다. 지난 이력은 `history.jsonl`.

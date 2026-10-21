@@ -1,14 +1,14 @@
 {
  "module": "W2",
  "title": "패션 · VMD 지원 포트폴리오 (신세계 VMD 'ON DISPLAY', 패션 공간 직군 조사, AI×패션 시안)",
- "as_of": "2026-10-20T07:41Z",
+ "as_of": "2026-10-21T03:42Z",
  "checkpoint": {
-  "at": "2026-10-20T07:41Z",
+  "at": "2026-10-21T03:42Z",
   "refs": {
-   "gentleMonster@claude/friendly-gates-0u80ge": "22a94ed",
+   "gentleMonster@claude/friendly-gates-0u80ge": "6229430",
    "gentleMonster@claude/project-thread-n4rxnf": "cd4f4d2",
    "gentleMonster@main": "bdee7d6",
-   "gentleMonster@claude/magical-bell-u02os9": "b7c9bfd"
+   "gentleMonster@claude/magical-bell-u02os9": "277a190"
   },
   "method": "scripts/sync_delta.py: 체크포인트 커밋 뒤의 커밋 · 바뀐 파일만 읽음. 세션 대화 원본은 읽지도 고치지도 않음",
   "not_cloned": [
@@ -22,10 +22,10 @@
    }
   }
  },
- "latest_confirmed": "v4 FROM THE INSIDE: 이야기 단락 A · 세 요소 확정안. 표지는 스토리 문장 기준 미드저니 수정(22a94ed). 10-20 사용자가 ETÉREO 펼침면 문법의 흐름을 P1 으로 정했고(magical-bell), 목차는 p1_types.md 타입 10가지로 다시 짰다.",
+ "latest_confirmed": "v4 FROM THE INSIDE, P1 은 ETÉREO 펼침면 문법의 흐름(10-20 사용자 결정). 10-21 사용자가 재료 조건(사진 · 패션 · 건축 세 가지, 글은 적게, VMD 결과물 없음)을 주었고, 그에 맞춘 P1 방향 제안(277a190)과 표지 연결 제안(6229430)이 사용자 확인을 기다린다.",
  "resume_point": {
   "op": "storyline",
-  "input_hint": "P1 목차(p1_types.md §3, v4 뼈대)가 기대는 열린 결정(W2-O11: 하루의 순서 · WINDOW LOG 직접 관찰 · 양면 쇼윈도, W2-O9 뼈대)과 p1_story_flow.md §5 제안 반영 여부를 사용자에게 묻는다. 표지는 midjourney_prompt_inside.md 의 수정 지시가 현재본.",
+  "input_hint": "p1_assets_direction.md '정할 것' 4가지(W2-O15)를 사용자에게 묻는다: 목차 교체, 표지(미드저니 시안 / 직접 찍은 사진), 제안 쪽, 세 재료 이미지 받기. 표지 연결 제안(W2-O16)도 함께.",
   "precondition": "사용자 확인 필요."
  },
  "confirmed": [
@@ -264,6 +264,20 @@
     "commit": "62fb588"
    },
    "decided_at": "2026-10-16T06:49Z",
+   "file_verified": true
+  },
+  {
+   "id": "W2-C18",
+   "statement": "P1 재료 조건(사용자): 이미지는 직접 찍은 사진 · 나의 패션 사진 · 건축학과 작업물 세 가지뿐, 텍스트로 많이 채울 수 없음, VMD 결과물(실제 진열 · 시공 · 매출)은 적을 수 없음",
+   "source": "사용자",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/magical-bell-u02os9",
+    "path": "docs/shinsegae_vmd/p1_assets_direction.md",
+    "line": 5,
+    "commit": "277a190"
+   },
+   "decided_at": "2026-10-21T03:42Z",
    "file_verified": true
   }
  ],
@@ -597,6 +611,34 @@
     "line": 81,
     "commit": "b7c9bfd"
    }
+  },
+  {
+   "id": "W2-O15",
+   "item": "P1 방향 제안(세 재료 = 비추다 · 조합하다 · 짓다) 정할 것: ① 이 표로 P1 목차를 바꿀지 ② 표지를 미드저니 시안으로 둘지 직접 찍은 사진으로 바꿀지 ③ 제안 쪽(9쪽) 넣을지 ④ 세 재료 이미지 보내 주기(사진 15장 안팎 · 패션 5~8장 · 건축 작업)",
+   "waiting_on": "사용자",
+   "blocking": true,
+   "source": "도구출력",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/magical-bell-u02os9",
+    "path": "docs/shinsegae_vmd/p1_assets_direction.md",
+    "line": 104,
+    "commit": "277a190"
+   }
+  },
+  {
+   "id": "W2-O16",
+   "item": "표지와 지원자 연결 제안 A+B+C(마네킹 등의 핀 · 집게 · 뒤로 돌린 태그, 실제 내 손을 찍어 합성, 뒤집힌 HYEOK JU) 채택 여부",
+   "waiting_on": "사용자",
+   "blocking": false,
+   "source": "도구출력",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/friendly-gates-0u80ge",
+    "path": "docs/shinsegae_vmd/midjourney_prompt_inside.md",
+    "line": 186,
+    "commit": "6229430"
+   }
   }
  ],
  "artifacts": [
@@ -787,9 +829,9 @@
    "repo": "cogito5170/gentleMonster",
    "ref": "claude/friendly-gates-0u80ge",
    "path": "docs/shinsegae_vmd/midjourney_prompt_inside.md",
-   "commit": "22a94ed",
+   "commit": "6229430",
    "status": "draft",
-   "note": "표지 프롬프트 + 누군가 표현 · 에디터 수정 · 유리 글자 HYEOK JU 뒤집기"
+   "note": "표지 프롬프트 + 누군가 표현 · 수정 · 유리 글자 · 지원자 연결(10-21)"
   },
   {
    "kind": "pdf",
@@ -826,6 +868,15 @@
    "commit": "eb860d3",
    "status": "final",
    "note": "ETÉREO 11장 펼침면 기록"
+  },
+  {
+   "kind": "doc",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/magical-bell-u02os9",
+   "path": "docs/shinsegae_vmd/p1_assets_direction.md",
+   "commit": "277a190",
+   "status": "draft",
+   "note": "P1 가진 재료로 만드는 방향(제안, 사용자 확인 전), 12쪽 목차안"
   }
  ],
  "unverified": [

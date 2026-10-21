@@ -1,15 +1,15 @@
 # W1 혁주 자기소개서 (신세계인터내셔날 해외패션 라운딩 VMD)
-기준 2026-10-20T07:41Z · 체크포인트 claude/clever-knuth-1dezlo@b786c61, claude/beautiful-gates-e42a5m@76d0f6d, claude/modest-cannon-ha8zs3@79ba2dc
+기준 2026-10-21T03:42Z · 체크포인트 claude/clever-knuth-1dezlo@94709fd, claude/beautiful-gates-e42a5m@76d0f6d, claude/modest-cannon-ha8zs3@79ba2dc
 
 ## 지금
-Q1(929자) · Q2(999자) 확정, FINAL 파일 두 개. Q3(학업 외 몰입 · 성과)는 베이글 카페 창고 정리를 중심으로 홀 재구성을 곁들인 rev6 962자(b786c61)가 현재본이고, 채택은 아직 없다.
+Q1(929자) · Q2(999자) 확정, FINAL 파일 두 개. Q3(학업 외 몰입 · 성과)는 베이글 카페 창고 정리 중심으로 사용자 수정을 받은 rev8 948자(94709fd)가 현재본이고, 채택은 아직 없다.
 
 ## 이어 할 일: `draft`
-sikorea_q3_draft.json rev6 전문과 글자 수, need_check 두 가지('식물을 옮겨 두어', 홀 결과 기록 없음)를 보여 주고 Q3 채택을 받는다. 채택되면 Q3 FINAL 을 남기고 세 문항을 selection_sikorea_vmd_3q.json 에 기록한다.
+sikorea_q3_draft.json rev8 전문과 글자 수를 보여 주고 Q3 채택을 받는다. 채택되면 Q3 FINAL 을 남기고 세 문항을 selection_sikorea_vmd_3q.json 에 기록한다.
 - 조건: 사용자 확인 필요 (PROCESS.md §0 '고르는 것은 사용자').
 
 ## 사용자에게 물을 것
-- W1-O12 Q3 rev6(962자, 소제목 '[주어지지 않은 창고 정리로, 오픈 때보다 깨끗한 창고를 만들다]') 채택 여부. 확인 남음: '식물을 옮겨 두어' 표현, 홀 결과는 기록 없음
+- W1-O12 Q3 rev8(948자, 3단락 선반 문장은 사용자 수정) 채택 여부. 2단락 '성수기마다'는 2번 문항과 통일해 유지
 
 ## 지금 유효한 결정 (최근순)
 - W1-D22 Q2 확정: 셋째 rev13(의류 회사 → 베이글 재고 → 진열) · 맺음 E1 · 소제목 D2 '[시안으로 대표 상품을 앞세우는 VMD]', 999자 → sikorea_rounding_vmd_q2_FINAL.md
@@ -23,7 +23,7 @@ sikorea_q3_draft.json rev6 전문과 글자 수, need_check 두 가지('식물�
 - docs/portfolio/handoff/selection_sikorea_vmd_3q.json @31e58ae
 - docs/portfolio/handoff/why_overseas_dept_paragraph.json @17763fc
 - docs/portfolio/handoff/prove_capability_drafts.json @f2a182e
-- docs/portfolio/handoff/sikorea_q3_draft.json @b786c61
+- docs/portfolio/handoff/sikorea_q3_draft.json @94709fd
 
 ## 읽는 법
 - 이 파일만 읽고 시작한다. 더 필요하면 `W1-hyeokju-cover-letter/state.json` 의 해당 id 만 연다. 지난 이력은 `history.jsonl`.
