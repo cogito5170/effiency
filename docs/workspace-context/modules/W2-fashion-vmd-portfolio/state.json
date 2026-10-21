@@ -1,14 +1,14 @@
 {
  "module": "W2",
  "title": "패션 · VMD 지원 포트폴리오 (신세계 VMD 'ON DISPLAY', 패션 공간 직군 조사, AI×패션 시안)",
- "as_of": "2026-10-21T04:41Z",
+ "as_of": "2026-10-21T05:41Z",
  "checkpoint": {
-  "at": "2026-10-21T04:41Z",
+  "at": "2026-10-21T05:41Z",
   "refs": {
    "gentleMonster@claude/friendly-gates-0u80ge": "0be22a5",
    "gentleMonster@claude/project-thread-n4rxnf": "cd4f4d2",
    "gentleMonster@main": "bdee7d6",
-   "gentleMonster@claude/magical-bell-u02os9": "7af3dae"
+   "gentleMonster@claude/magical-bell-u02os9": "4db537a"
   },
   "method": "scripts/sync_delta.py: 체크포인트 커밋 뒤의 커밋 · 바뀐 파일만 읽음. 세션 대화 원본은 읽지도 고치지도 않음",
   "not_cloned": [
@@ -22,10 +22,10 @@
    }
   }
  },
- "latest_confirmed": "P1 은 ETÉREO 흐름(10-20 결정), 재료 조건은 사진 · 패션 · 건축 세 가지(10-21 사용자). 10-21 오전 두 갈래가 함께 진행됐다: v5 THE FACE IS YOURS 스토리 · Codex 이미지 · 청사진(0be22a5)과 FROM THE INSIDE P1 의 9쪽 레이아웃 · 이야기 단락 편집본(7af3dae). 어느 쪽으로 갈지는 정해지지 않았다.",
+ "latest_confirmed": "P1(FROM THE INSIDE, ETÉREO 흐름)의 표지 + 1쪽을 사용자가 B안(Galatasaray 방식)으로 정했고 InDesign 파일까지 나왔다(4db537a, 10-21 05:00). 재료 조건은 사진 · 패션 · 건축 세 가지. 같은 날 v5 THE FACE IS YOURS 도 나와 있어 두 갈래 중 하나를 정해야 한다.",
  "resume_point": {
   "op": "storyline",
-  "input_hint": "먼저 W2-O17(v5 / FROM THE INSIDE P1)을 사용자에게 묻는다. FROM THE INSIDE 면 W2-O15(P1 방향 제안 4가지) · O18(마지막 문장)을, v5 면 storyline_blank_face.md 의 커버 · 청사진을 이어 간다.",
+  "input_hint": "W2-O17(v5 / FROM THE INSIDE P1)을 사용자에게 확인한다. P1 은 표지 · 1쪽이 B안으로 정해졌으니 다음 쪽과 W2-O15(목차 교체 · 제안 쪽 · 세 재료 이미지)를 이어 간다.",
   "precondition": "사용자 확인 필요."
  },
  "confirmed": [
@@ -487,6 +487,19 @@
     "line": 3,
     "commit": "eb860d3"
    }
+  },
+  {
+   "id": "W2-D23",
+   "date": "2026-10-21T05:00Z",
+   "decision": "P1 표지 + 1쪽은 B안(Galatasaray 방식: 사진 띠 + 검정 · 메시지 한 문장)으로. 표지 이미지는 사용자 제공. cover_b.* (InDesign IDML · JSX · zip)가 현재본",
+   "by": "사용자 결정 (파일 기록)",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/magical-bell-u02os9",
+    "path": "docs/shinsegae_vmd/p1_layout/README.md",
+    "line": 3,
+    "commit": "4db537a"
+   }
   }
  ],
  "open": [
@@ -667,6 +680,19 @@
     "path": "docs/shinsegae_vmd/p1_text.md",
     "line": 50,
     "commit": "7af3dae"
+   }
+  },
+  {
+   "id": "W2-O19",
+   "item": "표지 이미지 1296×912px 는 A4 인쇄에 약 110ppi. 인쇄하려면 가로 3500px 이상 원본 필요. 1쪽 오른쪽 사진(표지 왼쪽 잘라 씀)을 직접 찍은 사진으로 바꿀지",
+   "waiting_on": "사용자",
+   "blocking": false,
+   "source": "도구출력",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/magical-bell-u02os9",
+    "path": "docs/shinsegae_vmd/p1_layout/README.md",
+    "commit": "4db537a"
    }
   }
  ],
@@ -960,6 +986,15 @@
    "commit": "ac010e6",
    "status": "final",
    "note": "레퍼런스 분석 (메시지 · 구성 · 전개)"
+  },
+  {
+   "kind": "indesign",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/magical-bell-u02os9",
+   "path": "docs/shinsegae_vmd/p1_layout/cover_b_indesign.zip",
+   "commit": "4db537a",
+   "status": "draft",
+   "note": "P1 표지 + 1쪽 B안 InDesign 패키지 (cover_b.idml · .jsx, tools/p1_layout/cover_b.py)"
   }
  ],
  "unverified": [
