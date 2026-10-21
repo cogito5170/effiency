@@ -1,5 +1,5 @@
 # W2 패션 · VMD 지원 포트폴리오 (JAJU 라운딩 VMD · 이전 신세계 FROM THE INSIDE)
-기준 2026-10-21T07:42Z · 체크포인트 claude/friendly-gates-0u80ge@0be22a5, claude/project-thread-n4rxnf@cd4f4d2, main@bdee7d6
+기준 2026-10-21T09:42Z · 체크포인트 claude/friendly-gates-0u80ge@0be22a5, claude/project-thread-n4rxnf@cd4f4d2, main@bdee7d6
 
 ## 지금
 JAJU 포트폴리오: 사진 → 건축 → 패션 세 장을 모두 채운 수정안 B2(B안 톤 + C안 건축 레이아웃, 13쪽, f72ef6b)가 사용자 지시대로 나온 현재본이다. 그 뒤 레퍼런스 사례 5(VERLAG)로 변형안 D(14쪽)를 제안했고 사용자 확인 전이다.
@@ -22,11 +22,11 @@ W2-O21: plan_b2.pdf(현재본)와 plan_d.pdf(제안) 중 고르게 한다. 정�
 - 외 15개 → state.json decisions
 
 ## 작업 중인 파일
-- docs/jaju_rounding_vmd/assets.md @94a6682
 - docs/jaju_rounding_vmd/layout/plan_b2.pdf @f72ef6b
 - docs/jaju_rounding_vmd/layout/plan_d.pdf @be7a99e
 - docs/jaju_rounding_vmd/layout/plan_c.pdf @7443aa7
-- 외 27개 → state.json artifacts
+- docs/jaju_rounding_vmd/layout/cover_clean.pdf @ec39df7
+- 외 28개 → state.json artifacts
 
 ## 읽는 법
 - 이 파일만 읽고 시작한다. 더 필요하면 `W2-fashion-vmd-portfolio/state.json` 의 해당 id 만 연다. 지난 이력은 `history.jsonl`.

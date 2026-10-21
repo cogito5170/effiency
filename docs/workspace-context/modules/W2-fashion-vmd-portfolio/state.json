@@ -1,14 +1,14 @@
 {
  "module": "W2",
  "title": "패션 · VMD 지원 포트폴리오 (JAJU 라운딩 VMD · 이전 신세계 FROM THE INSIDE)",
- "as_of": "2026-10-21T07:42Z",
+ "as_of": "2026-10-21T09:42Z",
  "checkpoint": {
-  "at": "2026-10-21T07:42Z",
+  "at": "2026-10-21T09:42Z",
   "refs": {
    "gentleMonster@claude/friendly-gates-0u80ge": "0be22a5",
    "gentleMonster@claude/project-thread-n4rxnf": "cd4f4d2",
    "gentleMonster@main": "bdee7d6",
-   "gentleMonster@claude/magical-bell-u02os9": "be7a99e"
+   "gentleMonster@claude/magical-bell-u02os9": "ec39df7"
   },
   "method": "scripts/sync_delta.py: 체크포인트 커밋 뒤의 커밋 · 바뀐 파일만 읽음. 세션 대화 원본은 읽지도 고치지도 않음",
   "not_cloned": [
@@ -1045,6 +1045,15 @@
    "commit": "7443aa7",
    "status": "draft",
    "note": "새 안 C(잡지형 18쪽), 제안"
+  },
+  {
+   "kind": "pdf",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/magical-bell-u02os9",
+   "path": "docs/jaju_rounding_vmd/layout/cover_clean.pdf",
+   "commit": "ec39df7",
+   "status": "draft",
+   "note": "JAJU 표지 변형: 검은 띠 · 제목 · 메시지 세 줄을 뺀 사진 전면판 (tools/jaju_layout/cover_clean.py). 채택 여부 기록 없음"
   }
  ],
  "unverified": [
