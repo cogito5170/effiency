@@ -1,11 +1,11 @@
 # W2 패션 · VMD 지원 포트폴리오 (JAJU 라운딩 VMD · 이전 신세계 FROM THE INSIDE)
-기준 2026-10-22T11:42Z · 체크포인트 claude/friendly-gates-0u80ge@fcf62dd, claude/project-thread-n4rxnf@cd4f4d2, main@bdee7d6
+기준 2026-10-22T12:42Z · 체크포인트 claude/friendly-gates-0u80ge@fcf62dd, claude/project-thread-n4rxnf@cd4f4d2, main@bdee7d6
 
 ## 지금
-JAJU 포트폴리오 현재본은 B20 18쪽 315 × 195(84b281a). 6쪽은 2-2 세션에서 글을 rev5('내가 옷을 입을 때', 사용자 지시)로 다시 썼고 넣을 이야기 세 안(C 카페 홀 권함)이, 2-1 세션에서 레이아웃 안 A–D 가 사용자 선택을 기다린다.
+JAJU 포트폴리오 현재본은 B20 18쪽 315 × 195(84b281a). 6쪽은 레이아웃 안 D rev5(666afb8, InDesign 있음)로 다듬는 중이고, 글은 2-2 세션의 rev5 와 새 rev6 '중심 · 조화'(290e6f9) 중 사용자 선택을 기다린다.
 
 ## 이어 할 일: `storyline`
-6쪽: W2-O33(이야기 A/B/C) · W2-O34(레이아웃 A–D) · W2-O32(견본 값 기준)을 정하면 p06_story.md rev5 로 B21 을 만든다. 그 밖에 W2-O30 · W2-O27 · W2-O29 · W2-O25 · W2-O23. 마지막에 10MB 이내 제출본.
+6쪽: W2-O35(글 rev5 vs rev6, 큰 사진 PH-12 제안) · W2-O32(견본 값 기준)을 정하면 안 D rev5 에 글을 얹어 B21 을 만든다. 그 밖에 W2-O30 · W2-O27 · W2-O29 · W2-O25 · W2-O23. 마지막에 10MB 이내 제출본.
 - 조건: 사용자 확인 필요.
 
 ## 사용자에게 물을 것
@@ -15,18 +15,18 @@ JAJU 포트폴리오 현재본은 B20 18쪽 315 × 195(84b281a). 6쪽은 2-2 세
 - 외 1개 → state.json open
 
 ## 지금 유효한 결정 (최근순)
+- W2-D37 6쪽 레이아웃은 안 D(왼쪽 위 큰 사진 + 오른쪽 아래 작은 사진 둘)로 다듬는다. rev5: 큰 사진을 빨간 신호 점의 세로선까지 키우고 오른쪽 단 · 아래 글 재배치
 - W2-D36 6쪽 글은 '내가 옷을 입을 때' 기준(전체를 맞추고 한 가지만 다르게), 베이글 · 지인 스타일링 이야기는 뺀다 → rev5 가 기준
 - W2-D35 5쪽 'Where people stop?' 왼쪽 단에 A안(질문 + 01–03 쉼 / 04–06 행위 표)을 위에, B안(서술)을 아래에 둘 다 싣는다 → B19. 가장자리에서는 머물고 가운데에서는 모인다는 '가운…
 - W2-D34 사용자가 InDesign 에서 고친 4쪽 값(기준선 0.9pt · 십자 · 모서리 표시 · 바닥 줄 7pt · 파트 제목 210 타임라인 Bold 100pt · 한 줄 '일상 속, 스쳐 지나가는 사람들을 관찰하다.…
-- W2-D33 판형은 앞으로 315 × 195 mm(재단 여유 3mm)로 맞춘다. 4쪽 /01 Observe. InDesign 을 이 판형으로 다시 만듦
-- 외 22개 → state.json decisions
+- 외 23개 → state.json decisions
 
 ## 작업 중인 파일
-- docs/jaju_rounding_vmd/p05_why_they_stop.md @3aa17ef
 - docs/jaju_rounding_vmd/layout/plan_b20.pdf @84b281a
-- docs/jaju_rounding_vmd/p06_story.md @cd4ecc7
+- docs/jaju_rounding_vmd/p06_story.md @290e6f9
 - docs/jaju_rounding_vmd/layout/p06_layout_d.pdf @90c8f06
-- 외 42개 → state.json artifacts
+- docs/jaju_rounding_vmd/indesign/p06_layout_d/p06_layout_d.idml @666afb8
+- 외 43개 → state.json artifacts
 
 ## 읽는 법
 - 이 파일만 읽고 시작한다. 더 필요하면 `W2-fashion-vmd-portfolio/state.json` 의 해당 id 만 연다. 지난 이력은 `history.jsonl`.
