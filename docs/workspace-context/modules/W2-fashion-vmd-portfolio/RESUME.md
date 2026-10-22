@@ -1,8 +1,8 @@
 # W2 패션 · VMD 지원 포트폴리오 (JAJU 라운딩 VMD · 이전 신세계 FROM THE INSIDE)
-기준 2026-10-22T07:41Z · 체크포인트 claude/friendly-gates-0u80ge@fcf62dd, claude/project-thread-n4rxnf@cd4f4d2, main@bdee7d6
+기준 2026-10-22T08:42Z · 체크포인트 claude/friendly-gates-0u80ge@fcf62dd, claude/project-thread-n4rxnf@cd4f4d2, main@bdee7d6
 
 ## 지금
-JAJU 포트폴리오 현재본은 B19 18쪽 315 × 195(3aa17ef): 5쪽에 '무엇이 그들을 멈추게 했을까'의 답(쉼 · 행위)을 A안 위 · B안 아래로 실었다. 5–18쪽 InDesign 있음. 2쪽 메시지는 세 판 중 선택 대기, 사진 벽은 안 A 로 보류.
+JAJU 포트폴리오 현재본은 B19 18쪽 315 × 195(3aa17ef): 5쪽에 '무엇이 그들을 멈추게 했을까'의 답(쉼 · 행위)을 A안 위 · B안 아래로 실었고, 5쪽 사진 이름 두 안(13e1a3c)이 선택 대기. 2쪽 메시지는 세 판 중 선택 대기, 사진 벽은 안 A 로 보류.
 
 ## 이어 할 일: `storyline`
 layout_315x195.md 값 기준. W2-O27(2쪽 메시지 고르기) 뒤 2 · 3쪽을 315 × 195 로(W2-O29). 5쪽 외부 인용은 실제 출처 확인(unverified). 사진 벽 자리 · W2-O25 · W2-O23 이 남아 있다. 마지막에 10MB 이내 제출본.

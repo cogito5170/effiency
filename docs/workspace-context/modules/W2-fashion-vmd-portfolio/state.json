@@ -1,14 +1,14 @@
 {
  "module": "W2",
  "title": "패션 · VMD 지원 포트폴리오 (JAJU 라운딩 VMD · 이전 신세계 FROM THE INSIDE)",
- "as_of": "2026-10-22T07:41Z",
+ "as_of": "2026-10-22T08:42Z",
  "checkpoint": {
-  "at": "2026-10-22T07:41Z",
+  "at": "2026-10-22T08:42Z",
   "refs": {
    "gentleMonster@claude/friendly-gates-0u80ge": "fcf62dd",
    "gentleMonster@claude/project-thread-n4rxnf": "cd4f4d2",
    "gentleMonster@main": "bdee7d6",
-   "gentleMonster@claude/magical-bell-u02os9": "3aa17ef",
+   "gentleMonster@claude/magical-bell-u02os9": "13e1a3c",
    "gentleMonster@claude/awesome-keller-otac19": "09f64c3"
   },
   "method": "scripts/sync_delta.py: 체크포인트 커밋 뒤의 커밋 · 바뀐 파일만 읽음. 세션 대화 원본은 읽지도 고치지도 않음",
@@ -23,7 +23,7 @@
    }
   }
  },
- "latest_confirmed": "JAJU 포트폴리오 현재본은 B19 18쪽 315 × 195(3aa17ef): 5쪽에 '무엇이 그들을 멈추게 했을까'의 답(쉼 · 행위)을 A안 위 · B안 아래로 실었다. 5–18쪽 InDesign 있음. 2쪽 메시지는 세 판 중 선택 대기, 사진 벽은 안 A 로 보류.",
+ "latest_confirmed": "JAJU 포트폴리오 현재본은 B19 18쪽 315 × 195(3aa17ef): 5쪽에 '무엇이 그들을 멈추게 했을까'의 답(쉼 · 행위)을 A안 위 · B안 아래로 실었고, 5쪽 사진 이름 두 안(13e1a3c)이 선택 대기. 2쪽 메시지는 세 판 중 선택 대기, 사진 벽은 안 A 로 보류.",
  "resume_point": {
   "op": "storyline",
   "input_hint": "layout_315x195.md 값 기준. W2-O27(2쪽 메시지 고르기) 뒤 2 · 3쪽을 315 × 195 로(W2-O29). 5쪽 외부 인용은 실제 출처 확인(unverified). 사진 벽 자리 · W2-O25 · W2-O23 이 남아 있다. 마지막에 10MB 이내 제출본.",
@@ -818,6 +818,20 @@
     "path": "docs/jaju_rounding_vmd/layout_315x195.md",
     "line": 20,
     "commit": "cc0d222"
+   }
+  },
+  {
+   "id": "W2-O30",
+   "item": "5쪽 사진 여섯 장 이름 고르기: A(권함, 01–03 '…자리' · 04–06 '…먼저 닿는 곳' + 짐작한 질문) · B(한 장씩 짧은 제목)",
+   "waiting_on": "사용자",
+   "blocking": false,
+   "source": "도구출력",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/magical-bell-u02os9",
+    "path": "docs/jaju_rounding_vmd/p05_why_they_stop.md",
+    "line": 84,
+    "commit": "13e1a3c"
    }
   }
  ],
