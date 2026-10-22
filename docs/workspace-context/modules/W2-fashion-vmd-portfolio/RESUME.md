@@ -1,11 +1,11 @@
 # W2 패션 · VMD 지원 포트폴리오 (JAJU 라운딩 VMD · 이전 신세계 FROM THE INSIDE)
-기준 2026-10-22T08:42Z · 체크포인트 claude/friendly-gates-0u80ge@fcf62dd, claude/project-thread-n4rxnf@cd4f4d2, main@bdee7d6
+기준 2026-10-22T10:41Z · 체크포인트 claude/friendly-gates-0u80ge@fcf62dd, claude/project-thread-n4rxnf@cd4f4d2, main@bdee7d6
 
 ## 지금
-JAJU 포트폴리오 현재본은 B19 18쪽 315 × 195(3aa17ef): 5쪽에 '무엇이 그들을 멈추게 했을까'의 답(쉼 · 행위)을 A안 위 · B안 아래로 실었고, 5쪽 사진 이름 두 안(13e1a3c)이 선택 대기. 2쪽 메시지는 세 판 중 선택 대기, 사진 벽은 안 A 로 보류.
+JAJU 포트폴리오 현재본은 B20 18쪽 315 × 195(84b281a): 6쪽을 2-2 세션 rev1 '여백 — 한 점'으로 바꿨고, 2-2 세션은 이어서 rev2('주변과 분명히 다른 하나', a833da3)를 기준으로 냈다. 5쪽 사진 이름 · 2쪽 메시지는 선택 대기, 사진 벽은 안 A 로 보류.
 
 ## 이어 할 일: `storyline`
-layout_315x195.md 값 기준. W2-O27(2쪽 메시지 고르기) 뒤 2 · 3쪽을 315 × 195 로(W2-O29). 5쪽 외부 인용은 실제 출처 확인(unverified). 사진 벽 자리 · W2-O25 · W2-O23 이 남아 있다. 마지막에 10MB 이내 제출본.
+6쪽을 p06_story.md rev2 로 다시 짠다(W2-O31), 견본 값 기준은 사용자에게(W2-O32). 그 밖에 W2-O30(5쪽 사진 이름) · W2-O27(2쪽 메시지) · W2-O29(2 · 3쪽 판형) · W2-O25 · W2-O23. 마지막에 10MB 이내 제출본.
 - 조건: 사용자 확인 필요.
 
 ## 사용자에게 물을 것
@@ -22,13 +22,13 @@ layout_315x195.md 값 기준. W2-O27(2쪽 메시지 고르기) 뒤 2 · 3쪽을 
 - 외 21개 → state.json decisions
 
 ## 작업 중인 파일
-- docs/jaju_rounding_vmd/indesign/p05-18_315x195/p05-18_315x195.idml @cc0d222
-- docs/jaju_rounding_vmd/layout/plan_b19.pdf @3aa17ef
 - docs/jaju_rounding_vmd/indesign/p05_where_people_stop/p05_where_people_stop.idml @3aa17ef
 - docs/jaju_rounding_vmd/p05_why_they_stop.md @3aa17ef
-- 외 40개 → state.json artifacts
+- docs/jaju_rounding_vmd/layout/plan_b20.pdf @84b281a
+- docs/jaju_rounding_vmd/p06_story.md @a833da3
+- 외 41개 → state.json artifacts
 
 ## 읽는 법
 - 이 파일만 읽고 시작한다. 더 필요하면 `W2-fashion-vmd-portfolio/state.json` 의 해당 id 만 연다. 지난 이력은 `history.jsonl`.
-- 미확인 8개는 결론으로 쓰지 않는다. 확정은 저장소 파일로 다시 확인한다.
+- 미확인 9개는 결론으로 쓰지 않는다. 확정은 저장소 파일로 다시 확인한다.
 - 결정 · 산출물은 저장소에 커밋해 둔다. 백엔드가 커밋에서 다음 요약을 만든다.
