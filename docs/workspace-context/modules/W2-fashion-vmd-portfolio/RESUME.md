@@ -1,11 +1,11 @@
 # W2 패션 · VMD 지원 포트폴리오 (JAJU 라운딩 VMD · 이전 신세계 FROM THE INSIDE)
-기준 2026-10-22T02:41Z · 체크포인트 claude/friendly-gates-0u80ge@fcf62dd, claude/project-thread-n4rxnf@cd4f4d2, main@bdee7d6
+기준 2026-10-22T03:42Z · 체크포인트 claude/friendly-gates-0u80ge@fcf62dd, claude/project-thread-n4rxnf@cd4f4d2, main@bdee7d6
 
 ## 지금
-JAJU 포트폴리오 현재본은 B17 18쪽(dae6c67, 표지부터 쪽 번호). 3쪽 Prologue 는 InDesign 파일로 나왔고, 2쪽 책 사진 위 메시지는 1안 · 3안 InDesign(8f000d4)이 사용자 선택을 기다린다. 사진 벽 쪽은 안 A 로 보류.
+JAJU 포트폴리오 현재본은 B17 18쪽(dae6c67, 표지부터 쪽 번호). 3쪽 Prologue 는 InDesign 파일로 나왔고, 2쪽 책 사진 위 메시지는 1안 · 3안 · 리포타주 판 InDesign(4079787)이 사용자 선택을 기다린다. 사진 벽 쪽은 안 A 로 보류.
 
 ## 이어 할 일: `storyline`
-plan_b13.md 의 B17 기준. W2-O26(2쪽 메시지 1안 · 3안 중 고르기)을 묻고, 사진 벽(photo_wall.md 안 A)을 넣을 자리를 정한다. W2-O25 · W2-O23 도 남아 있다. 그 뒤 나머지 쪽 InDesign · 10MB 이내 제출본.
+plan_b13.md 의 B17 기준. W2-O27(2쪽 메시지 세 판 중 고르기)을 묻고, 사진 벽(photo_wall.md 안 A)을 넣을 자리를 정한다. W2-O25 · W2-O23 도 남아 있다. 그 뒤 나머지 쪽 InDesign · 10MB 이내 제출본.
 - 조건: 사용자 확인 필요.
 
 ## 사용자에게 물을 것
@@ -22,11 +22,11 @@ plan_b13.md 의 B17 기준. W2-O26(2쪽 메시지 1안 · 3안 중 고르기)을
 - 외 18개 → state.json decisions
 
 ## 작업 중인 파일
-- docs/jaju_rounding_vmd/indesign/p03_prologue/p03_prologue.idml @8f000d4
 - docs/jaju_rounding_vmd/indesign/p02_photo_galatasaray/p02_photo_galatasaray.idml @8f000d4
 - docs/jaju_rounding_vmd/indesign/p02_photo_desjobert/p02_photo_desjobert.idml @8f000d4
 - docs/jaju_rounding_vmd/photo_wall.md @fe98c7d
-- 외 35개 → state.json artifacts
+- docs/jaju_rounding_vmd/indesign/p02_reportage/p02_reportage.idml @4079787
+- 외 36개 → state.json artifacts
 
 ## 읽는 법
 - 이 파일만 읽고 시작한다. 더 필요하면 `W2-fashion-vmd-portfolio/state.json` 의 해당 id 만 연다. 지난 이력은 `history.jsonl`.
