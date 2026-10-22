@@ -1,14 +1,14 @@
 {
  "module": "W2",
  "title": "패션 · VMD 지원 포트폴리오 (JAJU 라운딩 VMD · 이전 신세계 FROM THE INSIDE)",
- "as_of": "2026-10-21T13:41Z",
+ "as_of": "2026-10-22T02:41Z",
  "checkpoint": {
-  "at": "2026-10-21T13:41Z",
+  "at": "2026-10-22T02:41Z",
   "refs": {
    "gentleMonster@claude/friendly-gates-0u80ge": "fcf62dd",
    "gentleMonster@claude/project-thread-n4rxnf": "cd4f4d2",
    "gentleMonster@main": "bdee7d6",
-   "gentleMonster@claude/magical-bell-u02os9": "4692010",
+   "gentleMonster@claude/magical-bell-u02os9": "8f000d4",
    "gentleMonster@claude/awesome-keller-otac19": "09f64c3"
   },
   "method": "scripts/sync_delta.py: 체크포인트 커밋 뒤의 커밋 · 바뀐 파일만 읽음. 세션 대화 원본은 읽지도 고치지도 않음",
@@ -23,10 +23,10 @@
    }
   }
  },
- "latest_confirmed": "JAJU 포트폴리오 현재본은 B16 18쪽(4692010): 첫 표지 흑백 사진, 그다음 쪽은 사용자가 준 책 펼친 사진만, 03 쪽은 2-2 세션에서 확정한 안 A + 짧은 질문 서술. 자주 스타일 시도는 B10 흐름으로 복구됨.",
+ "latest_confirmed": "JAJU 포트폴리오 현재본은 B17 18쪽(dae6c67, 표지부터 쪽 번호). 3쪽 Prologue 는 InDesign 파일로 나왔고, 2쪽 책 사진 위 메시지는 1안 · 3안 InDesign(8f000d4)이 사용자 선택을 기다린다. 사진 벽 쪽은 안 A 로 보류.",
  "resume_point": {
   "op": "storyline",
-  "input_hint": "plan_b13.md 의 B16 을 기준으로 남은 쪽을 다듬는다. ref_case1_etereo_b9.md 의 부족한 점, W2-O25(뒤표지 · 14쪽 사진 출처) · W2-O23(자기 소개 쪽 정보)이 남아 있다. 그 뒤 process.md 6~8단계(InDesign · 10MB 이내 제출본).",
+  "input_hint": "plan_b13.md 의 B17 기준. W2-O26(2쪽 메시지 1안 · 3안 중 고르기)을 묻고, 사진 벽(photo_wall.md 안 A)을 넣을 자리를 정한다. W2-O25 · W2-O23 도 남아 있다. 그 뒤 나머지 쪽 InDesign · 10MB 이내 제출본.",
   "precondition": "사용자 확인 필요."
  },
  "confirmed": [
@@ -556,6 +556,34 @@
     "commit": "66c13e1"
    },
    "note": "B7 복구 · 대표 쪽 뷰파인더 · Observe 컨셉(W2-D28 내용)은 그대로 이어짐"
+  },
+  {
+   "id": "W2-D31",
+   "date": "2026-10-22T01:56Z",
+   "decision": "쪽 번호는 표지부터 센다(표지 1 · 책 사진 2 · Prologue 3 … 뒤표지 18) → B17. 3쪽 Prologue 를 InDesign 파일로",
+   "by": "사용자 (파일 기록)",
+   "supersedes": null,
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/magical-bell-u02os9",
+    "path": "docs/jaju_rounding_vmd/plan_b13.md",
+    "line": 56,
+    "commit": "dae6c67"
+   }
+  },
+  {
+   "id": "W2-D32",
+   "date": "2026-10-22T02:13Z",
+   "decision": "사진 벽 단일 쪽은 안 A(색과 시간)로 보류, 들어갈 자리 · 다듬기는 나중에",
+   "by": "사용자 (파일 기록)",
+   "supersedes": null,
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/magical-bell-u02os9",
+    "path": "docs/jaju_rounding_vmd/photo_wall.md",
+    "line": 17,
+    "commit": "fe98c7d"
+   }
   }
  ],
  "open": [
@@ -720,6 +748,20 @@
     "path": "docs/jaju_rounding_vmd/plan_b13.md",
     "line": 36,
     "commit": "967d3bf"
+   }
+  },
+  {
+   "id": "W2-O26",
+   "item": "2쪽(책 사진) 위 메시지: 1안 Galatasaray · 3안 Desjobert(글 상자) InDesign 파일 중 고르기",
+   "waiting_on": "사용자",
+   "blocking": false,
+   "source": "도구출력",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/magical-bell-u02os9",
+    "path": "docs/jaju_rounding_vmd/p02_photo_text_options.md",
+    "line": 20,
+    "commit": "8f000d4"
    }
   }
  ],
@@ -1117,10 +1159,46 @@
    "kind": "pdf",
    "repo": "cogito5170/gentleMonster",
    "ref": "claude/magical-bell-u02os9",
-   "path": "docs/jaju_rounding_vmd/layout/plan_b16.pdf",
-   "commit": "4692010",
+   "path": "docs/jaju_rounding_vmd/layout/plan_b17.pdf",
+   "commit": "dae6c67",
    "status": "draft",
-   "note": "JAJU 현재본 B16 18쪽: 표지 다음에 사용자가 준 책 펼친 사진(opening_book.jpg)만 있는 쪽 추가 (사용자 지시, plan_b13.md:46)"
+   "note": "JAJU 현재본 B17 18쪽 (표지부터 쪽 번호)"
+  },
+  {
+   "kind": "doc",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/magical-bell-u02os9",
+   "path": "docs/jaju_rounding_vmd/indesign/p03_prologue/p03_prologue.idml",
+   "commit": "8f000d4",
+   "status": "draft",
+   "note": "3쪽 Prologue InDesign (JSX · 기준 PDF · 글꼴 함께)"
+  },
+  {
+   "kind": "doc",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/magical-bell-u02os9",
+   "path": "docs/jaju_rounding_vmd/indesign/p02_photo_galatasaray/p02_photo_galatasaray.idml",
+   "commit": "8f000d4",
+   "status": "draft",
+   "note": "2쪽 사진 위 메시지 1안 InDesign"
+  },
+  {
+   "kind": "doc",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/magical-bell-u02os9",
+   "path": "docs/jaju_rounding_vmd/indesign/p02_photo_desjobert/p02_photo_desjobert.idml",
+   "commit": "8f000d4",
+   "status": "draft",
+   "note": "2쪽 사진 위 메시지 3안 InDesign"
+  },
+  {
+   "kind": "doc",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/magical-bell-u02os9",
+   "path": "docs/jaju_rounding_vmd/photo_wall.md",
+   "commit": "fe98c7d",
+   "status": "draft",
+   "note": "사진 벽 세 안, 안 A 보류"
   }
  ],
  "unverified": [
