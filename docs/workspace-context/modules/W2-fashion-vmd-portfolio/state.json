@@ -1,14 +1,14 @@
 {
  "module": "W2",
  "title": "패션 · VMD 지원 포트폴리오 (JAJU 라운딩 VMD · 이전 신세계 FROM THE INSIDE)",
- "as_of": "2026-10-22T06:42Z",
+ "as_of": "2026-10-22T07:41Z",
  "checkpoint": {
-  "at": "2026-10-22T06:42Z",
+  "at": "2026-10-22T07:41Z",
   "refs": {
    "gentleMonster@claude/friendly-gates-0u80ge": "fcf62dd",
    "gentleMonster@claude/project-thread-n4rxnf": "cd4f4d2",
    "gentleMonster@main": "bdee7d6",
-   "gentleMonster@claude/magical-bell-u02os9": "cc0d222",
+   "gentleMonster@claude/magical-bell-u02os9": "3aa17ef",
    "gentleMonster@claude/awesome-keller-otac19": "09f64c3"
   },
   "method": "scripts/sync_delta.py: 체크포인트 커밋 뒤의 커밋 · 바뀐 파일만 읽음. 세션 대화 원본은 읽지도 고치지도 않음",
@@ -23,10 +23,10 @@
    }
   }
  },
- "latest_confirmed": "JAJU 포트폴리오 현재본은 B18 18쪽 315 × 195(cc0d222): 사용자가 InDesign 에서 고친 4쪽 값을 모든 쪽에 반영했고 5–18쪽 InDesign 이 나왔다. 2쪽 메시지는 1안 · 3안 · 리포타주 판 중 선택 대기, 사진 벽은 안 A 로 보류.",
+ "latest_confirmed": "JAJU 포트폴리오 현재본은 B19 18쪽 315 × 195(3aa17ef): 5쪽에 '무엇이 그들을 멈추게 했을까'의 답(쉼 · 행위)을 A안 위 · B안 아래로 실었다. 5–18쪽 InDesign 있음. 2쪽 메시지는 세 판 중 선택 대기, 사진 벽은 안 A 로 보류.",
  "resume_point": {
   "op": "storyline",
-  "input_hint": "layout_315x195.md 의 값이 기준. W2-O27(2쪽 메시지 고르기) 뒤 2 · 3쪽을 315 × 195 로(W2-O29). 사진 벽 자리 · W2-O25 · W2-O23 이 남아 있다. 마지막에 10MB 이내 제출본.",
+  "input_hint": "layout_315x195.md 값 기준. W2-O27(2쪽 메시지 고르기) 뒤 2 · 3쪽을 315 × 195 로(W2-O29). 5쪽 외부 인용은 실제 출처 확인(unverified). 사진 벽 자리 · W2-O25 · W2-O23 이 남아 있다. 마지막에 10MB 이내 제출본.",
   "precondition": "사용자 확인 필요."
  },
  "confirmed": [
@@ -611,6 +611,20 @@
     "path": "docs/jaju_rounding_vmd/layout_315x195.md",
     "line": 4,
     "commit": "cc0d222"
+   }
+  },
+  {
+   "id": "W2-D35",
+   "date": "2026-10-22T07:08Z",
+   "decision": "5쪽 'Where people stop?' 왼쪽 단에 A안(질문 + 01–03 쉼 / 04–06 행위 표)을 위에, B안(서술)을 아래에 둘 다 싣는다 → B19. 가장자리에서는 머물고 가운데에서는 모인다는 '가운데' 정리를 함께",
+   "by": "사용자 (파일 기록)",
+   "supersedes": null,
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/magical-bell-u02os9",
+    "path": "docs/jaju_rounding_vmd/p05_why_they_stop.md",
+    "line": 63,
+    "commit": "3aa17ef"
    }
   }
  ],
@@ -1252,15 +1266,6 @@
    "note": "4쪽 /01 Observe. InDesign 315 × 195 (InDesign 으로 열어 확인은 안 됨)"
   },
   {
-   "kind": "pdf",
-   "repo": "cogito5170/gentleMonster",
-   "ref": "claude/magical-bell-u02os9",
-   "path": "docs/jaju_rounding_vmd/layout/plan_b18.pdf",
-   "commit": "cc0d222",
-   "status": "draft",
-   "note": "JAJU 현재본 B18 18쪽 315 × 195 (layout_315x195.md)"
-  },
-  {
    "kind": "doc",
    "repo": "cogito5170/gentleMonster",
    "ref": "claude/magical-bell-u02os9",
@@ -1268,6 +1273,33 @@
    "commit": "cc0d222",
    "status": "draft",
    "note": "5–18쪽 한 문서 InDesign (8쪽 Contain 은 글자 윤곽선 뒤 사진 넣기 필요, InDesign 으로 열어 확인은 안 됨)"
+  },
+  {
+   "kind": "pdf",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/magical-bell-u02os9",
+   "path": "docs/jaju_rounding_vmd/layout/plan_b19.pdf",
+   "commit": "3aa17ef",
+   "status": "draft",
+   "note": "JAJU 현재본 B19 18쪽 315 × 195 (5쪽 A안 · B안)"
+  },
+  {
+   "kind": "doc",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/magical-bell-u02os9",
+   "path": "docs/jaju_rounding_vmd/indesign/p05_where_people_stop/p05_where_people_stop.idml",
+   "commit": "3aa17ef",
+   "status": "draft",
+   "note": "5쪽 InDesign (B19 반영)"
+  },
+  {
+   "kind": "doc",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/magical-bell-u02os9",
+   "path": "docs/jaju_rounding_vmd/p05_why_they_stop.md",
+   "commit": "3aa17ef",
+   "status": "draft",
+   "note": "'무엇이 그들을 멈추게 했을까' 답: 여백(쉼) · 신호(행위), 가운데의 철학"
   }
  ],
  "unverified": [
@@ -1308,6 +1340,11 @@
     "path": "CLAUDE.md",
     "line": 3
    }
+  },
+  {
+   "statement": "5쪽 근거로 쓴 외부 인용(윌리엄 H. 화이트 · 얀 겔 · 크리스토퍼 알렉산더 패턴 129 · 자주 강남 첫 매장 '장터' 주제)",
+   "where": "p05_why_they_stop.md:19, :61–77 (3aa17ef)",
+   "check": "모델이 쓴 인용, 원문 대조 안 됨. 포트폴리오에 싣기 전 확인"
   }
  ]
 }
