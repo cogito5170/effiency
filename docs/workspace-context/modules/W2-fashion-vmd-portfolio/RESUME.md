@@ -1,5 +1,5 @@
 # W2 패션 · VMD 지원 포트폴리오 (JAJU 라운딩 VMD · 이전 신세계 FROM THE INSIDE)
-기준 2026-10-23T05:41Z · 체크포인트 claude/friendly-gates-0u80ge@af2fb56, claude/project-thread-n4rxnf@cd4f4d2, main@bdee7d6
+기준 2026-10-23T06:42Z · 체크포인트 claude/friendly-gates-0u80ge@af2fb56, claude/project-thread-n4rxnf@cd4f4d2, main@bdee7d6
 
 ## 지금
 JAJU 포트폴리오 흐름이 '관찰하고, 분석하고, 채운다'로 바뀌었다(10-23 사용자): /01 Observe → /02 Analyze(내 옷) → /03 Fill(건축). 2-2 세션에 파트 2 Analyze rev2(6b56a92)가 있고, 2-1 판(B20)에는 아직 옮기지 않았다. 5쪽 판 · 6쪽 글은 선택 대기.
