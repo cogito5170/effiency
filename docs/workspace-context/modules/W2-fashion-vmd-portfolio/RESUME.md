@@ -1,11 +1,11 @@
 # W2 패션 · VMD 지원 포트폴리오 (JAJU 라운딩 VMD · 이전 신세계 FROM THE INSIDE)
-기준 2026-10-23T06:42Z · 체크포인트 claude/friendly-gates-0u80ge@af2fb56, claude/project-thread-n4rxnf@cd4f4d2, main@bdee7d6
+기준 2026-10-23T07:41Z · 체크포인트 claude/friendly-gates-0u80ge@af2fb56, claude/project-thread-n4rxnf@cd4f4d2, main@bdee7d6
 
 ## 지금
-JAJU 포트폴리오 흐름이 '관찰하고, 분석하고, 채운다'로 바뀌었다(10-23 사용자): /01 Observe → /02 Analyze(내 옷) → /03 Fill(건축). 2-2 세션에 파트 2 Analyze rev2(6b56a92)가 있고, 2-1 판(B20)에는 아직 옮기지 않았다. 5쪽 판 · 6쪽 글은 선택 대기.
+JAJU 포트폴리오 흐름은 /01 Observe → /02 Match.(맞추다, 내 옷) → /03 Fill(건축). 파트 2 Match 8–11쪽 InDesign(88a501f)이 나왔고 표지 이미지 파일은 사용자에게서 받아야 한다. 5쪽 판 · 6쪽 글은 선택 대기.
 
 ## 이어 할 일: `storyline`
-W2-O38: part2_analyze_story.md rev2 대로 파트 2 · 3 자리를 바꿔 B21 을 만든다. 함께 W2-O36(5쪽 판) · W2-O37(6쪽 글) · W2-O32(견본 값)을 사용자에게. 그 밖에 W2-O30 · W2-O27 · W2-O29 · W2-O25 · W2-O23. 마지막에 10MB 이내 제출본.
+파트 3 Fill 쪽(지금 8 Contain · 9 · 10 + 제안)을 파트 2 뒤로 옮기고 part2_contain_story.md 글을 얹어 B21 을 만든다. W2-O40(Match 표지 이미지) · W2-O36(5쪽 판) · W2-O37(6쪽 글) · W2-O32 를 사용자에게. 그 밖에 W2-O30 · O27 · O29 · O25 · O23.
 - 조건: 사용자 확인 필요.
 
 ## 사용자에게 물을 것
@@ -15,18 +15,18 @@ W2-O38: part2_analyze_story.md rev2 대로 파트 2 · 3 자리를 바꿔 B21 �
 - 외 1개 → state.json open
 
 ## 지금 유효한 결정 (최근순)
-- W2-D38 책 전체 흐름을 '관찰하고, 분석하고, 채운다'로: /01 Observe(사람들) → /02 Analyze(내 옷: 한 벌 · 아이템 · 장소, 지금의 11–14쪽) → /03 Fill(건축에서 배운 공간, 지금의…
+- W2-D39 파트 2 이름은 /02 Match.(맞추다): 한 벌 안에서 → 아이템끼리 → 장소에. 2-2 rev3 스토리가 확정본으로 2-1 에 넘어가 8–11쪽(표지 · Front, or back? · Selection—0…
 - W2-D37 6쪽 레이아웃은 안 D(왼쪽 위 큰 사진 + 오른쪽 아래 작은 사진 둘)로 다듬는다. rev5: 큰 사진을 빨간 신호 점의 세로선까지 키우고 오른쪽 단 · 아래 글 재배치
 - W2-D36 6쪽 글은 '내가 옷을 입을 때' 기준(전체를 맞추고 한 가지만 다르게), 베이글 · 지인 스타일링 이야기는 뺀다 → rev5 가 기준
 - W2-D35 5쪽 'Where people stop?' 왼쪽 단에 A안(질문 + 01–03 쉼 / 04–06 행위 표)을 위에, B안(서술)을 아래에 둘 다 싣는다 → B19. 가장자리에서는 머물고 가운데에서는 모인다는 '가운…
 - 외 24개 → state.json decisions
 
 ## 작업 중인 파일
-- docs/jaju_rounding_vmd/midjourney_room_spread.md @edf19dd
 - docs/jaju_rounding_vmd/part2_analyze_story.md @6b56a92
 - docs/jaju_rounding_vmd/part2_contain_story.md @9926d51
 - docs/jaju_rounding_vmd/gemini_outfit_swap.md @af2fb56
-- 외 48개 → state.json artifacts
+- docs/jaju_rounding_vmd/indesign/part2_match/part2_match.idml @88a501f
+- 외 49개 → state.json artifacts
 
 ## 읽는 법
 - 이 파일만 읽고 시작한다. 더 필요하면 `W2-fashion-vmd-portfolio/state.json` 의 해당 id 만 연다. 지난 이력은 `history.jsonl`.
