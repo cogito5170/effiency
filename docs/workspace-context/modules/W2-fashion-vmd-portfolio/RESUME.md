@@ -1,5 +1,5 @@
 # W2 패션 · VMD 지원 포트폴리오 (JAJU 라운딩 VMD · 이전 신세계 FROM THE INSIDE)
-기준 2026-10-23T02:41Z · 체크포인트 claude/friendly-gates-0u80ge@fcf62dd, claude/project-thread-n4rxnf@cd4f4d2, main@bdee7d6
+기준 2026-10-23T04:41Z · 체크포인트 claude/friendly-gates-0u80ge@edf19dd, claude/project-thread-n4rxnf@cd4f4d2, main@bdee7d6
 
 ## 지금
 JAJU 포트폴리오 현재본은 B20 18쪽 315 × 195(84b281a). 5쪽은 일정표 격자 꼴(4d9b7aa, InDesign 있음)이 새로 나왔고, 6쪽은 레이아웃 안 D rev5 위에 글 rev5 · rev6 · rev7(cb930ad, '하나의 장면 속 배치의 조화') 중 사용자 선택을 기다린다.
@@ -22,11 +22,11 @@ W2-O36(5쪽 B19 판 vs 격자 꼴) · W2-O37(6쪽 글 rev5/6/7) · W2-O32(견본
 - 외 23개 → state.json decisions
 
 ## 작업 중인 파일
-- docs/jaju_rounding_vmd/p06_story.md @cb930ad
 - docs/jaju_rounding_vmd/layout/p06_layout_d.pdf @90c8f06
 - docs/jaju_rounding_vmd/indesign/p06_layout_d/p06_layout_d.idml @666afb8
 - docs/jaju_rounding_vmd/indesign/p05_itinerary/p05_itinerary.idml @4d9b7aa
-- 외 44개 → state.json artifacts
+- docs/jaju_rounding_vmd/midjourney_room_spread.md @edf19dd
+- 외 45개 → state.json artifacts
 
 ## 읽는 법
 - 이 파일만 읽고 시작한다. 더 필요하면 `W2-fashion-vmd-portfolio/state.json` 의 해당 id 만 연다. 지난 이력은 `history.jsonl`.

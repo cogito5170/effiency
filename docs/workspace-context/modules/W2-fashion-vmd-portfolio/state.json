@@ -1,11 +1,11 @@
 {
  "module": "W2",
  "title": "패션 · VMD 지원 포트폴리오 (JAJU 라운딩 VMD · 이전 신세계 FROM THE INSIDE)",
- "as_of": "2026-10-23T02:41Z",
+ "as_of": "2026-10-23T04:41Z",
  "checkpoint": {
-  "at": "2026-10-23T02:41Z",
+  "at": "2026-10-23T04:41Z",
   "refs": {
-   "gentleMonster@claude/friendly-gates-0u80ge": "fcf62dd",
+   "gentleMonster@claude/friendly-gates-0u80ge": "edf19dd",
    "gentleMonster@claude/project-thread-n4rxnf": "cd4f4d2",
    "gentleMonster@main": "bdee7d6",
    "gentleMonster@claude/magical-bell-u02os9": "4d9b7aa",
@@ -1421,6 +1421,15 @@
    "commit": "4d9b7aa",
    "status": "draft",
    "note": "5쪽 일정표 격자 꼴 InDesign (+ layout/p05_itinerary.pdf)"
+  },
+  {
+   "kind": "doc",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/friendly-gates-0u80ge",
+   "path": "docs/jaju_rounding_vmd/midjourney_room_spread.md",
+   "commit": "edf19dd",
+   "status": "draft",
+   "note": "펼친 잡지 목업(시안 전용 사진)에 AR-07 · AR-08 을 넣는 미드저니 프롬프트, 사용자가 직접 생성"
   }
  ],
  "unverified": [
