@@ -1,11 +1,11 @@
 # W2 패션 · VMD 지원 포트폴리오 (JAJU 라운딩 VMD · 이전 신세계 FROM THE INSIDE)
-기준 2026-10-22T12:42Z · 체크포인트 claude/friendly-gates-0u80ge@fcf62dd, claude/project-thread-n4rxnf@cd4f4d2, main@bdee7d6
+기준 2026-10-23T02:41Z · 체크포인트 claude/friendly-gates-0u80ge@fcf62dd, claude/project-thread-n4rxnf@cd4f4d2, main@bdee7d6
 
 ## 지금
-JAJU 포트폴리오 현재본은 B20 18쪽 315 × 195(84b281a). 6쪽은 레이아웃 안 D rev5(666afb8, InDesign 있음)로 다듬는 중이고, 글은 2-2 세션의 rev5 와 새 rev6 '중심 · 조화'(290e6f9) 중 사용자 선택을 기다린다.
+JAJU 포트폴리오 현재본은 B20 18쪽 315 × 195(84b281a). 5쪽은 일정표 격자 꼴(4d9b7aa, InDesign 있음)이 새로 나왔고, 6쪽은 레이아웃 안 D rev5 위에 글 rev5 · rev6 · rev7(cb930ad, '하나의 장면 속 배치의 조화') 중 사용자 선택을 기다린다.
 
 ## 이어 할 일: `storyline`
-6쪽: W2-O35(글 rev5 vs rev6, 큰 사진 PH-12 제안) · W2-O32(견본 값 기준)을 정하면 안 D rev5 에 글을 얹어 B21 을 만든다. 그 밖에 W2-O30 · W2-O27 · W2-O29 · W2-O25 · W2-O23. 마지막에 10MB 이내 제출본.
+W2-O36(5쪽 B19 판 vs 격자 꼴) · W2-O37(6쪽 글 rev5/6/7) · W2-O32(견본 값)를 정하면 B21 을 만든다. 그 밖에 W2-O30 · W2-O27 · W2-O29 · W2-O25 · W2-O23. 마지막에 10MB 이내 제출본.
 - 조건: 사용자 확인 필요.
 
 ## 사용자에게 물을 것
@@ -22,11 +22,11 @@ JAJU 포트폴리오 현재본은 B20 18쪽 315 × 195(84b281a). 6쪽은 레이�
 - 외 23개 → state.json decisions
 
 ## 작업 중인 파일
-- docs/jaju_rounding_vmd/layout/plan_b20.pdf @84b281a
-- docs/jaju_rounding_vmd/p06_story.md @290e6f9
+- docs/jaju_rounding_vmd/p06_story.md @cb930ad
 - docs/jaju_rounding_vmd/layout/p06_layout_d.pdf @90c8f06
 - docs/jaju_rounding_vmd/indesign/p06_layout_d/p06_layout_d.idml @666afb8
-- 외 43개 → state.json artifacts
+- docs/jaju_rounding_vmd/indesign/p05_itinerary/p05_itinerary.idml @4d9b7aa
+- 외 44개 → state.json artifacts
 
 ## 읽는 법
 - 이 파일만 읽고 시작한다. 더 필요하면 `W2-fashion-vmd-portfolio/state.json` 의 해당 id 만 연다. 지난 이력은 `history.jsonl`.
