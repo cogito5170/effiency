@@ -1,11 +1,11 @@
 # W2 패션 · VMD 지원 포트폴리오 (JAJU 라운딩 VMD · 이전 신세계 FROM THE INSIDE)
-기준 2026-10-24T05:41Z · 체크포인트 claude/friendly-gates-0u80ge@af2fb56, claude/project-thread-n4rxnf@cd4f4d2, main@bdee7d6
+기준 2026-10-24T06:42Z · 체크포인트 claude/friendly-gates-0u80ge@af2fb56, claude/project-thread-n4rxnf@cd4f4d2, main@bdee7d6
 
 ## 지금
-JAJU 포트폴리오 흐름은 /01 Observe → /02 Match. → /03 Fill. Match 여는 면은 '옷의 색감, 원단, 디자인을 맞춘다. 그날 갈 장소에 옷의 무드를 맞춘다.'(DESIGN + MOOD). 2-2 가 다음 쪽 rev4(9 DESIGN → 10 MOOD → 11 마네킹)와 5.5 NEXT 문구 세 안을 냈고, 2-1 은 9 · 11쪽 진 판을 냈다. 쪽 순서 · 문구는 선택 대기.
+JAJU 포트폴리오 흐름은 /01 Observe → /02 Match. → /03 Fill. Match 여는 면은 DESIGN + MOOD. 2-2 가 rev4(9 DESIGN → 10 MOOD → 11 마네킹)를 문단 글로 쓰고(D42), 사용자 색 문장(C19)을 'JAJU 톤에 어우러져 상품이 먼저 보이게'로 재가공했다. 쪽 순서 · 문구 · 색 문단 자리는 선택 대기.
 
 ## 이어 할 일: `storyline`
-W2-O42(파트 2 rev4 순서) · W2-O43(여는 면 따옴표) · W2-O41(5.5 NEXT 문구) · W2-O40(Match 표지 이미지) · W2-O36 · W2-O37 · W2-O32 를 사용자에게. 정해지면 rev4 를 2-1 진 판에 반영하고 파트 3 Fill 쪽을 뒤로 옮기는 B21. 그 밖에 W2-O30 · O27 · O29 · O25 · O23.
+W2-O42(파트 2 rev4 순서) · W2-O44(색 문단 자리 · 판) · W2-O43(여는 면 따옴표) · W2-O41(5.5 NEXT 문구) · W2-O40(Match 표지 이미지) · W2-O36 · W2-O37 · W2-O32 를 사용자에게. 정해지면 rev4 문단 글을 2-1 진 판에 얹고 파트 3 Fill 쪽을 뒤로 옮기는 B21. 그 밖에 W2-O30 · O27 · O29 · O25 · O23.
 - 조건: 사용자 확인 필요.
 
 ## 사용자에게 물을 것
@@ -14,10 +14,10 @@ W2-O42(파트 2 rev4 순서) · W2-O43(여는 면 따옴표) · W2-O41(5.5 NEXT 
 - 외 2개 → state.json open
 
 ## 지금 유효한 결정 (최근순)
+- W2-D42 파트 2 rev4 글은 칸 · 목록이 아니라 문장으로 된 문단으로 쓴다 (쪽마다 한 문단, 5쪽 WHY 처럼)
 - W2-D41 9쪽 Front, or back? 를 STREET CULTURE 진 판으로 재가공해 InDesign · 포토샵으로 받기 (앞서 '12쪽' 요청은 소통 오류로 사용자가 이 쪽으로 바로잡음, Fill 표지 시안은 지움)
 - W2-D40 11쪽 Four places 를 스케이트 진(PEACE. LOVE. SKATE.)의 레이아웃 · 배치 · 폰트를 참고해 진(zine) 판으로 재가공하고 PDF 로 받기
-- W2-D39 파트 2 이름은 /02 Match.(맞추다): 한 벌 안에서 → 아이템끼리 → 장소에. 2-2 rev3 스토리가 확정본으로 2-1 에 넘어가 8–11쪽(표지 · Front, or back? · Selection—0…
-- 외 27개 → state.json decisions
+- 외 28개 → state.json decisions
 
 ## 작업 중인 파일
 - docs/jaju_rounding_vmd/indesign/part2_match/part2_match.idml @88a501f
