@@ -1,5 +1,5 @@
 # W3 젠틀몬스터 공간 포트폴리오 SPA (원고 · 잡지 · 띠 이미지 · 03 ARCHITECTURE 설치작품)
-기준 2026-10-16T03:30Z · 체크포인트 main@6acff99, claude/midjourney-574x172-image-sy9gq3@b3f3eda, claude/youthful-ride-kehgoo@cd6d457
+기준 2026-10-16T07:45Z · 체크포인트 main@bdee7d6, claude/midjourney-574x172-image-sy9gq3@b3f3eda, claude/youthful-ride-kehgoo@cd6d457
 
 ## 지금
 2026-10-15 CLAUDE.md(12ecdbd): 이미지는 모두 Codex. 그 직전 W3 작업 결정은 2026-10-10 10:16 띠 이미지 '방향성 프롬프트 3종, 오브제 · 물성은 나중에' (b3f3eda). 설치작품은 10-10 09:00 흉상 지시가 마지막이나 구현은 커밋되지 않음.

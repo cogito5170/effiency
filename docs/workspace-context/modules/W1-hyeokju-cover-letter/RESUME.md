@@ -1,31 +1,31 @@
-# W1 혁주 자기소개서 (신세계인터내셔날 해외패션 라운딩 VMD)
-기준 2026-10-16T06:50Z · 체크포인트 claude/clever-knuth-1dezlo@56d69a1, claude/beautiful-gates-e42a5m@76d0f6d, claude/modest-cannon-ha8zs3@79ba2dc
+# W1 혁주 자기소개서 (JAJU 라운딩 VMD · 이전 신세계인터내셔날 해외패션)
+기준 2026-10-24T13:41Z · 체크포인트 claude/clever-knuth-1dezlo@53372d6, claude/beautiful-gates-e42a5m@76d0f6d, claude/modest-cannon-ha8zs3@79ba2dc
 
 ## 지금
-Q1 구성은 R2 + 왜 해외 브랜드 VMD + 역량 답변(사용자, 10-16 06:09). 현재본은 조립본 rev qa2 931자(092bd99). 첫 단락 가운데 문장을 사용자 요청(앞 세 문장 · 마지막 문장 고정)으로 G1~G3 까지 냈고 선택은 아직 없다.
+대상은 JAJU 라운딩 VMD. Q1 확정(999자). Q2 는 단락별로 고쳐 rev35(1179자, 53372d6)가 현재본: 첫 단락 직무 정의형 확정(D32), 스타일링(C20 문구) · 3D 선행 모형(C21) · 카페와 의류 회사 단락. 1000자 넘어 줄여야 함. Q3 는 rev3 그대로.
 
-## 이어 할 일: `finalize`
-selfintro_p1_middle_options.json 의 G1~G3 를 보여 주고 하나를 고르게 한 뒤, 그 문장을 넣은 조립본 전문과 글자 수로 Q1 채택을 받는다. 채택되면 selection_sikorea_vmd_3q.json 의 Q1_selfintro 에 기록하고 Q2 로 넘어간다.
-- 조건: 사용자 확인 필요 (PROCESS.md §0 '고르는 것은 사용자').
-
-## 사용자에게 물을 것
-- W1-O8 첫 단락 가운데 문장 후보 G1~G3(rev2, 큰 것에서 작은 것으로) 중 선택, 그 뒤 qa2 조립본을 Q1 최종으로 채택할지
+## 이어 할 일: `draft_paragraph`
+JAJU Q2 rev35(1179자)를 PROCESS_question_revision.md 4번(997–1000자 맞춤)대로 줄일 안을 표로 낸다(W1-O25). 확정되면 jaju_rounding_vmd_q2_FINAL.md, 이어 Q3.
+- 조건: 사용자 확인 필요.
 
 ## 지금 유효한 결정 (최근순)
-- W1-D18 Q&A 2차: 첫 단락은 '두 관심(옷 · 배치)이 만남'으로, 둘째 단락은 '옮기는 일' 대신 실제 업무(시즌 테마를 착장 · 진열 · VP 로)로 → 조립본 rev qa2 931자
-- W1-D16 구성 확정 방향: R2 + H2 + 역량 답변. 회사 단락(D15 의 Z안)은 빠짐
-- W1-D10 첫 단락 R2 채택 (CMD-HJ84 R1~R3 중), 둘째 단락 = '왜 해외패션 VMD · 왜 이 부서'
-- W1-D7 신세계 공통 3문항(각 1000자) 형식으로 다시 씀, V5는 보존
-- W1-D4 대상 공고를 신세계인터내셔날 해외패션 라운딩 VMD로 전환, BLUE ELEPHANT 중단 (ATiiSSU 초안 A1은 '중단'으로 보관)
+- W1-D32 JAJU Q2 첫 단락 확정(rev28): 직무 정의형(S1) — '라운딩 VMD는 담당 매장마다 브랜드의 기준을 같은 모습으로 맞추는 사람' + 리브랜딩 첫 매장 사실 + '…경험을 쓸 수 있습니다'
+- W1-D31 JAJU Q1 확정(rev22, 999자): 소제목 '[일상의 불편에서 진열의 가능성을 찾다]' → jaju_rounding_vmd_q1_FINAL.md. 다음은 2번 문항
+- W1-D28 JAJU Q1 셋째(맺음) 단락은 B안(VMD 실무 없음 → 공간감 · 안목 두 가지로 채움 → 오래 일하겠다 · 오픈 · 리뉴얼)으로 — rev16 대신 rev15 B안 복구(rev17)
+- W1-D27 JAJU Q1 첫 단락은 방향 2(공간감 유지 + 인턴 실측 근거) 채택 → rev4. 소제목은 미정
+- W1-D26 JAJU 자기소개서는 rev1 구성을 복구한 rev3 를 현재본으로 한다 (Q1 933 · Q2 946 · Q3 975자). rev2 는 보존
+- W1-D25 JAJU 자기소개서 문항은 신세계 3문항과 같게(자기소개 · 지원동기 / 하고 싶은 일 · 차별화 능력 / 학업 외 몰입 · 성과). 신세계 FINAL 을 바탕으로 rev1 작성
+- 외 8개 → state.json decisions
 
 ## 작업 중인 파일
-- docs/portfolio/handoff/selection_sikorea_vmd_3q.json @31e58ae
-- docs/portfolio/handoff/selfintro_sikorea_assembled.json @092bd99
-- docs/portfolio/handoff/why_overseas_dept_paragraph.json @17763fc
-- docs/portfolio/handoff/prove_capability_drafts.json @f2a182e
-- docs/portfolio/handoff/selfintro_p1_middle_options.json @56d69a1
+- docs/portfolio/handoff/sikorea_q2_draft.json @59f720a
+- docs/company_analysis/jaju/04a_brand_image.md @c6deb58
+- docs/portfolio/jaju/jaju_rounding_vmd_Q1-3_draft.md @0a0cabf
+- docs/portfolio/handoff/jaju_selfintro_draft.json @f0959b5
+- docs/portfolio/jaju/PROCESS_question_revision.md @d6e3228
+- 외 3개 → state.json artifacts
 
 ## 읽는 법
 - 이 파일만 읽고 시작한다. 더 필요하면 `W1-hyeokju-cover-letter/state.json` 의 해당 id 만 연다. 지난 이력은 `history.jsonl`.
-- 미확인 5개는 결론으로 쓰지 않는다. 확정은 저장소 파일로 다시 확인한다.
+- 미확인 7개는 결론으로 쓰지 않는다. 확정은 저장소 파일로 다시 확인한다.
 - 결정 · 산출물은 저장소에 커밋해 둔다. 백엔드가 커밋에서 다음 요약을 만든다.

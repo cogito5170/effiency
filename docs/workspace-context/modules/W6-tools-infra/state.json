@@ -1,11 +1,11 @@
 {
  "module": "W6",
  "title": "도구 · 인프라 (relay · 메모리 · 프론트엔드 · agy)",
- "as_of": "2026-10-16T03:30Z",
+ "as_of": "2026-10-22T08:42Z",
  "checkpoint": {
-  "at": "2026-10-16T03:30Z",
+  "at": "2026-10-22T08:42Z",
   "refs": {
-   "gentleMonster@main": "6acff99",
+   "gentleMonster@main": "bdee7d6",
    "effiency@main": "8724b6c",
    "gentleMonster@claude/confident-goldberg-vpwcje": "0649ecb",
    "gentleMonster@claude/slot-correction-tests": "5fd19f4",
@@ -13,13 +13,14 @@
    "gentleMonster@claude/dazzling-fermat-5j22zb": "97ded21",
    "effiency@claude/zealous-goodall-wkb3yz": "03eb32a",
    "effiency@claude/context-archive": "6f7510c",
-   "effiency@claude/project-thread-susdx3": "ddc7904"
+   "effiency@claude/project-thread-susdx3": "ddc7904",
+   "effiency@claude/handoff-marked-task": "514bc6d"
   },
   "method": "scripts/sync_delta.py: 체크포인트 커밋 뒤의 커밋 · 바뀐 파일만 읽음. 세션 대화 원본은 읽지도 고치지도 않음",
   "not_cloned": [],
   "verified_no_change_at": "2026-10-16T06:30Z"
  },
- "latest_confirmed": "2026-10-15 사용자가 gentleMonster PR #9(기억·맥락 0eeccc8) · #10(정정 슬롯 386f7ae) · #11(relay 보관소 hook b688f77) 과 effiency PR #3(archive 6b0cd32) 를 머지 — 머지된 도구 상태의 최신. 미머지 최신은 effiency@claude/zealous-goodall-wkb3yz 의 relay ask(03eb32a), 맥 Quick Action 실패 원인(ask.log) 대기.",
+ "latest_confirmed": "미머지 최신은 effiency@claude/handoff-marked-task(514bc6d, 10-22): zealous-goodall 의 relay ask 위에 relay read(PDF 해설 패널, APPROVE)와 훅 보강(인수인계 차단 · 읽기 가드)을 더했다. 머지된 도구 상태는 10-15 그대로. 맥 Quick Action 실패 원인(ask.log)은 여전히 대기.",
  "resume_point": {
   "op": "relay_ask",
   "input_hint": "mode=diagnose: 사용자 맥의 빠른 동작 실행 출력 + `cat ~/.relay/ask.log` (없으면 `ls -la ~/.relay`) 를 받아 effiency@claude/zealous-goodall-wkb3yz 03eb32a 의 relay/ask.py 단계 로그와 대조",
@@ -198,6 +199,29 @@
    },
    "decided_at": "2026-10-07T20:27Z",
    "file_verified": false
+  },
+  {
+   "id": "W6-C13",
+   "statement": "relay read(PDF 옆 해설 패널, pdf-professor task)가 구현되어 relay 리뷰 VERDICT: APPROVE, unittest 113개 통과. 실제 브라우저 · PDF 렌더링은 수동 확인 필요",
+   "source": "도구출력",
+   "evidence": {
+    "repo": "cogito5170/effiency",
+    "ref": "claude/handoff-marked-task",
+    "path": ".relay/tasks/pdf-professor/state.md",
+    "line": 3,
+    "commit": "514bc6d"
+   }
+  },
+  {
+   "id": "W6-C14",
+   "statement": "훅 보강: 차단 직전 인수인계 상태 받아내기(auto_wrapup 을 대화형 세션까지), PreToolUse matcher '*', read_guard 의 limit 없는 offset · awk NR 범위 · grep -A/-B/-C(hooks.grep_max_context 20) 막기",
+   "source": "도구출력",
+   "evidence": {
+    "repo": "cogito5170/effiency",
+    "ref": "claude/handoff-marked-task",
+    "path": "relay/hooks.py",
+    "commit": "514bc6d"
+   }
   }
  ],
  "decisions": [
@@ -357,13 +381,6 @@
    "source": "도구출력"
   },
   {
-   "id": "W6-O3",
-   "item": "`relay run pdf-professor` 가 iteration 1 에서 멈춤 — 해결 여부 불명 (pdf-professor 는 brief.md 만 있고 run 산출물 없음)",
-   "waiting_on": "사용자",
-   "blocking": false,
-   "source": "도구출력"
-  },
-  {
    "id": "W6-O4",
    "item": "effiency@claude/project-thread-susdx3 ddc7904 (relay recall: 흔한 낱말만 겹치면 붙이지 않음) main 미머지",
    "waiting_on": "사용자",
@@ -456,6 +473,15 @@
    "path": "notes/pd-portfolio/project-proposal.md",
    "commit": "8724b6c",
    "status": "final"
+  },
+  {
+   "kind": "code",
+   "repo": "cogito5170/effiency",
+   "ref": "claude/handoff-marked-task",
+   "path": "relay/reader.py",
+   "commit": "514bc6d",
+   "status": "draft",
+   "note": "미머지 브랜치 (zealous-goodall relay ask 위에 쌓임), PR 없음"
   }
  ],
  "unverified": [
