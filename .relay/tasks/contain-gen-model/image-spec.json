@@ -1,0 +1,19 @@
+{
+ "subject": "A single architectural grid-frame model: a small lattice skeleton of thin pale timber members forming square cells (like the frame of a hanok courtyard house or a display shelf grid), standing alone on a low dark plinth in a museum.",
+ "purpose": "Photo set inside the word 'Contain' on a black magazine page; it must read as one object at small size.",
+ "style": "Editorial museum photography, real photograph, sharp, medium-format look, no illustration.",
+ "mood": "Quiet, contemplative, refined; dark gallery.",
+ "composition": "Frontal, the model fills most of the frame vertically, tight decisive crop, centered, generous black around top and sides only slightly.",
+ "palette": "Near-black background, warm pale wood, a small accent of muted red allowed in one cell.",
+ "lighting": "Single soft museum spotlight from above, deep shadows, no glare.",
+ "text": "",
+ "size": "1024x1536",
+ "avoid": [
+  "people",
+  "text or logos",
+  "busy background",
+  "CGI look",
+  "vignette frames"
+ ],
+ "notes": "High resolution detail on the joints; background must fall to black so it sits on a (4,5,5) black page."
+}
