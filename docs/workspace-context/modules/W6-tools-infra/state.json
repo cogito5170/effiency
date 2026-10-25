@@ -1,9 +1,9 @@
 {
  "module": "W6",
  "title": "도구 · 인프라 (relay · 메모리 · 프론트엔드 · agy)",
- "as_of": "2026-10-25T16:42Z",
+ "as_of": "2026-10-25T17:42Z",
  "checkpoint": {
-  "at": "2026-10-25T16:42Z",
+  "at": "2026-10-25T17:42Z",
   "refs": {
    "gentleMonster@main": "bdee7d6",
    "effiency@main": "8724b6c",
@@ -15,7 +15,7 @@
    "effiency@claude/context-archive": "6f7510c",
    "effiency@claude/project-thread-susdx3": "ddc7904",
    "effiency@claude/handoff-marked-task": "514bc6d",
-   "effiency@claude/project-thread-9s8x1k": "0a51b68"
+   "effiency@claude/project-thread-9s8x1k": "941d9e7"
   },
   "method": "scripts/sync_delta.py: 체크포인트 커밋 뒤의 커밋 · 바뀐 파일만 읽음. 세션 대화 원본은 읽지도 고치지도 않음",
   "not_cloned": [],
@@ -233,6 +233,17 @@
     "ref": "claude/project-thread-9s8x1k",
     "path": ".relay/tasks/canon-a-spd/response.json",
     "commit": "0a51b68"
+   }
+  },
+  {
+   "id": "W6-C16",
+   "statement": "같은 relay 브랜치에서 패션지 참고 2묶음(canon-f · g)을 더 받고, codex 로 참고 펼침면 이미지를 내려받음(첫 시도 실패, 네트워크 켜고 재시도해 canon-images/img 에 저장). 이어 파트 3 Contain 쪽 시안을 참고 펼침면 3장 · 확대 컷과 나란히 놓고 codex 를 심사위원으로 평가(aesthetic_criteria.md · prompt.md, JSON 등급): 1차 A_vitrine · B_split · C_intrusion 모두 revise, 2차 B2_split revise(사진 크롭 미흡, 가까운 참고 DOMa), B3_contained 는 요청만 있고 답 대기",
+   "source": "도구출력",
+   "evidence": {
+    "repo": "cogito5170/effiency",
+    "ref": "claude/project-thread-9s8x1k",
+    "path": ".relay/tasks/critic-B2_split/response.json",
+    "commit": "941d9e7"
    }
   }
  ],
@@ -503,6 +514,24 @@
    "commit": "0a51b68",
    "status": "draft",
    "note": "잡지 편집 디자인 참고 목록(잡지 · 호 · 디자이너 · 수상 · 출처 URL), output_tail 끝부분만 남음"
+  },
+  {
+   "kind": "data",
+   "repo": "cogito5170/effiency",
+   "ref": "claude/project-thread-9s8x1k",
+   "path": ".relay/tasks/canon-images/img/",
+   "commit": "aa990c1",
+   "status": "draft",
+   "note": "참고 잡지 펼침면 이미지(내려받은 것, 출처는 canon-* 목록)"
+  },
+  {
+   "kind": "data",
+   "repo": "cogito5170/effiency",
+   "ref": "claude/project-thread-9s8x1k",
+   "path": ".relay/tasks/critic-*/",
+   "commit": "941d9e7",
+   "status": "draft",
+   "note": "Contain 쪽 시안 심사 요청 · 기준 · 답 (A_vitrine · B_split · C_intrusion · B2_split · B3_contained)"
   }
  ],
  "unverified": [
@@ -534,6 +563,11 @@
    "statement": "이 참고 보드가 어느 작업(W4 잡지 시스템 · W2 포트폴리오 등)에 쓰이는지, output_tail 이 2000자로 잘려 앞부분 항목이 빠졌는지",
    "where": "effiency@claude/project-thread-9s8x1k .relay/tasks/canon-*",
    "check": "요청 파일에 대상 작업 이름 없음"
+  },
+  {
+   "statement": "이 심사가 W2 포트폴리오 파트 3 Contain 쪽(W2-D44 글) 레이아웃 고르기에 쓰이는 것으로 보임 — W2 쪽 기록은 아직 없음",
+   "where": "effiency@claude/project-thread-9s8x1k critic-* request (dfa2151 'canon critique of Contain candidates')",
+   "check": "커밋 메시지에서 추론"
   }
  ]
 }
