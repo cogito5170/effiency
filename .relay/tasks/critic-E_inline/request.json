@@ -1,0 +1,6 @@
+{
+ "action": "delegate",
+ "agent": "codex",
+ "instruction": "You are an editorial design juror. In .relay/tasks/critic-E_inline/ read prompt.md and aesthetic_criteria.md, then open and look at candidate.jpg, every zoom_*.jpg and every canon_*.jpg with your image viewing tool. Judge the candidate beside the canon pages exactly as prompt.md says and write ONLY .relay/tasks/critic-E_inline/critique_gpt.json in the JSON form it gives (Korean grade words, as listed). Do not change any other file.",
+ "id": "20261025T175928"
+}
