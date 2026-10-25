@@ -1,8 +1,8 @@
 # W1 혁주 자기소개서 (JAJU 라운딩 VMD · 이전 신세계인터내셔날 해외패션)
-기준 2026-10-25T05:42Z · 체크포인트 claude/clever-knuth-1dezlo@32919da, claude/beautiful-gates-e42a5m@76d0f6d, claude/modest-cannon-ha8zs3@79ba2dc
+기준 2026-10-25T06:42Z · 체크포인트 claude/clever-knuth-1dezlo@c664301, claude/beautiful-gates-e42a5m@76d0f6d, claude/modest-cannon-ha8zs3@79ba2dc
 
 ## 지금
-대상은 JAJU 라운딩 VMD. 1~3번 모두 확정: Q1 999자(D31), Q2 rev44 999자(D33, 스타일링 감각 · 구상을 미리 확인), Q3 rev50 998자(D34, 의류 회사처럼 칸막이로 나눈 카페 창고). FINAL 파일은 docs/portfolio/jaju/. 남은 것은 각 FINAL 의 '확인 필요' 메모와 공고 마감 여부(O17).
+대상은 JAJU 라운딩 VMD. 1~3번 모두 확정: Q1 999자(D31), Q2 rev44 999자(D33), Q3 rev50 998자(D34), 확인 필요 메모도 사용자가 확인(C25). FINAL 은 docs/portfolio/jaju/, 세 문항을 묶은 Word 파일 jaju_rounding_vmd_Q1-3.docx. 남은 것은 공고 마감 여부(O17).
 
 ## 이어 할 일: `draft_paragraph`
 JAJU 1~3번 확정 완료. 사용자가 새 문항 · 새 공고를 주거나 FINAL 의 '확인 필요' 메모(unverified)를 확인하면 그에 따라 고친다. 공고 마감 문의 결과(W1-O17) 대기.
@@ -27,5 +27,5 @@ JAJU 1~3번 확정 완료. 사용자가 새 문항 · 새 공고를 주거나 FI
 
 ## 읽는 법
 - 이 파일만 읽고 시작한다. 더 필요하면 `W1-hyeokju-cover-letter/state.json` 의 해당 id 만 연다. 지난 이력은 `history.jsonl`.
-- 미확인 10개는 결론으로 쓰지 않는다. 확정은 저장소 파일로 다시 확인한다.
+- 미확인 8개는 결론으로 쓰지 않는다. 확정은 저장소 파일로 다시 확인한다.
 - 결정 · 산출물은 저장소에 커밋해 둔다. 백엔드가 커밋에서 다음 요약을 만든다.
