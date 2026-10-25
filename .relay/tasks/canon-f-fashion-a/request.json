@@ -1,0 +1,6 @@
+{
+  "action": "delegate",
+  "agent": "codex",
+  "instruction": "Use web search. Find up to 8 real magazine spreads, covers or issue redesigns in this scope: fashion magazine art direction widely documented as canonical: Purple (Olivier Zahm, design by M/M Paris or others), Self Service (Ezra Petronio), Vogue Italia under Franca Sozzani (art direction, Steven Meisel covers), i-D (Terry Jones), Arena Homme+, Visionaire, AnOther Magazine.\nOnly include an item if you opened a page that documents it (award archive, publisher, museum, designer or studio portfolio, magCulture, It's Nice That, Eye magazine, Design Observer). Prefer pages that SHOW images of the spreads. Never invent URLs.\nDo NOT write or patch any files (the sandbox cannot write). Put the whole result in your FINAL message only, nothing else, max 1800 characters, one item per line exactly:\npublication | issue or year | art director / design studio | award or 'canonical' | url\n",
+  "id": "20261025T164321"
+}
