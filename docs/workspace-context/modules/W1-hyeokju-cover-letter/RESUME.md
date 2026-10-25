@@ -1,21 +1,21 @@
 # W1 혁주 자기소개서 (JAJU 라운딩 VMD · 이전 신세계인터내셔날 해외패션)
-기준 2026-10-25T04:41Z · 체크포인트 claude/clever-knuth-1dezlo@d682f52, claude/beautiful-gates-e42a5m@76d0f6d, claude/modest-cannon-ha8zs3@79ba2dc
+기준 2026-10-25T05:42Z · 체크포인트 claude/clever-knuth-1dezlo@32919da, claude/beautiful-gates-e42a5m@76d0f6d, claude/modest-cannon-ha8zs3@79ba2dc
 
 ## 지금
-대상은 JAJU 라운딩 VMD. Q1 확정(999자). Q2 는 rev42(998자, d682f52)가 현재본: 첫 단락 직무 정의형(D32), 스타일링(C20 문구) · 3D 선행 모형(C21) 두 능력, 카페 · 의류 회사 단락은 삭제, 두 능력을 묶는 맺음. FINAL 파일은 아직 없음. Q3 는 rev3 그대로.
+대상은 JAJU 라운딩 VMD. 1~3번 모두 확정: Q1 999자(D31), Q2 rev44 999자(D33, 스타일링 감각 · 구상을 미리 확인), Q3 rev50 998자(D34, 의류 회사처럼 칸막이로 나눈 카페 창고). FINAL 파일은 docs/portfolio/jaju/. 남은 것은 각 FINAL 의 '확인 필요' 메모와 공고 마감 여부(O17).
 
 ## 이어 할 일: `draft_paragraph`
-JAJU Q2 rev42(998자)를 사용자가 확인하면 jaju_rounding_vmd_q2_FINAL.md 로 내고(W1-O26), Q3 rev3 를 PROCESS_question_revision.md 절차로 고친다.
-- 조건: 사용자 확인 필요.
+JAJU 1~3번 확정 완료. 사용자가 새 문항 · 새 공고를 주거나 FINAL 의 '확인 필요' 메모(unverified)를 확인하면 그에 따라 고친다. 공고 마감 문의 결과(W1-O17) 대기.
+- 조건: 사용자 지시 필요.
 
 ## 지금 유효한 결정 (최근순)
+- W1-D34 JAJU Q3 확정(rev50, 998자): 소제목 '[의류 회사처럼 품목을 나눠, 한눈에 보이는 창고를 만들다]', 다짐은 VMD 팀에 건의하는 형태 → jaju_rounding_vmd_q3_FINAL.md. J…
+- W1-D33 JAJU Q2 확정(rev44, 999자): 소제목 '[어느 매장에서든 같은 장면을 만드는 VMD]', 직무 정의 → 스타일링 감각 → 구상을 미리 확인 → 두 능력 종합. 베이글 · 의류 회사 이야기는 Q3 로 …
 - W1-D32 JAJU Q2 첫 단락 확정(rev28): 직무 정의형(S1) — '라운딩 VMD는 담당 매장마다 브랜드의 기준을 같은 모습으로 맞추는 사람' + 리브랜딩 첫 매장 사실 + '…경험을 쓸 수 있습니다'
 - W1-D31 JAJU Q1 확정(rev22, 999자): 소제목 '[일상의 불편에서 진열의 가능성을 찾다]' → jaju_rounding_vmd_q1_FINAL.md. 다음은 2번 문항
 - W1-D28 JAJU Q1 셋째(맺음) 단락은 B안(VMD 실무 없음 → 공간감 · 안목 두 가지로 채움 → 오래 일하겠다 · 오픈 · 리뉴얼)으로 — rev16 대신 rev15 B안 복구(rev17)
 - W1-D27 JAJU Q1 첫 단락은 방향 2(공간감 유지 + 인턴 실측 근거) 채택 → rev4. 소제목은 미정
-- W1-D26 JAJU 자기소개서는 rev1 구성을 복구한 rev3 를 현재본으로 한다 (Q1 933 · Q2 946 · Q3 975자). rev2 는 보존
-- W1-D25 JAJU 자기소개서 문항은 신세계 3문항과 같게(자기소개 · 지원동기 / 하고 싶은 일 · 차별화 능력 / 학업 외 몰입 · 성과). 신세계 FINAL 을 바탕으로 rev1 작성
-- 외 8개 → state.json decisions
+- 외 10개 → state.json decisions
 
 ## 작업 중인 파일
 - docs/portfolio/handoff/sikorea_q2_draft.json @59f720a
@@ -27,5 +27,5 @@ JAJU Q2 rev42(998자)를 사용자가 확인하면 jaju_rounding_vmd_q2_FINAL.md
 
 ## 읽는 법
 - 이 파일만 읽고 시작한다. 더 필요하면 `W1-hyeokju-cover-letter/state.json` 의 해당 id 만 연다. 지난 이력은 `history.jsonl`.
-- 미확인 8개는 결론으로 쓰지 않는다. 확정은 저장소 파일로 다시 확인한다.
+- 미확인 10개는 결론으로 쓰지 않는다. 확정은 저장소 파일로 다시 확인한다.
 - 결정 · 산출물은 저장소에 커밋해 둔다. 백엔드가 커밋에서 다음 요약을 만든다.
