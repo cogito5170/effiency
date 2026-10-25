@@ -1,14 +1,14 @@
 {
  "module": "W2",
  "title": "패션 · VMD 지원 포트폴리오 (JAJU 라운딩 VMD · 이전 신세계 FROM THE INSIDE)",
- "as_of": "2026-10-25T11:42Z",
+ "as_of": "2026-10-25T12:42Z",
  "checkpoint": {
-  "at": "2026-10-25T11:42Z",
+  "at": "2026-10-25T12:42Z",
   "refs": {
    "gentleMonster@claude/friendly-gates-0u80ge": "af2fb56",
    "gentleMonster@claude/project-thread-n4rxnf": "cd4f4d2",
    "gentleMonster@main": "bdee7d6",
-   "gentleMonster@claude/magical-bell-u02os9": "7581140",
+   "gentleMonster@claude/magical-bell-u02os9": "57c2841",
    "gentleMonster@claude/awesome-keller-otac19": "de8e2b5"
   },
   "method": "scripts/sync_delta.py: 체크포인트 커밋 뒤의 커밋 · 바뀐 파일만 읽음. 세션 대화 원본은 읽지도 고치지도 않음",
@@ -23,7 +23,7 @@
    }
   }
  },
- "latest_confirmed": "JAJU 포트폴리오 흐름은 /01 Observe → /02 Match. → /03 Fill. Match 여는 면은 DESIGN + MOOD. 2-2 가 rev4(9 DESIGN → 10 MOOD → 11 마네킹) 문단 글, 색 문단(C19 재가공), '스타일의 범위를 한정 짓지 않는다' 문단(D43)을 썼다. 파트 3 Contain 쪽 글은 '건축학부에서 배운 것은 공간을 보는 법 / 매장마다 다른 공간을 읽어야 한다'로 확정(D44). 쪽 순서 · 문구 · 문단 자리는 선택 대기.",
+ "latest_confirmed": "JAJU 포트폴리오 흐름은 /01 Observe → /02 Match. → /03 Fill. 파트 3 은 Contain 쪽('건축학부에서 배운 것은 공간을 보는 법 / 매장마다 다른 공간을 읽어야 한다', D44) → 학부 · 인턴 모형 쪽(리드 A안 '학교에서는 건물의 틀을 그렸고, 인턴에서는 그 안을 들여다봤다', D45, 제목 고르는 중) → 다음 쪽 → Proposal. Match 쪽 순서 · 문구 · 문단 자리는 선택 대기.",
  "resume_point": {
   "op": "storyline",
   "input_hint": "W2-O42(파트 2 rev4 순서) · W2-O44(색 문단 자리) · W2-O45(스타일 문단 끝 문장) · W2-O43 · W2-O41 · W2-O40 · W2-O36 · W2-O37 · W2-O32 를 사용자에게. 정해지면 rev4 문단 글을 2-1 진 판에 얹고 파트 3 Fill 쪽을 뒤로 옮기는 B21. 자기소개서 Q2 표현은 W1-O20. 그 밖에 W2-O30 · O27 · O29 · O25 · O23.",
@@ -293,6 +293,19 @@
     "commit": "65f840f"
    },
    "decided_at": "2026-10-24T06:15Z"
+  },
+  {
+   "id": "W2-C20",
+   "statement": "사용자 사실: From the city to the room. 쪽에 실린 모형은 건축학부 설계 수업과 인턴 작업 모형. 그 쪽에 '하루는 물건의 자리로 정해진다 …' 같은 진열의 말을 얹는 것은 내용과 맞지 않음",
+   "source": "사용자",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/magical-bell-u02os9",
+    "path": "docs/jaju_rounding_vmd/part3_contain_story.md",
+    "line": 111,
+    "commit": "57c2841"
+   },
+   "decided_at": "2026-10-25T12:19Z"
   }
  ],
  "decisions": [
@@ -751,6 +764,19 @@
     "line": 59,
     "commit": "7581140"
    }
+  },
+  {
+   "id": "W2-D45",
+   "date": "2026-10-25T12:35Z",
+   "decision": "From the city to the room. 쪽 리드를 A안으로 고침(사용자가 InDesign 에서 반영): '학교에서는 건물의 틀을 그렸고, 인턴에서는 그 안을 들여다봤다. / 실내에 무엇이 어떻게 놓이는지 여겨보았다.' 캡션은 Design Studio 2-1 · 2-2 · 4-1 · 4-2 · INTERNSHIP_N'S HOUSE",
+   "by": "사용자",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/magical-bell-u02os9",
+    "path": "docs/jaju_rounding_vmd/part3_contain_story.md",
+    "line": 142,
+    "commit": "57c2841"
+   }
   }
  ],
  "open": [
@@ -1096,6 +1122,34 @@
     "path": "docs/jaju_rounding_vmd/part3_contain_story.md",
     "line": 68,
     "commit": "7581140"
+   }
+  },
+  {
+   "id": "W2-O47",
+   "item": "9쪽 제목 고르기: A From the frame to the inside.(권함) · B Outside in. · C Looking inside. · D 그대로. 함께: 캡션 'Semeseter' → Semester(네 곳), 바닥 줄 PART 3 와 가운데 낱말",
+   "waiting_on": "사용자",
+   "blocking": false,
+   "source": "도구출력",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/magical-bell-u02os9",
+    "path": "docs/jaju_rounding_vmd/part3_contain_story.md",
+    "line": 146,
+    "commit": "57c2841"
+   }
+  },
+  {
+   "id": "W2-O48",
+   "item": "Contain 쪽 첫 줄 '건축학부에서 배운 것은 …'을 인턴 작업도 실리므로 '건축을 배우며 익힌 것은 …'으로 넓힐지, 다음 쪽(A room, set like a display.) 초안을 학부 · 인턴 사실 캡션으로 다시 쓸지",
+   "waiting_on": "사용자",
+   "blocking": false,
+   "source": "도구출력",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/magical-bell-u02os9",
+    "path": "docs/jaju_rounding_vmd/part3_contain_story.md",
+    "line": 137,
+    "commit": "57c2841"
    }
   }
  ],
