@@ -1,0 +1,6 @@
+{
+  "action": "delegate",
+  "agent": "codex",
+  "instruction": "Use web search. Find up to 8 real magazine spreads, covers or issue designs in this scope: D&AD Pencils (Magazine & Newspaper Design) and European Design Awards editorial winners, 2015-2025.\nOnly include an item if you opened a page that documents it (award archive entry, publisher, museum, designer portfolio, reputable design press). Never invent URLs.\nDo NOT write or patch any files (the sandbox cannot write). Put the whole result in your FINAL message only, nothing else in it, max 1800 characters, one item per line in exactly this form:\npublication | issue or year | art director / design studio | award or 'canonical' | url\n",
+  "id": "20261025T163416"
+}
