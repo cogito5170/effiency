@@ -1,9 +1,9 @@
 {
  "module": "W6",
  "title": "도구 · 인프라 (relay · 메모리 · 프론트엔드 · agy)",
- "as_of": "2026-10-25T17:42Z",
+ "as_of": "2026-10-25T18:42Z",
  "checkpoint": {
-  "at": "2026-10-25T17:42Z",
+  "at": "2026-10-25T18:42Z",
   "refs": {
    "gentleMonster@main": "bdee7d6",
    "effiency@main": "8724b6c",
@@ -15,7 +15,7 @@
    "effiency@claude/context-archive": "6f7510c",
    "effiency@claude/project-thread-susdx3": "ddc7904",
    "effiency@claude/handoff-marked-task": "514bc6d",
-   "effiency@claude/project-thread-9s8x1k": "941d9e7"
+   "effiency@claude/project-thread-9s8x1k": "7ba54c2"
   },
   "method": "scripts/sync_delta.py: 체크포인트 커밋 뒤의 커밋 · 바뀐 파일만 읽음. 세션 대화 원본은 읽지도 고치지도 않음",
   "not_cloned": [],
@@ -244,6 +244,17 @@
     "ref": "claude/project-thread-9s8x1k",
     "path": ".relay/tasks/critic-B2_split/response.json",
     "commit": "941d9e7"
+   }
+  },
+  {
+   "id": "W6-C17",
+   "statement": "Contain 쪽 시안 심사를 16회차까지 이어 감: B2~I(inline · counter · tight 등) 대부분 revise, H_counter_fit · J_big · K_bleed · L_wide · M_cover · N_grid43 · O_bleed3 은 pass. 그 사이 Codex(relay image · delegate)로 Contain 사진을 만듦: 전시장(contain-gen-gallery), 모델(contain-gen-model · -wide · -43), 빨간 격자 작품 사진 크롭 복원 확대(contain-upscale)",
+   "source": "도구출력",
+   "evidence": {
+    "repo": "cogito5170/effiency",
+    "ref": "claude/project-thread-9s8x1k",
+    "path": ".relay/tasks/critic-O_bleed3/response.json",
+    "commit": "7ba54c2"
    }
   }
  ],
@@ -532,6 +543,24 @@
    "commit": "941d9e7",
    "status": "draft",
    "note": "Contain 쪽 시안 심사 요청 · 기준 · 답 (A_vitrine · B_split · C_intrusion · B2_split · B3_contained)"
+  },
+  {
+   "kind": "image",
+   "repo": "cogito5170/effiency",
+   "ref": "claude/project-thread-9s8x1k",
+   "path": ".relay/tasks/contain-gen-{gallery,model,model-wide,model-43}/image.png",
+   "commit": "38e6081",
+   "status": "draft",
+   "note": "Codex 가 만든 Contain 쪽 사진 넷"
+  },
+  {
+   "kind": "image",
+   "repo": "cogito5170/effiency",
+   "ref": "claude/project-thread-9s8x1k",
+   "path": ".relay/tasks/contain-upscale/work_upscaled.png",
+   "commit": "910c30b",
+   "status": "draft",
+   "note": "작품 사진 크롭(work_crop.png)을 Codex 로 복원 확대"
   }
  ],
  "unverified": [
@@ -568,6 +597,11 @@
    "statement": "이 심사가 W2 포트폴리오 파트 3 Contain 쪽(W2-D44 글) 레이아웃 고르기에 쓰이는 것으로 보임 — W2 쪽 기록은 아직 없음",
    "where": "effiency@claude/project-thread-9s8x1k critic-* request (dfa2151 'canon critique of Contain candidates')",
    "check": "커밋 메시지에서 추론"
+  },
+  {
+   "statement": "pass 받은 시안(H_counter_fit · J_big · K_bleed · L_wide · M_cover · N_grid43 · O_bleed3) 중 어느 것을 쓸지, 작품 사진(빨간 격자 종이 작품)의 원작자와 AI 확대본을 포트폴리오에 써도 되는지",
+   "where": "effiency@claude/project-thread-9s8x1k .relay/tasks/critic-* · contain-upscale (7ba54c2)",
+   "check": "파일에 사용자 선택 · 출처 기록 없음"
   }
  ]
 }
