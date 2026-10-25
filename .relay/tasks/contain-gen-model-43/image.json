@@ -1,0 +1,42 @@
+{
+  "task": "contain-gen-model-43",
+  "spec": {
+    "subject": "A single architectural grid-frame model: a lattice skeleton of thin pale timber members forming exactly 4 columns by 3 rows of square cells (like the frame of a hanok courtyard house or a display shelf grid), standing alone on a low dark plinth in a museum. Exactly one cell, lower left, holds a muted red panel.",
+    "purpose": "Photo set inside the square counter of a huge Korean letter on a black magazine page; the whole object must fill a wide frame edge to edge.",
+    "style": "Editorial museum photography, real photograph, sharp, medium-format look, no illustration. Same material and joinery as a refined timber model.",
+    "mood": "Quiet, contemplative, refined; dark gallery.",
+    "composition": "Strictly frontal and orthographic, no perspective, the model's outer frame is a rectangle about 1.36:1, filling about 92% of the frame height and centred, even black margin, plinth just visible at the bottom, all edges of the model straight and parallel to the frame.",
+    "palette": "Near-black background, warm pale wood, one muted red cell.",
+    "lighting": "Single soft museum spotlight from above, deep shadows, no glare.",
+    "size": "1536x1024",
+    "avoid": [
+      "people",
+      "text or logos",
+      "busy background",
+      "CGI look",
+      "perspective distortion"
+    ],
+    "notes": "Background must fall to pure black so it sits on a (4,5,5) black page. The whole model must be visible; no part cropped."
+  },
+  "status": "ok",
+  "runner": "codex",
+  "attempts": [
+    {
+      "argv": [
+        "codex",
+        "exec",
+        "--sandbox",
+        "workspace-write",
+        "--skip-git-repo-check",
+        "-c",
+        "features.image_generation=true"
+      ],
+      "exit_code": 0,
+      "tail": "nth.\npalette: Warm pale wood, one muted earthy red square, and near-black to pure-black surroundings.\nlighting: One soft overhead museum spotlight with deep shadows and no glare.\nsize: Exactly 1536 x 1024 pixels, landscape.\navoid: No people, text, logos, busy background, CGI appearance, or perspective distortion.\nnotes: Entire model remains visible; pure-black boundaries support placement on an RGB (4,5,5) page.\nIMAGE_PROMPT_EOF\" in /home/ubuntu/relay-inbox/repo/.relay/tasks/contain-gen-model-43\n succeeded in 0ms:\nexec\n/bin/bash -lc 'cp /home/ubuntu/.codex/generated_images/01a17457-a4e8-7633-819a-ba7727c8129c/exec-4111ebb7-6c6f-4aa6-bb0e-455694eeab9c.png image.png' in /home/ubuntu/relay-inbox/repo/.relay/tasks/contain-gen-model-43\n succeeded in 0ms:\ncodex\nSAVED image.png\ntokens used\n20,785"
+    }
+  ],
+  "image": "image.png",
+  "prompt_file": "image-prompt.md",
+  "source": "",
+  "seconds": 55.781
+}
