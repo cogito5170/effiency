@@ -1,11 +1,11 @@
 # W1 혁주 자기소개서 (JAJU 라운딩 VMD · 이전 신세계인터내셔날 해외패션)
-기준 2026-10-24T13:41Z · 체크포인트 claude/clever-knuth-1dezlo@53372d6, claude/beautiful-gates-e42a5m@76d0f6d, claude/modest-cannon-ha8zs3@79ba2dc
+기준 2026-10-25T04:41Z · 체크포인트 claude/clever-knuth-1dezlo@d682f52, claude/beautiful-gates-e42a5m@76d0f6d, claude/modest-cannon-ha8zs3@79ba2dc
 
 ## 지금
-대상은 JAJU 라운딩 VMD. Q1 확정(999자). Q2 는 단락별로 고쳐 rev35(1179자, 53372d6)가 현재본: 첫 단락 직무 정의형 확정(D32), 스타일링(C20 문구) · 3D 선행 모형(C21) · 카페와 의류 회사 단락. 1000자 넘어 줄여야 함. Q3 는 rev3 그대로.
+대상은 JAJU 라운딩 VMD. Q1 확정(999자). Q2 는 rev42(998자, d682f52)가 현재본: 첫 단락 직무 정의형(D32), 스타일링(C20 문구) · 3D 선행 모형(C21) 두 능력, 카페 · 의류 회사 단락은 삭제, 두 능력을 묶는 맺음. FINAL 파일은 아직 없음. Q3 는 rev3 그대로.
 
 ## 이어 할 일: `draft_paragraph`
-JAJU Q2 rev35(1179자)를 PROCESS_question_revision.md 4번(997–1000자 맞춤)대로 줄일 안을 표로 낸다(W1-O25). 확정되면 jaju_rounding_vmd_q2_FINAL.md, 이어 Q3.
+JAJU Q2 rev42(998자)를 사용자가 확인하면 jaju_rounding_vmd_q2_FINAL.md 로 내고(W1-O26), Q3 rev3 를 PROCESS_question_revision.md 절차로 고친다.
 - 조건: 사용자 확인 필요.
 
 ## 지금 유효한 결정 (최근순)
@@ -27,5 +27,5 @@ JAJU Q2 rev35(1179자)를 PROCESS_question_revision.md 4번(997–1000자 맞춤
 
 ## 읽는 법
 - 이 파일만 읽고 시작한다. 더 필요하면 `W1-hyeokju-cover-letter/state.json` 의 해당 id 만 연다. 지난 이력은 `history.jsonl`.
-- 미확인 7개는 결론으로 쓰지 않는다. 확정은 저장소 파일로 다시 확인한다.
+- 미확인 8개는 결론으로 쓰지 않는다. 확정은 저장소 파일로 다시 확인한다.
 - 결정 · 산출물은 저장소에 커밋해 둔다. 백엔드가 커밋에서 다음 요약을 만든다.

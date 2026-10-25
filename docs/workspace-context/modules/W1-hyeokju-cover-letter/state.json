@@ -1,11 +1,11 @@
 {
  "module": "W1",
  "title": "혁주 자기소개서 (JAJU 라운딩 VMD · 이전 신세계인터내셔날 해외패션)",
- "as_of": "2026-10-24T13:41Z",
+ "as_of": "2026-10-25T04:41Z",
  "checkpoint": {
-  "at": "2026-10-24T13:41Z",
+  "at": "2026-10-25T04:41Z",
   "refs": {
-   "gentleMonster@claude/clever-knuth-1dezlo": "53372d6",
+   "gentleMonster@claude/clever-knuth-1dezlo": "d682f52",
    "gentleMonster@claude/beautiful-gates-e42a5m": "76d0f6d",
    "gentleMonster@claude/modest-cannon-ha8zs3": "79ba2dc",
    "gentleMonster@main": "bdee7d6",
@@ -17,10 +17,10 @@
    "cogito5170/analy_agent@claude/modest-cannon-ha8zs3"
   ]
  },
- "latest_confirmed": "대상은 JAJU 라운딩 VMD. Q1 확정(999자). Q2 는 단락별로 고쳐 rev35(1179자, 53372d6)가 현재본: 첫 단락 직무 정의형 확정(D32), 스타일링(C20 문구) · 3D 선행 모형(C21) · 카페와 의류 회사 단락. 1000자 넘어 줄여야 함. Q3 는 rev3 그대로.",
+ "latest_confirmed": "대상은 JAJU 라운딩 VMD. Q1 확정(999자). Q2 는 rev42(998자, d682f52)가 현재본: 첫 단락 직무 정의형(D32), 스타일링(C20 문구) · 3D 선행 모형(C21) 두 능력, 카페 · 의류 회사 단락은 삭제, 두 능력을 묶는 맺음. FINAL 파일은 아직 없음. Q3 는 rev3 그대로.",
  "resume_point": {
   "op": "draft_paragraph",
-  "input_hint": "JAJU Q2 rev35(1179자)를 PROCESS_question_revision.md 4번(997–1000자 맞춤)대로 줄일 안을 표로 낸다(W1-O25). 확정되면 jaju_rounding_vmd_q2_FINAL.md, 이어 Q3.",
+  "input_hint": "JAJU Q2 rev42(998자)를 사용자가 확인하면 jaju_rounding_vmd_q2_FINAL.md 로 내고(W1-O26), Q3 rev3 를 PROCESS_question_revision.md 절차로 고친다.",
   "precondition": "사용자 확인 필요."
  },
  "confirmed": [
@@ -288,6 +288,18 @@
     "commit": "53372d6"
    },
    "decided_at": "2026-10-24T13:19Z"
+  },
+  {
+   "id": "W1-C22",
+   "statement": "JAJU Q2 rev42(998자)가 현재본: 넷째 단락(카페 · 의류 회사) 삭제, 맺음은 두 능력(스타일링 감각 · 구상을 미리 확인) 종합 + 첫 단락 목표, 소제목 '[어느 매장에서든 같은 장면을 만드는 VMD]'. rev36~41 은 첫 · 둘째 · 셋째 단락 문장 압축(각 '1안')",
+   "source": "도구출력",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/clever-knuth-1dezlo",
+    "path": "docs/portfolio/handoff/jaju_selfintro_draft.json",
+    "line": 895,
+    "commit": "d682f52"
+   }
   }
  ],
  "decisions": [
@@ -565,8 +577,8 @@
    }
   },
   {
-   "id": "W1-O25",
-   "item": "JAJU Q2 rev35 가 1179자로 1000자를 넘음 — 둘째(스타일링) · 셋째(모형) 단락을 사용자와 보완한 뒤라 줄일 곳을 정해야 함",
+   "id": "W1-O26",
+   "item": "JAJU Q2 rev42(998자)는 아직 FINAL 파일 없음 — 사용자 확인 뒤 jaju_rounding_vmd_q2_FINAL.md, 이어 Q3(rev3 그대로)",
    "waiting_on": "사용자",
    "blocking": false,
    "source": "도구출력",
@@ -574,8 +586,8 @@
     "repo": "cogito5170/gentleMonster",
     "ref": "claude/clever-knuth-1dezlo",
     "path": "docs/portfolio/handoff/jaju_selfintro_draft.json",
-    "line": 765,
-    "commit": "53372d6"
+    "line": 57,
+    "commit": "d682f52"
    }
   }
  ],
@@ -809,6 +821,11 @@
    "statement": "Q1 FINAL '상품 하나보다 매장 전체의 흐름 안에서 자리를 봅니다'(해석) · 출장 범위(지방 포함) · 직접 겪은 JAJU 매장 경험 없음",
    "where": "jaju_rounding_vmd_q1_FINAL.md:10 (f5ebb3c)",
    "check": "파일의 '확인 필요' 메모, 사용자 확인 전"
+  },
+  {
+   "statement": "rev36~42 의 '1안' 표기와 넷째 단락 삭제가 사용자 선택인지",
+   "where": "jaju_selfintro_draft.json rev36~rev42 note (d682f52)",
+   "check": "파일에는 note 만 있음, 사용자 원문 미확인"
   }
  ]
 }
