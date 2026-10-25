@@ -1,0 +1,6 @@
+{
+ "action": "delegate",
+ "agent": "codex",
+ "instruction": "In .relay/tasks/contain-upscale/ there is work_crop.png, a low-resolution crop of a photo of a red gridded paper artwork hanging on a white gallery wall. Using your built-in image generation/editing tool with work_crop.png as the reference image, make a faithful high-resolution restoration (upscale) of the SAME picture: same framing, same object, same colours and pixel-grid texture, sharp detail, no added elements, no text. Output size 1024x1536. Save the result as .relay/tasks/contain-upscale/work_upscaled.png. If you have no image tool, write .relay/tasks/contain-upscale/NO_IMAGE_TOOL.txt explaining what is available. Do not change any other file and never print credentials.",
+ "id": "20261025T180754"
+}
