@@ -1,0 +1,42 @@
+{
+  "task": "contain-gen-model-wide",
+  "spec": {
+    "subject": "A single architectural grid-frame model, wide and low: a lattice skeleton of thin pale timber members forming 5 columns by 3 rows of square cells (like the frame of a hanok courtyard house or a display shelf grid), standing alone on a long low dark plinth in a museum. Exactly one cell, lower left, holds a muted red panel.",
+    "purpose": "Photo set inside the square counter of a huge Korean letter on a black magazine page; the whole object must fill a wide frame edge to edge.",
+    "style": "Editorial museum photography, real photograph, sharp, medium-format look, no illustration. Same material and joinery as a refined timber model.",
+    "mood": "Quiet, contemplative, refined; dark gallery.",
+    "composition": "Frontal, orthographic-looking, the whole model fills about 90% of the frame width, small even black margin all around, plinth just visible at the bottom.",
+    "palette": "Near-black background, warm pale wood, one muted red cell.",
+    "lighting": "Single soft museum spotlight from above, deep shadows, no glare.",
+    "size": "1536x1024",
+    "avoid": [
+      "people",
+      "text or logos",
+      "busy background",
+      "CGI look",
+      "perspective distortion"
+    ],
+    "notes": "Background must fall to pure black so it sits on a (4,5,5) black page."
+  },
+  "status": "ok",
+  "runner": "codex",
+  "attempts": [
+    {
+      "argv": [
+        "codex",
+        "exec",
+        "--sandbox",
+        "workspace-write",
+        "--skip-git-repo-check",
+        "-c",
+        "features.image_generation=true"
+      ],
+      "exit_code": 0,
+      "tail": "er counter; no actual typography or magazine shown.\n+style: Real editorial museum photograph with medium-format sharpness, natural wood grain and refined flush joinery.\n+mood: Quiet, contemplative and refined in a dark gallery.\n+composition: Centered frontal elevation, parallel lines, approximately 90% width, whole model visible with small balanced black margins and a narrow plinth strip.\n+palette: Near-black background, warm pale timber and a single muted brick-red cell.\n+lighting: One soft overhead museum spotlight, deep shadows and no glare.\n+size: Exactly 1536 × 1024 pixels, landscape 3:2.\n+avoid: Exclude people, text, logos, busy backgrounds, CGI appearance and perspective distortion.\n+notes: Outer background falls to pure black to blend into an RGB (4, 5, 5) page.\n\ntokens used\n20,106"
+    }
+  ],
+  "image": "image.png",
+  "prompt_file": "image-prompt.md",
+  "source": "",
+  "seconds": 58.813
+}
