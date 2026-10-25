@@ -1,0 +1,17 @@
+{
+  "dominant_device": "type-as-image",
+  "grades": {
+    "device_clarity": "좋음",
+    "restraint": "좋음",
+    "type_hierarchy": "보통",
+    "negative_space": "미흡",
+    "photo_crop": "미흡",
+    "familiar": "좋음",
+    "strange": "보통",
+    "bold": "좋음",
+    "stable": "보통"
+  },
+  "closest_canon": 36,
+  "evidence": "Dazed(36)와 같은 검은 바탕이지만, 정전의 큰 인물 사진과 촘촘한 두 단 본문이 만드는 좌우 균형 대신 시안은 고대비 세리프 ‘Contain’과 그 사이의 사각 사진을 하단 한 줄에 집중시킨다. 확대에서 제목 획의 절단이나 거터에 먹힌 글자는 보이지 않으나, 사진 양옆의 큰 간격이 단어를 ‘Con / tain’으로 갈라 읽게 하고 우상단 설명부의 회색 막대는 본문 조판의 위계를 충분히 형성하지 못한다. DOMa(16)의 크기가 다른 검은 형태들이 만드는 리듬과 비교하면 시안의 넓은 상부 검은 면은 연결되는 요소가 적어 여백의 긴장이 약하며, quiet 0.733도 제시 범위를 웃돈다. The Face(21)의 판면을 채운 인물 크롭이나 Dazed의 인물 중심 크롭과 달리 작은 전시장 사진은 사람·작품·바닥이 함께 들어간 중간 거리여서 시각적 초점이 약하다.",
+  "verdict": "revise"
+}
