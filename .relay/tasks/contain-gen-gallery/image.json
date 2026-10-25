@@ -1,0 +1,41 @@
+{
+  "task": "contain-gen-gallery",
+  "spec": {
+    "subject": "Interior of a contemporary art museum gallery: long white wall on the right with four large red gridded paper works hung in a row, polished warm wooden floor, a low ceiling soffit, a few visitors standing in a small group looking at the works.",
+    "purpose": "Background photo for a magazine slide titled 'Contain'; also cropped tightly to one red work.",
+    "style": "Real documentary photograph, sharp, natural, high resolution.",
+    "mood": "Calm, airy, museum hush.",
+    "composition": "Wide horizontal view, one-point perspective down the gallery, works on the right wall in sharp focus.",
+    "palette": "White walls, warm honey wood floor, vermilion red in the works, black clothing on visitors.",
+    "lighting": "Even daylight-balanced museum lighting from the ceiling.",
+    "size": "1536x1024",
+    "avoid": [
+      "text or logos",
+      "fisheye distortion",
+      "CGI look",
+      "faces in close-up"
+    ],
+    "notes": "The red works should have a fine pixel-grid texture, readable when cropped tightly."
+  },
+  "status": "ok",
+  "runner": "codex",
+  "attempts": [
+    {
+      "argv": [
+        "codex",
+        "exec",
+        "--sandbox",
+        "workspace-write",
+        "--skip-git-repo-check",
+        "-c",
+        "features.image_generation=true"
+      ],
+      "exit_code": 0,
+      "tail": "with natural materials, crisp detail, realistic tones, and high resolution.\n+mood: Quiet visitors, open space, and restrained lighting convey calm, airiness, and museum hush.\n+composition: Horizontal eye-level architectural view with one-point perspective and sharply focused works along the right wall.\n+palette: White architecture, honey wood, vermilion artworks, and mostly black visitor clothing.\n+lighting: Even daylight-balanced ceiling illumination with soft shadows and controlled reflections.\n+size: Request one horizontal image at exactly 1536x1024 pixels.\n+avoid: Exclude all text and logos, fisheye distortion, CGI appearance, and close-up faces.\n+notes: Fine red pixel grids, subtle ink variations, and paper grain remain readable in a tight crop of the nearest work.\n\ntokens used\n12,366"
+    }
+  ],
+  "image": "image.png",
+  "prompt_file": "image-prompt.md",
+  "source": "",
+  "seconds": 98.788
+}
