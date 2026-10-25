@@ -1,0 +1,19 @@
+{
+ "subject": "A single architectural grid-frame model, wide and low: a lattice skeleton of thin pale timber members forming 5 columns by 3 rows of square cells (like the frame of a hanok courtyard house or a display shelf grid), standing alone on a long low dark plinth in a museum. Exactly one cell, lower left, holds a muted red panel.",
+ "purpose": "Photo set inside the square counter of a huge Korean letter on a black magazine page; the whole object must fill a wide frame edge to edge.",
+ "style": "Editorial museum photography, real photograph, sharp, medium-format look, no illustration. Same material and joinery as a refined timber model.",
+ "mood": "Quiet, contemplative, refined; dark gallery.",
+ "composition": "Frontal, orthographic-looking, the whole model fills about 90% of the frame width, small even black margin all around, plinth just visible at the bottom.",
+ "palette": "Near-black background, warm pale wood, one muted red cell.",
+ "lighting": "Single soft museum spotlight from above, deep shadows, no glare.",
+ "text": "",
+ "size": "1536x1024",
+ "avoid": [
+  "people",
+  "text or logos",
+  "busy background",
+  "CGI look",
+  "perspective distortion"
+ ],
+ "notes": "Background must fall to pure black so it sits on a (4,5,5) black page."
+}
