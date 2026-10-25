@@ -3,370 +3,612 @@
     "index": 1,
     "publication": "New York Magazine",
     "issue": "2021-03-29, “The Lunacy of Text-Based Therapy” 표지",
-    "file": null,
-    "image_url": null,
-    "source_page": "https://www.typeroom.eu/57th-annual-spd-awards-the-winners",
-    "shows": "other",
-    "reason": "Download blocked: environment network access is disabled (DNS resolution failed); web reader cannot save image binaries."
+    "file": "img/01-new-york-magazine-1.jpg",
+    "image_url": "https://asme.memberclicks.net/assets/BCC2022/New%20York%20-%20March%2029%202021.jpg",
+    "source_page": "https://asme.memberclicks.net/asme-best-cover-contest-winners-and-finalists-2022",
+    "shows": "cover"
   },
   {
     "index": 2,
     "publication": "The New York Times for Kids",
     "issue": "2021-05-30, The Money Issue 표지",
-    "file": null,
-    "image_url": null,
-    "source_page": "https://www.typeroom.eu/57th-annual-spd-awards-the-winners",
-    "shows": "other",
-    "reason": "Download blocked: environment network access is disabled (DNS resolution failed); web reader cannot save image binaries."
+    "file": "img/02-the-new-york-times-for-kids-1.jpg",
+    "image_url": "https://d2z00kf51ll94q.cloudfront.net//archive/2022/media/ADC101_PUB017S_0.jpg",
+    "source_page": "https://www.oneclub.org/awards/adcawards/-award/43093/the-new-york-times-for-kids-may-2021/",
+    "shows": "cover"
+  },
+  {
+    "index": 2,
+    "publication": "The New York Times for Kids",
+    "issue": "2021-05-30, The Money Issue 표지",
+    "file": "img/02-the-new-york-times-for-kids-2.jpg",
+    "image_url": "https://d2z00kf51ll94q.cloudfront.net//archive/2022/media/ADC101_PUB017S_1.jpg",
+    "source_page": "https://www.oneclub.org/awards/adcawards/-award/43093/the-new-york-times-for-kids-may-2021/",
+    "shows": "spread"
   },
   {
     "index": 3,
     "publication": "The New York Times for Kids",
     "issue": "2021-10-31, The Halloween Issue",
-    "file": null,
-    "image_url": null,
-    "source_page": "https://www.typeroom.eu/57th-annual-spd-awards-the-winners",
-    "shows": "other",
-    "reason": "Download blocked: environment network access is disabled (DNS resolution failed); web reader cannot save image binaries."
+    "file": "img/03-the-new-york-times-for-kids-1.webp",
+    "image_url": "https://d2z00kf51ll94q.cloudfront.net//archive/2022/media/ADC101_PUB001G_0.jpg",
+    "source_page": "https://www.oneclub.org/awards/adcawards/-award/45026/the-new-york-times-for-kids-october-2021/",
+    "shows": "cover",
+    "processing": "Converted to WebP at original dimensions to meet the 2 MB limit."
+  },
+  {
+    "index": 3,
+    "publication": "The New York Times for Kids",
+    "issue": "2021-10-31, The Halloween Issue",
+    "file": "img/03-the-new-york-times-for-kids-2.webp",
+    "image_url": "https://d2z00kf51ll94q.cloudfront.net//archive/2022/media/ADC101_PUB001G_1.jpg",
+    "source_page": "https://www.oneclub.org/awards/adcawards/-award/45026/the-new-york-times-for-kids-october-2021/",
+    "shows": "spread",
+    "processing": "Converted to WebP at original dimensions to meet the 2 MB limit."
   },
   {
     "index": 4,
     "publication": "Fast Company",
     "issue": "2021-10, Innovation by Design",
-    "file": null,
-    "image_url": null,
-    "source_page": "https://www.typeroom.eu/57th-annual-spd-awards-the-winners",
-    "shows": "other",
-    "reason": "Download blocked: environment network access is disabled (DNS resolution failed); web reader cannot save image binaries."
+    "file": "img/04-fast-company-1.jpg",
+    "image_url": "https://files.coverscdn.com/covers/237129/mid/0000.jpg",
+    "source_page": "https://pocketmags.com/fast-company-magazine/october-2021",
+    "shows": "cover"
+  },
+  {
+    "index": 4,
+    "publication": "Fast Company",
+    "issue": "2021-10, Innovation by Design",
+    "file": "img/04-fast-company-2.jpg",
+    "image_url": "https://files.coverscdn.com/covers/237129/mid/0019.jpg",
+    "source_page": "https://pocketmags.com/fast-company-magazine/october-2021",
+    "shows": "page"
   },
   {
     "index": 5,
     "publication": "Wired Italia",
     "issue": "n.75 (2015) 리디자인",
-    "file": null,
-    "image_url": null,
+    "file": "img/05-wired-italia-1.webp",
+    "image_url": "https://pitis.eu/wp-content/uploads/2019/03/IMG_2308-1.jpg",
+    "source_page": "https://pitis.eu/project/wired-italia-trimestrale/",
+    "shows": "spread",
+    "processing": "Converted to WebP at original dimensions to meet the 2 MB limit."
+  },
+  {
+    "index": 5,
+    "publication": "Wired Italia",
+    "issue": "n.75 (2015) 리디자인",
+    "file": "img/05-wired-italia-2.jpg",
+    "image_url": "https://pitis.eu/wp-content/uploads/2019/02/Wired_dicembre15-772x1024.jpg",
     "source_page": "https://pitis.eu/press/",
-    "shows": "other",
-    "reason": "Download blocked: environment network access is disabled (DNS resolution failed); web reader cannot save image binaries."
+    "shows": "cover"
   },
   {
     "index": 6,
     "publication": "Wired Italia",
     "issue": "n.78 (2016)",
-    "file": null,
-    "image_url": null,
-    "source_page": "https://pitis.eu/press/",
-    "shows": "other",
-    "reason": "Download blocked: environment network access is disabled (DNS resolution failed); web reader cannot save image binaries."
+    "file": "img/06-wired-italia-1.webp",
+    "image_url": "https://pitis.eu/wp-content/uploads/2019/03/IH6A0114-3.jpg",
+    "source_page": "https://pitis.eu/fr/project/wired-italia-2016-17-2/",
+    "shows": "cover",
+    "processing": "Converted to WebP at original dimensions to meet the 2 MB limit."
+  },
+  {
+    "index": 6,
+    "publication": "Wired Italia",
+    "issue": "n.78 (2016)",
+    "file": "img/06-wired-italia-2.webp",
+    "image_url": "https://pitis.eu/wp-content/uploads/2019/03/IH6A0145-8-1.jpg",
+    "source_page": "https://pitis.eu/fr/project/wired-italia-2016-17-2/",
+    "shows": "spread",
+    "processing": "Converted to WebP at original dimensions to meet the 2 MB limit."
   },
   {
     "index": 7,
     "publication": "Wired Italia",
     "issue": "2017",
-    "file": null,
-    "image_url": null,
-    "source_page": "https://pitis.eu/press/",
-    "shows": "other",
-    "reason": "Download blocked: environment network access is disabled (DNS resolution failed); web reader cannot save image binaries."
+    "file": "img/07-wired-italia-1.webp",
+    "image_url": "https://pitis.eu/wp-content/uploads/2019/03/IH6A0811.jpg",
+    "source_page": "https://pitis.eu/fr/project/wired-italia-2017-18-2/",
+    "shows": "cover",
+    "processing": "Converted to WebP at original dimensions to meet the 2 MB limit."
+  },
+  {
+    "index": 7,
+    "publication": "Wired Italia",
+    "issue": "2017",
+    "file": "img/07-wired-italia-2.webp",
+    "image_url": "https://pitis.eu/wp-content/uploads/2019/03/IH6A0249-32.jpg",
+    "source_page": "https://pitis.eu/fr/project/wired-italia-2017-18-2/",
+    "shows": "cover",
+    "processing": "Converted to WebP at original dimensions to meet the 2 MB limit."
   },
   {
     "index": 8,
     "publication": "Wired Italia",
     "issue": "n.84 (2018)",
-    "file": null,
-    "image_url": null,
+    "file": "img/08-wired-italia-1.jpg",
+    "image_url": "https://pitis.eu/wp-content/uploads/2019/09/59414336_2359593350745562_5966961123319087104_o.jpg",
     "source_page": "https://pitis.eu/press/",
-    "shows": "other",
-    "reason": "Download blocked: environment network access is disabled (DNS resolution failed); web reader cannot save image binaries."
+    "shows": "cover"
   },
   {
     "index": 9,
     "publication": "Wired Italia",
     "issue": "#100 (2023)",
-    "file": null,
-    "image_url": null,
+    "file": "img/09-wired-italia-1.jpg",
+    "image_url": "https://pitis.eu/wp-content/uploads/2023/05/DSC9435.jpg",
+    "source_page": "https://pitis.eu/project/wired-italia-2022-2023/",
+    "shows": "spread"
+  },
+  {
+    "index": 9,
+    "publication": "Wired Italia",
+    "issue": "#100 (2023)",
+    "file": "img/09-wired-italia-2.png",
+    "image_url": "https://pitis.eu/wp-content/uploads/2023/07/Schermata-2023-05-09-alle-12.14.17.png",
     "source_page": "https://pitis.eu/press/",
-    "shows": "other",
-    "reason": "Download blocked: environment network access is disabled (DNS resolution failed); web reader cannot save image binaries."
+    "shows": "cover"
   },
   {
     "index": 10,
     "publication": "Fukt",
     "issue": "#17 (2019)",
-    "file": null,
-    "image_url": null,
-    "source_page": "https://www.arianespanier.com/press",
-    "shows": "other",
-    "reason": "Download blocked: environment network access is disabled (DNS resolution failed); web reader cannot save image binaries."
+    "file": "img/10-fukt-1.jpg",
+    "image_url": "https://images.squarespace-cdn.com/content/v1/59830eb0a803bb2295785f00/1536924703958-O1J0FY12BP9RLYKS6U9B/coverfukt17_white.jpg",
+    "source_page": "https://www.fuktmagazine.com/shop/fukt-17",
+    "shows": "cover"
+  },
+  {
+    "index": 10,
+    "publication": "Fukt",
+    "issue": "#17 (2019)",
+    "file": "img/10-fukt-2.jpg",
+    "image_url": "https://images.squarespace-cdn.com/content/v1/59830eb0a803bb2295785f00/1536922928485-86I8BVQI0LG0BSATOSE7/FUKT17_SPREADS_0011_Ebene-3.jpg",
+    "source_page": "https://www.fuktmagazine.com/shop/fukt-17",
+    "shows": "spread"
   },
   {
     "index": 11,
     "publication": "Fukt",
     "issue": "#18 The System Issue (2020)",
-    "file": null,
-    "image_url": null,
-    "source_page": "https://www.arianespanier.com/press",
-    "shows": "other",
-    "reason": "Download blocked: environment network access is disabled (DNS resolution failed); web reader cannot save image binaries."
+    "file": "img/11-fukt-1.jpg",
+    "image_url": "https://images.squarespace-cdn.com/content/v1/59830eb0a803bb2295785f00/1606220728109-WABKI3FYD2116Y1QCEYR/1_FRONT_WHITE.jpg",
+    "source_page": "https://www.fuktmagazine.com/shop/fukt-18",
+    "shows": "cover"
   },
   {
     "index": 12,
     "publication": "Fukt",
     "issue": "#19 Storylines (2021)",
-    "file": null,
-    "image_url": null,
-    "source_page": "https://www.arianespanier.com/press",
-    "shows": "other",
-    "reason": "Download blocked: environment network access is disabled (DNS resolution failed); web reader cannot save image binaries."
+    "file": "img/12-fukt-1.jpg",
+    "image_url": "https://a-g-i.s3.eu-west-3.amazonaws.com/arianespanier/01_FUKT_19_Front_WHITE.jpg",
+    "source_page": "https://a-g-i.org/design/fukt-magazine-storylines",
+    "shows": "cover"
+  },
+  {
+    "index": 12,
+    "publication": "Fukt",
+    "issue": "#19 Storylines (2021)",
+    "file": "img/12-fukt-2.webp",
+    "image_url": "https://a-g-i.s3.eu-west-3.amazonaws.com/arianespanier/FUKT_foldout4_150dpi.jpg",
+    "source_page": "https://a-g-i.org/design/fukt-magazine-storylines",
+    "shows": "cover",
+    "processing": "Converted to WebP at original dimensions to meet the 2 MB limit."
   },
   {
     "index": 13,
     "publication": "Fukt",
     "issue": "#22 The Nature Issue (2025)",
-    "file": null,
-    "image_url": null,
-    "source_page": "https://www.arianespanier.com/press",
-    "shows": "other",
-    "reason": "Download blocked: environment network access is disabled (DNS resolution failed); web reader cannot save image binaries."
+    "file": "img/13-fukt-1.jpg",
+    "image_url": "https://m.itsnicethat.com/original_images/01_Fukt_Nature_front.jpg",
+    "source_page": "https://www.itsnicethat.com/articles/fukt-magazine-the-nature-issue-publication-project-280425",
+    "shows": "cover"
+  },
+  {
+    "index": 13,
+    "publication": "Fukt",
+    "issue": "#22 The Nature Issue (2025)",
+    "file": "img/13-fukt-2.jpg",
+    "image_url": "https://m.itsnicethat.com/original_images/fukt_nature_165x230_124-125.jpg",
+    "source_page": "https://www.itsnicethat.com/articles/fukt-magazine-the-nature-issue-publication-project-280425",
+    "shows": "spread"
   },
   {
     "index": 14,
     "publication": "Kindling",
     "issue": "Issue 3, The Imagination Issue (2023)",
-    "file": null,
-    "image_url": null,
-    "source_page": "https://alexhunting.studio/blogs/projects/kinfolk",
-    "shows": "other",
-    "reason": "Download blocked: environment network access is disabled (DNS resolution failed); web reader cannot save image binaries."
+    "file": "img/14-kindling-1.jpg",
+    "image_url": "https://alexhunting.studio/cdn/shop/files/KD_Cover3.jpg?v=1712233120",
+    "source_page": "https://alexhunting.studio/blogs/projects/kindling",
+    "shows": "cover"
+  },
+  {
+    "index": 14,
+    "publication": "Kindling",
+    "issue": "Issue 3, The Imagination Issue (2023)",
+    "file": "img/14-kindling-2.jpg",
+    "image_url": "https://alexhunting.studio/cdn/shop/files/KINDLING_ISSUE3_34-35_LEFT_d09ec935-2938-4c03-a6f7-b1c6cf397c05.jpg?v=1712228768",
+    "source_page": "https://alexhunting.studio/blogs/projects/kindling",
+    "shows": "spread"
   },
   {
     "index": 15,
     "publication": "Meantime",
     "issue": "#3 Funny Stories (2022)",
-    "file": null,
-    "image_url": null,
+    "file": "img/15-meantime-1.jpg",
+    "image_url": "https://cms.dandad.org/images/nmXb4uYObTiexrGCzxkRXpyVjF8=/26044/width-2800/1440x2560-inside_kCTDy8y.jpeg",
     "source_page": "https://www.dandad.org/work/d-ad-awards-archive/meantime-3-funny-stories",
-    "shows": "other",
-    "reason": "Download blocked: environment network access is disabled (DNS resolution failed); web reader cannot save image binaries."
+    "shows": "cover"
+  },
+  {
+    "index": 15,
+    "publication": "Meantime",
+    "issue": "#3 Funny Stories (2022)",
+    "file": "img/15-meantime-2.jpg",
+    "image_url": "https://cms.dandad.org/images/0GGX2VMlocHrTkn5G-FgydJEpZM=/26045/width-2800/1440x2560-inside_rly12zZ.jpeg",
+    "source_page": "https://www.dandad.org/work/d-ad-awards-archive/meantime-3-funny-stories",
+    "shows": "cover"
   },
   {
     "index": 16,
     "publication": "DOMa",
     "issue": "2021",
-    "file": null,
-    "image_url": null,
+    "file": "img/16-doma-1.jpg",
+    "image_url": "https://europeandesign.s3.amazonaws.com/uploads/submissions/2021/magazine/7403-108-246270/images/0cbfe889-d954-4539-aa10-dab223fc1d96.jpg",
     "source_page": "https://awards.europeandesign.org/winner/246270",
-    "shows": "other",
-    "reason": "Download blocked: environment network access is disabled (DNS resolution failed); web reader cannot save image binaries."
+    "shows": "cover"
+  },
+  {
+    "index": 16,
+    "publication": "DOMa",
+    "issue": "2021",
+    "file": "img/16-doma-2.jpg",
+    "image_url": "https://europeandesign.s3.amazonaws.com/uploads/submissions/2021/magazine/7403-108-246270/images/ab7f3978-9ddd-433d-8fef-6804cbb17027.jpg",
+    "source_page": "https://awards.europeandesign.org/winner/246270",
+    "shows": "spread"
   },
   {
     "index": 17,
     "publication": "Emergence Magazine",
     "issue": "Vol.4 Shifting Landscapes (2024)",
-    "file": null,
-    "image_url": null,
+    "file": "img/17-emergence-magazine-1.jpg",
+    "image_url": "https://europeandesign.s3.eu-central-1.amazonaws.com/files/2024/dYua771w48i8AFYszaiE2GIfOl25JbCOvpMJ1fhq.jpg",
     "source_page": "https://awards.europeandesign.org/winner/260744",
-    "shows": "other",
-    "reason": "Download blocked: environment network access is disabled (DNS resolution failed); web reader cannot save image binaries."
+    "shows": "cover"
+  },
+  {
+    "index": 17,
+    "publication": "Emergence Magazine",
+    "issue": "Vol.4 Shifting Landscapes (2024)",
+    "file": "img/17-emergence-magazine-2.jpg",
+    "image_url": "https://europeandesign.s3.eu-central-1.amazonaws.com/files/2024/ClIQCeWc8auMLxHzKnoYFponxbwcF9FdStizFuy8.jpg",
+    "source_page": "https://awards.europeandesign.org/winner/260744",
+    "shows": "spread"
   },
   {
     "index": 18,
     "publication": "Harper's Bazaar",
     "issue": "1940-08 표지 외 1940–50년대 펼침면",
-    "file": null,
-    "image_url": null,
+    "file": "img/18-harper-s-bazaar-1.jpg",
+    "image_url": "https://i0.wp.com/www.thecompmagazine.com/wp-content/uploads/2021/06/Alexey_Brodovitch_08.jpg",
     "source_page": "https://www.thecompmagazine.com/alexey-brodovitch-art-direction-supreme-mid-20th-century/",
-    "shows": "other",
-    "reason": "Download blocked: environment network access is disabled (DNS resolution failed); web reader cannot save image binaries."
+    "shows": "cover"
+  },
+  {
+    "index": 18,
+    "publication": "Harper's Bazaar",
+    "issue": "1940-08 표지 외 1940–50년대 펼침면",
+    "file": "img/18-harper-s-bazaar-2.jpg",
+    "image_url": "https://i0.wp.com/www.thecompmagazine.com/wp-content/uploads/2021/06/Alexey_Brodovitch_01.jpg",
+    "source_page": "https://www.thecompmagazine.com/alexey-brodovitch-art-direction-supreme-mid-20th-century/",
+    "shows": "spread"
   },
   {
     "index": 19,
     "publication": "Harper's Bazaar",
     "issue": "1992-09 리디자인",
-    "file": null,
-    "image_url": null,
-    "source_page": "https://www.newyorker.com/magazine/1993/07/05/bing-its-fabien",
-    "shows": "other",
-    "reason": "Download blocked: environment network access is disabled (DNS resolution failed); web reader cannot save image binaries."
+    "file": "img/19-harper-s-bazaar-1.jpg",
+    "image_url": "https://vintagefashionmagazinecovers.wordpress.com/wp-content/uploads/2015/06/harpers-bazaar-cover-fabien-baron.jpg",
+    "source_page": "https://vintagefashionmagazinecovers.wordpress.com/2015/06/18/harpers-bazaar-1992/",
+    "shows": "cover"
   },
   {
     "index": 20,
     "publication": "The Face",
     "issue": "No.49 Electro (1984-05)",
-    "file": null,
-    "image_url": null,
-    "source_page": "https://designreviewed.com/artefacts/the-face-electro-1984/",
-    "shows": "other",
-    "reason": "Download blocked: environment network access is disabled (DNS resolution failed); web reader cannot save image binaries."
+    "file": "img/20-the-face-1.png",
+    "image_url": "https://www.testpressing.org/wp-content/uploads/2012/01/ELECTRO1.png",
+    "source_page": "https://www.testpressing.org/archive/the-faceelectro",
+    "shows": "cover"
+  },
+  {
+    "index": 20,
+    "publication": "The Face",
+    "issue": "No.49 Electro (1984-05)",
+    "file": "img/20-the-face-2.webp",
+    "image_url": "https://www.testpressing.org/wp-content/uploads/2012/01/ELECTRO2.png",
+    "source_page": "https://www.testpressing.org/archive/the-faceelectro",
+    "shows": "spread",
+    "processing": "Converted to WebP at original dimensions to meet the 2 MB limit."
   },
   {
     "index": 21,
     "publication": "The Face",
     "issue": "No.50 (1984-06)",
-    "file": null,
-    "image_url": null,
-    "source_page": "https://designreviewed.com/series/the-face/",
-    "shows": "other",
-    "reason": "Download blocked: environment network access is disabled (DNS resolution failed); web reader cannot save image binaries."
+    "file": "img/21-the-face-1.jpg",
+    "image_url": "https://www.record28.com/cdn/shop/files/THE_FACE_50.jpg?v=1739978615",
+    "source_page": "https://www.record28.com/products/the-face-50-th-issue-no-50-june-1984",
+    "shows": "cover"
+  },
+  {
+    "index": 21,
+    "publication": "The Face",
+    "issue": "No.50 (1984-06)",
+    "file": "img/21-the-face-2.jpg",
+    "image_url": "https://www.record28.com/cdn/shop/files/THE_FACE_50_5.jpg?v=1739978615",
+    "source_page": "https://www.record28.com/products/the-face-50-th-issue-no-50-june-1984",
+    "shows": "page"
   },
   {
     "index": 22,
     "publication": "The Face",
     "issue": "No.57 (1985-01)",
-    "file": null,
-    "image_url": null,
-    "source_page": "https://designreviewed.com/series/the-face/",
-    "shows": "other",
-    "reason": "Download blocked: environment network access is disabled (DNS resolution failed); web reader cannot save image binaries."
+    "file": "img/22-the-face-1.jpg",
+    "image_url": "https://magazinecanteen.com/cdn/shop/files/THEFACEMAGAZINE198510copy2_a790b8eb-947d-45c1-b9d1-9747f9e238c6.jpg?v=1760868252",
+    "source_page": "https://magazinecanteen.com/products/the-face-magazine-1985-annie-lennox-1",
+    "shows": "cover"
   },
   {
     "index": 23,
     "publication": "Colors",
     "issue": "1990–1995 (1–13호)",
-    "file": null,
-    "image_url": null,
+    "file": "img/23-colors-1.jpg",
+    "image_url": "https://a-g-i.s3.eu-west-3.amazonaws.com/tiborkalman/tibor1.jpg",
     "source_page": "https://a-g-i.org/design/colors",
-    "shows": "other",
-    "reason": "Download blocked: environment network access is disabled (DNS resolution failed); web reader cannot save image binaries."
+    "shows": "cover"
+  },
+  {
+    "index": 23,
+    "publication": "Colors",
+    "issue": "1990–1995 (1–13호)",
+    "file": "img/23-colors-2.jpg",
+    "image_url": "https://a-g-i.s3.eu-west-3.amazonaws.com/tiborkalman/tibor2.jpg",
+    "source_page": "https://a-g-i.org/design/colors",
+    "shows": "cover"
   },
   {
     "index": 24,
     "publication": "The Gentlewoman",
     "issue": "2011",
-    "file": null,
-    "image_url": null,
-    "source_page": "https://www.dutchdesignawards.nl/gallery/the-gentlewoman/",
-    "shows": "other",
-    "reason": "Download blocked: environment network access is disabled (DNS resolution failed); web reader cannot save image binaries."
+    "file": "img/24-the-gentlewoman-1.jpg",
+    "image_url": "https://www.maban.co.uk/image/cutout-gentlewoman-cover.jpg",
+    "source_page": "https://www.maban.co.uk/51/",
+    "shows": "cover"
+  },
+  {
+    "index": 24,
+    "publication": "The Gentlewoman",
+    "issue": "2011",
+    "file": "img/24-the-gentlewoman-2.jpg",
+    "image_url": "https://www.maban.co.uk/image/cutout-gentlewoman.jpg",
+    "source_page": "https://www.maban.co.uk/51/",
+    "shows": "page"
   },
   {
     "index": 25,
     "publication": "Kinfolk",
     "issue": "2021 여름 리디자인",
-    "file": null,
-    "image_url": null,
+    "file": "img/25-kinfolk-1.jpg",
+    "image_url": "https://alexhunting.studio/cdn/shop/files/KINFOLK40_10-11_ab003a35-86d8-443a-ac5f-e5a2862d1851.jpg?v=1712074676",
     "source_page": "https://alexhunting.studio/blogs/projects/kinfolk",
-    "shows": "other",
-    "reason": "Download blocked: environment network access is disabled (DNS resolution failed); web reader cannot save image binaries."
+    "shows": "spread"
+  },
+  {
+    "index": 25,
+    "publication": "Kinfolk",
+    "issue": "2021 여름 리디자인",
+    "file": "img/25-kinfolk-2.jpg",
+    "image_url": "https://alexhunting.studio/cdn/shop/files/KINFOLK40_12-13_copy_12f106a0-4c2a-41c0-897e-08adfd20b3e3.jpg?v=1712074698",
+    "source_page": "https://alexhunting.studio/blogs/projects/kinfolk",
+    "shows": "spread"
   },
   {
     "index": 26,
     "publication": "032c",
     "issue": "Issue 13 (2007 여름) 리디자인",
-    "file": null,
-    "image_url": null,
-    "source_page": "https://designobserver.com/how-to-be-ugly/",
-    "shows": "other",
-    "reason": "Download blocked: environment network access is disabled (DNS resolution failed); web reader cannot save image binaries."
+    "file": "img/26-032c-1.jpg",
+    "image_url": "https://rarebooksparis.com/cdn/shop/files/IMAGES_Pagina_01.jpg?v=1716904909",
+    "source_page": "https://rarebooksparis.com/collections/fashion/products/032c-issue-13-energy-experimentation",
+    "shows": "cover"
+  },
+  {
+    "index": 26,
+    "publication": "032c",
+    "issue": "Issue 13 (2007 여름) 리디자인",
+    "file": "img/26-032c-2.jpg",
+    "image_url": "https://rarebooksparis.com/cdn/shop/files/IMAGES_Pagina_02.jpg?v=1716904910",
+    "source_page": "https://rarebooksparis.com/collections/fashion/products/032c-issue-13-energy-experimentation",
+    "shows": "spread"
   },
   {
     "index": 27,
     "publication": "032c",
     "issue": "Issue 30 (2016)",
-    "file": null,
-    "image_url": null,
+    "file": "img/27-032c-1.jpg",
+    "image_url": "https://cdn.shopify.com/s/files/1/0514/7889/files/IMG_6493.jpg",
     "source_page": "https://magculture.com/blogs/journal/032c-30",
-    "shows": "other",
-    "reason": "Download blocked: environment network access is disabled (DNS resolution failed); web reader cannot save image binaries."
+    "shows": "spread"
+  },
+  {
+    "index": 27,
+    "publication": "032c",
+    "issue": "Issue 30 (2016)",
+    "file": "img/27-032c-2.jpg",
+    "image_url": "https://magculture.com/cdn/shop/articles/IMG_6491_fefdf0a5-e322-4480-8b48-36f0c09d8613.jpg?v=1615829434",
+    "source_page": "https://magculture.com/blogs/journal/032c-30",
+    "shows": "cover"
   },
   {
     "index": 28,
     "publication": "La Belle et La Bête",
     "issue": "2019",
-    "file": null,
-    "image_url": null,
-    "source_page": "https://www.tdc.org/competitions/communication-design-2019/",
-    "shows": "other",
-    "reason": "Download blocked: environment network access is disabled (DNS resolution failed); web reader cannot save image binaries."
+    "file": "img/28-la-belle-et-la-bete-1.jpg",
+    "image_url": "https://tdc.org/wp-content/uploads/2025/01/2_Judges-Choice_Spalter_Rational_La-Belle.jpg",
+    "source_page": "https://tdc.org/news/2019-communication-design-judges-choice-magazine-design-by-rational-beauty/",
+    "shows": "spread"
+  },
+  {
+    "index": 28,
+    "publication": "La Belle et La Bête",
+    "issue": "2019",
+    "file": "img/28-la-belle-et-la-bete-2.jpg",
+    "image_url": "https://tdc.org/wp-content/uploads/2025/01/3_Judges-Choice_Spalter_Rational_La-Belle.jpg",
+    "source_page": "https://tdc.org/news/2019-communication-design-judges-choice-magazine-design-by-rational-beauty/",
+    "shows": "spread"
   },
   {
     "index": 29,
     "publication": "i-D",
     "issue": "No.3 (창간 1980)",
-    "file": null,
-    "image_url": null,
-    "source_page": "https://www.eyemagazine.com/feature/article/reputations-terry-jones",
-    "shows": "other",
-    "reason": "Download blocked: environment network access is disabled (DNS resolution failed); web reader cannot save image binaries."
+    "file": "img/29-i-d-1.jpg",
+    "image_url": "https://www.cultjones.com/wp-content/uploads/idmag-1.jpg",
+    "source_page": "https://www.cultjones.com/product/jones-terry-i-d-magazine-7/",
+    "shows": "cover"
+  },
+  {
+    "index": 29,
+    "publication": "i-D",
+    "issue": "No.3 (창간 1980)",
+    "file": "img/29-i-d-2.jpg",
+    "image_url": "https://www.cultjones.com/wp-content/uploads/idmag1-1.jpg",
+    "source_page": "https://www.cultjones.com/product/jones-terry-i-d-magazine-7/",
+    "shows": "page"
   },
   {
     "index": 30,
     "publication": "Vogue Italia",
     "issue": "1988-07/08 Sozzani 첫 호 표지",
-    "file": null,
-    "image_url": null,
-    "source_page": "https://www.vogue.it/article/storia-vogue-italia",
-    "shows": "other",
-    "reason": "Download blocked: environment network access is disabled (DNS resolution failed); web reader cannot save image binaries."
+    "file": "img/30-vogue-italia-1.jpg",
+    "image_url": "https://pictures.abebooks.com/inventory/31321291551.jpg",
+    "source_page": "https://www.abebooks.de/magazine-zeitschriften/VOGUE-Italia-Magazine-July-1988-ROBYN/31321291551/bd",
+    "shows": "cover"
   },
   {
     "index": 31,
     "publication": "Visionaire",
     "issue": "No.18 Fashion Special",
-    "file": null,
-    "image_url": null,
+    "file": "img/31-visionaire-1.jpg",
+    "image_url": "https://visionaireworld.com/cdn/shop/products/18-LOUIS-VUITTON-Cover.jpg?v=1528753168",
     "source_page": "https://visionaireworld.com/products/visionaire-18-fashion-special-louis-vuitton",
-    "shows": "other",
-    "reason": "Download blocked: environment network access is disabled (DNS resolution failed); web reader cannot save image binaries."
+    "shows": "cover"
   },
   {
     "index": 32,
     "publication": "Fantastic Man",
     "issue": "#30 리디자인 (2019)",
-    "file": null,
-    "image_url": null,
+    "file": "img/32-fantastic-man-1.jpg",
+    "image_url": "https://magculture.com/cdn/shop/articles/IMG_3509_c969186a-e723-4433-9c9b-1c539ac6e2d7.jpg?v=1615834236",
     "source_page": "https://magculture.com/blogs/journal/fantastic-man-30",
-    "shows": "other",
-    "reason": "Download blocked: environment network access is disabled (DNS resolution failed); web reader cannot save image binaries."
+    "shows": "cover"
+  },
+  {
+    "index": 32,
+    "publication": "Fantastic Man",
+    "issue": "#30 리디자인 (2019)",
+    "file": "img/32-fantastic-man-2.jpg",
+    "image_url": "https://cdn.shopify.com/s/files/1/0514/7889/files/IMG_3512.jpg",
+    "source_page": "https://magculture.com/blogs/journal/fantastic-man-30",
+    "shows": "spread"
   },
   {
     "index": 33,
     "publication": "Perfect Magazine",
     "issue": "Issue 1 (2021-09)",
-    "file": null,
-    "image_url": null,
+    "file": "img/33-perfect-magazine-1.jpg",
+    "image_url": "https://images.squarespace-cdn.com/content/v1/62b446a90f840d20f23374db/1658742905324-4EJSAWR4CKZJT9MS9SEC/Binder5_Page_046.jpg",
     "source_page": "https://www.weare23.com/projects-feed/perfect-magazine-issue-1",
-    "shows": "other",
-    "reason": "Download blocked: environment network access is disabled (DNS resolution failed); web reader cannot save image binaries."
+    "shows": "cover"
+  },
+  {
+    "index": 33,
+    "publication": "Perfect Magazine",
+    "issue": "Issue 1 (2021-09)",
+    "file": "img/33-perfect-magazine-2.jpg",
+    "image_url": "https://images.squarespace-cdn.com/content/v1/62b446a90f840d20f23374db/1658743048338-3M2UBVRQMRF4P6ALM36K/Binder3_Page_72.jpg",
+    "source_page": "https://www.weare23.com/projects-feed/perfect-magazine-issue-1",
+    "shows": "cover"
   },
   {
     "index": 34,
     "publication": "Buffalo Zine",
     "issue": "No.9 (2020)",
-    "file": null,
-    "image_url": null,
+    "file": "img/34-buffalo-zine-1.jpg",
+    "image_url": "https://cms.dandad.org/images/er7Em1gVN--nzkFlS0h81DQ_59k=/31430/width-2800/3000x2400_L5zIQiF.jpg",
     "source_page": "https://www.dandad.org/work/d-ad-awards-archive/buffalo-zine-no-9",
-    "shows": "other",
-    "reason": "Download blocked: environment network access is disabled (DNS resolution failed); web reader cannot save image binaries."
+    "shows": "cover"
+  },
+  {
+    "index": 34,
+    "publication": "Buffalo Zine",
+    "issue": "No.9 (2020)",
+    "file": "img/34-buffalo-zine-2.jpg",
+    "image_url": "https://cms.dandad.org/images/GyF3jIm9mVRCOEvVmolO3i0-7FY=/31431/width-2800/3000x2400_pZuwoWT.jpg",
+    "source_page": "https://www.dandad.org/work/d-ad-awards-archive/buffalo-zine-no-9",
+    "shows": "cover"
   },
   {
     "index": 35,
     "publication": "Buffalo Zine",
     "issue": "No.11 (2021)",
-    "file": null,
-    "image_url": null,
+    "file": "img/35-buffalo-zine-1.jpg",
+    "image_url": "https://cms.dandad.org/images/9AoarI3zqGm_VbGtUk5zda9Hjek=/30134/width-2800/3000x2400_3fvTnqS.jpg",
     "source_page": "https://www.dandad.org/work/d-ad-awards-archive/buffalo-zine-no-11",
-    "shows": "other",
-    "reason": "Download blocked: environment network access is disabled (DNS resolution failed); web reader cannot save image binaries."
+    "shows": "spread"
+  },
+  {
+    "index": 35,
+    "publication": "Buffalo Zine",
+    "issue": "No.11 (2021)",
+    "file": "img/35-buffalo-zine-2.jpg",
+    "image_url": "https://cms.dandad.org/images/tbyfdLu9y-8tRQT2C88IYO5OFFg=/30135/width-2800/3000x2400_cN4Gn7O.jpg",
+    "source_page": "https://www.dandad.org/work/d-ad-awards-archive/buffalo-zine-no-11",
+    "shows": "spread"
   },
   {
     "index": 36,
     "publication": "Dazed",
     "issue": "2015 가을 리디자인",
-    "file": null,
-    "image_url": null,
+    "file": "img/36-dazed-1.jpg",
+    "image_url": "https://m.itsnicethat.com/original_images/55cb55b27fa44cb8d400016f.jpg",
     "source_page": "https://d3buuag9gcp8bb.cloudfront.net/features/dazed-magazine-redesign-jamie-reid",
-    "shows": "other",
-    "reason": "Download blocked: environment network access is disabled (DNS resolution failed); web reader cannot save image binaries."
+    "shows": "cover"
+  },
+  {
+    "index": 36,
+    "publication": "Dazed",
+    "issue": "2015 가을 리디자인",
+    "file": "img/36-dazed-2.jpg",
+    "image_url": "https://m.itsnicethat.com/original_images/55cb55d27fa44cb8d4000187.jpg",
+    "source_page": "https://d3buuag9gcp8bb.cloudfront.net/features/dazed-magazine-redesign-jamie-reid",
+    "shows": "spread"
   },
   {
     "index": 37,
     "publication": "System",
     "issue": "No.5 + Kanye, Juergen & Kim 별책",
-    "file": null,
-    "image_url": null,
-    "source_page": "https://lenthal.com/work/",
-    "shows": "other",
-    "reason": "Download blocked: environment network access is disabled (DNS resolution failed); web reader cannot save image binaries."
+    "file": "img/37-system-1.jpg",
+    "image_url": "https://system-magazine.com/media/pages/issues/issue-05/5da513b4fd-1685447875/system5-cover-bandeau.jpg",
+    "source_page": "https://system-magazine.com/issues/issue-05",
+    "shows": "cover"
+  },
+  {
+    "index": 37,
+    "publication": "System",
+    "issue": "No.5 + Kanye, Juergen & Kim 별책",
+    "file": "img/37-system-2.png",
+    "image_url": "https://tomorrowpublications.com/cdn/shop/files/coverimages_322a39cf-3458-4a04-9853-65c636fce05a.png?v=1771474313&width=3000",
+    "source_page": "https://tomorrowpublications.com/products/kanye-juergen-kim-2015-system-magazine-no-5",
+    "shows": "cover"
   }
 ]
