@@ -1,0 +1,42 @@
+{
+  "task": "contain-gen-model",
+  "spec": {
+    "subject": "A single architectural grid-frame model: a small lattice skeleton of thin pale timber members forming square cells (like the frame of a hanok courtyard house or a display shelf grid), standing alone on a low dark plinth in a museum.",
+    "purpose": "Photo set inside the word 'Contain' on a black magazine page; it must read as one object at small size.",
+    "style": "Editorial museum photography, real photograph, sharp, medium-format look, no illustration.",
+    "mood": "Quiet, contemplative, refined; dark gallery.",
+    "composition": "Frontal, the model fills most of the frame vertically, tight decisive crop, centered, generous black around top and sides only slightly.",
+    "palette": "Near-black background, warm pale wood, a small accent of muted red allowed in one cell.",
+    "lighting": "Single soft museum spotlight from above, deep shadows, no glare.",
+    "size": "1024x1536",
+    "avoid": [
+      "people",
+      "text or logos",
+      "busy background",
+      "CGI look",
+      "vignette frames"
+    ],
+    "notes": "High resolution detail on the joints; background must fall to black so it sits on a (4,5,5) black page."
+  },
+  "status": "ok",
+  "runner": "codex",
+  "attempts": [
+    {
+      "argv": [
+        "codex",
+        "exec",
+        "--sandbox",
+        "workspace-write",
+        "--skip-git-repo-check",
+        "-c",
+        "features.image_generation=true"
+      ],
+      "exit_code": 0,
+      "tail": "eleton with square cells and precise joints on a low dark museum plinth.\n+purpose: One readable object for placement inside Contain; no letters or mask in the photograph.\n+style: Sharp, realistic editorial museum photography with a medium-format look.\n+mood: Quiet, contemplative and refined in a dark gallery.\n+composition: Centered frontal view, dominant vertical scale, tight crop with modest black top and side margins.\n+palette: Near-black, warm pale wood, one small muted red inset.\n+lighting: Single soft overhead spotlight, deep shadows and no glare.\n+size: Exactly 1024x1536 pixels, portrait.\n+avoid: No people, text, logos, busy background, CGI appearance or vignette frames.\n+notes: Detailed joints; background edges approximate RGB (4,5,5) for a black magazine page.\n+\n\ntokens used\n42,231"
+    }
+  ],
+  "image": "image.png",
+  "prompt_file": "image-prompt.md",
+  "source": "",
+  "seconds": 67.393
+}
