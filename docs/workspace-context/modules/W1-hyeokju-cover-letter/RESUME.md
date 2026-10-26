@@ -1,8 +1,8 @@
 # W1 혁주 자기소개서 (JAJU 라운딩 VMD · 이전 신세계인터내셔날 해외패션)
-기준 2026-10-25T06:42Z · 체크포인트 claude/clever-knuth-1dezlo@c664301, claude/beautiful-gates-e42a5m@76d0f6d, claude/modest-cannon-ha8zs3@79ba2dc
+기준 2026-10-26T15:43Z · 체크포인트 claude/clever-knuth-1dezlo@c664301, claude/beautiful-gates-e42a5m@76d0f6d, claude/modest-cannon-ha8zs3@79ba2dc
 
 ## 지금
-대상은 JAJU 라운딩 VMD. 1~3번 모두 확정: Q1 999자(D31), Q2 rev44 999자(D33), Q3 rev50 998자(D34), 확인 필요 메모도 사용자가 확인(C25). FINAL 은 docs/portfolio/jaju/, 세 문항을 묶은 Word 파일 jaju_rounding_vmd_Q1-3.docx. 남은 것은 공고 마감 여부(O17).
+대상은 JAJU 라운딩 VMD. 1~3번 모두 확정: Q1 999자(D31), Q2 rev44 999자(D33), Q3 rev50 998자(D34), 확인 필요 메모도 사용자가 확인(C25). FINAL 은 docs/portfolio/jaju/, 세 문항을 묶은 Word 파일 jaju_rounding_vmd_Q1-3.docx. 지원 메일 초안(application_email.md)이 있고 연락처 빈칸 · 발송은 사용자 몫(O27). 공고 마감 여부(O17).
 
 ## 이어 할 일: `draft_paragraph`
 JAJU 1~3번 확정 완료. 사용자가 새 문항 · 새 공고를 주거나 FINAL 의 '확인 필요' 메모(unverified)를 확인하면 그에 따라 고친다. 공고 마감 문의 결과(W1-O17) 대기.
@@ -18,12 +18,12 @@ JAJU 1~3번 확정 완료. 사용자가 새 문항 · 새 공고를 주거나 FI
 - 외 10개 → state.json decisions
 
 ## 작업 중인 파일
-- docs/portfolio/handoff/sikorea_q2_draft.json @59f720a
 - docs/company_analysis/jaju/04a_brand_image.md @c6deb58
 - docs/portfolio/jaju/jaju_rounding_vmd_Q1-3_draft.md @0a0cabf
 - docs/portfolio/handoff/jaju_selfintro_draft.json @f0959b5
 - docs/portfolio/jaju/PROCESS_question_revision.md @d6e3228
-- 외 3개 → state.json artifacts
+- docs/jaju_rounding_vmd/application_email.md @e9676f1
+- 외 4개 → state.json artifacts
 
 ## 읽는 법
 - 이 파일만 읽고 시작한다. 더 필요하면 `W1-hyeokju-cover-letter/state.json` 의 해당 id 만 연다. 지난 이력은 `history.jsonl`.
