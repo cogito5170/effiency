@@ -1,15 +1,16 @@
 {
  "module": "W1",
  "title": "혁주 자기소개서 (JAJU 라운딩 VMD · 이전 신세계인터내셔날 해외패션)",
- "as_of": "2026-10-26T15:43Z",
+ "as_of": "2026-10-27T09:40Z",
  "checkpoint": {
-  "at": "2026-10-26T15:43Z",
+  "at": "2026-10-27T09:40Z",
   "refs": {
    "gentleMonster@claude/clever-knuth-1dezlo": "c664301",
    "gentleMonster@claude/beautiful-gates-e42a5m": "76d0f6d",
    "gentleMonster@claude/modest-cannon-ha8zs3": "79ba2dc",
    "gentleMonster@main": "bdee7d6",
-   "gentleMonster@claude/gracious-edison-inoq0z": "e9676f1"
+   "gentleMonster@claude/gracious-edison-inoq0z": "e9676f1",
+   "gentleMonster@claude/brave-cannon-emzaxy": "189d627"
   },
   "method": "scripts/sync_delta.py: 체크포인트 커밋 뒤의 커밋 · 바뀐 파일만 읽음. 세션 대화 원본은 읽지도 고치지도 않음",
   "not_cloned": [
@@ -885,6 +886,15 @@
    "commit": "e9676f1",
    "status": "draft",
    "note": "JAJU 라운딩 VMD 지원 메일 초안 (박재영 과장님 앞)"
+  },
+  {
+   "kind": "doc",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/brave-cannon-emzaxy",
+   "path": "docs/interview/finals_snapshot.md",
+   "commit": "189d627",
+   "status": "draft",
+   "note": "JAJU 면접 준비 세션의 출발점: 자기소개서(W1) · CV v4(W4) · 포트폴리오(W2) · 지원 메일 최종본 확인 기록"
   }
  ],
  "unverified": [
@@ -927,6 +937,16 @@
    "statement": "rev36~42 의 '1안' 표기와 넷째 단락 삭제가 사용자 선택인지",
    "where": "jaju_selfintro_draft.json rev36~rev42 note (d682f52)",
    "check": "파일에는 note 만 있음, 사용자 원문 미확인"
+  },
+  {
+   "statement": "면접 일정이 잡혔는지(서류 합격 여부) — 면접 준비 세션이 시작됐다는 것만 확인됨",
+   "where": "docs/interview/finals_snapshot.md 1~4행 (189d627)",
+   "check": "파일에 일정 · 합격 언급 없음"
+  },
+  {
+   "statement": "CV '헤비타트' / 포트폴리오 부록 '해비타트' 표기를 한쪽으로 맞출 일(W4 · W2), 면접 세션이 지적",
+   "where": "docs/interview/finals_snapshot.md §5 (189d627)",
+   "check": "사용자 결정 없음"
   }
  ]
 }
