@@ -1,0 +1,6 @@
+{
+ "action": "delegate",
+ "agent": "codex",
+ "instruction": "In .relay/tasks/ideas-gpt/ read prompt.md and do exactly what it asks, using web search and opening pages to verify every number and URL. Write the full result in Korean to .relay/tasks/ideas-gpt/out-codex.md. Do not change any other file. In your final message, give only the three most promising ideas, one line each, max 1500 characters.",
+ "id": "20261027T142534"
+}
