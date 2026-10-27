@@ -1,9 +1,9 @@
 {
  "module": "W6",
  "title": "도구 · 인프라 (relay · 메모리 · 프론트엔드 · agy)",
- "as_of": "2026-10-27T14:25Z",
+ "as_of": "2026-10-27T15:09Z",
  "checkpoint": {
-  "at": "2026-10-27T14:25Z",
+  "at": "2026-10-27T15:09Z",
   "refs": {
    "gentleMonster@main": "bdee7d6",
    "effiency@main": "8724b6c",
@@ -16,7 +16,8 @@
    "effiency@claude/project-thread-susdx3": "ddc7904",
    "effiency@claude/handoff-marked-task": "514bc6d",
    "effiency@claude/project-thread-9s8x1k": "7ba54c2",
-   "effiency@claude/project-thread-el0x57": "bb6d984"
+   "effiency@claude/project-thread-el0x57": "bb6d984",
+   "effiency@claude/project-thread-9jtvcv": "011355e"
   },
   "method": "scripts/sync_delta.py: 체크포인트 커밋 뒤의 커밋 · 바뀐 파일만 읽음. 세션 대화 원본은 읽지도 고치지도 않음",
   "not_cloned": [],
@@ -269,6 +270,18 @@
     "line": 1,
     "commit": "bb6d984"
    }
+  },
+  {
+   "id": "W6-C19",
+   "statement": "AI 쇼핑 자료조사 R1 서지 검증 1차 완료: 검토 문서의 논문 26편 모두 실재, 6편 부제 보완, 8편 권 · 호 재확인 필요. 다음은 R2 경쟁 지형. 후보 방향 셋(롱테일 통합 · 기억하는 개인 스타일리스트(잠정 추천) · B2B 검색)은 아직 결정 안 함",
+   "source": "도구출력",
+   "evidence": {
+    "repo": "cogito5170/effiency",
+    "ref": "claude/project-thread-9jtvcv",
+    "path": "notes/ai-shopping/README.md",
+    "line": 28,
+    "commit": "011355e"
+   }
   }
  ],
  "decisions": [
@@ -410,6 +423,19 @@
     "commit": "386f7ae · b688f77; effiency 6b0cd32",
     "file_verified": true
    }
+  },
+  {
+   "id": "W6-D13",
+   "date": "2026-10-27T15:09Z",
+   "decision": "AI 쇼핑 통합 서비스(가칭, 원안 혁주) 착수 — 자료조사(R1~R6)부터, 코드 · 무단 크롤링은 하지 않음. 임시 위치 effiency/notes/ai-shopping/, 방향 확정 뒤 윤경이 만든 전용 레포로 이전",
+   "by": "사용자 (파일 기록)",
+   "evidence": {
+    "repo": "cogito5170/effiency",
+    "ref": "claude/project-thread-9jtvcv",
+    "path": "notes/ai-shopping/intent.md",
+    "line": 56,
+    "commit": "011355e"
+   }
   }
  ],
  "open": [
@@ -454,6 +480,20 @@
    "waiting_on": "사용자",
    "blocking": false,
    "source": "도구출력"
+  },
+  {
+   "id": "W6-O8",
+   "item": "AI 쇼핑 R5 수요 · 지불의사 인터뷰 설계안을 혁주 · 윤경이 검토, R6 에서 세 방향 중 하나 선택(또는 전부 기각)",
+   "waiting_on": "사용자",
+   "blocking": false,
+   "source": "도구출력",
+   "evidence": {
+    "repo": "cogito5170/effiency",
+    "ref": "claude/project-thread-9jtvcv",
+    "path": "notes/ai-shopping/README.md",
+    "line": 32,
+    "commit": "011355e"
+   }
   }
  ],
  "artifacts": [
@@ -574,6 +614,24 @@
    "commit": "910c30b",
    "status": "draft",
    "note": "작품 사진 크롭(work_crop.png)을 Codex 로 복원 확대"
+  },
+  {
+   "kind": "doc",
+   "repo": "cogito5170/effiency",
+   "ref": "claude/project-thread-9jtvcv",
+   "path": "notes/ai-shopping/intent.md",
+   "commit": "011355e",
+   "status": "draft",
+   "note": "AI 쇼핑 통합 서비스 목적 · 질문 Q1~Q4 · 반증 조건 · 결정 기록"
+  },
+  {
+   "kind": "doc",
+   "repo": "cogito5170/effiency",
+   "ref": "claude/project-thread-9jtvcv",
+   "path": "notes/ai-shopping/README.md",
+   "commit": "011355e",
+   "status": "draft",
+   "note": "AI 쇼핑 조사 계획 R1~R6 과 진행 상황"
   }
  ],
  "unverified": [
@@ -619,6 +677,11 @@
   {
    "statement": "구독형 AI 서비스 아이디어 조사는 W1~W5 어디에도 속하지 않는 새 주제로 보임 — relay 사용이라 W6 에 둠",
    "where": ".relay/tasks/ideas-gpt/prompt.md (bb6d984)",
+   "check": "사용자가 작업 공간을 정한 기록 없음"
+  },
+  {
+   "statement": "AI 쇼핑 프로젝트를 W6 에 둠 — 사용자 결정(새 세션은 기존 W 중 하나에)에 따른 배정이고, ideas-gpt 위임(C18)과 같은 줄기로 봄",
+   "where": "notes/ai-shopping/README.md 'GPT 교차 조사' (011355e)",
    "check": "사용자가 작업 공간을 정한 기록 없음"
   }
  ]
