@@ -1,5 +1,5 @@
 # W6 도구 · 인프라 (relay · 메모리 · 프론트엔드 · agy)
-기준 2026-10-25T18:42Z · 체크포인트 main@bdee7d6, main@8724b6c, claude/confident-goldberg-vpwcje@0649ecb
+기준 2026-10-27T14:25Z · 체크포인트 main@bdee7d6, main@8724b6c, claude/confident-goldberg-vpwcje@0649ecb
 
 ## 지금
 미머지 최신은 effiency@claude/handoff-marked-task(514bc6d, 10-22): zealous-goodall 의 relay ask 위에 relay read(PDF 해설 패널, APPROVE)와 훅 보강(인수인계 차단 · 읽기 가드)을 더했다. 머지된 도구 상태는 10-15 그대로. 맥 Quick Action 실패 원인(ask.log)은 여전히 대기.
@@ -30,5 +30,5 @@ mode=diagnose: 사용자 맥의 빠른 동작 실행 출력 + `cat ~/.relay/ask.
 
 ## 읽는 법
 - 이 파일만 읽고 시작한다. 더 필요하면 `W6-tools-infra/state.json` 의 해당 id 만 연다. 지난 이력은 `history.jsonl`.
-- 미확인 9개는 결론으로 쓰지 않는다. 확정은 저장소 파일로 다시 확인한다.
+- 미확인 10개는 결론으로 쓰지 않는다. 확정은 저장소 파일로 다시 확인한다.
 - 결정 · 산출물은 저장소에 커밋해 둔다. 백엔드가 커밋에서 다음 요약을 만든다.

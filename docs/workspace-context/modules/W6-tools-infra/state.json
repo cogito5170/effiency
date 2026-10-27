@@ -1,9 +1,9 @@
 {
  "module": "W6",
  "title": "도구 · 인프라 (relay · 메모리 · 프론트엔드 · agy)",
- "as_of": "2026-10-25T18:42Z",
+ "as_of": "2026-10-27T14:25Z",
  "checkpoint": {
-  "at": "2026-10-25T18:42Z",
+  "at": "2026-10-27T14:25Z",
   "refs": {
    "gentleMonster@main": "bdee7d6",
    "effiency@main": "8724b6c",
@@ -15,7 +15,8 @@
    "effiency@claude/context-archive": "6f7510c",
    "effiency@claude/project-thread-susdx3": "ddc7904",
    "effiency@claude/handoff-marked-task": "514bc6d",
-   "effiency@claude/project-thread-9s8x1k": "7ba54c2"
+   "effiency@claude/project-thread-9s8x1k": "7ba54c2",
+   "effiency@claude/project-thread-el0x57": "bb6d984"
   },
   "method": "scripts/sync_delta.py: 체크포인트 커밋 뒤의 커밋 · 바뀐 파일만 읽음. 세션 대화 원본은 읽지도 고치지도 않음",
   "not_cloned": [],
@@ -255,6 +256,18 @@
     "ref": "claude/project-thread-9s8x1k",
     "path": ".relay/tasks/critic-O_bleed3/response.json",
     "commit": "7ba54c2"
+   }
+  },
+  {
+   "id": "W6-C18",
+   "statement": "relay 로 Codex 에 새 과제 위임(ideas-gpt): 한국 시장 중심 구독형 AI 서비스 아이디어 15개 이상 · 숨은 수요 5개, 아이디어마다 불편 수치 · 미구현 검색 · 학술 이론 근거, 결과는 out-codex.md (아직 응답 없음)",
+   "source": "도구출력",
+   "evidence": {
+    "repo": "cogito5170/effiency",
+    "ref": "claude/project-thread-el0x57",
+    "path": ".relay/tasks/ideas-gpt/request.json",
+    "line": 1,
+    "commit": "bb6d984"
    }
   }
  ],
@@ -602,6 +615,11 @@
    "statement": "pass 받은 시안(H_counter_fit · J_big · K_bleed · L_wide · M_cover · N_grid43 · O_bleed3) 중 어느 것을 쓸지, 작품 사진(빨간 격자 종이 작품)의 원작자와 AI 확대본을 포트폴리오에 써도 되는지",
    "where": "effiency@claude/project-thread-9s8x1k .relay/tasks/critic-* · contain-upscale (7ba54c2)",
    "check": "파일에 사용자 선택 · 출처 기록 없음"
+  },
+  {
+   "statement": "구독형 AI 서비스 아이디어 조사는 W1~W5 어디에도 속하지 않는 새 주제로 보임 — relay 사용이라 W6 에 둠",
+   "where": ".relay/tasks/ideas-gpt/prompt.md (bb6d984)",
+   "check": "사용자가 작업 공간을 정한 기록 없음"
   }
  ]
 }
