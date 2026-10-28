@@ -1,16 +1,16 @@
 {
  "module": "W1",
  "title": "혁주 자기소개서 (JAJU 라운딩 VMD · 이전 신세계인터내셔날 해외패션)",
- "as_of": "2026-10-28T10:26Z",
+ "as_of": "2026-10-28T11:09Z",
  "checkpoint": {
-  "at": "2026-10-28T10:26Z",
+  "at": "2026-10-28T11:09Z",
   "refs": {
    "gentleMonster@claude/clever-knuth-1dezlo": "c664301",
    "gentleMonster@claude/beautiful-gates-e42a5m": "76d0f6d",
    "gentleMonster@claude/modest-cannon-ha8zs3": "79ba2dc",
    "gentleMonster@main": "bdee7d6",
    "gentleMonster@claude/gracious-edison-inoq0z": "e9676f1",
-   "gentleMonster@claude/brave-cannon-emzaxy": "495cff2"
+   "gentleMonster@claude/brave-cannon-emzaxy": "272dac8"
   },
   "method": "scripts/sync_delta.py: 체크포인트 커밋 뒤의 커밋 · 바뀐 파일만 읽음. 세션 대화 원본은 읽지도 고치지도 않음",
   "not_cloned": [
@@ -1032,6 +1032,15 @@
    "commit": "495cff2",
    "status": "draft",
    "note": "JAJU 면접 예상 질문(1분 자기소개 · 자기소개서 · CV · 직무 · 인성), 서류에 있는 답의 재료와 ⚠ 빈칸"
+  },
+  {
+   "kind": "doc",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/brave-cannon-emzaxy",
+   "path": "docs/interview/jaju_interview_questions_selfintro.docx",
+   "commit": "272dac8",
+   "status": "draft",
+   "note": "자기소개서 문항별 면접 예상 질문 Word (질문 · 답의 재료 + 연습용 질문만 판)"
   }
  ],
  "unverified": [

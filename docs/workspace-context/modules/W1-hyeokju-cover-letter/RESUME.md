@@ -1,5 +1,5 @@
 # W1 혁주 자기소개서 (JAJU 라운딩 VMD · 이전 신세계인터내셔날 해외패션)
-기준 2026-10-28T10:26Z · 체크포인트 claude/clever-knuth-1dezlo@c664301, claude/beautiful-gates-e42a5m@76d0f6d, claude/modest-cannon-ha8zs3@79ba2dc
+기준 2026-10-28T11:09Z · 체크포인트 claude/clever-knuth-1dezlo@c664301, claude/beautiful-gates-e42a5m@76d0f6d, claude/modest-cannon-ha8zs3@79ba2dc
 
 ## 지금
 대상은 JAJU 라운딩 VMD. 자기소개서 1~3번 확정(D31 · D33 · D34, C25), FINAL 과 묶음 Word 는 docs/portfolio/jaju/. 지원 메일 초안 연락처 빈칸 · 발송은 사용자 몫(O27). 면접 준비(brave-cannon): 1분 자기소개 v20 정본(D40), 매장 추세 C26, 예상 질문 문서와 사용자가 채울 답(O30). 공고 마감 여부(O17).
@@ -18,12 +18,12 @@ JAJU 1~3번 확정 완료. 사용자가 새 문항 · 새 공고를 주거나 FI
 - 외 14개 → state.json decisions
 
 ## 작업 중인 파일
-- docs/interview/finals_snapshot.md @189d627
 - docs/interview/one_minute_intro.md @747b12e
 - docs/interview/one_minute_topics.md @747b12e
 - docs/interview/jaju_store_expansion.md @a908cf6
 - docs/interview/expected_questions.md @495cff2
-- 외 9개 → state.json artifacts
+- docs/interview/jaju_interview_questions_selfintro.docx @272dac8
+- 외 10개 → state.json artifacts
 
 ## 읽는 법
 - 이 파일만 읽고 시작한다. 더 필요하면 `W1-hyeokju-cover-letter/state.json` 의 해당 id 만 연다. 지난 이력은 `history.jsonl`.
