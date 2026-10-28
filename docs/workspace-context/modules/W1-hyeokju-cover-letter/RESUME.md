@@ -1,5 +1,5 @@
 # W1 혁주 자기소개서 (JAJU 라운딩 VMD · 이전 신세계인터내셔날 해외패션)
-기준 2026-10-28T08:34Z · 체크포인트 claude/clever-knuth-1dezlo@c664301, claude/beautiful-gates-e42a5m@76d0f6d, claude/modest-cannon-ha8zs3@79ba2dc
+기준 2026-10-28T09:28Z · 체크포인트 claude/clever-knuth-1dezlo@c664301, claude/beautiful-gates-e42a5m@76d0f6d, claude/modest-cannon-ha8zs3@79ba2dc
 
 ## 지금
 대상은 JAJU 라운딩 VMD. 자기소개서 1~3번 확정(D31 · D33 · D34, C25), FINAL 과 묶음 Word 는 docs/portfolio/jaju/. 지원 메일 초안 연락처 빈칸 · 발송은 사용자 몫(O27). 면접 준비(brave-cannon): 1분 자기소개 v17 정본(D39, 배운 점 '전체를 먼저 보는 법'), 방향 D35~D37, 매장 추세 C26. 공고 마감 여부(O17).

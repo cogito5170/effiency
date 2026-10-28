@@ -1,16 +1,16 @@
 {
  "module": "W1",
  "title": "혁주 자기소개서 (JAJU 라운딩 VMD · 이전 신세계인터내셔날 해외패션)",
- "as_of": "2026-10-28T08:34Z",
+ "as_of": "2026-10-28T09:28Z",
  "checkpoint": {
-  "at": "2026-10-28T08:34Z",
+  "at": "2026-10-28T09:28Z",
   "refs": {
    "gentleMonster@claude/clever-knuth-1dezlo": "c664301",
    "gentleMonster@claude/beautiful-gates-e42a5m": "76d0f6d",
    "gentleMonster@claude/modest-cannon-ha8zs3": "79ba2dc",
    "gentleMonster@main": "bdee7d6",
    "gentleMonster@claude/gracious-edison-inoq0z": "e9676f1",
-   "gentleMonster@claude/brave-cannon-emzaxy": "1b52144"
+   "gentleMonster@claude/brave-cannon-emzaxy": "1486542"
   },
   "method": "scripts/sync_delta.py: 체크포인트 커밋 뒤의 커밋 · 바뀐 파일만 읽음. 세션 대화 원본은 읽지도 고치지도 않음",
   "not_cloned": [
@@ -353,6 +353,18 @@
     "commit": "a908cf6"
    },
    "decided_at": "2026-10-27T11:02Z"
+  },
+  {
+   "id": "W1-C27",
+   "statement": "1분 자기소개: 사용자가 연결을 자기 문장으로 바꾼 v18 을 시도했다가 같은 날 v17 연결('2024년부터 … 진열 배치를')로 되돌림 — v17 이 정본 그대로(W1-D39)",
+   "source": "도구출력",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/brave-cannon-emzaxy",
+    "path": "docs/interview/one_minute_intro.md",
+    "line": 6,
+    "commit": "1486542"
+   }
   }
  ],
  "decisions": [
