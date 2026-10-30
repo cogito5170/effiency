@@ -1,15 +1,15 @@
 {
  "module": "W1",
  "title": "혁주 자기소개서 (JAJU 라운딩 VMD · 이전 신세계인터내셔날 해외패션)",
- "as_of": "2026-10-28T11:09Z",
+ "as_of": "2026-10-30T10:40Z",
  "checkpoint": {
-  "at": "2026-10-28T11:09Z",
+  "at": "2026-10-30T10:40Z",
   "refs": {
    "gentleMonster@claude/clever-knuth-1dezlo": "c664301",
    "gentleMonster@claude/beautiful-gates-e42a5m": "76d0f6d",
    "gentleMonster@claude/modest-cannon-ha8zs3": "79ba2dc",
    "gentleMonster@main": "bdee7d6",
-   "gentleMonster@claude/gracious-edison-inoq0z": "e9676f1",
+   "gentleMonster@claude/gracious-edison-inoq0z": "8517f0e",
    "gentleMonster@claude/brave-cannon-emzaxy": "272dac8"
   },
   "method": "scripts/sync_delta.py: 체크포인트 커밋 뒤의 커밋 · 바뀐 파일만 읽음. 세션 대화 원본은 읽지도 고치지도 않음",
@@ -18,7 +18,7 @@
    "cogito5170/analy_agent@claude/modest-cannon-ha8zs3"
   ]
  },
- "latest_confirmed": "대상은 JAJU 라운딩 VMD. 자기소개서 1~3번 확정(D31 · D33 · D34, C25), FINAL 과 묶음 Word 는 docs/portfolio/jaju/. 지원 메일 초안 연락처 빈칸 · 발송은 사용자 몫(O27). 면접 준비(brave-cannon): 1분 자기소개 v20 정본(D40), 매장 추세 C26, 예상 질문 문서와 사용자가 채울 답(O30). 공고 마감 여부(O17).",
+ "latest_confirmed": "대상은 JAJU 라운딩 VMD. 자기소개서 1~3번 확정(D31 · D33 · D34, C25), FINAL 과 묶음 Word 는 docs/portfolio/jaju/. 지원 메일 초안 연락처 빈칸 · 발송은 사용자 몫(O27). 면접 준비(brave-cannon): 1분 자기소개 v20 정본(D40), 예상 질문과 사용자가 채울 답(O30). 10-30: 기업 분석 프로세스 v2(C29), 블루엘리펀트 Creative Intern 분석 초안 · 사용자 질문(C28, O31), 공고 검색 목록(C30). 공고 마감 여부(O17).",
  "resume_point": {
   "op": "draft_paragraph",
   "input_hint": "JAJU 1~3번 확정 완료. 사용자가 새 문항 · 새 공고를 주거나 FINAL 의 '확인 필요' 메모(unverified)를 확인하면 그에 따라 고친다. 공고 마감 문의 결과(W1-O17) 대기.",
@@ -364,6 +364,42 @@
     "path": "docs/interview/one_minute_intro.md",
     "line": 6,
     "commit": "1486542"
+   }
+  },
+  {
+   "id": "W1-C28",
+   "statement": "블루엘리펀트 Creative Intern (비주얼 콘텐츠 디자인 인턴, 3개월 계약직, 성수) 공고를 사용자 캡처로 받아 기업 분석 K0~K6 초안을 시작함. 공간 직군이 아니라 커머스 · SNS · 캠페인 디자인 자리",
+   "source": "도구출력",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/gracious-edison-inoq0z",
+    "path": "docs/company_analysis/blue_elephant/01_scope_posting.md",
+    "line": 3,
+    "commit": "8517f0e"
+   }
+  },
+  {
+   "id": "W1-C29",
+   "statement": "기업 분석 프로세스 v2: 젠틀몬스터 · JAJU 두 분석을 묶어 K0~K9 로 정리 (K3b 캡처 반영, K5-이미지 요약, K9 세션별 공유 추가). 접속 불가 자료는 링크 목록을 주고 사용자 캡처를 받는 것이 원칙",
+   "source": "도구출력",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/gracious-edison-inoq0z",
+    "path": "docs/company_analysis/PROCESS.md",
+    "line": 1,
+    "commit": "8517f0e"
+   }
+  },
+  {
+   "id": "W1-C30",
+   "statement": "10-30 VMD · 공간 디자이너 공고 웹 검색 목록 작성 (검색 요약 기준, 원문 미확인). 지원 가능 후보 8곳, 예: 젠틀몬스터 공간 오브제 디자이너 상시지원 (신입 가능)",
+   "source": "도구출력",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/gracious-edison-inoq0z",
+    "path": "docs/job_search/2026-10-30_vmd_space_intern.md",
+    "line": 14,
+    "commit": "6d0d37a"
    }
   }
  ],
@@ -747,6 +783,20 @@
     "line": 90,
     "commit": "495cff2"
    }
+  },
+  {
+   "id": "W1-O31",
+   "item": "블루엘리펀트 분석에서 사용자 답 · 캡처 대기: UQ1 건축학과 = 디자인 관련 전공으로 지원할지, UQ2 Premiere · AE · Figma, UQ3 AI 도구 경험 넣을지, UQ4 SNS · 영어, UQ5 3개월 근무 · JAJU 와 우선순위, UQ6 분쟁 처리, UQ7 · UQ8 매장 · THE PULL 경험. 캡처 R1~R17",
+   "waiting_on": "사용자",
+   "blocking": false,
+   "source": "도구출력",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/gracious-edison-inoq0z",
+    "path": "docs/company_analysis/blue_elephant/05_user.md",
+    "line": 6,
+    "commit": "8517f0e"
+   }
   }
  ],
  "artifacts": [
@@ -1041,6 +1091,69 @@
    "commit": "272dac8",
    "status": "draft",
    "note": "자기소개서 문항별 면접 예상 질문 Word (질문 · 답의 재료 + 연습용 질문만 판)"
+  },
+  {
+   "kind": "doc",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/gracious-edison-inoq0z",
+   "path": "docs/company_analysis/PROCESS.md",
+   "commit": "8517f0e",
+   "status": "draft",
+   "note": "기업 분석 프로세스 v2 (K0~K9)"
+  },
+  {
+   "kind": "doc",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/gracious-edison-inoq0z",
+   "path": "docs/company_analysis/blue_elephant/01_scope_posting.md",
+   "commit": "8517f0e",
+   "status": "draft",
+   "note": "블루엘리펀트 Creative Intern K0 공고 원문 · K1 범위 · K2 공고 해부 · 적합도"
+  },
+  {
+   "kind": "doc",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/gracious-edison-inoq0z",
+   "path": "docs/company_analysis/blue_elephant/02_sources.md",
+   "commit": "8517f0e",
+   "status": "draft",
+   "note": "K3 자료 표 + 캡처 요청 목록 R1~R17"
+  },
+  {
+   "kind": "doc",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/gracious-edison-inoq0z",
+   "path": "docs/company_analysis/blue_elephant/03_keywords_cases.md",
+   "commit": "8517f0e",
+   "status": "draft",
+   "note": "K4 발언 · 키워드 · 사례"
+  },
+  {
+   "kind": "doc",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/gracious-edison-inoq0z",
+   "path": "docs/company_analysis/blue_elephant/04_analysis.md",
+   "commit": "8517f0e",
+   "status": "draft",
+   "note": "K5 분석 · K5-이미지 (잠정) · K6 답변 유형 A~E, 추천 D → A + C"
+  },
+  {
+   "kind": "doc",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/gracious-edison-inoq0z",
+   "path": "docs/company_analysis/blue_elephant/05_user.md",
+   "commit": "8517f0e",
+   "status": "draft",
+   "note": "K7 사용자 질문 UQ1~UQ8 · K8 결과물 준비 · 쓰면 안 되는 것"
+  },
+  {
+   "kind": "doc",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/gracious-edison-inoq0z",
+   "path": "docs/job_search/2026-10-30_vmd_space_intern.md",
+   "commit": "6d0d37a",
+   "status": "draft",
+   "note": "VMD · 공간 디자이너 공고 검색 목록 (10-30)"
   }
  ],
  "unverified": [
@@ -1092,6 +1205,11 @@
   {
    "statement": "CV '헤비타트' / 포트폴리오 부록 '해비타트' 표기를 한쪽으로 맞출 일(W4 · W2), 면접 세션이 지적",
    "where": "docs/interview/finals_snapshot.md §5 (189d627)",
+   "check": "사용자 결정 없음"
+  },
+  {
+   "statement": "블루엘리펀트 Creative Intern 을 새 지원 대상으로 할지 사용자 결정은 파일에 없음 (분석 '시작' 만 기록, JAJU 지원은 진행 중). 관점 '비주얼 커뮤니케이션' 도 '사용자 확인 필요'",
+   "where": "docs/company_analysis/blue_elephant/01_scope_posting.md:39 (8517f0e)",
    "check": "사용자 결정 없음"
   }
  ]

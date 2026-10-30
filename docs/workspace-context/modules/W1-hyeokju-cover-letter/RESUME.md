@@ -1,8 +1,8 @@
 # W1 혁주 자기소개서 (JAJU 라운딩 VMD · 이전 신세계인터내셔날 해외패션)
-기준 2026-10-28T11:09Z · 체크포인트 claude/clever-knuth-1dezlo@c664301, claude/beautiful-gates-e42a5m@76d0f6d, claude/modest-cannon-ha8zs3@79ba2dc
+기준 2026-10-30T10:40Z · 체크포인트 claude/clever-knuth-1dezlo@c664301, claude/beautiful-gates-e42a5m@76d0f6d, claude/modest-cannon-ha8zs3@79ba2dc
 
 ## 지금
-대상은 JAJU 라운딩 VMD. 자기소개서 1~3번 확정(D31 · D33 · D34, C25), FINAL 과 묶음 Word 는 docs/portfolio/jaju/. 지원 메일 초안 연락처 빈칸 · 발송은 사용자 몫(O27). 면접 준비(brave-cannon): 1분 자기소개 v20 정본(D40), 매장 추세 C26, 예상 질문 문서와 사용자가 채울 답(O30). 공고 마감 여부(O17).
+대상은 JAJU 라운딩 VMD. 자기소개서 1~3번 확정(D31 · D33 · D34, C25), FINAL 과 묶음 Word 는 docs/portfolio/jaju/. 지원 메일 초안 연락처 빈칸 · 발송은 사용자 몫(O27). 면접 준비(brave-cannon): 1분 자기소개 v20 정본(D40), 예상 질문과 사용자가 채울 답(O30). 10-30: 기업 분석 프로세스 v2(C29), 블루엘리펀트 Creative Intern 분석 초안 · 사용자 질문(C28, O31), 공고 검색 목록(C30). 공고 마감 여부(O17).
 
 ## 이어 할 일: `draft_paragraph`
 JAJU 1~3번 확정 완료. 사용자가 새 문항 · 새 공고를 주거나 FINAL 의 '확인 필요' 메모(unverified)를 확인하면 그에 따라 고친다. 공고 마감 문의 결과(W1-O17) 대기.
@@ -18,14 +18,14 @@ JAJU 1~3번 확정 완료. 사용자가 새 문항 · 새 공고를 주거나 FI
 - 외 14개 → state.json decisions
 
 ## 작업 중인 파일
-- docs/interview/one_minute_intro.md @747b12e
-- docs/interview/one_minute_topics.md @747b12e
-- docs/interview/jaju_store_expansion.md @a908cf6
-- docs/interview/expected_questions.md @495cff2
-- docs/interview/jaju_interview_questions_selfintro.docx @272dac8
-- 외 10개 → state.json artifacts
+- docs/company_analysis/blue_elephant/02_sources.md @8517f0e
+- docs/company_analysis/blue_elephant/03_keywords_cases.md @8517f0e
+- docs/company_analysis/blue_elephant/04_analysis.md @8517f0e
+- docs/company_analysis/blue_elephant/05_user.md @8517f0e
+- docs/job_search/2026-10-30_vmd_space_intern.md @6d0d37a
+- 외 17개 → state.json artifacts
 
 ## 읽는 법
 - 이 파일만 읽고 시작한다. 더 필요하면 `W1-hyeokju-cover-letter/state.json` 의 해당 id 만 연다. 지난 이력은 `history.jsonl`.
-- 미확인 10개는 결론으로 쓰지 않는다. 확정은 저장소 파일로 다시 확인한다.
+- 미확인 11개는 결론으로 쓰지 않는다. 확정은 저장소 파일로 다시 확인한다.
 - 결정 · 산출물은 저장소에 커밋해 둔다. 백엔드가 커밋에서 다음 요약을 만든다.
