@@ -1,15 +1,15 @@
 {
  "module": "W2",
  "title": "패션 · VMD 지원 포트폴리오 (JAJU 라운딩 VMD · 이전 신세계 FROM THE INSIDE)",
- "as_of": "2026-10-26T13:54Z",
+ "as_of": "2026-10-30T11:41Z",
  "checkpoint": {
-  "at": "2026-10-26T13:54Z",
+  "at": "2026-10-30T11:41Z",
   "refs": {
    "gentleMonster@claude/friendly-gates-0u80ge": "af2fb56",
    "gentleMonster@claude/project-thread-n4rxnf": "cd4f4d2",
    "gentleMonster@main": "bdee7d6",
-   "gentleMonster@claude/magical-bell-u02os9": "f053769",
-   "gentleMonster@claude/awesome-keller-otac19": "de8e2b5"
+   "gentleMonster@claude/magical-bell-u02os9": "9ef9ae4",
+   "gentleMonster@claude/awesome-keller-otac19": "0ce7724"
   },
   "method": "scripts/sync_delta.py: 체크포인트 커밋 뒤의 커밋 · 바뀐 파일만 읽음. 세션 대화 원본은 읽지도 고치지도 않음",
   "not_cloned": [
@@ -23,7 +23,7 @@
    }
   }
  },
- "latest_confirmed": "JAJU 포트폴리오 흐름은 /01 Observe → /02 Match. → /03 Fill. 파트 3 은 Contain 쪽(D44) → 학부 · 인턴 모형 쪽(리드 D45, 제목 고르는 중) → 다음 쪽 → Proposal, 맨 끝에 부록 A-1 카페 · 창고 · A-2 해비타트 봉사(밝은 회색, D46). Match 쪽 순서 · 문구 · 문단 자리는 선택 대기.",
+ "latest_confirmed": "JAJU 포트폴리오 흐름은 /01 Observe → /02 Match. → /03 Fill. 파트 3 은 Contain 쪽(D44) → 학부 · 인턴 모형 쪽(리드 D45, 제목 고르는 중) → 다음 쪽 → Proposal, 맨 끝에 부록 A-1 · A-2(D46). Match 쪽 순서 · 문구 · 문단 자리는 선택 대기. 10-30 블루엘리펀트 Creative Intern 포트폴리오를 별도로 시작: URL 생략(D47), 스토리 안 A · B · C(C21) 고르기 대기(O50).",
  "resume_point": {
   "op": "storyline",
   "input_hint": "W2-O42(파트 2 rev4 순서) · W2-O44(색 문단 자리) · W2-O45(스타일 문단 끝 문장) · W2-O43 · W2-O41 · W2-O40 · W2-O36 · W2-O37 · W2-O32 를 사용자에게. 정해지면 rev4 문단 글을 2-1 진 판에 얹고 파트 3 Fill 쪽을 뒤로 옮기는 B21. 자기소개서 Q2 표현은 W1-O20. 그 밖에 W2-O30 · O27 · O29 · O25 · O23.",
@@ -306,6 +306,18 @@
     "commit": "57c2841"
    },
    "decided_at": "2026-10-25T12:19Z"
+  },
+  {
+   "id": "W2-C21",
+   "statement": "2-2_포트폴리오(스토리) 세션이 블루엘리펀트 포트폴리오 스토리 안 셋을 냄: A 터널 · 구조 · 장면(권함, + C 의 KEEP 한 쪽), B 익숙한 것을 낯설게, C 공고 업무 네 축. 포트폴리오 1 필수 · 2 · 3 선택(50MB, PDF). JAJU 포트폴리오와 별개 작업",
+   "source": "도구출력",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/awesome-keller-otac19",
+    "path": "docs/blue_elephant_creative_intern/storyline_options.md",
+    "line": 58,
+    "commit": "0ce7724"
+   }
   }
  ],
  "decisions": [
@@ -790,6 +802,19 @@
     "line": 174,
     "commit": "f053769"
    }
+  },
+  {
+   "id": "W2-D47",
+   "date": "2026-10-30T11:40Z",
+   "decision": "블루엘리펀트 Creative Intern 포트폴리오: 지원서 '업무 유관 URL'(선택)은 우선 생략 (\"우선 URL은 생략한다.\"). 인스타그램 · 사진 모음 링크는 넣지 않고 사진은 포트폴리오 PDF 안에서만",
+   "by": "사용자 (파일 기록)",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/magical-bell-u02os9",
+    "path": "docs/blue_elephant_portfolio/decisions.md",
+    "line": 8,
+    "commit": "9ef9ae4"
+   }
   }
  ],
  "open": [
@@ -1177,6 +1202,20 @@
     "path": "docs/jaju_rounding_vmd/part3_contain_story.md",
     "line": 171,
     "commit": "f053769"
+   }
+  },
+  {
+   "id": "W2-O50",
+   "item": "블루엘리펀트 포트폴리오 스토리: 뼈대 A · B · C 고르기(권함 A + KEEP), 산 안경 · 매장 사진 유무, 인스타그램 원본 · 군 동기 사진 제외, 비주얼 콘텐츠 포트폴리오 레퍼런스 2~3개, 포트폴리오 2 · 3 제출 여부",
+   "waiting_on": "사용자",
+   "blocking": false,
+   "source": "도구출력",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/awesome-keller-otac19",
+    "path": "docs/blue_elephant_creative_intern/storyline_options.md",
+    "line": 76,
+    "commit": "0ce7724"
    }
   }
  ],
@@ -1785,6 +1824,24 @@
    "commit": "f053769",
    "status": "draft",
    "note": "부록 A-1 · A-2 (같은 판 .idml · .zip 은 docs/jaju_rounding_vmd/indesign/outside_pages/, 만드는 코드 tools/jaju_layout/indd_outside.py)"
+  },
+  {
+   "kind": "doc",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/magical-bell-u02os9",
+   "path": "docs/blue_elephant_portfolio/decisions.md",
+   "commit": "9ef9ae4",
+   "status": "draft",
+   "note": "블루엘리펀트 포트폴리오 결정 기록"
+  },
+  {
+   "kind": "doc",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/awesome-keller-otac19",
+   "path": "docs/blue_elephant_creative_intern/storyline_options.md",
+   "commit": "0ce7724",
+   "status": "draft",
+   "note": "블루엘리펀트 포트폴리오 스토리 구성안 A · B · C"
   }
  ],
  "unverified": [
@@ -1850,6 +1907,11 @@
    "statement": "JAJU 패션 카테고리 다섯 갈래(슬립웨어 · 라운지/원마일 · 언더웨어 · 티셔츠/애슬레저 · 시즌 의류)",
    "where": "jaju_fashion_categories.md:6 (a64e9e1)",
    "check": "공식몰 메뉴 이름 미확인, 보도 · 상품에서 읽은 나눔. 애슬레저는 2020 기사"
+  },
+  {
+   "statement": "스토리 구성안 §3 은 '업무 유관 URL' 에 사진 모음 링크를 두자고 하는데, 같은 시각 다른 세션 기록은 URL 우선 생략(W2-D47). 구성안이 결정보다 1분 늦게 커밋됐지만 결정을 반영하지 않음",
+   "where": "docs/blue_elephant_creative_intern/storyline_options.md:68 (0ce7724)",
+   "check": "모델 추론"
   }
  ]
 }

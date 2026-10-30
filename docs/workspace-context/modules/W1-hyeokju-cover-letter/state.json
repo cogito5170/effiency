@@ -1,15 +1,15 @@
 {
  "module": "W1",
  "title": "혁주 자기소개서 (JAJU 라운딩 VMD · 이전 신세계인터내셔날 해외패션)",
- "as_of": "2026-10-30T10:40Z",
+ "as_of": "2026-10-30T11:40Z",
  "checkpoint": {
-  "at": "2026-10-30T10:40Z",
+  "at": "2026-10-30T11:40Z",
   "refs": {
-   "gentleMonster@claude/clever-knuth-1dezlo": "c664301",
+   "gentleMonster@claude/clever-knuth-1dezlo": "023456f",
    "gentleMonster@claude/beautiful-gates-e42a5m": "76d0f6d",
    "gentleMonster@claude/modest-cannon-ha8zs3": "79ba2dc",
    "gentleMonster@main": "bdee7d6",
-   "gentleMonster@claude/gracious-edison-inoq0z": "8517f0e",
+   "gentleMonster@claude/gracious-edison-inoq0z": "2cb1564",
    "gentleMonster@claude/brave-cannon-emzaxy": "272dac8"
   },
   "method": "scripts/sync_delta.py: 체크포인트 커밋 뒤의 커밋 · 바뀐 파일만 읽음. 세션 대화 원본은 읽지도 고치지도 않음",
@@ -18,7 +18,7 @@
    "cogito5170/analy_agent@claude/modest-cannon-ha8zs3"
   ]
  },
- "latest_confirmed": "대상은 JAJU 라운딩 VMD. 자기소개서 1~3번 확정(D31 · D33 · D34, C25), FINAL 과 묶음 Word 는 docs/portfolio/jaju/. 지원 메일 초안 연락처 빈칸 · 발송은 사용자 몫(O27). 면접 준비(brave-cannon): 1분 자기소개 v20 정본(D40), 예상 질문과 사용자가 채울 답(O30). 10-30: 기업 분석 프로세스 v2(C29), 블루엘리펀트 Creative Intern 분석 초안 · 사용자 질문(C28, O31), 공고 검색 목록(C30). 공고 마감 여부(O17).",
+ "latest_confirmed": "JAJU 라운딩 VMD: 자기소개서 1~3번 확정(D31 · D33 · D34), 지원 메일 발송은 사용자 몫(O27), 면접 준비 1분 자기소개 v20(D40) · 사용자가 채울 답(O30), 공고 마감 여부(O17). 10-30 블루엘리펀트 Creative Intern 지원 준비: 기업 분석 v2(C29) 1차 출처판(C31) · 사용자 답(C32), 자기소개서 지침(D41)과 A1 초안 두 문항 확인 대기(C33, O32).",
  "resume_point": {
   "op": "draft_paragraph",
   "input_hint": "JAJU 1~3번 확정 완료. 사용자가 새 문항 · 새 공고를 주거나 FINAL 의 '확인 필요' 메모(unverified)를 확인하면 그에 따라 고친다. 공고 마감 문의 결과(W1-O17) 대기.",
@@ -401,6 +401,42 @@
     "line": 14,
     "commit": "6d0d37a"
    }
+  },
+  {
+   "id": "W1-C31",
+   "statement": "블루엘리펀트 캡처(P1 · P2 · 위키백과)를 02b_captures.md 에 옮겨 분석 · 이미지 요약 · 답변 유형을 1차 출처판으로 다시 씀. 쓸 수 있는 것(공고 · 뉴스1 · 패션비즈 스페이스 2.0 '터널 · 구조 · 장면' 등)과 쓰면 안 되는 것(매출 · 매장 수 · 성수 규모 · 분쟁 · 대표 이름 · THE PULL 문구) 목록",
+   "source": "도구출력",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/gracious-edison-inoq0z",
+    "path": "docs/company_analysis/blue_elephant/05_user.md",
+    "line": 27,
+    "commit": "2cb1564"
+   }
+  },
+  {
+   "id": "W1-C32",
+   "statement": "사용자 K7 답 기록: 매장 관찰(H빔 골조 · 노출콘크리트 · 오브제 같은 매대, 거울이 많아 편했고 구매까지), 개인 인스타그램 ju_03.25 관찰, 제품 시안은 가능하면 만든다, 각 세션에 필요한 것만 나눠 보냄(K9: 1_자기소개서 · 2-1 · 2-2_포트폴리오 · 3_이미지 생성)",
+   "source": "도구출력",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/gracious-edison-inoq0z",
+    "path": "docs/company_analysis/blue_elephant/05_user.md",
+    "line": 43,
+    "commit": "2cb1564"
+   }
+  },
+  {
+   "id": "W1-C33",
+   "statement": "블루엘리펀트 자기소개서 A1 초안: 문항 1 '지원한 이유, 왜 블루엘리펀트' 674자 · 문항 2 '본인 소개 · 강점' 801자, 사용자 확인 대기",
+   "source": "도구출력",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/clever-knuth-1dezlo",
+    "path": "docs/portfolio/handoff/selection_blue_elephant_q1.json",
+    "line": 5,
+    "commit": "023456f"
+   }
   }
  ],
  "decisions": [
@@ -672,6 +708,19 @@
     "line": 8,
     "commit": "495cff2"
    }
+  },
+  {
+   "id": "W1-D41",
+   "date": "2026-10-30T11:31Z",
+   "decision": "블루엘리펀트 Creative Intern 자기소개서 지침: AI 툴은 적극 활용한다고 씀(이 공고 한정), 문항당 1000자, 베이글 카페 창고 정리 재사용 가능, JAJU 이야기 · 젠틀몬스터 분쟁은 쓰지 않음, 영상 툴은 '빠르게 익힌다'로만, 지원 전공 '디자인_건축학과', 3개월 · 주 5일 가능, 문항은 젠틀몬스터 지원서 두 문항 그대로",
+   "by": "사용자 (파일 기록)",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/clever-knuth-1dezlo",
+    "path": "docs/portfolio/context_handoff.md",
+    "line": 310,
+    "commit": "1296e11"
+   }
   }
  ],
  "open": [
@@ -785,17 +834,17 @@
    }
   },
   {
-   "id": "W1-O31",
-   "item": "블루엘리펀트 분석에서 사용자 답 · 캡처 대기: UQ1 건축학과 = 디자인 관련 전공으로 지원할지, UQ2 Premiere · AE · Figma, UQ3 AI 도구 경험 넣을지, UQ4 SNS · 영어, UQ5 3개월 근무 · JAJU 와 우선순위, UQ6 분쟁 처리, UQ7 · UQ8 매장 · THE PULL 경험. 캡처 R1~R17",
+   "id": "W1-O32",
+   "item": "블루엘리펀트 자기소개서 A1 초안(문항 1 · 2) 사용자 확인",
    "waiting_on": "사용자",
    "blocking": false,
    "source": "도구출력",
    "evidence": {
     "repo": "cogito5170/gentleMonster",
-    "ref": "claude/gracious-edison-inoq0z",
-    "path": "docs/company_analysis/blue_elephant/05_user.md",
-    "line": 6,
-    "commit": "8517f0e"
+    "ref": "claude/clever-knuth-1dezlo",
+    "path": "docs/portfolio/handoff/selection_blue_elephant_q2.json",
+    "line": 9,
+    "commit": "023456f"
    }
   }
  ],
@@ -1097,9 +1146,9 @@
    "repo": "cogito5170/gentleMonster",
    "ref": "claude/gracious-edison-inoq0z",
    "path": "docs/company_analysis/PROCESS.md",
-   "commit": "8517f0e",
+   "commit": "2cb1564",
    "status": "draft",
-   "note": "기업 분석 프로세스 v2 (K0~K9)"
+   "note": "기업 분석 프로세스 v2 (K0~K9), K9 에 '보낼 때마다 세션 목록 재조회' 추가"
   },
   {
    "kind": "doc",
@@ -1133,18 +1182,18 @@
    "repo": "cogito5170/gentleMonster",
    "ref": "claude/gracious-edison-inoq0z",
    "path": "docs/company_analysis/blue_elephant/04_analysis.md",
-   "commit": "8517f0e",
+   "commit": "f0c6ede",
    "status": "draft",
-   "note": "K5 분석 · K5-이미지 (잠정) · K6 답변 유형 A~E, 추천 D → A + C"
+   "note": "K5 · K5-이미지 · K6 1차 출처판, 추천 D → A + C"
   },
   {
    "kind": "doc",
    "repo": "cogito5170/gentleMonster",
    "ref": "claude/gracious-edison-inoq0z",
    "path": "docs/company_analysis/blue_elephant/05_user.md",
-   "commit": "8517f0e",
+   "commit": "2cb1564",
    "status": "draft",
-   "note": "K7 사용자 질문 UQ1~UQ8 · K8 결과물 준비 · 쓰면 안 되는 것"
+   "note": "K7 사용자 답 · 인스타그램 관찰 · K8 쓸 수 있는 / 없는 것 · K9 공유 기록"
   },
   {
    "kind": "doc",
@@ -1154,6 +1203,42 @@
    "commit": "6d0d37a",
    "status": "draft",
    "note": "VMD · 공간 디자이너 공고 검색 목록 (10-30)"
+  },
+  {
+   "kind": "doc",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/gracious-edison-inoq0z",
+   "path": "docs/company_analysis/blue_elephant/02b_captures.md",
+   "commit": "2cb1564",
+   "status": "draft",
+   "note": "K3b 사용자 캡처 옮김 (P1 · P2 · 위키백과)"
+  },
+  {
+   "kind": "doc",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/clever-knuth-1dezlo",
+   "path": "docs/portfolio/postings/blue_elephant_creative_intern.md",
+   "commit": "1296e11",
+   "status": "final",
+   "note": "블루엘리펀트 Creative Intern 공고 원문 (사용자 캡처)"
+  },
+  {
+   "kind": "doc",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/clever-knuth-1dezlo",
+   "path": "docs/portfolio/handoff/selection_blue_elephant_q1.json",
+   "commit": "023456f",
+   "status": "draft",
+   "note": "블루엘리펀트 문항 1 A1 (674자)"
+  },
+  {
+   "kind": "doc",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/clever-knuth-1dezlo",
+   "path": "docs/portfolio/handoff/selection_blue_elephant_q2.json",
+   "commit": "023456f",
+   "status": "draft",
+   "note": "블루엘리펀트 문항 2 A1 (801자)"
   }
  ],
  "unverified": [
@@ -1208,8 +1293,8 @@
    "check": "사용자 결정 없음"
   },
   {
-   "statement": "블루엘리펀트 Creative Intern 을 새 지원 대상으로 할지 사용자 결정은 파일에 없음 (분석 '시작' 만 기록, JAJU 지원은 진행 중). 관점 '비주얼 커뮤니케이션' 도 '사용자 확인 필요'",
-   "where": "docs/company_analysis/blue_elephant/01_scope_posting.md:39 (8517f0e)",
+   "statement": "사용자 답 \"JAJU 는 배제한다\"(근무 우선순위 질문 UQ5 에 대한 답)가 JAJU 지원 자체를 접는다는 뜻인지, 블루엘리펀트 지원서에 JAJU 이야기를 쓰지 않는다는 뜻인지 파일만으로는 갈리지 않음. 1_자기소개서 세션은 후자로 적음",
+   "where": "docs/company_analysis/blue_elephant/05_user.md:52 (2cb1564), docs/portfolio/context_handoff.md:310 (1296e11)",
    "check": "사용자 결정 없음"
   }
  ]
