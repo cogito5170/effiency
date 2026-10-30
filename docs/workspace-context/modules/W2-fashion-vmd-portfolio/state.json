@@ -1,15 +1,15 @@
 {
  "module": "W2",
  "title": "패션 · VMD 지원 포트폴리오 (JAJU 라운딩 VMD · 이전 신세계 FROM THE INSIDE)",
- "as_of": "2026-10-30T11:41Z",
+ "as_of": "2026-10-30T12:29Z",
  "checkpoint": {
-  "at": "2026-10-30T11:41Z",
+  "at": "2026-10-30T12:29Z",
   "refs": {
    "gentleMonster@claude/friendly-gates-0u80ge": "af2fb56",
    "gentleMonster@claude/project-thread-n4rxnf": "cd4f4d2",
    "gentleMonster@main": "bdee7d6",
    "gentleMonster@claude/magical-bell-u02os9": "9ef9ae4",
-   "gentleMonster@claude/awesome-keller-otac19": "0ce7724"
+   "gentleMonster@claude/awesome-keller-otac19": "19e210a"
   },
   "method": "scripts/sync_delta.py: 체크포인트 커밋 뒤의 커밋 · 바뀐 파일만 읽음. 세션 대화 원본은 읽지도 고치지도 않음",
   "not_cloned": [
@@ -23,7 +23,7 @@
    }
   }
  },
- "latest_confirmed": "JAJU 포트폴리오 흐름은 /01 Observe → /02 Match. → /03 Fill. 파트 3 은 Contain 쪽(D44) → 학부 · 인턴 모형 쪽(리드 D45, 제목 고르는 중) → 다음 쪽 → Proposal, 맨 끝에 부록 A-1 · A-2(D46). Match 쪽 순서 · 문구 · 문단 자리는 선택 대기. 10-30 블루엘리펀트 Creative Intern 포트폴리오를 별도로 시작: URL 생략(D47), 스토리 안 A · B · C(C21) 고르기 대기(O50).",
+ "latest_confirmed": "JAJU 포트폴리오 흐름은 /01 Observe → /02 Match. → /03 Fill. 파트 3 은 Contain 쪽(D44) → 학부 · 인턴 모형 쪽(리드 D45, 제목 고르는 중) → 다음 쪽 → Proposal, 맨 끝에 부록 A-1 · A-2(D46). Match 쪽 순서 · 문구 · 문단 자리는 선택 대기. 10-30 블루엘리펀트 Creative Intern 포트폴리오(별도): URL 생략(D47), 뼈대 터널 · 구조 · 장면 + KEEP(D48), 시안 13쪽 저해상도(C22), AI 시안 후보 · 제품 사진 대기(O51).",
  "resume_point": {
   "op": "storyline",
   "input_hint": "W2-O42(파트 2 rev4 순서) · W2-O44(색 문단 자리) · W2-O45(스타일 문단 끝 문장) · W2-O43 · W2-O41 · W2-O40 · W2-O36 · W2-O37 · W2-O32 를 사용자에게. 정해지면 rev4 문단 글을 2-1 진 판에 얹고 파트 3 Fill 쪽을 뒤로 옮기는 B21. 자기소개서 Q2 표현은 W1-O20. 그 밖에 W2-O30 · O27 · O29 · O25 · O23.",
@@ -317,6 +317,30 @@
     "path": "docs/blue_elephant_creative_intern/storyline_options.md",
     "line": 58,
     "commit": "0ce7724"
+   }
+  },
+  {
+   "id": "W2-C22",
+   "statement": "포트폴리오 1 시안 13쪽 저해상도 PDF(00 'Where the eye stops.' → Prologue → /01 TUNNEL → /02 STRUCTURE · Keep → /03 SCENE 'IN THE MIRROR' → 끝). 제품 컷은 빈 칸(사용자가 산 안경을 직접 찍어 넣음), 브랜드 형식 쪽에 '지원용 시안 (비공식)'",
+   "source": "도구출력",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/awesome-keller-otac19",
+    "path": "docs/blue_elephant_creative_intern/storyline_options.md",
+    "line": 90,
+    "commit": "a6a2e71"
+   }
+  },
+  {
+   "id": "W2-C23",
+   "statement": "참고 포트폴리오 안 셋(① 커머스 카탈로그 ② 캠페인 에디토리얼 ③ SNS 아카이브, 권함 ① 바탕 + ② 표지 + ③ SCENE)과 검색으로 찾은 링크 셋(Contra, 이 환경에서 열람 불가). 새 인스타그램 피드 캡처 + 원본 4장(F-01 · 02 · 07 · 09) 받음",
+   "source": "도구출력",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/awesome-keller-otac19",
+    "path": "docs/blue_elephant_creative_intern/storyline_options.md",
+    "line": 139,
+    "commit": "19e210a"
    }
   }
  ],
@@ -815,6 +839,19 @@
     "line": 8,
     "commit": "9ef9ae4"
    }
+  },
+  {
+   "id": "W2-D48",
+   "date": "2026-10-30T11:57Z",
+   "decision": "블루엘리펀트 포트폴리오 1 뼈대는 권하는 방향(안 A 터널 · 구조 · 장면 + 안 C 의 KEEP 한 쪽)으로. 재료는 안경 착장 매장 셀카, AI 는 필요하면 3_이미지 생성 세션으로, 인스타그램은 우선 저해상도로 시안(원본은 추후), 군 동기 사진은 뺌, 포트폴리오 2 · 3 은 1 을 마친 뒤 가능하면(보류)",
+   "by": "사용자 (파일 기록)",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/awesome-keller-otac19",
+    "path": "docs/blue_elephant_creative_intern/storyline_options.md",
+    "line": 87,
+    "commit": "a6a2e71"
+   }
   }
  ],
  "open": [
@@ -1205,8 +1242,8 @@
    }
   },
   {
-   "id": "W2-O50",
-   "item": "블루엘리펀트 포트폴리오 스토리: 뼈대 A · B · C 고르기(권함 A + KEEP), 산 안경 · 매장 사진 유무, 인스타그램 원본 · 군 동기 사진 제외, 비주얼 콘텐츠 포트폴리오 레퍼런스 2~3개, 포트폴리오 2 · 3 제출 여부",
+   "id": "W2-O51",
+   "item": "블루엘리펀트 포트폴리오 1: 3_이미지 생성 세션에 보낼 AI 캠페인 시안 후보(바다 앞 빈 의자 둘 + 안경) 사용자 확인, 산 안경 제품 사진, 나머지 인스타그램 원본, 참고 포트폴리오 링크 확인",
    "waiting_on": "사용자",
    "blocking": false,
    "source": "도구출력",
@@ -1214,8 +1251,8 @@
     "repo": "cogito5170/gentleMonster",
     "ref": "claude/awesome-keller-otac19",
     "path": "docs/blue_elephant_creative_intern/storyline_options.md",
-    "line": 76,
-    "commit": "0ce7724"
+    "line": 116,
+    "commit": "a6a2e71"
    }
   }
  ],
@@ -1839,9 +1876,18 @@
    "repo": "cogito5170/gentleMonster",
    "ref": "claude/awesome-keller-otac19",
    "path": "docs/blue_elephant_creative_intern/storyline_options.md",
-   "commit": "0ce7724",
+   "commit": "19e210a",
    "status": "draft",
-   "note": "블루엘리펀트 포트폴리오 스토리 구성안 A · B · C"
+   "note": "블루엘리펀트 포트폴리오 스토리 구성안 + §6 진행 · §7 참고 안 · 링크"
+  },
+  {
+   "kind": "render",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/awesome-keller-otac19",
+   "path": "docs/blue_elephant_creative_intern/layout/p1_draft.pdf",
+   "commit": "a6a2e71",
+   "status": "draft",
+   "note": "포트폴리오 1 시안 13쪽 (저해상도, tools/be_layout/p1_draft.py 로 생성)"
   }
  ],
  "unverified": [
