@@ -1,11 +1,11 @@
 {
  "module": "W2",
  "title": "패션 · VMD 지원 포트폴리오 (JAJU 라운딩 VMD · 이전 신세계 FROM THE INSIDE)",
- "as_of": "2026-10-30T12:29Z",
+ "as_of": "2026-10-31T01:21Z",
  "checkpoint": {
-  "at": "2026-10-30T12:29Z",
+  "at": "2026-10-31T01:21Z",
   "refs": {
-   "gentleMonster@claude/friendly-gates-0u80ge": "af2fb56",
+   "gentleMonster@claude/friendly-gates-0u80ge": "74cde0a",
    "gentleMonster@claude/project-thread-n4rxnf": "cd4f4d2",
    "gentleMonster@main": "bdee7d6",
    "gentleMonster@claude/magical-bell-u02os9": "9ef9ae4",
@@ -341,6 +341,18 @@
     "path": "docs/blue_elephant_creative_intern/storyline_options.md",
     "line": 139,
     "commit": "19e210a"
+   }
+  },
+  {
+   "id": "W2-C24",
+   "statement": "캐릭터화된 지원자 이미지용 미드저니 프롬프트 네 판(안경원 정면 셀카 구도 3D 캐릭터, 얼굴 특징을 살린 강한 판, 실사에 가까운 판, 참고 이미지 그래픽 스타일 판). 사용자가 미드저니에서 직접 돌리는 용도",
+   "source": "도구출력",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/friendly-gates-0u80ge",
+    "path": "docs/character/midjourney_character.md",
+    "line": 1,
+    "commit": "74cde0a"
    }
   }
  ],
@@ -1888,6 +1900,15 @@
    "commit": "a6a2e71",
    "status": "draft",
    "note": "포트폴리오 1 시안 13쪽 (저해상도, tools/be_layout/p1_draft.py 로 생성)"
+  },
+  {
+   "kind": "doc",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/friendly-gates-0u80ge",
+   "path": "docs/character/midjourney_character.md",
+   "commit": "74cde0a",
+   "status": "draft",
+   "note": "캐릭터 이미지 미드저니 프롬프트 네 판"
   }
  ],
  "unverified": [
@@ -1958,6 +1979,16 @@
    "statement": "스토리 구성안 §3 은 '업무 유관 URL' 에 사진 모음 링크를 두자고 하는데, 같은 시각 다른 세션 기록은 URL 우선 생략(W2-D47). 구성안이 결정보다 1분 늦게 커밋됐지만 결정을 반영하지 않음",
    "where": "docs/blue_elephant_creative_intern/storyline_options.md:68 (0ce7724)",
    "check": "모델 추론"
+  },
+  {
+   "statement": "이 프롬프트가 어느 지원서(블루엘리펀트 포트폴리오 등)에 쓰일지 파일에 없음. 브랜치 기준으로 W2 에 둠",
+   "where": "docs/character/midjourney_character.md (74cde0a)",
+   "check": "모델 추론"
+  },
+  {
+   "statement": "gentleMonster CLAUDE.md(10-15 사용자 결정)는 새 이미지는 Codex 로만, 긴 이미지 프롬프트를 쓰지 않는다고 함. 미드저니용 긴 프롬프트는 이 규칙과 어긋날 수 있음 (사용자가 따로 허락했는지는 파일에 없음)",
+   "where": "docs/character/midjourney_character.md (b39d630)",
+   "check": "사용자 결정 없음"
   }
  ]
 }
