@@ -1,14 +1,16 @@
 {
  "module": "W1",
- "title": "혁주 자기소개서 (신세계인터내셔날 해외패션 라운딩 VMD)",
- "as_of": "2026-10-16T06:50Z",
+ "title": "혁주 자기소개서 (JAJU 라운딩 VMD · 이전 신세계인터내셔날 해외패션)",
+ "as_of": "2026-10-30T11:40Z",
  "checkpoint": {
-  "at": "2026-10-16T06:50Z",
+  "at": "2026-10-30T11:40Z",
   "refs": {
-   "gentleMonster@claude/clever-knuth-1dezlo": "56d69a1",
+   "gentleMonster@claude/clever-knuth-1dezlo": "023456f",
    "gentleMonster@claude/beautiful-gates-e42a5m": "76d0f6d",
    "gentleMonster@claude/modest-cannon-ha8zs3": "79ba2dc",
-   "gentleMonster@main": "6acff99"
+   "gentleMonster@main": "bdee7d6",
+   "gentleMonster@claude/gracious-edison-inoq0z": "2cb1564",
+   "gentleMonster@claude/brave-cannon-emzaxy": "272dac8"
   },
   "method": "scripts/sync_delta.py: 체크포인트 커밋 뒤의 커밋 · 바뀐 파일만 읽음. 세션 대화 원본은 읽지도 고치지도 않음",
   "not_cloned": [
@@ -16,11 +18,11 @@
    "cogito5170/analy_agent@claude/modest-cannon-ha8zs3"
   ]
  },
- "latest_confirmed": "Q1 구성은 R2 + 왜 해외 브랜드 VMD + 역량 답변(사용자, 10-16 06:09). 현재본은 조립본 rev qa2 931자(092bd99). 첫 단락 가운데 문장을 사용자 요청(앞 세 문장 · 마지막 문장 고정)으로 G1~G3 까지 냈고 선택은 아직 없다.",
+ "latest_confirmed": "JAJU 라운딩 VMD: 자기소개서 1~3번 확정(D31 · D33 · D34), 지원 메일 발송은 사용자 몫(O27), 면접 준비 1분 자기소개 v20(D40) · 사용자가 채울 답(O30), 공고 마감 여부(O17). 10-30 블루엘리펀트 Creative Intern 지원 준비: 기업 분석 v2(C29) 1차 출처판(C31) · 사용자 답(C32), 자기소개서 지침(D41)과 A1 초안 두 문항 확인 대기(C33, O32).",
  "resume_point": {
-  "op": "finalize",
-  "input_hint": "selfintro_p1_middle_options.json 의 G1~G3 를 보여 주고 하나를 고르게 한 뒤, 그 문장을 넣은 조립본 전문과 글자 수로 Q1 채택을 받는다. 채택되면 selection_sikorea_vmd_3q.json 의 Q1_selfintro 에 기록하고 Q2 로 넘어간다.",
-  "precondition": "사용자 확인 필요 (PROCESS.md §0 '고르는 것은 사용자')."
+  "op": "draft_paragraph",
+  "input_hint": "JAJU 1~3번 확정 완료. 사용자가 새 문항 · 새 공고를 주거나 FINAL 의 '확인 필요' 메모(unverified)를 확인하면 그에 따라 고친다. 공고 마감 문의 결과(W1-O17) 대기.",
+  "precondition": "사용자 지시 필요."
  },
  "confirmed": [
   {
@@ -155,59 +157,286 @@
   },
   {
    "id": "W1-C12",
-   "statement": "사용자 제공 1차 출처: 신세계인터내셔날 보도 '에르노 신세계 강남점 국내 최초 남성 단독 매장'(2026.10.06)과 사용자 요약(도전성 · 매장 도입 시기 · 신규 매장 시선)",
-   "source": "사용자",
-   "evidence": {
-    "repo": "cogito5170/gentleMonster",
-    "ref": "claude/clever-knuth-1dezlo",
-    "path": "docs/portfolio/context_handoff.md",
-    "line": 235,
-    "commit": "3e6d83e"
-   },
-   "decided_at": "2026-10-16T03:20Z",
-   "file_verified": true,
-   "note": "원문 docs/portfolio/postings/herno_gangnam_men_store_20261006.md (d5e9e1e)"
-  },
-  {
-   "id": "W1-C13",
-   "statement": "역량 증명 답변에서 베이글 가게 이야기는 뺀다",
-   "source": "사용자",
-   "evidence": {
-    "repo": "cogito5170/gentleMonster",
-    "ref": "claude/clever-knuth-1dezlo",
-    "path": "docs/portfolio/context_handoff.md",
-    "line": 241,
-    "commit": "3e6d83e"
-   },
-   "decided_at": "2026-10-16T06:05Z",
-   "file_verified": true
-  },
-  {
-   "id": "W1-C14",
-   "statement": "자기소개서 구성: 첫 문단 R2 + H2(왜 해외 브랜드 VMD 부서) + 면접용 역량 답변(베이글 제외). 회사 단락(에르노 도전성)은 이 구성에서 빠진다",
-   "source": "사용자",
-   "evidence": {
-    "repo": "cogito5170/gentleMonster",
-    "ref": "claude/clever-knuth-1dezlo",
-    "path": "docs/portfolio/context_handoff.md",
-    "line": 243,
-    "commit": "3e6d83e"
-   },
-   "decided_at": "2026-10-16T06:09Z",
-   "file_verified": true
-  },
-  {
-   "id": "W1-C15",
-   "statement": "조립본 rev qa2: 931자(줄바꿈 포함) · 926자(제외)",
+   "statement": "Q1 최종본 sikorea_rounding_vmd_selfintro_FINAL.md: 줄바꿈 포함 929자, 소제목 [어떻게 놓으면 더 잘 팔릴까]",
    "source": "도구출력",
    "evidence": {
     "repo": "cogito5170/gentleMonster",
     "ref": "claude/clever-knuth-1dezlo",
-    "path": "docs/portfolio/handoff/selfintro_sikorea_assembled.json",
-    "commit": "092bd99"
+    "path": "docs/portfolio/sikorea_rounding_vmd_selfintro_FINAL.md",
+    "commit": "0525a62"
    },
-   "decided_at": "2026-10-16T06:31Z",
+   "decided_at": "2026-10-20T04:49Z",
    "file_verified": true
+  },
+  {
+   "id": "W1-C13",
+   "statement": "Q3 사실(사용자 답): 베이글 창고 정리는 스스로 제안, 쉬는 시간 · 손님 없는 시간에 약 1주 반, 사장님 '매장 오픈 때보다 창고가 깨끗하다'. 포트폴리오 23쪽(카페 아르바이트)에 홀 테이블 재배치 · 식물로 공간 분절 · 창고 그리드 수납",
+   "source": "사용자",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/clever-knuth-1dezlo",
+    "path": "docs/portfolio/context_handoff.md",
+    "line": 263,
+    "commit": "d33e0e8"
+   },
+   "decided_at": "2026-10-20T06:42Z",
+   "file_verified": true,
+   "note": "263~267행"
+  },
+  {
+   "id": "W1-C14",
+   "statement": "Q3 사실(사용자 답): 홀은 새 물건 없이 기존 물건(테이블 · 식물)만으로 재구성",
+   "source": "사용자",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/clever-knuth-1dezlo",
+    "path": "docs/portfolio/context_handoff.md",
+    "line": 269,
+    "commit": "b786c61"
+   },
+   "decided_at": "2026-10-20T07:05Z",
+   "file_verified": true
+  },
+  {
+   "id": "W1-C15",
+   "statement": "JAJU 공고: 매장 순회 · 진열 · 환경 개선 · 오픈/리뉴얼 지원, 자격 '패션 스타일링 업무 가능', 우대 패션 스타일링 · 의류 · 잡화 판매/진열 경험. 이력서 · 자기소개서 · 포트폴리오 파일 첨부(포트폴리오 10MB 이내 압축), 제목 'JAJU 라운딩 VMD / 성명'. 자기소개서 문항 · 분량은 정해지지 않음",
+   "source": "사용자",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/gracious-edison-inoq0z",
+    "path": "docs/jaju_rounding_vmd/DIRECTION.md",
+    "line": 7,
+    "commit": "486f7ab"
+   },
+   "decided_at": "2026-10-21T05:59Z",
+   "file_verified": true,
+   "note": "사용자가 준 공고 캡처에서 옮김"
+  },
+  {
+   "id": "W1-C16",
+   "statement": "사용자 자기 인식: 관찰하는 것을 좋아한다(사람들의 일상을 관찰하며 다닌다) · 불편을 잘 느낀다 · 불편을 풀 가능성을 잘 찾는다(아르바이트 경험). JAJU 1줄 요약(합의): 한국인의 일상을 관찰해 바쁜 도시 생활의 불편을 덜어 주는 브랜드",
+   "source": "사용자",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/clever-knuth-1dezlo",
+    "path": "docs/portfolio/context_handoff.md",
+    "line": 279,
+    "commit": "f0959b5"
+   },
+   "decided_at": "2026-10-24T08:30Z"
+  },
+  {
+   "id": "W1-C17",
+   "statement": "사용자: 장기 근무 의사 있음(사실). 복학 의사 없음 — 건축이 아닌 VMD 로 전향하고자 함",
+   "source": "사용자",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/clever-knuth-1dezlo",
+    "path": "docs/portfolio/context_handoff.md",
+    "line": 281,
+    "commit": "c36747a"
+   },
+   "decided_at": "2026-10-24T09:12Z"
+  },
+  {
+   "id": "W1-C18",
+   "statement": "사용자 사실: 지인 스타일링 뒤 다양한 연령대와 성별의 사람들에게서 '너무 잘 어울린다, 다른 사람인 줄 알았다'는 반응",
+   "source": "사용자",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/clever-knuth-1dezlo",
+    "path": "docs/portfolio/context_handoff.md",
+    "line": 285,
+    "commit": "bc49023"
+   },
+   "decided_at": "2026-10-24T12:24Z"
+  },
+  {
+   "id": "W1-C19",
+   "statement": "사용자 사실: 건축사사무소 인턴 때 만든 3D 를 인턴 동료와 둘이 실제 모형으로 제작, 문화역서울284 기획전시 《돌봄의 디자인》에 실제로 전시됨(사무소 팀 작업 아님, 전시 시기는 쓰지 않음)",
+   "source": "사용자",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/clever-knuth-1dezlo",
+    "path": "docs/portfolio/context_handoff.md",
+    "line": 288,
+    "commit": "bc49023"
+   },
+   "decided_at": "2026-10-24T12:30Z"
+  },
+  {
+   "id": "W1-C20",
+   "statement": "사용자 정정 · 지정: 지인은 평소 다양한 스타일링을 보고 부탁함(품목 · 같은 톤 한정 표현은 쓰지 않음). 반응 문구는 '어울리는 분위기의 스타일을 잘 찾았다'로 (W1-C18 의 문구 대신)",
+   "source": "사용자",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/clever-knuth-1dezlo",
+    "path": "docs/portfolio/context_handoff.md",
+    "line": 292,
+    "commit": "53372d6"
+   },
+   "decided_at": "2026-10-24T13:05Z"
+  },
+  {
+   "id": "W1-C21",
+   "statement": "사용자 사실: 인턴 모형은 사무소가 실제 지은 건물과 대지의 모형. 3D 없이도 만들 수 있었으나 본인이 먼저 3D 로 제작 중 문제를 예상해 완성도를 높임. 본인 역할 · 전시 반응은 쓰지 않음",
+   "source": "사용자",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/clever-knuth-1dezlo",
+    "path": "docs/portfolio/context_handoff.md",
+    "line": 296,
+    "commit": "53372d6"
+   },
+   "decided_at": "2026-10-24T13:19Z"
+  },
+  {
+   "id": "W1-C22",
+   "statement": "JAJU Q2 rev42(998자)가 현재본: 넷째 단락(카페 · 의류 회사) 삭제, 맺음은 두 능력(스타일링 감각 · 구상을 미리 확인) 종합 + 첫 단락 목표, 소제목 '[어느 매장에서든 같은 장면을 만드는 VMD]'. rev36~41 은 첫 · 둘째 · 셋째 단락 문장 압축(각 '1안')",
+   "source": "도구출력",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/clever-knuth-1dezlo",
+    "path": "docs/portfolio/handoff/jaju_selfintro_draft.json",
+    "line": 895,
+    "commit": "d682f52"
+   }
+  },
+  {
+   "id": "W1-C23",
+   "statement": "사용자 확인: 베이글 카페 창고 정리 전 남은 수량이 한눈에 보이지 않았음. 창고 · 홀 모두 새로 산 것 없이 있던 물건의 자리만 바꿈. 홀에 손님끼리 시선이 마주치는 불편이 있었음",
+   "source": "사용자",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/clever-knuth-1dezlo",
+    "path": "docs/portfolio/context_handoff.md",
+    "line": 300,
+    "commit": "32919da"
+   },
+   "decided_at": "2026-10-25T05:08Z"
+  },
+  {
+   "id": "W1-C24",
+   "statement": "사용자 사실: 의류 회사 창고는 열마다 칸막이로 가방 · 옷 · 모자를 종류별로 나눔, 카페 수납장은 틀은 비슷하나 구분이 없어 섞여 있었음. 카페 수납장은 카페에 있던 단단한 박스로 나눔(새로 산 것 아님). 홀 · 매대 결과와 창고 수치는 쓰지 않음",
+   "source": "사용자",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/clever-knuth-1dezlo",
+    "path": "docs/portfolio/context_handoff.md",
+    "line": 302,
+    "commit": "32919da"
+   },
+   "decided_at": "2026-10-25T05:16Z"
+  },
+  {
+   "id": "W1-C25",
+   "statement": "사용자 확인: JAJU Q2 '3D로 크기와 배치를 확인'은 사실, Q3 배운 점(같은 틀의 수납장이라도 구분이 있느냐에 따라 물건 찾기 쉬운 정도가 달라짐)은 실제로 느낀 것과 맞음",
+   "source": "사용자",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/clever-knuth-1dezlo",
+    "path": "docs/portfolio/context_handoff.md",
+    "line": 308,
+    "commit": "c664301"
+   },
+   "decided_at": "2026-10-25T05:43Z"
+  },
+  {
+   "id": "W1-C26",
+   "statement": "JAJU 매장 추세: 261개(2023 말) → 247개(2024 말) 비효율 매장 정리, 2026-02 콤팩트 매장 연내 20개 · 2030년까지 100여 개 계획 — 서울경제 2026-02-23 · 비즈워치 2025-05-08 원문은 사용자가 제공해 확인. 감소는 '리뉴얼 대비'가 아니라 비효율 정리(그 해석은 본인 해석으로 말할 것)",
+   "source": "도구출력",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/brave-cannon-emzaxy",
+    "path": "docs/interview/jaju_store_expansion.md",
+    "line": 6,
+    "commit": "a908cf6"
+   },
+   "decided_at": "2026-10-27T11:02Z"
+  },
+  {
+   "id": "W1-C27",
+   "statement": "1분 자기소개: 사용자가 연결을 자기 문장으로 바꾼 v18 을 시도했다가 같은 날 v17 연결('2024년부터 … 진열 배치를')로 되돌림 — v17 이 정본 그대로(W1-D39)",
+   "source": "도구출력",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/brave-cannon-emzaxy",
+    "path": "docs/interview/one_minute_intro.md",
+    "line": 6,
+    "commit": "1486542"
+   }
+  },
+  {
+   "id": "W1-C28",
+   "statement": "블루엘리펀트 Creative Intern (비주얼 콘텐츠 디자인 인턴, 3개월 계약직, 성수) 공고를 사용자 캡처로 받아 기업 분석 K0~K6 초안을 시작함. 공간 직군이 아니라 커머스 · SNS · 캠페인 디자인 자리",
+   "source": "도구출력",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/gracious-edison-inoq0z",
+    "path": "docs/company_analysis/blue_elephant/01_scope_posting.md",
+    "line": 3,
+    "commit": "8517f0e"
+   }
+  },
+  {
+   "id": "W1-C29",
+   "statement": "기업 분석 프로세스 v2: 젠틀몬스터 · JAJU 두 분석을 묶어 K0~K9 로 정리 (K3b 캡처 반영, K5-이미지 요약, K9 세션별 공유 추가). 접속 불가 자료는 링크 목록을 주고 사용자 캡처를 받는 것이 원칙",
+   "source": "도구출력",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/gracious-edison-inoq0z",
+    "path": "docs/company_analysis/PROCESS.md",
+    "line": 1,
+    "commit": "8517f0e"
+   }
+  },
+  {
+   "id": "W1-C30",
+   "statement": "10-30 VMD · 공간 디자이너 공고 웹 검색 목록 작성 (검색 요약 기준, 원문 미확인). 지원 가능 후보 8곳, 예: 젠틀몬스터 공간 오브제 디자이너 상시지원 (신입 가능)",
+   "source": "도구출력",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/gracious-edison-inoq0z",
+    "path": "docs/job_search/2026-10-30_vmd_space_intern.md",
+    "line": 14,
+    "commit": "6d0d37a"
+   }
+  },
+  {
+   "id": "W1-C31",
+   "statement": "블루엘리펀트 캡처(P1 · P2 · 위키백과)를 02b_captures.md 에 옮겨 분석 · 이미지 요약 · 답변 유형을 1차 출처판으로 다시 씀. 쓸 수 있는 것(공고 · 뉴스1 · 패션비즈 스페이스 2.0 '터널 · 구조 · 장면' 등)과 쓰면 안 되는 것(매출 · 매장 수 · 성수 규모 · 분쟁 · 대표 이름 · THE PULL 문구) 목록",
+   "source": "도구출력",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/gracious-edison-inoq0z",
+    "path": "docs/company_analysis/blue_elephant/05_user.md",
+    "line": 27,
+    "commit": "2cb1564"
+   }
+  },
+  {
+   "id": "W1-C32",
+   "statement": "사용자 K7 답 기록: 매장 관찰(H빔 골조 · 노출콘크리트 · 오브제 같은 매대, 거울이 많아 편했고 구매까지), 개인 인스타그램 ju_03.25 관찰, 제품 시안은 가능하면 만든다, 각 세션에 필요한 것만 나눠 보냄(K9: 1_자기소개서 · 2-1 · 2-2_포트폴리오 · 3_이미지 생성)",
+   "source": "도구출력",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/gracious-edison-inoq0z",
+    "path": "docs/company_analysis/blue_elephant/05_user.md",
+    "line": 43,
+    "commit": "2cb1564"
+   }
+  },
+  {
+   "id": "W1-C33",
+   "statement": "블루엘리펀트 자기소개서 A1 초안: 문항 1 '지원한 이유, 왜 블루엘리펀트' 674자 · 문항 2 '본인 소개 · 강점' 801자, 사용자 확인 대기",
+   "source": "도구출력",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/clever-knuth-1dezlo",
+    "path": "docs/portfolio/handoff/selection_blue_elephant_q1.json",
+    "line": 5,
+    "commit": "023456f"
+   }
   }
  ],
  "decisions": [
@@ -269,17 +498,228 @@
    }
   },
   {
-   "id": "W1-D18",
-   "date": "2026-10-16T06:31Z",
-   "decision": "Q&A 2차: 첫 단락은 '두 관심(옷 · 배치)이 만남'으로, 둘째 단락은 '옮기는 일' 대신 실제 업무(시즌 테마를 착장 · 진열 · VP 로)로 → 조립본 rev qa2 931자",
-   "by": "사용자 질문 → 허브 수정",
-   "supersedes": "W1-D17",
+   "id": "W1-D19",
+   "date": "2026-10-20T04:49Z",
+   "decision": "Q1 자기소개 및 지원동기 확정: qa2판 그대로(단락 사이 빈 줄 없음, 929자) → sikorea_rounding_vmd_selfintro_FINAL.md",
+   "by": "파일 기록 ('확정' 표기, 사용자 원문 미확인)",
+   "supersedes": "W1-D18",
    "evidence": {
     "repo": "cogito5170/gentleMonster",
     "ref": "claude/clever-knuth-1dezlo",
     "path": "docs/portfolio/context_handoff.md",
-    "line": 246,
-    "commit": "092bd99"
+    "line": 247,
+    "commit": "0525a62"
+   }
+  },
+  {
+   "id": "W1-D22",
+   "date": "2026-10-20T06:18Z",
+   "decision": "Q2 확정: 셋째 rev13(의류 회사 → 베이글 재고 → 진열) · 맺음 E1 · 소제목 D2 '[시안으로 대표 상품을 앞세우는 VMD]', 999자 → sikorea_rounding_vmd_q2_FINAL.md",
+   "by": "사용자 채택 (파일 기록, 본문 확정은 사용자 '확장한다'를 '확정한다'로 해석)",
+   "supersedes": "W1-D21",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/clever-knuth-1dezlo",
+    "path": "docs/portfolio/context_handoff.md",
+    "line": 261,
+    "commit": "52c551c"
+   }
+  },
+  {
+   "id": "W1-D23",
+   "date": "2026-10-21T05:00Z",
+   "decision": "Q3 확정: 4문단, 소제목 '[의류 회사 경험과 건축 공부로, 창고와 홀을 다시 정리하다]', 958자 → sikorea_rounding_vmd_q3_FINAL.md",
+   "by": "파일 기록 ('확정' 표기)",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/clever-knuth-1dezlo",
+    "path": "docs/portfolio/context_handoff.md",
+    "line": 273,
+    "commit": "989ac8a"
+   }
+  },
+  {
+   "id": "W1-D24",
+   "date": "2026-10-21T05:59Z",
+   "decision": "지원 대상 전환: 신세계인터내셔날 해외패션 라운딩 VMD → JAJU 라운딩 VMD(삼구아이앤씨 · 신세계까사 협력사). 기존 3문항 FINAL 은 보존하고 JAJU 판은 새로 쓴다",
+   "by": "사용자 (\"포트폴리오, 자기소개서 작성을 기존 해외 브랜드 VMD에서 '자주 라운딩 VMD'로 변경한다. 다른 세션에도 해당 내용을 공유하라.\")",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/gracious-edison-inoq0z",
+    "path": "docs/jaju_rounding_vmd/DIRECTION.md",
+    "line": 3,
+    "commit": "486f7ab"
+   }
+  },
+  {
+   "id": "W1-D25",
+   "date": "2026-10-21T07:22Z",
+   "decision": "JAJU 자기소개서 문항은 신세계 3문항과 같게(자기소개 · 지원동기 / 하고 싶은 일 · 차별화 능력 / 학업 외 몰입 · 성과). 신세계 FINAL 을 바탕으로 rev1 작성",
+   "by": "사용자 지시 (파일 기록)",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/clever-knuth-1dezlo",
+    "path": "docs/portfolio/context_handoff.md",
+    "line": 275,
+    "commit": "459531d"
+   }
+  },
+  {
+   "id": "W1-D26",
+   "date": "2026-10-24T07:15Z",
+   "decision": "JAJU 자기소개서는 rev1 구성을 복구한 rev3 를 현재본으로 한다 (Q1 933 · Q2 946 · Q3 975자). rev2 는 보존",
+   "by": "사용자 (파일 기록)",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/clever-knuth-1dezlo",
+    "path": "docs/portfolio/handoff/jaju_selfintro_draft.json",
+    "line": 39,
+    "commit": "0a0cabf"
+   }
+  },
+  {
+   "id": "W1-D27",
+   "date": "2026-10-24T08:06Z",
+   "decision": "JAJU Q1 첫 단락은 방향 2(공간감 유지 + 인턴 실측 근거) 채택 → rev4. 소제목은 미정",
+   "by": "사용자 (파일 기록)",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/clever-knuth-1dezlo",
+    "path": "docs/portfolio/handoff/jaju_selfintro_draft.json",
+    "line": 78,
+    "commit": "f0959b5"
+   }
+  },
+  {
+   "id": "W1-D28",
+   "date": "2026-10-24T09:32Z",
+   "decision": "JAJU Q1 셋째(맺음) 단락은 B안(VMD 실무 없음 → 공간감 · 안목 두 가지로 채움 → 오래 일하겠다 · 오픈 · 리뉴얼)으로 — rev16 대신 rev15 B안 복구(rev17)",
+   "by": "사용자 (파일 기록)",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/clever-knuth-1dezlo",
+    "path": "docs/portfolio/handoff/jaju_selfintro_draft.json",
+    "line": 346,
+    "commit": "c36747a"
+   }
+  },
+  {
+   "id": "W1-D31",
+   "date": "2026-10-24T12:10Z",
+   "decision": "JAJU Q1 확정(rev22, 999자): 소제목 '[일상의 불편에서 진열의 가능성을 찾다]' → jaju_rounding_vmd_q1_FINAL.md. 다음은 2번 문항",
+   "by": "사용자 (파일 기록)",
+   "supersedes": "W1-D30",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/clever-knuth-1dezlo",
+    "path": "docs/portfolio/context_handoff.md",
+    "line": 283,
+    "commit": "bc49023"
+   }
+  },
+  {
+   "id": "W1-D32",
+   "date": "2026-10-24T12:55Z",
+   "decision": "JAJU Q2 첫 단락 확정(rev28): 직무 정의형(S1) — '라운딩 VMD는 담당 매장마다 브랜드의 기준을 같은 모습으로 맞추는 사람' + 리브랜딩 첫 매장 사실 + '…경험을 쓸 수 있습니다'",
+   "by": "사용자 (파일 기록)",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/clever-knuth-1dezlo",
+    "path": "docs/portfolio/handoff/jaju_selfintro_draft.json",
+    "line": 640,
+    "commit": "53372d6"
+   }
+  },
+  {
+   "id": "W1-D33",
+   "date": "2026-10-25T04:59Z",
+   "decision": "JAJU Q2 확정(rev44, 999자): 소제목 '[어느 매장에서든 같은 장면을 만드는 VMD]', 직무 정의 → 스타일링 감각 → 구상을 미리 확인 → 두 능력 종합. 베이글 · 의류 회사 이야기는 Q3 로 → jaju_rounding_vmd_q2_FINAL.md",
+   "by": "사용자 (파일 기록)",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/clever-knuth-1dezlo",
+    "path": "docs/portfolio/context_handoff.md",
+    "line": 298,
+    "commit": "32919da"
+   }
+  },
+  {
+   "id": "W1-D34",
+   "date": "2026-10-25T05:40Z",
+   "decision": "JAJU Q3 확정(rev50, 998자): 소제목 '[의류 회사처럼 품목을 나눠, 한눈에 보이는 창고를 만들다]', 다짐은 VMD 팀에 건의하는 형태 → jaju_rounding_vmd_q3_FINAL.md. JAJU 1~3번 모두 확정",
+   "by": "사용자 (파일 기록)",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/clever-knuth-1dezlo",
+    "path": "docs/portfolio/context_handoff.md",
+    "line": 306,
+    "commit": "32919da"
+   }
+  },
+  {
+   "id": "W1-D35",
+   "date": "2026-10-27T10:47Z",
+   "decision": "1분 자기소개 방향: 다른 지원자와의 차별점은 '건축학과', 공고의 '매장 오픈 / 리뉴얼 업무 지원'을 강조 (베이글 카페 창고 중심 v4 에서 전환)",
+   "by": "사용자 (파일 기록)",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/brave-cannon-emzaxy",
+    "path": "docs/interview/one_minute_intro.md",
+    "line": 185,
+    "commit": "a908cf6"
+   }
+  },
+  {
+   "id": "W1-D36",
+   "date": "2026-10-27T10:52Z",
+   "decision": "1분 자기소개 v7 지시: 현재에서 '5년제' 삭제 · '미리 그려 보는 법'은 추상적이라 뺌, 연결은 자주 매장 추세를 조사해 데이터로",
+   "by": "사용자 (파일 기록)",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/brave-cannon-emzaxy",
+    "path": "docs/interview/one_minute_intro.md",
+    "line": 166,
+    "commit": "a908cf6"
+   }
+  },
+  {
+   "id": "W1-D37",
+   "date": "2026-10-27T11:36Z",
+   "decision": "1분 자기소개 뼈대: 패션 + 건축 두 축 / JAJU 비효율 매장 정리 → 콤팩트 매장 2030년까지 100여 개 / 라운딩 + 매장 오픈 · 리뉴얼 (사용자 초안 v9). 두괄식은 무시",
+   "by": "사용자 (파일 기록)",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/brave-cannon-emzaxy",
+    "path": "docs/interview/one_minute_intro.md",
+    "line": 106,
+    "commit": "a908cf6"
+   }
+  },
+  {
+   "id": "W1-D40",
+   "date": "2026-10-28T10:13Z",
+   "supersedes": "W1-D39",
+   "decision": "1분 자기소개 정본 v20 (사용자가 v19 를 고쳐 확정): 현재 '스타일링과 실측, 3D 모델링을 함께 갖춘'('건축학과에서 익힌' 뺌), 경험 '인턴 경험으로 실측과 모델링' · '3D 없이 진행할 수 있는 모형 작업' · 배운 점 '하나를 고르기 전에 전체를 보는 법', 연결 '2024년부터 비효율 매장을 줄이고 콤팩트 매장을 2030년까지 100여 개로' · 착장 · 진열 배치를 3D 로 먼저 맞춰 보겠다. 약 53~61초",
+   "by": "사용자 (파일 기록)",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/brave-cannon-emzaxy",
+    "path": "docs/interview/one_minute_intro.md",
+    "line": 8,
+    "commit": "495cff2"
+   }
+  },
+  {
+   "id": "W1-D41",
+   "date": "2026-10-30T11:31Z",
+   "decision": "블루엘리펀트 Creative Intern 자기소개서 지침: AI 툴은 적극 활용한다고 씀(이 공고 한정), 문항당 1000자, 베이글 카페 창고 정리 재사용 가능, JAJU 이야기 · 젠틀몬스터 분쟁은 쓰지 않음, 영상 툴은 '빠르게 익힌다'로만, 지원 전공 '디자인_건축학과', 3개월 · 주 5일 가능, 문항은 젠틀몬스터 지원서 두 문항 그대로",
+   "by": "사용자 (파일 기록)",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/clever-knuth-1dezlo",
+    "path": "docs/portfolio/context_handoff.md",
+    "line": 310,
+    "commit": "1296e11"
    }
   }
  ],
@@ -293,17 +733,6 @@
    "evidence": {
     "path": "docs/portfolio/handoff/selection_sikorea_vmd_3q.json",
     "line": 35
-   }
-  },
-  {
-   "id": "W1-O4",
-   "item": "공고 시한: 면접 10월 내 개별 진행, 조기 마감 가능 · 포트폴리오 10MB 이내 첨부",
-   "waiting_on": "사용자",
-   "blocking": false,
-   "source": "도구출력",
-   "evidence": {
-    "path": "docs/portfolio/postings/sikorea_rounding_vmd.md",
-    "line": 22
    }
   },
   {
@@ -325,25 +754,98 @@
    "source": "도구출력"
   },
   {
-   "id": "W1-O8",
-   "item": "첫 단락 가운데 문장 후보 G1~G3(rev2, 큰 것에서 작은 것으로) 중 선택, 그 뒤 qa2 조립본을 Q1 최종으로 채택할지",
+   "id": "W1-O11",
+   "item": "Q1 FINAL 의 실행 필요 항목: 출근 전 담당 브랜드 매장을 직접 보고 정리",
    "waiting_on": "사용자",
-   "blocking": true,
+   "blocking": false,
    "source": "도구출력",
    "evidence": {
     "repo": "cogito5170/gentleMonster",
     "ref": "claude/clever-knuth-1dezlo",
-    "path": "docs/portfolio/handoff/selfintro_p1_middle_options.json",
-    "commit": "56d69a1"
-   },
-   "note": "사용자 요청: 앞 세 문장과 마지막 '두 관심이 만나는 일이 ~ VMD였습니다' 고정"
+    "path": "docs/portfolio/sikorea_rounding_vmd_selfintro_FINAL.md",
+    "commit": "0525a62"
+   }
   },
   {
-   "id": "W1-O9",
-   "item": "신세계 공통 3문항 중 Q2 · Q3 진행 상태가 파일에 없음",
+   "id": "W1-O13",
+   "item": "Q2 FINAL 확인 메모: '필요하면 매장을 3D로' 업무 방식 미확인, 1번 문항 셋째 단락과 경험 겹침",
    "waiting_on": "사용자",
    "blocking": false,
-   "source": "추론·미검증"
+   "source": "도구출력",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/clever-knuth-1dezlo",
+    "path": "docs/portfolio/sikorea_rounding_vmd_q2_FINAL.md",
+    "commit": "52c551c"
+   }
+  },
+  {
+   "id": "W1-O15",
+   "item": "Q3 FINAL 확인 메모: '남은 수량도 한눈에 보이지 않았습니다'(결과에서 추정), 창고 정리에도 새로 산 것이 없었는지, '판매 공간' 용어",
+   "waiting_on": "사용자",
+   "blocking": false,
+   "source": "도구출력",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/clever-knuth-1dezlo",
+    "path": "docs/portfolio/sikorea_rounding_vmd_q3_FINAL.md",
+    "commit": "989ac8a"
+   }
+  },
+  {
+   "id": "W1-O17",
+   "item": "JAJU 공고가 마감으로 표시됨. 사용자가 jy.park@isamkoo.com 에 마감 여부 문의 메일을 보낼 예정(초안은 DIRECTION.md), 답장 결과 대기",
+   "waiting_on": "사용자",
+   "blocking": false,
+   "source": "도구출력",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/gracious-edison-inoq0z",
+    "path": "docs/jaju_rounding_vmd/DIRECTION.md",
+    "commit": "486f7ab"
+   }
+  },
+  {
+   "id": "W1-O27",
+   "item": "JAJU 지원 메일 초안(jy.park@isamkoo.com, 첨부: 이력서 · 자기소개서 PDF, 포트폴리오 zip 10MB 이내): 연락처 [휴대전화] · [이메일] 빈칸, 보낼지 · 보냈는지 미정 (공고 마감 문의 W1-O17 과 같은 받는 사람)",
+   "waiting_on": "사용자",
+   "blocking": false,
+   "source": "도구출력",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/gracious-edison-inoq0z",
+    "path": "docs/jaju_rounding_vmd/application_email.md",
+    "line": 26,
+    "commit": "e9676f1"
+   }
+  },
+  {
+   "id": "W1-O30",
+   "item": "면접 예상 질문에서 사용자가 사실을 채울 답(급한 순): 졸업 · 학업 계획, JAJU 매장 방문, 3D 프로그램 숙련도 · 실측 현장 · 모형에서 내 몫, 인턴 기간 · 휴학 이유 · 희망 연봉(공고 2,400만 원 이상~ 협의) · 단점, 해비타트 시기 · 역할",
+   "waiting_on": "사용자",
+   "blocking": false,
+   "source": "도구출력",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/brave-cannon-emzaxy",
+    "path": "docs/interview/expected_questions.md",
+    "line": 90,
+    "commit": "495cff2"
+   }
+  },
+  {
+   "id": "W1-O32",
+   "item": "블루엘리펀트 자기소개서 A1 초안(문항 1 · 2) 사용자 확인",
+   "waiting_on": "사용자",
+   "blocking": false,
+   "source": "도구출력",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/clever-knuth-1dezlo",
+    "path": "docs/portfolio/handoff/selection_blue_elephant_q2.json",
+    "line": 9,
+    "commit": "023456f"
+   }
   }
  ],
  "artifacts": [
@@ -409,15 +911,6 @@
    "kind": "doc",
    "repo": "cogito5170/gentleMonster",
    "ref": "claude/clever-knuth-1dezlo",
-   "path": "docs/portfolio/handoff/selfintro_sikorea_assembled.json",
-   "commit": "092bd99",
-   "status": "draft",
-   "note": "Q1 현재본 rev qa2 931자"
-  },
-  {
-   "kind": "doc",
-   "repo": "cogito5170/gentleMonster",
-   "ref": "claude/clever-knuth-1dezlo",
    "path": "docs/portfolio/handoff/why_overseas_dept_paragraph.json",
    "commit": "17763fc",
    "status": "draft",
@@ -445,10 +938,307 @@
    "kind": "doc",
    "repo": "cogito5170/gentleMonster",
    "ref": "claude/clever-knuth-1dezlo",
-   "path": "docs/portfolio/handoff/selfintro_p1_middle_options.json",
-   "commit": "56d69a1",
+   "path": "docs/portfolio/sikorea_rounding_vmd_selfintro_FINAL.md",
+   "commit": "0525a62",
+   "status": "final",
+   "note": "Q1 자기소개 및 지원동기 확정본"
+  },
+  {
+   "kind": "doc",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/clever-knuth-1dezlo",
+   "path": "docs/portfolio/sikorea_rounding_vmd_q2_FINAL.md",
+   "commit": "52c551c",
+   "status": "final",
+   "note": "Q2 하고 싶은 일 · 차별화 능력 확정본 999자"
+  },
+  {
+   "kind": "image",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/clever-knuth-1dezlo",
+   "path": "docs/portfolio/assets/portfolio_p23_cafe_storage_layout.jpg",
+   "commit": "d33e0e8",
+   "status": "final",
+   "note": "포트폴리오 23쪽, 창고 정리 전후 + 홀 사진"
+  },
+  {
+   "kind": "doc",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/clever-knuth-1dezlo",
+   "path": "docs/portfolio/sikorea_rounding_vmd_q3_FINAL.md",
+   "commit": "989ac8a",
+   "status": "final",
+   "note": "Q3 학업 외 몰입 · 성과 확정본 958자"
+  },
+  {
+   "kind": "doc",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/clever-knuth-1dezlo",
+   "path": "docs/portfolio/handoff/sikorea_q2_draft.json",
+   "commit": "59f720a",
    "status": "draft",
-   "note": "첫 단락 가운데 문장 M1~M3 → G1~G3"
+   "note": "Q2 확정 뒤 rev15 · rev16 제안 (Q3 와 중복 줄이기)"
+  },
+  {
+   "kind": "doc",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/gracious-edison-inoq0z",
+   "path": "docs/jaju_rounding_vmd/DIRECTION.md",
+   "commit": "486f7ab",
+   "status": "final",
+   "note": "전환 결정 · JAJU 공고 · 브랜드 이야기 · W1/W2 영향 · 문의 메일 초안"
+  },
+  {
+   "kind": "doc",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/gracious-edison-inoq0z",
+   "path": "docs/company_analysis/jaju/04a_brand_image.md",
+   "commit": "c6deb58",
+   "status": "draft",
+   "note": "JAJU 이미지 요약, 사용자 제공 기사 · 보도자료 캡처 5건(02b_captures.md) 기준으로 다시 씀"
+  },
+  {
+   "kind": "doc",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/clever-knuth-1dezlo",
+   "path": "docs/portfolio/jaju/jaju_rounding_vmd_Q1-3_draft.md",
+   "commit": "0a0cabf",
+   "status": "draft",
+   "note": "JAJU 자기소개서 rev3 = rev1 복구 (handoff/jaju_selfintro_draft.json current: rev3)"
+  },
+  {
+   "kind": "docx",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/clever-knuth-1dezlo",
+   "path": "docs/portfolio/sikorea_rounding_vmd_Q1-3.docx",
+   "commit": "46c19da",
+   "status": "final",
+   "note": "신세계 확정 3문항 Word 파일 (보존)"
+  },
+  {
+   "kind": "doc",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/clever-knuth-1dezlo",
+   "path": "docs/portfolio/handoff/jaju_selfintro_draft.json",
+   "commit": "f0959b5",
+   "status": "draft",
+   "note": "current: rev5 (Q1 963자). q1_p1_work · q1_p2_work 에 단락별 후보와 사용자 판"
+  },
+  {
+   "kind": "doc",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/clever-knuth-1dezlo",
+   "path": "docs/portfolio/jaju/jaju_rounding_vmd_q1_FINAL.md",
+   "commit": "f5ebb3c",
+   "status": "final",
+   "note": "JAJU Q1 확정 999자"
+  },
+  {
+   "kind": "doc",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/clever-knuth-1dezlo",
+   "path": "docs/portfolio/jaju/PROCESS_question_revision.md",
+   "commit": "d6e3228",
+   "status": "draft",
+   "note": "Q1 에서 정리한 문항 수정 절차 + 사용자가 거부한 표현 목록 (Q2 · Q3 에 그대로 씀)"
+  },
+  {
+   "kind": "doc",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/clever-knuth-1dezlo",
+   "path": "docs/portfolio/jaju/jaju_rounding_vmd_q2_FINAL.md",
+   "commit": "91513eb",
+   "status": "final",
+   "note": "JAJU Q2 확정본 999자"
+  },
+  {
+   "kind": "doc",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/clever-knuth-1dezlo",
+   "path": "docs/portfolio/jaju/jaju_rounding_vmd_q3_FINAL.md",
+   "commit": "32919da",
+   "status": "final",
+   "note": "JAJU Q3 확정본 998자"
+  },
+  {
+   "kind": "doc",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/clever-knuth-1dezlo",
+   "path": "docs/portfolio/jaju/jaju_rounding_vmd_Q1-3.docx",
+   "commit": "c664301",
+   "status": "final",
+   "note": "JAJU 1~3번 확정본을 묶은 Word 파일"
+  },
+  {
+   "kind": "doc",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/gracious-edison-inoq0z",
+   "path": "docs/jaju_rounding_vmd/application_email.md",
+   "commit": "e9676f1",
+   "status": "draft",
+   "note": "JAJU 라운딩 VMD 지원 메일 초안 (박재영 과장님 앞)"
+  },
+  {
+   "kind": "doc",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/brave-cannon-emzaxy",
+   "path": "docs/interview/finals_snapshot.md",
+   "commit": "189d627",
+   "status": "draft",
+   "note": "JAJU 면접 준비 세션의 출발점: 자기소개서(W1) · CV v4(W4) · 포트폴리오(W2) · 지원 메일 최종본 확인 기록"
+  },
+  {
+   "kind": "doc",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/brave-cannon-emzaxy",
+   "path": "docs/interview/one_minute_intro.md",
+   "commit": "747b12e",
+   "status": "draft",
+   "note": "1분 자기소개 v4(정본 후보) · v2 · v1 보존, 예시 대조 검토, 키워드 · 이어질 질문"
+  },
+  {
+   "kind": "doc",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/brave-cannon-emzaxy",
+   "path": "docs/interview/one_minute_intro_method.md",
+   "commit": "747b12e",
+   "status": "reference",
+   "note": "1분 자기소개 작성법(현재 → 경험 → 연결) 학습 정리"
+  },
+  {
+   "kind": "doc",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/brave-cannon-emzaxy",
+   "path": "docs/interview/one_minute_topics.md",
+   "commit": "747b12e",
+   "status": "draft",
+   "note": "베이글 카페 밖 1분 자기소개 주제 후보 7개와 순위 · 조합 제안"
+  },
+  {
+   "kind": "doc",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/brave-cannon-emzaxy",
+   "path": "docs/interview/jaju_store_expansion.md",
+   "commit": "a908cf6",
+   "status": "draft",
+   "note": "JAJU 매장 추세 조사(매장 수 · 콤팩트 매장 · 두 기사 3줄 요약 · 퍼센트 환산)"
+  },
+  {
+   "kind": "doc",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/brave-cannon-emzaxy",
+   "path": "docs/interview/expected_questions.md",
+   "commit": "495cff2",
+   "status": "draft",
+   "note": "JAJU 면접 예상 질문(1분 자기소개 · 자기소개서 · CV · 직무 · 인성), 서류에 있는 답의 재료와 ⚠ 빈칸"
+  },
+  {
+   "kind": "doc",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/brave-cannon-emzaxy",
+   "path": "docs/interview/jaju_interview_questions_selfintro.docx",
+   "commit": "272dac8",
+   "status": "draft",
+   "note": "자기소개서 문항별 면접 예상 질문 Word (질문 · 답의 재료 + 연습용 질문만 판)"
+  },
+  {
+   "kind": "doc",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/gracious-edison-inoq0z",
+   "path": "docs/company_analysis/PROCESS.md",
+   "commit": "2cb1564",
+   "status": "draft",
+   "note": "기업 분석 프로세스 v2 (K0~K9), K9 에 '보낼 때마다 세션 목록 재조회' 추가"
+  },
+  {
+   "kind": "doc",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/gracious-edison-inoq0z",
+   "path": "docs/company_analysis/blue_elephant/01_scope_posting.md",
+   "commit": "8517f0e",
+   "status": "draft",
+   "note": "블루엘리펀트 Creative Intern K0 공고 원문 · K1 범위 · K2 공고 해부 · 적합도"
+  },
+  {
+   "kind": "doc",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/gracious-edison-inoq0z",
+   "path": "docs/company_analysis/blue_elephant/02_sources.md",
+   "commit": "8517f0e",
+   "status": "draft",
+   "note": "K3 자료 표 + 캡처 요청 목록 R1~R17"
+  },
+  {
+   "kind": "doc",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/gracious-edison-inoq0z",
+   "path": "docs/company_analysis/blue_elephant/03_keywords_cases.md",
+   "commit": "8517f0e",
+   "status": "draft",
+   "note": "K4 발언 · 키워드 · 사례"
+  },
+  {
+   "kind": "doc",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/gracious-edison-inoq0z",
+   "path": "docs/company_analysis/blue_elephant/04_analysis.md",
+   "commit": "f0c6ede",
+   "status": "draft",
+   "note": "K5 · K5-이미지 · K6 1차 출처판, 추천 D → A + C"
+  },
+  {
+   "kind": "doc",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/gracious-edison-inoq0z",
+   "path": "docs/company_analysis/blue_elephant/05_user.md",
+   "commit": "2cb1564",
+   "status": "draft",
+   "note": "K7 사용자 답 · 인스타그램 관찰 · K8 쓸 수 있는 / 없는 것 · K9 공유 기록"
+  },
+  {
+   "kind": "doc",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/gracious-edison-inoq0z",
+   "path": "docs/job_search/2026-10-30_vmd_space_intern.md",
+   "commit": "6d0d37a",
+   "status": "draft",
+   "note": "VMD · 공간 디자이너 공고 검색 목록 (10-30)"
+  },
+  {
+   "kind": "doc",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/gracious-edison-inoq0z",
+   "path": "docs/company_analysis/blue_elephant/02b_captures.md",
+   "commit": "2cb1564",
+   "status": "draft",
+   "note": "K3b 사용자 캡처 옮김 (P1 · P2 · 위키백과)"
+  },
+  {
+   "kind": "doc",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/clever-knuth-1dezlo",
+   "path": "docs/portfolio/postings/blue_elephant_creative_intern.md",
+   "commit": "1296e11",
+   "status": "final",
+   "note": "블루엘리펀트 Creative Intern 공고 원문 (사용자 캡처)"
+  },
+  {
+   "kind": "doc",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/clever-knuth-1dezlo",
+   "path": "docs/portfolio/handoff/selection_blue_elephant_q1.json",
+   "commit": "023456f",
+   "status": "draft",
+   "note": "블루엘리펀트 문항 1 A1 (674자)"
+  },
+  {
+   "kind": "doc",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/clever-knuth-1dezlo",
+   "path": "docs/portfolio/handoff/selection_blue_elephant_q2.json",
+   "commit": "023456f",
+   "status": "draft",
+   "note": "블루엘리펀트 문항 2 A1 (801자)"
   }
  ],
  "unverified": [
@@ -476,6 +1266,36 @@
    "statement": "writing_agent / analy_agent 저장소의 프롬프트 · 규칙 파일 내용",
    "where": "session_0122yxjinLCToP7QLnhJbJka, session_01GGPjmZVBdKmygvWvYsFFv6",
    "check": "클론 없음, file_verified:false"
+  },
+  {
+   "statement": "Q1 rev18 '리브랜딩을 적용한 첫 매장에서는 … 편의성을 고려했다고 밝혔습니다'의 '편의성' 부분",
+   "where": "jaju_selfintro_draft.json rev18 Q1 (c36747a)",
+   "check": "기업 분석 C8 은 '고객 눈높이'까지 확인. '편의성'은 원문 대조 안 됨"
+  },
+  {
+   "statement": "Q1 FINAL '상품 하나보다 매장 전체의 흐름 안에서 자리를 봅니다'(해석) · 출장 범위(지방 포함) · 직접 겪은 JAJU 매장 경험 없음",
+   "where": "jaju_rounding_vmd_q1_FINAL.md:10 (f5ebb3c)",
+   "check": "파일의 '확인 필요' 메모, 사용자 확인 전"
+  },
+  {
+   "statement": "rev36~42 의 '1안' 표기와 넷째 단락 삭제가 사용자 선택인지",
+   "where": "jaju_selfintro_draft.json rev36~rev42 note (d682f52)",
+   "check": "파일에는 note 만 있음, 사용자 원문 미확인"
+  },
+  {
+   "statement": "면접 일정이 잡혔는지(서류 합격 여부) — 면접 준비 세션이 시작됐다는 것만 확인됨",
+   "where": "docs/interview/finals_snapshot.md 1~4행 (189d627)",
+   "check": "파일에 일정 · 합격 언급 없음"
+  },
+  {
+   "statement": "CV '헤비타트' / 포트폴리오 부록 '해비타트' 표기를 한쪽으로 맞출 일(W4 · W2), 면접 세션이 지적",
+   "where": "docs/interview/finals_snapshot.md §5 (189d627)",
+   "check": "사용자 결정 없음"
+  },
+  {
+   "statement": "사용자 답 \"JAJU 는 배제한다\"(근무 우선순위 질문 UQ5 에 대한 답)가 JAJU 지원 자체를 접는다는 뜻인지, 블루엘리펀트 지원서에 JAJU 이야기를 쓰지 않는다는 뜻인지 파일만으로는 갈리지 않음. 1_자기소개서 세션은 후자로 적음",
+   "where": "docs/company_analysis/blue_elephant/05_user.md:52 (2cb1564), docs/portfolio/context_handoff.md:310 (1296e11)",
+   "check": "사용자 결정 없음"
   }
  ]
 }
