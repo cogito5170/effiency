@@ -1,11 +1,11 @@
 {
  "module": "W2",
  "title": "패션 · VMD 지원 포트폴리오 (JAJU 라운딩 VMD · 이전 신세계 FROM THE INSIDE)",
- "as_of": "2026-10-31T01:21Z",
+ "as_of": "2026-10-31T02:40Z",
  "checkpoint": {
-  "at": "2026-10-31T01:21Z",
+  "at": "2026-10-31T02:40Z",
   "refs": {
-   "gentleMonster@claude/friendly-gates-0u80ge": "74cde0a",
+   "gentleMonster@claude/friendly-gates-0u80ge": "c4a2196",
    "gentleMonster@claude/project-thread-n4rxnf": "cd4f4d2",
    "gentleMonster@main": "bdee7d6",
    "gentleMonster@claude/magical-bell-u02os9": "9ef9ae4",
@@ -353,6 +353,18 @@
     "path": "docs/character/midjourney_character.md",
     "line": 1,
     "commit": "74cde0a"
+   }
+  },
+  {
+   "id": "W2-C25",
+   "statement": "캐릭터 이미지 작업이 이어짐: 코트 이미지에 안경 씌우기 · 위에서 찍은 각도 · 브랜드 웹 히어로 컷 · 잡지 커버 · 아이웨어 화보 프롬프트(미드저니 V7 · Gemini 판), 얼굴이 바뀐 원인(웹 캡처를 이미지 프롬프트에 넣음 · 셀 셰이딩 얼굴 · Weird/Chaos)과 얼굴을 지키는 순서. 청사진 PDF 셋(캐릭터 과정 일곱 단계, 미드저니 결과 14장, 아이웨어 화보)",
+   "source": "도구출력",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/friendly-gates-0u80ge",
+    "path": "docs/character/midjourney_character.md",
+    "line": 155,
+    "commit": "c4a2196"
    }
   }
  ],
@@ -863,6 +875,19 @@
     "path": "docs/blue_elephant_creative_intern/storyline_options.md",
     "line": 87,
     "commit": "a6a2e71"
+   }
+  },
+  {
+   "id": "W2-D49",
+   "date": "2026-10-31T02:12Z",
+   "decision": "미드저니 프롬프트 규칙: 사용자는 V7 을 쓴다. --cw · --cref · --ow · --oref 는 쓰지 않고, 이미지 프롬프트 + --iw · 스타일 참조 + --sw · --ar · --style raw · --stylize · --no · --chaos · --weird 만. 얼굴은 --iw 높게 + 글 묘사로 지키고, 안 되면 Editor · Gemini 얼굴 교체 · 포토샵. 프롬프트에 URL 자리표시 · 한글 · 따옴표를 넣지 않음",
+   "by": "사용자 (파일 기록)",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/friendly-gates-0u80ge",
+    "path": "CLAUDE.md",
+    "line": 16,
+    "commit": "d541167"
    }
   }
  ],
@@ -1906,9 +1931,36 @@
    "repo": "cogito5170/gentleMonster",
    "ref": "claude/friendly-gates-0u80ge",
    "path": "docs/character/midjourney_character.md",
-   "commit": "74cde0a",
+   "commit": "c4a2196",
    "status": "draft",
-   "note": "캐릭터 이미지 미드저니 프롬프트 네 판"
+   "note": "캐릭터 이미지 미드저니 · Gemini 프롬프트 모음 (V7 판, 얼굴 지키기, 아이웨어 화보)"
+  },
+  {
+   "kind": "render",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/friendly-gates-0u80ge",
+   "path": "docs/character/blueprint/character_process_blueprint.pdf",
+   "commit": "c027af7",
+   "status": "draft",
+   "note": "캐릭터 이미지 과정 청사진"
+  },
+  {
+   "kind": "render",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/friendly-gates-0u80ge",
+   "path": "docs/midjourney_results/midjourney_results_blueprint.pdf",
+   "commit": "dcb910d",
+   "status": "draft",
+   "note": "미드저니 결과물 청사진 (커버 · 책 목업 · 캐릭터 14장)"
+  },
+  {
+   "kind": "render",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/friendly-gates-0u80ge",
+   "path": "docs/character/eyewear/eyewear_campaign_blueprint.pdf",
+   "commit": "c4a2196",
+   "status": "draft",
+   "note": "아이웨어 화보 청사진"
   }
  ],
  "unverified": [
@@ -1984,11 +2036,6 @@
    "statement": "이 프롬프트가 어느 지원서(블루엘리펀트 포트폴리오 등)에 쓰일지 파일에 없음. 브랜치 기준으로 W2 에 둠",
    "where": "docs/character/midjourney_character.md (74cde0a)",
    "check": "모델 추론"
-  },
-  {
-   "statement": "gentleMonster CLAUDE.md(10-15 사용자 결정)는 새 이미지는 Codex 로만, 긴 이미지 프롬프트를 쓰지 않는다고 함. 미드저니용 긴 프롬프트는 이 규칙과 어긋날 수 있음 (사용자가 따로 허락했는지는 파일에 없음)",
-   "where": "docs/character/midjourney_character.md (b39d630)",
-   "check": "사용자 결정 없음"
   }
  ]
 }
