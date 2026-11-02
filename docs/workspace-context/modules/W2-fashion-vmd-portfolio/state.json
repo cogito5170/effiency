@@ -1,14 +1,14 @@
 {
  "module": "W2",
  "title": "패션 · VMD 지원 포트폴리오 (JAJU 라운딩 VMD · 이전 신세계 FROM THE INSIDE)",
- "as_of": "2026-11-02T05:29Z",
+ "as_of": "2026-11-02T07:32Z",
  "checkpoint": {
-  "at": "2026-11-02T05:29Z",
+  "at": "2026-11-02T07:32Z",
   "refs": {
    "gentleMonster@claude/friendly-gates-0u80ge": "5c124cd",
    "gentleMonster@claude/project-thread-n4rxnf": "cd4f4d2",
    "gentleMonster@main": "bdee7d6",
-   "gentleMonster@claude/magical-bell-u02os9": "9ef9ae4",
+   "gentleMonster@claude/magical-bell-u02os9": "e7c84ed",
    "gentleMonster@claude/awesome-keller-otac19": "19e210a"
   },
   "method": "scripts/sync_delta.py: 체크포인트 커밋 뒤의 커밋 · 바뀐 파일만 읽음. 세션 대화 원본은 읽지도 고치지도 않음",
@@ -389,6 +389,30 @@
     "path": "tools/web_hero/build.mjs",
     "line": 44,
     "commit": "5c124cd"
+   }
+  },
+  {
+   "id": "W2-C28",
+   "statement": "사용자가 블루엘리펀트 프로젝트 다섯 개(웹디자인 · 전광판 · 전시 실외 · 전시 실내 · SNS 운영)를 담을 영어 한 단어 제목을 요청함: '다중의 작업이 가능한'을 내포하고, 이어서 'VERSATILE 같은 유의어, 강하고 직관적인 단어'를 원함",
+   "source": "사용자",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/magical-bell-u02os9",
+    "path": "docs/blue_elephant_portfolio/decisions.md",
+    "line": 11,
+    "commit": "e7c84ed"
+   }
+  },
+  {
+   "id": "W2-C29",
+   "statement": "묶음 제목 후보: MULTIFRAME 권함(같은 사진을 여러 틀에 넣음 · 안경 프레임), 그 밖에 RANGE · FACETS · PRISM · ACROSS · VERSATILE. 유의어 2차: ADAPT · ALL-ROUND 권함, FLEX · SHIFT · AGILE · OMNI · MULTIPLY · CHAMELEON · PROTEAN",
+   "source": "도구출력",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/magical-bell-u02os9",
+    "path": "docs/blue_elephant_portfolio/decisions.md",
+    "line": 13,
+    "commit": "e7c84ed"
    }
   }
  ],
@@ -1342,6 +1366,20 @@
     "path": "docs/web_hero/web_hero_blueprint.pdf",
     "line": 1,
     "commit": "5c124cd"
+   }
+  },
+  {
+   "id": "W2-O54",
+   "item": "블루엘리펀트 프로젝트 묶음 제목 고르기 (MULTIFRAME · ADAPT · ALL-ROUND 권함, 파일에 '미정')",
+   "waiting_on": "사용자",
+   "blocking": false,
+   "source": "도구출력",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/magical-bell-u02os9",
+    "path": "docs/blue_elephant_portfolio/decisions.md",
+    "line": 10,
+    "commit": "e7c84ed"
    }
   }
  ],

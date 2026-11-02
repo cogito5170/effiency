@@ -1,5 +1,5 @@
 # W2 패션 · VMD 지원 포트폴리오 (JAJU 라운딩 VMD · 이전 신세계 FROM THE INSIDE)
-기준 2026-11-02T05:29Z · 체크포인트 claude/friendly-gates-0u80ge@5c124cd, claude/project-thread-n4rxnf@cd4f4d2, main@bdee7d6
+기준 2026-11-02T07:32Z · 체크포인트 claude/friendly-gates-0u80ge@5c124cd, claude/project-thread-n4rxnf@cd4f4d2, main@bdee7d6
 
 ## 지금
 JAJU 포트폴리오 흐름은 /01 Observe → /02 Match. → /03 Fill. 파트 3 은 Contain 쪽(D44) → 학부 · 인턴 모형 쪽(리드 D45, 제목 고르는 중) → 다음 쪽 → Proposal, 맨 끝에 부록 A-1 · A-2(D46). Match 쪽 순서 · 문구 · 문단 자리는 선택 대기. 10-30 블루엘리펀트 Creative Intern 포트폴리오(별도): URL 생략(D47), 뼈대 터널 · 구조 · 장면 + KEEP(D48), 시안 13쪽 저해상도(C22), AI 시안 후보 · 제품 사진 …
