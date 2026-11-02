@@ -1,11 +1,11 @@
 {
  "module": "W2",
  "title": "패션 · VMD 지원 포트폴리오 (JAJU 라운딩 VMD · 이전 신세계 FROM THE INSIDE)",
- "as_of": "2026-11-02T09:38Z",
+ "as_of": "2026-11-02T10:06Z",
  "checkpoint": {
-  "at": "2026-11-02T09:38Z",
+  "at": "2026-11-02T10:06Z",
   "refs": {
-   "gentleMonster@claude/friendly-gates-0u80ge": "18e5de4",
+   "gentleMonster@claude/friendly-gates-0u80ge": "bf79393",
    "gentleMonster@claude/project-thread-n4rxnf": "cd4f4d2",
    "gentleMonster@main": "bdee7d6",
    "gentleMonster@claude/magical-bell-u02os9": "25492e4",
@@ -449,6 +449,30 @@
     "path": "tools/tone_match/grade.py",
     "line": 1,
     "commit": "18e5de4"
+   }
+  },
+  {
+   "id": "W2-C33",
+   "statement": "웹 카드 네 장 문구(영어 + 해석, 실적 · 숫자 지어내지 않음): 1 검정 Passion 'Clothes came first, / buildings came after' · 2 카페 창가 Observe 'I look from the inside, / out to the people' · 3 가게 앞 Display 'A window should hold / the passer-by' · 4 노을 산책 Styling 'Dressed for the place, / toned to the hour', 카드마다 대안 제목 하나씩",
+   "source": "도구출력",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/friendly-gates-0u80ge",
+    "path": "docs/web_cards/card_copy.md",
+    "line": 1,
+    "commit": "ca48da3"
+   }
+  },
+  {
+   "id": "W2-C34",
+   "statement": "웹 카드 네 장을 1920 × 1080 InDesign 파일로 만듦: IDML · JSX 스크립트 · Links(card2–4 사진) · PDF · JPG 미리보기, 묶음 zip",
+   "source": "도구출력",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/friendly-gates-0u80ge",
+    "path": "docs/web_cards/indesign/cards_1920x1080.jsx",
+    "line": 1,
+    "commit": "bf79393"
    }
   }
  ],
@@ -1458,6 +1482,20 @@
     "line": 1,
     "commit": "18e5de4"
    }
+  },
+  {
+   "id": "W2-O58",
+   "item": "웹 카드 네 장 문구 확인 (본안 · 대안 제목 중 고르기) 후 InDesign 파일에서 다듬기",
+   "waiting_on": "사용자",
+   "blocking": false,
+   "source": "도구출력",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/friendly-gates-0u80ge",
+    "path": "docs/web_cards/card_copy.md",
+    "line": 36,
+    "commit": "ca48da3"
+   }
   }
  ],
  "artifacts": [
@@ -2173,6 +2211,33 @@
    "commit": "18e5de4",
    "status": "draft",
    "note": "카드 사진 세 장 색보정 전후 비교"
+  },
+  {
+   "kind": "doc",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/friendly-gates-0u80ge",
+   "path": "docs/web_cards/card_copy.md",
+   "commit": "ca48da3",
+   "status": "draft",
+   "note": "웹 카드 네 장 라벨 · 제목 · 내용 (영어 + 해석)"
+  },
+  {
+   "kind": "render",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/friendly-gates-0u80ge",
+   "path": "docs/web_cards/card_copy_blueprint.pdf",
+   "commit": "776e63d",
+   "status": "draft",
+   "note": "웹 카드 문구 청사진 (화면 · 표 · 흐름 · 글자)"
+  },
+  {
+   "kind": "render",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/friendly-gates-0u80ge",
+   "path": "docs/web_cards/cards_1920x1080_indesign.zip",
+   "commit": "bf79393",
+   "status": "draft",
+   "note": "웹 카드 1920 × 1080 InDesign 묶음 (IDML · JSX · Links · PDF)"
   }
  ],
  "unverified": [
