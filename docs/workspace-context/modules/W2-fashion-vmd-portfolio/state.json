@@ -1,11 +1,11 @@
 {
  "module": "W2",
  "title": "패션 · VMD 지원 포트폴리오 (JAJU 라운딩 VMD · 이전 신세계 FROM THE INSIDE)",
- "as_of": "2026-11-02T10:06Z",
+ "as_of": "2026-11-02T11:17Z",
  "checkpoint": {
-  "at": "2026-11-02T10:06Z",
+  "at": "2026-11-02T11:17Z",
   "refs": {
-   "gentleMonster@claude/friendly-gates-0u80ge": "bf79393",
+   "gentleMonster@claude/friendly-gates-0u80ge": "b9d1c41",
    "gentleMonster@claude/project-thread-n4rxnf": "cd4f4d2",
    "gentleMonster@main": "bdee7d6",
    "gentleMonster@claude/magical-bell-u02os9": "25492e4",
@@ -473,6 +473,18 @@
     "path": "docs/web_cards/indesign/cards_1920x1080.jsx",
     "line": 1,
     "commit": "bf79393"
+   }
+  },
+  {
+   "id": "W2-C35",
+   "statement": "카드 페이지 머리 문구(영어 + 해석): 제목 'Style & / Display.', 버튼 'View More Passions →', 오른쪽 문단 4줄 'Passions — showing how I watch people, read spaces and style looks…', 작은 문장 'I build displays and outfits that make people stop, look in and smile.' 대안 제목 Style & Space. · Seen & Styled. InDesign 1920 × 1080 파일에 반영(Pretendard)",
+   "source": "도구출력",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/friendly-gates-0u80ge",
+    "path": "docs/web_cards/page_copy.md",
+    "line": 1,
+    "commit": "b9d1c41"
    }
   }
  ],
@@ -1496,6 +1508,20 @@
     "line": 36,
     "commit": "ca48da3"
    }
+  },
+  {
+   "id": "W2-O59",
+   "item": "카드 페이지 머리 문구 확인 (제목 Style & Display. 본안 · 대안 중 고르기)",
+   "waiting_on": "사용자",
+   "blocking": false,
+   "source": "도구출력",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/friendly-gates-0u80ge",
+    "path": "docs/web_cards/page_copy.md",
+    "line": 12,
+    "commit": "b9d1c41"
+   }
   }
  ],
  "artifacts": [
@@ -2235,9 +2261,18 @@
    "repo": "cogito5170/gentleMonster",
    "ref": "claude/friendly-gates-0u80ge",
    "path": "docs/web_cards/cards_1920x1080_indesign.zip",
-   "commit": "bf79393",
+   "commit": "b9d1c41",
    "status": "draft",
-   "note": "웹 카드 1920 × 1080 InDesign 묶음 (IDML · JSX · Links · PDF)"
+   "note": "웹 카드 1920 × 1080 InDesign 묶음 (머리 문구 포함)"
+  },
+  {
+   "kind": "doc",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/friendly-gates-0u80ge",
+   "path": "docs/web_cards/page_copy.md",
+   "commit": "b9d1c41",
+   "status": "draft",
+   "note": "카드 페이지 머리 제목 · 문단 · 버튼 (영어 + 해석, 디자인 값)"
   }
  ],
  "unverified": [
