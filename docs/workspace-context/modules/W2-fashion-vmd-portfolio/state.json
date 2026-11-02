@@ -1,11 +1,11 @@
 {
  "module": "W2",
  "title": "패션 · VMD 지원 포트폴리오 (JAJU 라운딩 VMD · 이전 신세계 FROM THE INSIDE)",
- "as_of": "2026-10-31T06:15Z",
+ "as_of": "2026-11-02T05:29Z",
  "checkpoint": {
-  "at": "2026-10-31T06:15Z",
+  "at": "2026-11-02T05:29Z",
   "refs": {
-   "gentleMonster@claude/friendly-gates-0u80ge": "ea3f554",
+   "gentleMonster@claude/friendly-gates-0u80ge": "5c124cd",
    "gentleMonster@claude/project-thread-n4rxnf": "cd4f4d2",
    "gentleMonster@main": "bdee7d6",
    "gentleMonster@claude/magical-bell-u02os9": "9ef9ae4",
@@ -377,6 +377,18 @@
     "path": "tools/frame_fit/build.mjs",
     "line": 1,
     "commit": "ea3f554"
+   }
+  },
+  {
+   "id": "W2-C27",
+   "statement": "웹 히어로 시안(docs/web_hero/current.jpg)의 에이전시 템플릿 문구를 아이웨어 홈페이지 문구로 바꾼 청사진: 메뉴 Home · Shop · Collection · Stores, 라벨 | AW26 Collection, 헤드라인 세 안(A SEE DIFFERENTLY. 캠페인형 추천 · B NEW SEASON. 시즌 런칭형 · C HANDMADE ACETATE 소재형, 47~49자 4줄), 좌측 하단 카드 1 Try On(피팅 예약) · 카드 2 AW26(근거 없는 95 % 대체), 오타 TOMORRW 지적",
+   "source": "도구출력",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/friendly-gates-0u80ge",
+    "path": "tools/web_hero/build.mjs",
+    "line": 44,
+    "commit": "5c124cd"
    }
   }
  ],
@@ -1317,6 +1329,20 @@
     "line": 1,
     "commit": "ea3f554"
    }
+  },
+  {
+   "id": "W2-O53",
+   "item": "웹 히어로 헤드라인: 안 A(권함) · B · C 중 고르기, 시즌 코드 AW26 을 실제 시즌에 맞추기",
+   "waiting_on": "사용자",
+   "blocking": false,
+   "source": "도구출력",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/friendly-gates-0u80ge",
+    "path": "docs/web_hero/web_hero_blueprint.pdf",
+    "line": 1,
+    "commit": "5c124cd"
+   }
   }
  ],
  "artifacts": [
@@ -1996,6 +2022,24 @@
    "commit": "ea3f554",
    "status": "draft",
    "note": "모서리 틀 사진 비율 청사진 (진단 · 기하 · 세 안 · B 순서)"
+  },
+  {
+   "kind": "render",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/friendly-gates-0u80ge",
+   "path": "docs/web_hero/web_hero_blueprint.pdf",
+   "commit": "5c124cd",
+   "status": "draft",
+   "note": "웹 히어로 문구 청사진 (지금 · 문구 세 안 · A 반영 · 카드)"
+  },
+  {
+   "kind": "render",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/friendly-gates-0u80ge",
+   "path": "docs/web_hero/after_A.jpg",
+   "commit": "5c124cd",
+   "status": "draft",
+   "note": "웹 히어로 A 반영 미리보기 (B · C 는 after_B · after_C)"
   }
  ],
  "unverified": [
@@ -2075,6 +2119,11 @@
   {
    "statement": "모서리 틀(두 벽 코너 프레임)이 어느 결과물의 어느 쪽인지 파일에 없음 (블루엘리펀트 포트폴리오 · JAJU 포트폴리오 중 미확인)",
    "where": "docs/frame_fit/ (ea3f554)",
+   "check": "모델 추론"
+  },
+  {
+   "statement": "웹 히어로 시안이 어느 포트폴리오 · 지원 건에 쓰이는지, 아이웨어 브랜드로 쓰라는 것이 사용자 지시인지 파일에 없음",
+   "where": "docs/web_hero/ (78d0e2f, 5c124cd)",
    "check": "모델 추론"
   }
  ]
