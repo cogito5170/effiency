@@ -1,14 +1,14 @@
 {
  "module": "W2",
  "title": "패션 · VMD 지원 포트폴리오 (JAJU 라운딩 VMD · 이전 신세계 FROM THE INSIDE)",
- "as_of": "2026-11-03T08:06Z",
+ "as_of": "2026-11-03T10:08Z",
  "checkpoint": {
-  "at": "2026-11-03T08:06Z",
+  "at": "2026-11-03T10:08Z",
   "refs": {
    "gentleMonster@claude/friendly-gates-0u80ge": "2342a21",
    "gentleMonster@claude/project-thread-n4rxnf": "cd4f4d2",
    "gentleMonster@main": "bdee7d6",
-   "gentleMonster@claude/magical-bell-u02os9": "2c4ecaf",
+   "gentleMonster@claude/magical-bell-u02os9": "492b2b0",
    "gentleMonster@claude/awesome-keller-otac19": "19e210a"
   },
   "method": "scripts/sync_delta.py: 체크포인트 커밋 뒤의 커밋 · 바뀐 파일만 읽음. 세션 대화 원본은 읽지도 고치지도 않음",
@@ -509,6 +509,18 @@
     "path": "tools/logo_blueprint/build.mjs",
     "line": 36,
     "commit": "2342a21"
+   }
+  },
+  {
+   "id": "W2-C38",
+   "statement": "이력 쪽 내용: Education 서울시립대 2020 – 재학 · B.Arch 5년제 · 설계 7학기. Experiences A.CO.LAB 인턴(2026.08, 실측 · 모델링 · 문화역서울284 전시 모형) · 설계 스튜디오(City · Courtyard · Path · Hollow) · 카페(창고 그리드 · 홀 재배치) · 해비타트 · 육군 병장(표창 2회). 뺀 것: JAJU 라운딩 VMD 지원 줄 · VMD 말 · 휴학 연도 · 연락처. SVG(층별 벡터) · PDF 1920 × 1080 pt · PNG",
+   "source": "도구출력",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/magical-bell-u02os9",
+    "path": "docs/blue_elephant_portfolio/decisions.md",
+    "line": 45,
+    "commit": "492b2b0"
    }
   }
  ],
@@ -1072,6 +1084,32 @@
     "line": 38,
     "commit": "2c4ecaf"
    }
+  },
+  {
+   "id": "W2-D53",
+   "date": "2026-11-03T10:00Z",
+   "decision": "블루엘리펀트 포트폴리오에 사용자 이력서를 바탕으로 1번 사례 꼴의 이력 쪽(Resume. · Education · Skills · Experiences)을 일러스트 파일로 만든다",
+   "by": "사용자 (파일 기록)",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/magical-bell-u02os9",
+    "path": "docs/blue_elephant_portfolio/decisions.md",
+    "line": 43,
+    "commit": "5c9983e"
+   }
+  },
+  {
+   "id": "W2-D54",
+   "date": "2026-11-03T10:08Z",
+   "decision": "이력 쪽 Skills 순서: 왼쪽 Photoshop · Illustrator · InDesign · AutoCAD · Rhino · Enscape, 오른쪽 Korean · English · (빈 칸) · AI imaging · Photography (같은 날 두 차례 바꾼 끝의 안)",
+   "by": "사용자 (파일 기록)",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/magical-bell-u02os9",
+    "path": "docs/blue_elephant_portfolio/decisions.md",
+    "line": 50,
+    "commit": "492b2b0"
+   }
   }
  ],
  "open": [
@@ -1585,6 +1623,20 @@
     "path": ".relay/tasks/012-logo-crown-shine-a/request.json",
     "line": 1,
     "commit": "031e107"
+   }
+  },
+  {
+   "id": "W2-O61",
+   "item": "이력 쪽 확인: 카페 영어 이름, 전시 영어 제목('Design of Care'), 'AI imaging' 대신 쓴 도구 이름을 적을지",
+   "waiting_on": "사용자",
+   "blocking": false,
+   "source": "도구출력",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/magical-bell-u02os9",
+    "path": "docs/blue_elephant_portfolio/decisions.md",
+    "line": 47,
+    "commit": "492b2b0"
    }
   }
  ],
@@ -2364,6 +2416,15 @@
    "commit": "2342a21",
    "status": "draft",
    "note": "로고 '왕관이 빛나다' 청사진 틀 (스케치 + Codex 세 안 자리, 결과 대기)"
+  },
+  {
+   "kind": "render",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/magical-bell-u02os9",
+   "path": "docs/blue_elephant_portfolio/resume/resume_page.svg",
+   "commit": "492b2b0",
+   "status": "draft",
+   "note": "블루엘리펀트 이력 쪽 Resume. 일러스트레이터용 벡터 (PDF · PNG 함께)"
   }
  ],
  "unverified": [

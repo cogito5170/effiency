@@ -1,5 +1,5 @@
 # W2 패션 · VMD 지원 포트폴리오 (JAJU 라운딩 VMD · 이전 신세계 FROM THE INSIDE)
-기준 2026-11-03T08:06Z · 체크포인트 claude/friendly-gates-0u80ge@2342a21, claude/project-thread-n4rxnf@cd4f4d2, main@bdee7d6
+기준 2026-11-03T10:08Z · 체크포인트 claude/friendly-gates-0u80ge@2342a21, claude/project-thread-n4rxnf@cd4f4d2, main@bdee7d6
 
 ## 지금
 JAJU 포트폴리오 흐름은 /01 Observe → /02 Match. → /03 Fill. 파트 3 은 Contain 쪽(D44) → 학부 · 인턴 모형 쪽(리드 D45, 제목 고르는 중) → 다음 쪽 → Proposal, 맨 끝에 부록 A-1 · A-2(D46). Match 쪽 순서 · 문구 · 문단 자리는 선택 대기. 10-30 블루엘리펀트 Creative Intern 포트폴리오(별도): URL 생략(D47), 뼈대 터널 · 구조 · 장면 + KEEP(D48), 시안 13쪽 저해상도(C22), AI 시안 후보 · 제품 사진 …
@@ -14,16 +14,16 @@ W2-O42(파트 2 rev4 순서) · W2-O44(색 문단 자리) · W2-O45(스타일 �
 - 외 2개 → state.json open
 
 ## 지금 유효한 결정 (최근순)
+- W2-D54 이력 쪽 Skills 순서: 왼쪽 Photoshop · Illustrator · InDesign · AutoCAD · Rhino · Enscape, 오른쪽 Korean · English · (빈 칸) · AI im…
+- W2-D53 블루엘리펀트 포트폴리오에 사용자 이력서를 바탕으로 1번 사례 꼴의 이력 쪽(Resume. · Education · Skills · Experiences)을 일러스트 파일로 만든다
 - W2-D52 SNS 휴대폰 셋 모두 게시물 칸(좌상단 아이디 줄 ~ 우하단 저장 표시)을 흰색으로 비우고 1920 × 1080 px 일러스트레이터 파일로
-- W2-D51 블루엘리펀트 SNS 쪽: 인스타그램 카드 셋을 검은 바탕에 겹친 아이폰 셋으로 (TV Azteca 인스타그램 목업 꼴, 각 화면에 한 페이지, 맨 위 로고 자리 비움)
-- W2-D50 블루엘리펀트 포트폴리오 표지 제목은 PROTEAN 으로 정함 (메시지의 PROTEN 은 오타, 화면대로 PROTEAN)
-- 외 38개 → state.json decisions
+- 외 40개 → state.json decisions
 
 ## 작업 중인 파일
-- docs/blue_elephant_portfolio/sns_phones/sns_phones.pdf @338a9cd
 - docs/blue_elephant_portfolio/sns_phones/sns_phones_blank.svg @2c4ecaf
 - docs/logo_crown/logo_crown_blueprint.pdf @2342a21
-- 외 74개 → state.json artifacts
+- docs/blue_elephant_portfolio/resume/resume_page.svg @492b2b0
+- 외 75개 → state.json artifacts
 
 ## 읽는 법
 - 이 파일만 읽고 시작한다. 더 필요하면 `W2-fashion-vmd-portfolio/state.json` 의 해당 id 만 연다. 지난 이력은 `history.jsonl`.
