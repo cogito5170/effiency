@@ -1,14 +1,14 @@
 {
  "module": "W2",
  "title": "패션 · VMD 지원 포트폴리오 (JAJU 라운딩 VMD · 이전 신세계 FROM THE INSIDE)",
- "as_of": "2026-11-03T10:08Z",
+ "as_of": "2026-11-03T10:48Z",
  "checkpoint": {
-  "at": "2026-11-03T10:08Z",
+  "at": "2026-11-03T10:48Z",
   "refs": {
    "gentleMonster@claude/friendly-gates-0u80ge": "2342a21",
    "gentleMonster@claude/project-thread-n4rxnf": "cd4f4d2",
    "gentleMonster@main": "bdee7d6",
-   "gentleMonster@claude/magical-bell-u02os9": "492b2b0",
+   "gentleMonster@claude/magical-bell-u02os9": "55a39dd",
    "gentleMonster@claude/awesome-keller-otac19": "19e210a"
   },
   "method": "scripts/sync_delta.py: 체크포인트 커밋 뒤의 커밋 · 바뀐 파일만 읽음. 세션 대화 원본은 읽지도 고치지도 않음",
@@ -521,6 +521,18 @@
     "path": "docs/blue_elephant_portfolio/decisions.md",
     "line": 45,
     "commit": "492b2b0"
+   }
+  },
+  {
+   "id": "W2-C39",
+   "statement": "Thank you. 쪽: Contact 는 이력서 CONTACT ME 의 이름 · 메일 · 전화만, LinkedIn · Behance 링크 줄은 넣지 않음(D47). 이력 쪽과 같은 글꼴 · 색, 왼쪽 세로 쪽 번호는 'P/ 00' 자리 표시. SVG · PDF 1920 × 1080 pt · PNG",
+   "source": "도구출력",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/magical-bell-u02os9",
+    "path": "docs/blue_elephant_portfolio/decisions.md",
+    "line": 55,
+    "commit": "55a39dd"
    }
   }
  ],
@@ -1110,6 +1122,19 @@
     "line": 50,
     "commit": "492b2b0"
    }
+  },
+  {
+   "id": "W2-D55",
+   "date": "2026-11-03T10:48Z",
+   "decision": "블루엘리펀트 마지막 쪽은 사례 꼴의 Thank you. · Contact 를 사용자에 맞게 만들어 일러스트 파일로",
+   "by": "사용자 (파일 기록)",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/magical-bell-u02os9",
+    "path": "docs/blue_elephant_portfolio/decisions.md",
+    "line": 53,
+    "commit": "55a39dd"
+   }
   }
  ],
  "open": [
@@ -1637,6 +1662,20 @@
     "path": "docs/blue_elephant_portfolio/decisions.md",
     "line": 47,
     "commit": "492b2b0"
+   }
+  },
+  {
+   "id": "W2-O62",
+   "item": "블루엘리펀트 책 쪽 순서를 정해 각 쪽의 'P/ 00' 쪽 번호 채우기",
+   "waiting_on": "사용자",
+   "blocking": false,
+   "source": "도구출력",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/magical-bell-u02os9",
+    "path": "docs/blue_elephant_portfolio/decisions.md",
+    "line": 56,
+    "commit": "55a39dd"
    }
   }
  ],
@@ -2425,6 +2464,15 @@
    "commit": "492b2b0",
    "status": "draft",
    "note": "블루엘리펀트 이력 쪽 Resume. 일러스트레이터용 벡터 (PDF · PNG 함께)"
+  },
+  {
+   "kind": "render",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/magical-bell-u02os9",
+   "path": "docs/blue_elephant_portfolio/thanks/thanks_page.svg",
+   "commit": "55a39dd",
+   "status": "draft",
+   "note": "블루엘리펀트 마지막 쪽 Thank you. 일러스트레이터용 벡터 (PDF · PNG 함께)"
   }
  ],
  "unverified": [
