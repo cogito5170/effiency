@@ -1,14 +1,14 @@
 {
  "module": "W2",
  "title": "패션 · VMD 지원 포트폴리오 (JAJU 라운딩 VMD · 이전 신세계 FROM THE INSIDE)",
- "as_of": "2026-11-02T11:17Z",
+ "as_of": "2026-11-03T08:06Z",
  "checkpoint": {
-  "at": "2026-11-02T11:17Z",
+  "at": "2026-11-03T08:06Z",
   "refs": {
-   "gentleMonster@claude/friendly-gates-0u80ge": "b9d1c41",
+   "gentleMonster@claude/friendly-gates-0u80ge": "2342a21",
    "gentleMonster@claude/project-thread-n4rxnf": "cd4f4d2",
    "gentleMonster@main": "bdee7d6",
-   "gentleMonster@claude/magical-bell-u02os9": "25492e4",
+   "gentleMonster@claude/magical-bell-u02os9": "2c4ecaf",
    "gentleMonster@claude/awesome-keller-otac19": "19e210a"
   },
   "method": "scripts/sync_delta.py: 체크포인트 커밋 뒤의 커밋 · 바뀐 파일만 읽음. 세션 대화 원본은 읽지도 고치지도 않음",
@@ -485,6 +485,30 @@
     "path": "docs/web_cards/page_copy.md",
     "line": 1,
     "commit": "b9d1c41"
+   }
+  },
+  {
+   "id": "W2-C36",
+   "statement": "SNS 겹친 아이폰 셋: 가운데(격자 9장) 앞에 크게, 양옆(바위 · 미술관) 뒤에서 조금 위로, 로고 자리 y 약 40–190px 비움, 지어낸 좋아요 수 · 댓글 없음. 사진은 사용자 카드 화면에서 잘라 내 해상도 낮음 (원본으로 바꾸면 선명). 빈 판은 SVG(층별 벡터) · PDF(1920 × 1080 pt) · PNG, 흰 사각형 POST_AREA_LEFT · RIGHT · CENTER 와 LOGO_AREA",
+   "source": "도구출력",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/magical-bell-u02os9",
+    "path": "docs/blue_elephant_portfolio/decisions.md",
+    "line": 35,
+    "commit": "2c4ecaf"
+   }
+  },
+  {
+   "id": "W2-C37",
+   "statement": "로고 '왕관이 빛나다': 사용자 스케치(그릇 모양 왕관 + 위로 퍼지는 막대 셋 + 보석 점 셋)를 다듬는 세 안 A 면 · B 선 · C 해 뜨는 왕관, 진한 주황 #D9480F 와 흰색 두 색, 원형 틀. Codex 이미지 요청 012–014 를 올렸고 청사진 틀은 결과 대기 칸으로 만듦",
+   "source": "도구출력",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/friendly-gates-0u80ge",
+    "path": "tools/logo_blueprint/build.mjs",
+    "line": 36,
+    "commit": "2342a21"
    }
   }
  ],
@@ -1022,6 +1046,32 @@
     "line": 18,
     "commit": "7f40ca1"
    }
+  },
+  {
+   "id": "W2-D51",
+   "date": "2026-11-03T08:01Z",
+   "decision": "블루엘리펀트 SNS 쪽: 인스타그램 카드 셋을 검은 바탕에 겹친 아이폰 셋으로 (TV Azteca 인스타그램 목업 꼴, 각 화면에 한 페이지, 맨 위 로고 자리 비움)",
+   "by": "사용자 (파일 기록)",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/magical-bell-u02os9",
+    "path": "docs/blue_elephant_portfolio/decisions.md",
+    "line": 33,
+    "commit": "338a9cd"
+   }
+  },
+  {
+   "id": "W2-D52",
+   "date": "2026-11-03T08:06Z",
+   "decision": "SNS 휴대폰 셋 모두 게시물 칸(좌상단 아이디 줄 ~ 우하단 저장 표시)을 흰색으로 비우고 1920 × 1080 px 일러스트레이터 파일로",
+   "by": "사용자 (파일 기록)",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/magical-bell-u02os9",
+    "path": "docs/blue_elephant_portfolio/decisions.md",
+    "line": 38,
+    "commit": "2c4ecaf"
+   }
   }
  ],
  "open": [
@@ -1521,6 +1571,20 @@
     "path": "docs/web_cards/page_copy.md",
     "line": 12,
     "commit": "b9d1c41"
+   }
+  },
+  {
+   "id": "W2-O60",
+   "item": "Codex 로고 결과(012–014)를 받아 청사진에 넣고 A · B · C 중 고르기",
+   "waiting_on": "Codex · 사용자",
+   "blocking": false,
+   "source": "도구출력",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/friendly-gates-0u80ge",
+    "path": ".relay/tasks/012-logo-crown-shine-a/request.json",
+    "line": 1,
+    "commit": "031e107"
    }
   }
  ],
@@ -2273,6 +2337,33 @@
    "commit": "b9d1c41",
    "status": "draft",
    "note": "카드 페이지 머리 제목 · 문단 · 버튼 (영어 + 해석, 디자인 값)"
+  },
+  {
+   "kind": "render",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/magical-bell-u02os9",
+   "path": "docs/blue_elephant_portfolio/sns_phones/sns_phones.pdf",
+   "commit": "338a9cd",
+   "status": "draft",
+   "note": "SNS 쪽 겹친 아이폰 셋 1920 × 1080 (PNG 3840 × 2160 도 있음)"
+  },
+  {
+   "kind": "render",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/magical-bell-u02os9",
+   "path": "docs/blue_elephant_portfolio/sns_phones/sns_phones_blank.svg",
+   "commit": "2c4ecaf",
+   "status": "draft",
+   "note": "게시물 칸을 흰색으로 비운 일러스트레이터용 벡터 (PDF · PNG 함께)"
+  },
+  {
+   "kind": "render",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/friendly-gates-0u80ge",
+   "path": "docs/logo_crown/logo_crown_blueprint.pdf",
+   "commit": "2342a21",
+   "status": "draft",
+   "note": "로고 '왕관이 빛나다' 청사진 틀 (스케치 + Codex 세 안 자리, 결과 대기)"
   }
  ],
  "unverified": [
@@ -2362,6 +2453,11 @@
   {
    "statement": "톤 통일 대상 '카드 줄'과 참조 카드가 어느 결과물(블루엘리펀트 · 웹 히어로 등)인지 파일에 없음",
    "where": "docs/tone_match/ (18e5de4)",
+   "check": "모델 추론"
+  },
+  {
+   "statement": "로고 '왕관이 빛나다'가 어느 브랜드 · 포트폴리오용인지 파일에 없음",
+   "where": "docs/logo_crown/ (2342a21)",
    "check": "모델 추론"
   }
  ]

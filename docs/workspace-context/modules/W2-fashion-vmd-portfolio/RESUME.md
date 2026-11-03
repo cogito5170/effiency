@@ -1,5 +1,5 @@
 # W2 패션 · VMD 지원 포트폴리오 (JAJU 라운딩 VMD · 이전 신세계 FROM THE INSIDE)
-기준 2026-11-02T11:17Z · 체크포인트 claude/friendly-gates-0u80ge@b9d1c41, claude/project-thread-n4rxnf@cd4f4d2, main@bdee7d6
+기준 2026-11-03T08:06Z · 체크포인트 claude/friendly-gates-0u80ge@2342a21, claude/project-thread-n4rxnf@cd4f4d2, main@bdee7d6
 
 ## 지금
 JAJU 포트폴리오 흐름은 /01 Observe → /02 Match. → /03 Fill. 파트 3 은 Contain 쪽(D44) → 학부 · 인턴 모형 쪽(리드 D45, 제목 고르는 중) → 다음 쪽 → Proposal, 맨 끝에 부록 A-1 · A-2(D46). Match 쪽 순서 · 문구 · 문단 자리는 선택 대기. 10-30 블루엘리펀트 Creative Intern 포트폴리오(별도): URL 생략(D47), 뼈대 터널 · 구조 · 장면 + KEEP(D48), 시안 13쪽 저해상도(C22), AI 시안 후보 · 제품 사진 …
@@ -14,18 +14,18 @@ W2-O42(파트 2 rev4 순서) · W2-O44(색 문단 자리) · W2-O45(스타일 �
 - 외 2개 → state.json open
 
 ## 지금 유효한 결정 (최근순)
+- W2-D52 SNS 휴대폰 셋 모두 게시물 칸(좌상단 아이디 줄 ~ 우하단 저장 표시)을 흰색으로 비우고 1920 × 1080 px 일러스트레이터 파일로
+- W2-D51 블루엘리펀트 SNS 쪽: 인스타그램 카드 셋을 검은 바탕에 겹친 아이폰 셋으로 (TV Azteca 인스타그램 목업 꼴, 각 화면에 한 페이지, 맨 위 로고 자리 비움)
 - W2-D50 블루엘리펀트 포트폴리오 표지 제목은 PROTEAN 으로 정함 (메시지의 PROTEN 은 오타, 화면대로 PROTEAN)
-- W2-D49 미드저니 프롬프트 규칙: 사용자는 V7 을 쓴다. --cw · --cref · --ow · --oref 는 쓰지 않고, 이미지 프롬프트 + --iw · 스타일 참조 + --sw · --ar · --style raw…
-- W2-D48 블루엘리펀트 포트폴리오 1 뼈대는 권하는 방향(안 A 터널 · 구조 · 장면 + 안 C 의 KEEP 한 쪽)으로. 재료는 안경 착장 매장 셀카, AI 는 필요하면 3_이미지 생성 세션으로, 인스타그램은 우선 저해상…
-- 외 36개 → state.json decisions
+- 외 38개 → state.json decisions
 
 ## 작업 중인 파일
-- docs/web_cards/card_copy_blueprint.pdf @776e63d
-- docs/web_cards/cards_1920x1080_indesign.zip @b9d1c41
-- docs/web_cards/page_copy.md @b9d1c41
-- 외 71개 → state.json artifacts
+- docs/blue_elephant_portfolio/sns_phones/sns_phones.pdf @338a9cd
+- docs/blue_elephant_portfolio/sns_phones/sns_phones_blank.svg @2c4ecaf
+- docs/logo_crown/logo_crown_blueprint.pdf @2342a21
+- 외 74개 → state.json artifacts
 
 ## 읽는 법
 - 이 파일만 읽고 시작한다. 더 필요하면 `W2-fashion-vmd-portfolio/state.json` 의 해당 id 만 연다. 지난 이력은 `history.jsonl`.
-- 미확인 17개는 결론으로 쓰지 않는다. 확정은 저장소 파일로 다시 확인한다.
+- 미확인 18개는 결론으로 쓰지 않는다. 확정은 저장소 파일로 다시 확인한다.
 - 결정 · 산출물은 저장소에 커밋해 둔다. 백엔드가 커밋에서 다음 요약을 만든다.
