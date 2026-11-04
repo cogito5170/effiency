@@ -1,11 +1,11 @@
 {
  "module": "W1",
  "title": "혁주 자기소개서 (JAJU 라운딩 VMD · 이전 신세계인터내셔날 해외패션)",
- "as_of": "2026-11-04T08:57Z",
+ "as_of": "2026-11-04T10:35Z",
  "checkpoint": {
-  "at": "2026-11-04T08:57Z",
+  "at": "2026-11-04T10:35Z",
   "refs": {
-   "gentleMonster@claude/clever-knuth-1dezlo": "f281ad7",
+   "gentleMonster@claude/clever-knuth-1dezlo": "b585f90",
    "gentleMonster@claude/beautiful-gates-e42a5m": "76d0f6d",
    "gentleMonster@claude/modest-cannon-ha8zs3": "79ba2dc",
    "gentleMonster@main": "bdee7d6",
@@ -449,6 +449,42 @@
     "line": 1,
     "commit": "f281ad7"
    }
+  },
+  {
+   "id": "W1-C35",
+   "statement": "블루엘리펀트 사실(사용자): 건축을 하며 파사드 디자인에 관심이 많음, 블루엘리펀트는 파사드로 평범한 건물에 브랜드 정체성을 준다고 봄. 지난 9월 홍대 매장(HONGDAE No.8) 저층부 모델 사진을 보고 들어감, 층마다 다른 컨셉이라 전시를 보는 듯했고 제품 디자인이 여러 갈래, 곳곳의 착용 사진으로 분위기를 바로 알았고 구매로 이어짐. 이 직군은 배너 · 파사드 디자인을 맡음",
+   "source": "사용자",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/clever-knuth-1dezlo",
+    "path": "docs/portfolio/context_handoff.md",
+    "line": 316,
+    "commit": "11988a1"
+   }
+  },
+  {
+   "id": "W1-C36",
+   "statement": "블루엘리펀트 공고 담당업무 정정: '배너, 피드'가 아니라 '배너, 파사드 등 운영 디자인' (사용자 공고 캡처 2026-11-04)",
+   "source": "사용자",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/clever-knuth-1dezlo",
+    "path": "docs/portfolio/postings/blue_elephant_creative_intern.md",
+    "line": 23,
+    "commit": "1b6afbc"
+   }
+  },
+  {
+   "id": "W1-C37",
+   "statement": "블루엘리펀트 1번 문항 두 버전: 젠틀몬스터 꼴 v3 〈파사드의 이미지 한 장이 문을 열게 한 곳〉(지원한 이유 / 왜 블루엘리펀트여야 하는가, 999자, 홍대 매장 경험 · 준비 단락 반영)과 자주 꼴 [매장의 거울을 화면 속 착용 컷으로](자기소개 및 지원동기, 997자)",
+   "source": "도구출력",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/clever-knuth-1dezlo",
+    "path": "docs/portfolio/blue_elephant/blue_elephant_q1_two_versions.md",
+    "line": 5,
+    "commit": "b585f90"
+   }
   }
  ],
  "decisions": [
@@ -746,6 +782,19 @@
     "line": 313,
     "commit": "b3fe527"
    }
+  },
+  {
+   "id": "W1-D43",
+   "date": "2026-11-04T10:17Z",
+   "decision": "블루엘리펀트(콘텐츠 직군) 글에서는 공간 요소인 'H빔 · 노출콘크리트'를 쓰지 않는다",
+   "by": "사용자 (파일 기록)",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/clever-knuth-1dezlo",
+    "path": "docs/portfolio/context_handoff.md",
+    "line": 314,
+    "commit": "1b6afbc"
+   }
   }
  ],
  "open": [
@@ -870,6 +919,20 @@
     "path": "docs/portfolio/blue_elephant/blue_elephant_Q1-3_draft.md",
     "line": 1,
     "commit": "f281ad7"
+   }
+  },
+  {
+   "id": "W1-O34",
+   "item": "블루엘리펀트 1번 문항: 젠틀몬스터 꼴 v3 · 자주 꼴 중 고르기, 자주 꼴에는 아직 'H빔 골조' 문장이 남아 있음(D43)",
+   "waiting_on": "사용자",
+   "blocking": false,
+   "source": "도구출력",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/clever-knuth-1dezlo",
+    "path": "docs/portfolio/blue_elephant/blue_elephant_q1_two_versions.md",
+    "line": 20,
+    "commit": "b585f90"
    }
   }
  ],
@@ -1282,6 +1345,15 @@
    "commit": "f281ad7",
    "status": "draft",
    "note": "블루엘리펀트 자기소개서 퇴고 기록 (phase1~3, final, final_v2)"
+  },
+  {
+   "kind": "doc",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/clever-knuth-1dezlo",
+   "path": "docs/portfolio/blue_elephant/blue_elephant_q1_two_versions.md",
+   "commit": "b585f90",
+   "status": "draft",
+   "note": "블루엘리펀트 1번 문항 젠틀몬스터 꼴 v3 · 자주 꼴 두 버전"
   }
  ],
  "unverified": [
