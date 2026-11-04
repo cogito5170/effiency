@@ -1,5 +1,5 @@
 # W1 혁주 자기소개서 (JAJU 라운딩 VMD · 이전 신세계인터내셔날 해외패션)
-기준 2026-11-04T10:35Z · 체크포인트 claude/clever-knuth-1dezlo@b585f90, claude/beautiful-gates-e42a5m@76d0f6d, claude/modest-cannon-ha8zs3@79ba2dc
+기준 2026-11-04T11:26Z · 체크포인트 claude/clever-knuth-1dezlo@ca463fc, claude/beautiful-gates-e42a5m@76d0f6d, claude/modest-cannon-ha8zs3@79ba2dc
 
 ## 지금
 JAJU 라운딩 VMD: 자기소개서 1~3번 확정(D31 · D33 · D34), 지원 메일 발송은 사용자 몫(O27), 면접 준비 1분 자기소개 v20(D40) · 사용자가 채울 답(O30), 공고 마감 여부(O17). 10-30 블루엘리펀트 Creative Intern 지원 준비: 기업 분석 v2(C29) 1차 출처판(C31) · 사용자 답(C32), 자기소개서 지침(D41)과 A1 초안 두 문항 확인 대기(C33, O32).
@@ -27,5 +27,5 @@ JAJU 1~3번 확정 완료. 사용자가 새 문항 · 새 공고를 주거나 FI
 
 ## 읽는 법
 - 이 파일만 읽고 시작한다. 더 필요하면 `W1-hyeokju-cover-letter/state.json` 의 해당 id 만 연다. 지난 이력은 `history.jsonl`.
-- 미확인 11개는 결론으로 쓰지 않는다. 확정은 저장소 파일로 다시 확인한다.
+- 미확인 12개는 결론으로 쓰지 않는다. 확정은 저장소 파일로 다시 확인한다.
 - 결정 · 산출물은 저장소에 커밋해 둔다. 백엔드가 커밋에서 다음 요약을 만든다.
