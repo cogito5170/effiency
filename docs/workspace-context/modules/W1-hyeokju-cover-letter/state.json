@@ -1,11 +1,11 @@
 {
  "module": "W1",
  "title": "혁주 자기소개서 (JAJU 라운딩 VMD · 이전 신세계인터내셔날 해외패션)",
- "as_of": "2026-10-30T11:40Z",
+ "as_of": "2026-11-04T08:57Z",
  "checkpoint": {
-  "at": "2026-10-30T11:40Z",
+  "at": "2026-11-04T08:57Z",
   "refs": {
-   "gentleMonster@claude/clever-knuth-1dezlo": "023456f",
+   "gentleMonster@claude/clever-knuth-1dezlo": "f281ad7",
    "gentleMonster@claude/beautiful-gates-e42a5m": "76d0f6d",
    "gentleMonster@claude/modest-cannon-ha8zs3": "79ba2dc",
    "gentleMonster@main": "bdee7d6",
@@ -437,6 +437,18 @@
     "line": 5,
     "commit": "023456f"
    }
+  },
+  {
+   "id": "W1-C34",
+   "statement": "블루엘리펀트 자기소개서 3문항 안 v2: 공고 · 기업 분석(gracious-edison 04_analysis.md)과 웹 검색으로 다시 씀, 젠틀몬스터 지원서의 개인 사실(절제/과감, 7학기 영어 리서치, 툴)은 회사 이름 없이 반영. 1번 [공간을 보는 재미를 화면으로 옮기다] 998자(매장 H빔 · 노출콘크리트 관찰), 2번 [단정한 상품 컷과 대담한 캠페인을 함께 다루는 디자이너] 1000자, 3번 [의류 회사처럼 품목을 나눠, 한눈에 보이는 창고를 만들다] 998자(베이글 카페 창고 · 홀). 퇴고 과정은 iterations.json(phase1~3, final_v2)",
+   "source": "도구출력",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/clever-knuth-1dezlo",
+    "path": "docs/portfolio/blue_elephant/blue_elephant_Q1-3_draft.md",
+    "line": 1,
+    "commit": "f281ad7"
+   }
   }
  ],
  "decisions": [
@@ -721,6 +733,19 @@
     "line": 310,
     "commit": "1296e11"
    }
+  },
+  {
+   "id": "W1-D42",
+   "date": "2026-11-04T08:49Z",
+   "decision": "블루엘리펀트 자기소개서 문항을 JAJU VMD 와 같은 3문항(자기소개 및 지원동기 / 하고 싶은 일과 차별화된 능력·경험 / 학업 외 몰입·성과 경험), 문항당 1000자로 바꿈",
+   "by": "사용자 (파일 기록)",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/clever-knuth-1dezlo",
+    "path": "docs/portfolio/context_handoff.md",
+    "line": 313,
+    "commit": "b3fe527"
+   }
   }
  ],
  "open": [
@@ -834,17 +859,17 @@
    }
   },
   {
-   "id": "W1-O32",
-   "item": "블루엘리펀트 자기소개서 A1 초안(문항 1 · 2) 사용자 확인",
+   "id": "W1-O33",
+   "item": "블루엘리펀트 자기소개서 3문항 안 v2 사용자 확인",
    "waiting_on": "사용자",
    "blocking": false,
    "source": "도구출력",
    "evidence": {
     "repo": "cogito5170/gentleMonster",
     "ref": "claude/clever-knuth-1dezlo",
-    "path": "docs/portfolio/handoff/selection_blue_elephant_q2.json",
-    "line": 9,
-    "commit": "023456f"
+    "path": "docs/portfolio/blue_elephant/blue_elephant_Q1-3_draft.md",
+    "line": 1,
+    "commit": "f281ad7"
    }
   }
  ],
@@ -1239,6 +1264,24 @@
    "commit": "023456f",
    "status": "draft",
    "note": "블루엘리펀트 문항 2 A1 (801자)"
+  },
+  {
+   "kind": "doc",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/clever-knuth-1dezlo",
+   "path": "docs/portfolio/blue_elephant/blue_elephant_Q1-3_draft.md",
+   "commit": "f281ad7",
+   "status": "draft",
+   "note": "블루엘리펀트 Creative Intern 자기소개서 3문항 안 v2 (문항당 1000자 이하)"
+  },
+  {
+   "kind": "data",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/clever-knuth-1dezlo",
+   "path": "docs/portfolio/blue_elephant/blue_elephant_selfintro_iterations.json",
+   "commit": "f281ad7",
+   "status": "draft",
+   "note": "블루엘리펀트 자기소개서 퇴고 기록 (phase1~3, final, final_v2)"
   }
  ],
  "unverified": [
