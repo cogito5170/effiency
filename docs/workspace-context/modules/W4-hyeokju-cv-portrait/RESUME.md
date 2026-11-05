@@ -1,5 +1,5 @@
 # W4 혁주 CV · 인물 사진 (CV 청사진 → .ai, RELIEF 지면 엔진, CV 히어로 실사 인물)
-기준 2026-11-05T07:37Z · 체크포인트 main@bdee7d6, claude/cv-blueprint@9cd729a, claude/hyeokju-cv@84980aa
+기준 2026-11-05T07:48Z · 체크포인트 main@bdee7d6, claude/cv-blueprint@2d7798b, claude/hyeokju-cv@84980aa
 
 ## 지금
 1쪽 TYPE 1 · 2쪽 그레이 사이드노트(6a1d95c) 위에, 2026-10-25 자주(JAJU) 지원용 CV 를 따로 짬. 지금 판은 v4: 사용자 폼 클로드.idml(TYPE 2C 흰 바탕, 사이드바 1/3) 위 재배치(D13), 사진 S(D12), 글은 자기소개서 확정본 + 젠틀몬스터 CV 사실과 사용자 수정(C12). TYPE 1 v3 안(D11)도 남아 있음. 인물 사진은 Codex(W5) 경로(D10).
@@ -26,7 +26,7 @@
 - docs/cv/indesign/CV_TYPE2C_JAJU{,_WHITE,_GRAY,_IVORY}.idml @e68edc5
 - docs/cv/indesign/CV_JAJU_V4.idml @1944b21
 - docs/cv/blue_elephant/BE_CV_changes.md @5d2dbbf
-- docs/cv/blue_elephant/apply_blue_elephant.jsx @9cd729a
+- docs/cv/blue_elephant/apply_blue_elephant.jsx @2d7798b
 - 외 8개 → state.json artifacts
 
 ## 읽는 법

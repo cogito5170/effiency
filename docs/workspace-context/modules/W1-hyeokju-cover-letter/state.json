@@ -1,11 +1,11 @@
 {
  "module": "W1",
  "title": "혁주 자기소개서 (JAJU 라운딩 VMD · 이전 신세계인터내셔날 해외패션)",
- "as_of": "2026-11-05T07:31Z",
+ "as_of": "2026-11-05T08:40Z",
  "checkpoint": {
-  "at": "2026-11-05T07:31Z",
+  "at": "2026-11-05T08:40Z",
   "refs": {
-   "gentleMonster@claude/clever-knuth-1dezlo": "cd854b5",
+   "gentleMonster@claude/clever-knuth-1dezlo": "b8a8b9a",
    "gentleMonster@claude/beautiful-gates-e42a5m": "76d0f6d",
    "gentleMonster@claude/modest-cannon-ha8zs3": "79ba2dc",
    "gentleMonster@main": "bdee7d6",
@@ -593,6 +593,18 @@
     "line": 57,
     "commit": "cd854b5"
    }
+  },
+  {
+   "id": "W1-C47",
+   "statement": "블루엘리펀트 1번 현재본: 본문만(소제목 제외) 984자 / 소제목 포함 1010자, Word 파일 blue_elephant_Q1-3.docx 를 사용자 양식으로 다시 만듦",
+   "source": "도구출력",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/clever-knuth-1dezlo",
+    "path": "docs/portfolio/blue_elephant/blue_elephant_q1_FINAL.md",
+    "line": 11,
+    "commit": "b8a8b9a"
+   }
   }
  ],
  "decisions": [
@@ -915,6 +927,19 @@
     "path": "docs/portfolio/context_handoff.md",
     "line": 329,
     "commit": "7e79d3f"
+   }
+  },
+  {
+   "id": "W1-D45",
+   "date": "2026-11-05T08:40Z",
+   "decision": "블루엘리펀트 1번은 둘째 단락 재구성(C-1)을 되돌려 이전 초안으로 두고, 설계 수업 문장만 '파사드뿐 아니라 학부 설계 수업에서 … 시각화하는 데에도 흥미를 느꼈습니다'로 교체. 제출 양식은 소제목 없음",
+   "by": "사용자 (파일 기록)",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/clever-knuth-1dezlo",
+    "path": "docs/portfolio/blue_elephant/blue_elephant_q1_FINAL.md",
+    "line": 17,
+    "commit": "b8a8b9a"
    }
   }
  ],
@@ -1517,9 +1542,9 @@
    "repo": "cogito5170/gentleMonster",
    "ref": "claude/clever-knuth-1dezlo",
    "path": "docs/portfolio/blue_elephant/blue_elephant_Q1-3.docx",
-   "commit": "cd854b5",
+   "commit": "b8a8b9a",
    "status": "draft",
-   "note": "블루엘리펀트 1~3번 Word 파일 (자주 양식)"
+   "note": "블루엘리펀트 1~3번 Word 파일 (사용자 양식으로 재생성, 1번 수정 반영)"
   }
  ],
  "unverified": [

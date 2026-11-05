@@ -1,12 +1,12 @@
 {
  "module": "W4",
  "title": "혁주 CV · 인물 사진 (CV 청사진 → .ai, RELIEF 지면 엔진, CV 히어로 실사 인물)",
- "as_of": "2026-11-05T07:37Z",
+ "as_of": "2026-11-05T07:48Z",
  "checkpoint": {
-  "at": "2026-11-05T07:37Z",
+  "at": "2026-11-05T07:48Z",
   "refs": {
    "gentleMonster@main": "bdee7d6",
-   "gentleMonster@claude/cv-blueprint": "9cd729a",
+   "gentleMonster@claude/cv-blueprint": "2d7798b",
    "gentleMonster@claude/hyeokju-cv": "84980aa",
    "gentleMonster@claude/gentle-monster-magazine-system-xh6ijk": "d10b8ee"
   },
@@ -202,6 +202,18 @@
     "path": "docs/cv/blue_elephant/BE_CV_changes.md",
     "line": 3,
     "commit": "5d2dbbf"
+   }
+  },
+  {
+   "id": "W4-C14",
+   "statement": "블루엘리펀트 이력서 스크립트의 사이드바 한 줄 소개를 3안 '레퍼런스에서 찾은 아이디어를 이미지로 옮기려는 지원자'로 바꿈 (이전: '시각화 작업을 매장과 화면의 이미지로 옮기려는 지원자')",
+   "source": "도구출력",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/cv-blueprint",
+    "path": "docs/cv/blue_elephant/apply_blue_elephant.jsx",
+    "line": 19,
+    "commit": "2d7798b"
    }
   }
  ],
@@ -572,9 +584,9 @@
    "repo": "cogito5170/gentleMonster",
    "ref": "claude/cv-blueprint",
    "path": "docs/cv/blue_elephant/apply_blue_elephant.jsx",
-   "commit": "9cd729a",
+   "commit": "2d7798b",
    "status": "draft",
-   "note": "자주 이력서 .indd 글자 교체 InDesign 스크립트"
+   "note": "자주 이력서 .indd 글자 교체 InDesign 스크립트 (사이드바 소개 3안)"
   }
  ],
  "unverified": [
