@@ -1,12 +1,12 @@
 {
  "module": "W4",
  "title": "혁주 CV · 인물 사진 (CV 청사진 → .ai, RELIEF 지면 엔진, CV 히어로 실사 인물)",
- "as_of": "2026-10-25T13:42Z",
+ "as_of": "2026-11-05T07:37Z",
  "checkpoint": {
-  "at": "2026-10-25T13:42Z",
+  "at": "2026-11-05T07:37Z",
   "refs": {
    "gentleMonster@main": "bdee7d6",
-   "gentleMonster@claude/cv-blueprint": "1944b21",
+   "gentleMonster@claude/cv-blueprint": "9cd729a",
    "gentleMonster@claude/hyeokju-cv": "84980aa",
    "gentleMonster@claude/gentle-monster-magazine-system-xh6ijk": "d10b8ee"
   },
@@ -191,6 +191,18 @@
     "commit": "1944b21"
    },
    "decided_at": "2026-10-25T13:01Z"
+  },
+  {
+   "id": "W4-C13",
+   "statement": "자주 이력서 → 블루엘리펀트 Creative Intern 바뀐 부분 대조표(BE_CV_changes.md/.pdf): 사이드바 지원 직무, ABOUT 제목(2번 소제목), KEYWORDS, EDUCATION 지원 줄, EXPERIENCE 에 포트폴리오 PROTEAN 추가. 이름·사진·연락처·FIVE VISION·NUMBERS·SKILLS 등은 그대로. 근거는 자기소개서 1·2번 확정본과 3번 v6. .indd 글자만 바꾸는 InDesign 스크립트 apply_blue_elephant.jsx 추가",
+   "source": "도구출력",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/cv-blueprint",
+    "path": "docs/cv/blue_elephant/BE_CV_changes.md",
+    "line": 3,
+    "commit": "5d2dbbf"
+   }
   }
  ],
  "decisions": [
@@ -410,6 +422,20 @@
     "line": 224,
     "commit": "94d3af5"
    }
+  },
+  {
+   "id": "W4-O9",
+   "item": "블루엘리펀트 이력서 확인 항목: 인턴 기간 '2026.08 – 08', EDUCATION 지원 날짜 '2026.11', PROTEAN 작업 기간, (선택) SKILLS 흐름 줄의 AI",
+   "waiting_on": "사용자",
+   "blocking": false,
+   "source": "도구출력",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/cv-blueprint",
+    "path": "docs/cv/blue_elephant/BE_CV_changes.md",
+    "line": 76,
+    "commit": "5d2dbbf"
+   }
   }
  ],
  "artifacts": [
@@ -531,6 +557,24 @@
    "commit": "1944b21",
    "status": "draft",
    "note": "자주 CV v4 (사용자 폼 클로드.idml 위, .zip 에 글꼴), 원본 폼은 docs/cv/indesign/클로드.idml"
+  },
+  {
+   "kind": "doc",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/cv-blueprint",
+   "path": "docs/cv/blue_elephant/BE_CV_changes.md",
+   "commit": "5d2dbbf",
+   "status": "draft",
+   "note": "자주 → 블루엘리펀트 이력서 바뀐 부분 (+ .pdf)"
+  },
+  {
+   "kind": "data",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/cv-blueprint",
+   "path": "docs/cv/blue_elephant/apply_blue_elephant.jsx",
+   "commit": "9cd729a",
+   "status": "draft",
+   "note": "자주 이력서 .indd 글자 교체 InDesign 스크립트"
   }
  ],
  "unverified": [
