@@ -1,11 +1,11 @@
 {
  "module": "W1",
  "title": "혁주 자기소개서 (JAJU 라운딩 VMD · 이전 신세계인터내셔날 해외패션)",
- "as_of": "2026-11-05T09:09Z",
+ "as_of": "2026-11-05T09:47Z",
  "checkpoint": {
-  "at": "2026-11-05T09:09Z",
+  "at": "2026-11-05T09:47Z",
   "refs": {
-   "gentleMonster@claude/clever-knuth-1dezlo": "ea4151c",
+   "gentleMonster@claude/clever-knuth-1dezlo": "ce087e2",
    "gentleMonster@claude/beautiful-gates-e42a5m": "76d0f6d",
    "gentleMonster@claude/modest-cannon-ha8zs3": "79ba2dc",
    "gentleMonster@main": "bdee7d6",
@@ -640,6 +640,18 @@
     "path": "docs/portfolio/blue_elephant/blue_elephant_q3_FINAL.md",
     "line": 14,
     "commit": "ea4151c"
+   }
+  },
+  {
+   "id": "W1-C51",
+   "statement": "블루엘리펀트 2번 둘째 역량 문장 B안(사용자 확인): 학부 설계 건물은 실제로 지어지지 않으므로 '실제로 지어지지 않는 건물도 렌더링으로 실제처럼', '어색한 부분은 설계안에 다시 반영했습니다'. 본문 999자, Word 파일도 갱신",
+   "source": "사용자",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/clever-knuth-1dezlo",
+    "path": "docs/portfolio/blue_elephant/blue_elephant_q2_FINAL.md",
+    "line": 18,
+    "commit": "ce087e2"
    }
   }
  ],
@@ -1591,9 +1603,9 @@
    "repo": "cogito5170/gentleMonster",
    "ref": "claude/clever-knuth-1dezlo",
    "path": "docs/portfolio/blue_elephant/blue_elephant_Q1-3.docx",
-   "commit": "697b884",
+   "commit": "ce087e2",
    "status": "draft",
-   "note": "블루엘리펀트 1~3번 Word 파일 (소제목 없이 본문 997~1000자)"
+   "note": "블루엘리펀트 1~3번 Word 파일 (2번 B안 반영)"
   },
   {
    "kind": "doc",
