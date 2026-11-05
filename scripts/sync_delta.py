@@ -24,13 +24,16 @@ from pathlib import Path
 HEX = re.compile(r"^[0-9a-f]{7,40}$")
 # 백엔드 자신이 만든 커밋 · 브랜치는 변경으로 세지 않는다 (10-16 실측: 이것만으로 W5 · W6 에 가짜 변경 4건)
 BACKEND_PATHS = ("docs/workspace-context/", "scripts/check_modules.py", "scripts/sync_delta.py",
-                 "scripts/build_resume.py", "scripts/apply_delta.py", "tests/test_module_contracts.py")
+                 "scripts/build_resume.py", "scripts/apply_delta.py", "tests/test_module_contracts.py",
+                 "scripts/workspace_resume.py")
+MAX_SHOWN = 30  # ref 하나에 보여 줄 커밋 수. 넘으면 "외 N개"
 BACKEND_REFS = {"claude/project-thread-uqkc04"}
+BACKEND_SESSIONS = ("session_01LTvxA79u2EYVPYVh3hj3ZP",)  # 백엔드 세션이 남긴 커밋 (Claude-Session 트레일러)
 
 
 def git(clone: Path, *args: str) -> str:
     r = subprocess.run(["git", "-C", str(clone), *args], capture_output=True, text=True)
-    return r.stdout if r.returncode == 0 else ""
+    return r.stdout if r.returncode == 0 else None
 
 
 def refs_of(state: dict) -> dict[str, str]:
@@ -58,8 +61,14 @@ def delta(root: Path, clones: list[Path]) -> dict:
     result: dict = {"modules": {}, "unassigned": []}
     known: set[tuple[str, str]] = set()
     earliest = None
-    for d in sorted(p for p in root.iterdir() if p.is_dir() and p.name.startswith("W")):
-        state = json.loads((d / "state.json").read_text(encoding="utf-8"))
+    dirs = sorted(p for p in root.iterdir() if p.is_dir() and p.name.startswith("W"))
+    states = {d: json.loads((d / "state.json").read_text(encoding="utf-8")) for d in dirs}
+    # 이미 어느 모듈의 체크포인트에 든 커밋(과 그 조상)은 다시 세지 않는다.
+    # 10-16 실측: 브랜치가 main 에 머지되자 main 을 체크포인트로 둔 여섯 모듈 모두에 같은 커밋 23개가 잡혔다.
+    seen_commits = {c for s in states.values() for c in refs_of(s).values()}
+    shown: set[tuple[str, str]] = set()  # (repo, commit) — 여러 모듈이 같은 ref 를 보면 한 번만
+    for d in dirs:
+        state = states[d]
         mid = d.name.split("-")[0]
         at = state.get("checkpoint", {}).get("at") or state.get("as_of")
         earliest = min(earliest or at, at)
@@ -71,18 +80,22 @@ def delta(root: Path, clones: list[Path]) -> dict:
             if clone is None:
                 mod["refs"][key] = {"skipped": "클론 없음"}
                 continue
-            tip = git(clone, "rev-parse", "--short", f"origin/{ref}").strip()
+            tip = (git(clone, "rev-parse", "--short", f"origin/{ref}") or "").strip()
             if not tip:
                 mod["refs"][key] = {"skipped": "원격에 없음"}
                 continue
-            log = git(clone, "log", "--reverse", "--no-merges", "--format=\x1e%h\t%cI\t%s", "--name-only",
-                      f"{commit}..origin/{ref}")
+            excl = [f"^{c}" for c in seen_commits if c != commit and git(clone, "cat-file", "-e", c) is not None]
+            log = git(clone, "log", "--reverse", "--no-merges", "--format=\x1e%h\t%cI\t%(trailers:key=Claude-Session,valueonly,separator=%x20)\t%s", "--name-only",
+                      f"{commit}..origin/{ref}", *excl) or ""
             commits = []
             for block in log.split("\x1e")[1:]:
                 head, *names = [x for x in block.splitlines() if x.strip()]
-                h, t, s = head.split("\t", 2)
-                if names and all(n.startswith(BACKEND_PATHS) for n in names):
+                h, t, by, s = head.split("\t", 3)
+                if any(b in by for b in BACKEND_SESSIONS) or (names and all(n.startswith(BACKEND_PATHS) for n in names)):
                     continue
+                if (repo.lower(), h) in shown:
+                    continue
+                shown.add((repo.lower(), h))
                 commits.append({"commit": h, "at": t[:16], "subject": s, "files": len(names)})
             if commits:
                 mod["refs"][key] = {"from": commit, "tip": tip, "commits": commits}
@@ -116,8 +129,10 @@ def main(argv: list[str] | None = None) -> int:
         for key, v in mod["refs"].items():
             if "commits" in v:
                 print(f"  {key} {v['from']}..{v['tip']}")
-                for c in v["commits"]:
+                for c in v["commits"][:MAX_SHOWN]:
                     print(f"    {c['commit']} {c['at']} [{c.get('files', 0)}] {c['subject'][:90]}")
+                if len(v["commits"]) > MAX_SHOWN:
+                    print(f"    … 외 {len(v['commits']) - MAX_SHOWN}개 (--json 으로 전부)")
     if res["unassigned"]:
         print("모듈에 속하지 않은 새 브랜치:")
         for u in res["unassigned"]:

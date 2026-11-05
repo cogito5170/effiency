@@ -1,5 +1,5 @@
 # W5 이미지 생성 경로 (로컬 확산 · Gemini · Codex)
-기준 2026-10-16T03:30Z · 체크포인트 main@6acff99, main@8724b6c, claude/codex-all-images@12ecdbd
+기준 2026-10-16T07:45Z · 체크포인트 main@bdee7d6, main@8724b6c, claude/codex-all-images@12ecdbd
 
 ## 지금
 W5-D8: gentleMonster CLAUDE.md '이미지는 모두 Codex 로 만든다 (2026-10-15 사용자 결정)' — 사용자가 PR #14 를 머지(6acff99, 2026-10-15T14:39Z). 로컬 확산 · Gemini · Midjourney 프롬프트 경로를 대체. 경로: image-spec.json → claude/* 푸시 → VM relay inbox → codex exec 이미지 → 같은 브랜치 커밋.

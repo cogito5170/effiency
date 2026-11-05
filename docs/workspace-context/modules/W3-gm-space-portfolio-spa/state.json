@@ -1,11 +1,11 @@
 {
  "module": "W3",
  "title": "젠틀몬스터 공간 포트폴리오 SPA (원고 · 잡지 · 띠 이미지 · 03 ARCHITECTURE 설치작품)",
- "as_of": "2026-10-16T03:30Z",
+ "as_of": "2026-10-16T07:45Z",
  "checkpoint": {
-  "at": "2026-10-16T03:30Z",
+  "at": "2026-10-16T07:45Z",
   "refs": {
-   "gentleMonster@main": "6acff99",
+   "gentleMonster@main": "bdee7d6",
    "gentleMonster@claude/midjourney-574x172-image-sy9gq3": "b3f3eda",
    "gentleMonster@claude/youthful-ride-kehgoo": "cd6d457",
    "gentleMonster@claude/gentle-monster-magazine-system-xh6ijk": "d10b8ee",
