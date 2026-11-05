@@ -1,14 +1,14 @@
 {
  "module": "W2",
  "title": "패션 · VMD 지원 포트폴리오 (JAJU 라운딩 VMD · 이전 신세계 FROM THE INSIDE)",
- "as_of": "2026-11-03T10:48Z",
+ "as_of": "2026-11-05T06:15Z",
  "checkpoint": {
-  "at": "2026-11-03T10:48Z",
+  "at": "2026-11-05T06:15Z",
   "refs": {
-   "gentleMonster@claude/friendly-gates-0u80ge": "2342a21",
+   "gentleMonster@claude/friendly-gates-0u80ge": "14d9271",
    "gentleMonster@claude/project-thread-n4rxnf": "cd4f4d2",
    "gentleMonster@main": "bdee7d6",
-   "gentleMonster@claude/magical-bell-u02os9": "55a39dd",
+   "gentleMonster@claude/magical-bell-u02os9": "6c3e95c",
    "gentleMonster@claude/awesome-keller-otac19": "19e210a"
   },
   "method": "scripts/sync_delta.py: 체크포인트 커밋 뒤의 커밋 · 바뀐 파일만 읽음. 세션 대화 원본은 읽지도 고치지도 않음",
@@ -533,6 +533,30 @@
     "path": "docs/blue_elephant_portfolio/decisions.md",
     "line": 55,
     "commit": "55a39dd"
+   }
+  },
+  {
+   "id": "W2-C40",
+   "statement": "블루엘리펀트 포트폴리오(14쪽) 흐름 검토: 사용자가 흐름이 끊긴다며 대안을 요청. 끊기는 이유 다섯(표지의 세 장이 본문에 없음, 같은 종류가 흩어짐, 작업 쪽에 글 · 쪽 번호 없음, 바탕 톤이 쪽마다 바뀜, 같은 사진의 다섯 매체 흐름이 안 드러남)과 대안 A(권함, 표지 버튼 = 장: Index → Resume → 01 ARCHITECTURE → 02 STYLE → 03 DETAIL) · B(순서만, 큰 틀에서 작은 틀로) · C(TUNNEL · STRUCTURE · SCENE · KEEP). 공통: 쪽마다 'P/ nn | 장 이름' + 캡션, 표지 오타 BLUEELLEPHANT · ARCHITECTUR 고침",
+   "source": "도구출력",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/magical-bell-u02os9",
+    "path": "docs/blue_elephant_portfolio/flow/flow_review.md",
+    "line": 3,
+    "commit": "6c3e95c"
+   }
+  },
+  {
+   "id": "W2-C41",
+   "statement": "포트폴리오 목업 보드: SPA(가운데 표지 + 양옆 펼침면 여섯 장, 사용자 포트폴리오 PDF 에서 뽑은 쪽)와 VMD 같은 양식, 각각 1920 × 1080 InDesign 묶음(IDML · JSX · Links · 미리보기). tools/portfolio_mockup 스크립트에 spa/vmd 설정",
+   "source": "도구출력",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/friendly-gates-0u80ge",
+    "path": "tools/portfolio_mockup/build.mjs",
+    "line": 2,
+    "commit": "14d9271"
    }
   }
  ],
@@ -1677,6 +1701,20 @@
     "line": 56,
     "commit": "55a39dd"
    }
+  },
+  {
+   "id": "W2-O63",
+   "item": "블루엘리펀트 포트폴리오 흐름 대안 A · B · C 중 고르기 (A 권함), 표지 오타 BLUEELLEPHANT · ARCHITECTUR 고치기",
+   "waiting_on": "사용자",
+   "blocking": false,
+   "source": "도구출력",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/magical-bell-u02os9",
+    "path": "docs/blue_elephant_portfolio/flow/flow_review.md",
+    "line": 14,
+    "commit": "6c3e95c"
+   }
   }
  ],
  "artifacts": [
@@ -2473,6 +2511,33 @@
    "commit": "55a39dd",
    "status": "draft",
    "note": "블루엘리펀트 마지막 쪽 Thank you. 일러스트레이터용 벡터 (PDF · PNG 함께)"
+  },
+  {
+   "kind": "doc",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/magical-bell-u02os9",
+   "path": "docs/blue_elephant_portfolio/flow/flow_review.md",
+   "commit": "6c3e95c",
+   "status": "draft",
+   "note": "블루엘리펀트 포트폴리오 흐름 검토 · 대안 셋 (flow_option_A.png 순서 그림)"
+  },
+  {
+   "kind": "render",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/friendly-gates-0u80ge",
+   "path": "docs/portfolio_mockup/portfolio_mockup_1920x1080_indesign.zip",
+   "commit": "14d9271",
+   "status": "draft",
+   "note": "SPA 포트폴리오 목업 보드 1920 × 1080 InDesign 묶음"
+  },
+  {
+   "kind": "render",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/friendly-gates-0u80ge",
+   "path": "docs/portfolio_mockup_vmd/portfolio_vmd_mockup_1920x1080_indesign.zip",
+   "commit": "14d9271",
+   "status": "draft",
+   "note": "VMD 포트폴리오 목업 보드 1920 × 1080 InDesign 묶음"
   }
  ],
  "unverified": [
