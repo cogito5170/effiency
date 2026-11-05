@@ -1,11 +1,11 @@
 {
  "module": "W1",
  "title": "혁주 자기소개서 (JAJU 라운딩 VMD · 이전 신세계인터내셔날 해외패션)",
- "as_of": "2026-11-04T11:26Z",
+ "as_of": "2026-11-05T05:41Z",
  "checkpoint": {
-  "at": "2026-11-04T11:26Z",
+  "at": "2026-11-05T05:41Z",
   "refs": {
-   "gentleMonster@claude/clever-knuth-1dezlo": "ca463fc",
+   "gentleMonster@claude/clever-knuth-1dezlo": "57d695a",
    "gentleMonster@claude/beautiful-gates-e42a5m": "76d0f6d",
    "gentleMonster@claude/modest-cannon-ha8zs3": "79ba2dc",
    "gentleMonster@main": "bdee7d6",
@@ -509,6 +509,30 @@
     "line": 1,
     "commit": "ca463fc"
    }
+  },
+  {
+   "id": "W1-C40",
+   "statement": "JAJU 2번 문항 FINAL 을 제출본(PDF)에 맞춰 '마네킨' → '마네킹' 2곳 정정 (글자 수 같음)",
+   "source": "도구출력",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/clever-knuth-1dezlo",
+    "path": "docs/portfolio/jaju/jaju_rounding_vmd_q2_FINAL.md",
+    "line": 16,
+    "commit": "5faec47"
+   }
+  },
+  {
+   "id": "W1-C41",
+   "statement": "블루엘리펀트 2번 문항(하고 싶은 일과 차별화된 능력·경험) S1 구조 재작성 v1~v3: v3 [리서치로 생각하고, 시각화로 먼저 확인하는 디자이너] 997자 — 직무 두 갈래 → 첫째 리서치 기획력(7학기 해외 자료) → 둘째 렌더링 · 포토샵 후보정 시각화 → 포부(아이디에이션 미팅에 해외 레퍼런스 제안, 시안을 이미지로 먼저 확인). v2 에서 파사드 · 갤러리 · 모형 이야기 뺌",
+   "source": "도구출력",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/clever-knuth-1dezlo",
+    "path": "docs/portfolio/blue_elephant/blue_elephant_q2_S1_draft.md",
+    "line": 21,
+    "commit": "57d695a"
+   }
   }
  ],
  "decisions": [
@@ -958,6 +982,20 @@
     "line": 14,
     "commit": "ca463fc"
    }
+  },
+  {
+   "id": "W1-O36",
+   "item": "블루엘리펀트 2번 문항 v3 사용자 확인 — 둘째 단락의 '설계 수업에서 렌더링으로 먼저 보여 주었다'는 O35(렌더링 사용 여부) 확인에 달림",
+   "waiting_on": "사용자",
+   "blocking": false,
+   "source": "도구출력",
+   "evidence": {
+    "repo": "cogito5170/gentleMonster",
+    "ref": "claude/clever-knuth-1dezlo",
+    "path": "docs/portfolio/blue_elephant/blue_elephant_q2_S1_draft.md",
+    "line": 26,
+    "commit": "57d695a"
+   }
   }
  ],
  "artifacts": [
@@ -1159,9 +1197,9 @@
    "repo": "cogito5170/gentleMonster",
    "ref": "claude/clever-knuth-1dezlo",
    "path": "docs/portfolio/jaju/jaju_rounding_vmd_q2_FINAL.md",
-   "commit": "91513eb",
+   "commit": "5faec47",
    "status": "final",
-   "note": "JAJU Q2 확정본 999자"
+   "note": "JAJU 2번 문항 FINAL, 제출본 표기(마네킹)에 맞춤"
   },
   {
    "kind": "doc",
@@ -1387,6 +1425,15 @@
    "commit": "ca463fc",
    "status": "final",
    "note": "블루엘리펀트 Creative Intern 1번 문항 완성본 (995자)"
+  },
+  {
+   "kind": "doc",
+   "repo": "cogito5170/gentleMonster",
+   "ref": "claude/clever-knuth-1dezlo",
+   "path": "docs/portfolio/blue_elephant/blue_elephant_q2_S1_draft.md",
+   "commit": "57d695a",
+   "status": "draft",
+   "note": "블루엘리펀트 2번 문항 S1 구조 v1~v3 (v3 997자)"
   }
  ],
  "unverified": [
@@ -1448,6 +1495,11 @@
   {
    "statement": "블루엘리펀트 1번 문항 '확정' 기록에 사용자 표시가 없음 — 사용자 승인인지 파일로는 확인 안 됨",
    "where": "docs/portfolio/context_handoff.md:322 (ca463fc)",
+   "check": "모델 추론"
+  },
+  {
+   "statement": "'제출본(PDF)에 맞춰' 정정한 것으로 보아 JAJU 지원서가 제출됐을 수 있으나, 제출 여부 · 날짜는 파일에 없음 (O17 · O27 은 그대로 둠)",
+   "where": "docs/portfolio/jaju/jaju_rounding_vmd_q2_FINAL.md:16 (5faec47)",
    "check": "모델 추론"
   }
  ]
